@@ -1,0 +1,467 @@
+﻿<?xml version="1.0"?>
+<Root>
+	<using namespace="UnityEngine" prefix ="UnityEngine."/>
+	<using namespace="UnityEngine.UI" prefix ="UnityEngine.UI."/>
+	<using namespace="Assembly-CSharp" prefix =""/>
+	<styles asset="UI/styles/selected-city-styles"/>
+
+
+	<!--Layout-->
+	<UIRect OBJECT_NAME="selected-city.xml" Anchor="UIAnchor.VertStretchLeft" Pivot="UIPivot.BottomLeft" Inset="42,0,0,0" SortOrder="-2" 
+			State="{{ActiveSelection}}" StateType="CITY" StateToggleMode="StateToggleModeType.Visibility" IsActive="true">
+		<!--Templates-->
+		<UIRect OBJECT_NAME="Templates" IsActive="false">
+			<UIButton TEMPLATE_TYPE="SimpleIconButton">
+				<UIImage
+				  TEMPLATE_OBJECT="Icon"
+				  Width="33" Height="21"
+				  PreserveAspect="true"
+				  NormalColor="#FFFFFF"
+				  DisabledColor="#aaaaaa"/>
+			</UIButton>
+		</UIRect>
+
+		<UIRect Anchor="UIAnchor.VertStretchLeft" Pivot="UIPivot.BottomLeft" Width="325" BackgroundImageMode="Sliced" BackgroundImage="BlurrBG5" BackgroundImageMaterial="UI/Materials/UIBlur">
+			<UIImage Anchor="UIAnchor.VertStretchLeft" Pivot="UIPivot.BottomLeft" Width="325" BackgroundImageMode="Sliced" BackgroundImage="CityProjectTrim"/>
+
+			<!-- Production Buttons -->
+			<UIRect Inset="0,0,325,0">
+				<template TEMPLATE="ScrollRect" ResetScrollbar="false" Anchor="UIAnchor.VertStretchLeft" Pivot="UIPivot.TopLeft" Width="100%" Viewport.Padding="0,0,0,-68" BatchCanvas="true"
+						Viewport.Pivot="UIPivot.MiddleLeft" VerticalScrollbar.Pivot="UIPivot.MiddleRight" VerticalScrollbar.Width="12" VerticalVisibility="AutoHideAndExpand"
+						Horizontal="false" HorizontalVisibility="Permanent" TOOLTIP_LOCATION="TooltipLocation.Right" MovementType="Clamped" IsVisible="{{SelectedPanel-City-IsActive}}"
+						BG.BackgroundImage="CityProjectTrim" BG.BackgroundImageMode="Sliced" BG.IsActive="true" VerticalScrollbar.BackgroundImage="TREE_SCROLLBAR_BG" VerticalScrollbarHandle.BackgroundImage="TREE_SCROLLBAR_GOLD">
+
+					<UIImage IgnoreLayout="true" BackgroundImage="CityProjectsTopPiece" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" Height="12" Width="325" BackgroundImageMode="Simple"/>
+
+					<VGroup OBJECT_NAME="selected-city.xml/ProductionButtons" ASSIGN_TO_PARENT="UIScrollRect:Content" Anchor="UIAnchor.HorStretchTop" Pivot="UIPivot.TopLeft" Spacing="2" MinHeight="100%" VerticalFit="PreferredSize" ChildAlignment="TextAnchor.UpperLeft" Padding="12,5,0,5" IsVisible="{{SelectedPanel-City-ShowProduction}}">
+						<loop start="0" end="4" placeholder="^">
+							<VGroup TOOLTIP_LOCATION="TooltipLocation.RightTop" ChildAlignment="TextAnchor.UpperLeft">
+								<UIContentToggle STYLE="VGroup" BackgroundColor="#00000000" Spacing="2" FlexWidth="1" AllowNavigationSelection="false">
+									<HGroup Padding="0,25,0,45" FlexWidth="1" BackgroundImage="SubheadingBG" BackgroundImageMode="Sliced" MinHeight="32" ChildAlignment="TextAnchor.MiddleCenter" IsVisible="{{SelectedPanel-City-ProductionButtons^-IsActive}}" IsLayoutIgnoredWhenInvisible="true"
+											ITEM_TYPE="{{SelectedPanel-City-CityCategory^-ItemType}}" ITEM_DATA="{{SelectedPanel-City-CityCategory^-Data}}" TOOLTIP_LOCATION="TooltipLocation.Right" TooltipOffset="15,0">
+
+										<UIText STYLE="TitleBarLabel" Label="{{SelectedPanel-City-CityCategory^-Label}}" HOVER_EVENT_TYPE="Ignore" AutoSizeMin="13" AutoSizeMax="15" Alignment="Midline" WordWrapping="true" TextMargin="5,5,5,5"/>
+										<UIText Label="{{SelectedPanel-City-CityCategory^-YieldLabel}}" AutoSizeMin="13" AutoSizeMax="15" Alignment="Midline" WordWrapping="false"/>
+										<UIImage BackgroundImage="OPEN_HIGHLIGHTED" IgnoreLayout="true" Width="20" Height="20" PreserveAspect="true" StateType="IsOff" Position="125,0"/>
+										<UIImage NormalImage="CLOSE_NORMAL" HighlightedImage="CLOSE_HIGHLIGHTED" IgnoreLayout="true" Width="20" Height="20" PreserveAspect="true" Position="125,0" ASSIGN_TO_PARENT="UIContentToggle:OnGraphic"/>
+									</HGroup>
+
+									<VGroup ASSIGN_TO_PARENT="UIContentToggle:Content" IsVisible="{{SelectedPanel-City-ProductionButtons^-IsActive}}" IsLayoutIgnoredWhenInvisible="true" TOOLTIP_LOCATION="TooltipLocation.RightTop" Spacing="0.5">
+
+										<loop start="0" end="{{SelectedPanel-City-ProductionButtons^-ContextButtons-Count}}" placeholder="$">
+											<template TEMPLATE="SelectedCity-ProductionContextButton" Height="60" FlexWidth="1"
+													Text.Label="{{SelectedPanel-City-ProductionButtons^-Context-Button$-Label}}"
+													Label-BL.Label="{{SelectedPanel-City-ProductionButtons^-Context-Button$-BottomRight}}"
+													Icon.BackgroundImage="{{SelectedPanel-City-ProductionButtons^-Context-Button$-Icon}}"
+													Icon.IsActive="{{SelectedPanel-City-ProductionButtons^-Context-Button$-IconIsActive}}"
+													IconBG.BackgroundImage="{{SelectedPanel-City-ProductionButtons^-Context-Button$-Icon-BG}}"
+													IsHighlight="{{SelectedPanel-City-ProductionButtons^-Context-Button$-IsHighlight}}false"
+													IsInteractable="{{SelectedPanel-City-ProductionButtons^-Context-Button$-IsInteractable}}"
+													ITEM_TYPE="{{SelectedPanel-City-ProductionButtons^-Context-Button$-ItemType}}"
+													ITEM_DATA="{{SelectedPanel-City-ProductionButtons^-Context-Button$-Data}}"
+													StateAttributes="[IsOn_TooltipOffset:320,0][Default_TooltipOffset:15,0]"
+													TOOLTIP_LOCATION="TooltipLocation.RightTop">
+												<template TEMPLATE="SelectedUnit-ContextMenu" Position="20,0" CellSize="280,60" Padding="8,8,8,8">
+													<loop start="0" end="{{SelectedPanel-City-ProductionButtons^-ContextButton$-NumButtons}}" placeholder="@">
+														<template
+														  TEMPLATE="SelectedCity-ProductionButton"
+														  Height="60" FlexWidth="1"
+														  Text.Label="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-Label}}"
+														  Label-BR.Label="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-BottomLeft}}"
+														  Label-BL.Label="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-BottomRight}}"
+														  Label-Bonus.Label="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-Bonus}}"
+														  Icon.BackgroundImage="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-Icon}}"
+														  Icon.IsActive="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-IconIsActive}}"
+														  IconBG.BackgroundImage="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-Icon-BG}}"
+														  Recommended.IsActive="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-IsRecommended}}false"
+														  RecommendedParticles.IsActive="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-IsQueueEmpty}}false"
+														  IsInteractable="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-IsInteractable}}"
+														  IsVisible="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-IsActive}}"
+														  IsLayoutIgnoredWhenInvisible="true"
+														  IsHighlight="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-IsHighlight}false"
+														  ITEM_TYPE="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-ItemType}}"
+														  ITEM_DATA="{{SelectedPanel-City-ProductionButtons^-ContextButton$-Button@-Data}}"/>
+													</loop>
+												</template>
+											</template>
+										</loop>
+
+										<loop start="0" end="{{SelectedPanel-City-ProductionButtons^-Count}}" placeholder="@">											
+											<template
+											  TEMPLATE="SelectedCity-ProductionButton"
+											  Height="60" FlexWidth="1"
+											  Text.Label="{{SelectedPanel-City-ProductionButtons^-Button@-Label}}"
+											  Label-BR.Label="{{SelectedPanel-City-ProductionButtons^-Button@-BottomLeft}}"
+											  Label-BL.Label="{{SelectedPanel-City-ProductionButtons^-Button@-BottomRight}}"
+											  Label-Bonus.Label="{{SelectedPanel-City-ProductionButtons^-Button@-Bonus}}"
+											  Icon.BackgroundImage="{{SelectedPanel-City-ProductionButtons^-Button@-Icon}}"
+											  Icon.IsActive="{{SelectedPanel-City-ProductionButtons^-Button@-IconIsActive}}"
+											  IconBG.BackgroundImage="{{SelectedPanel-City-ProductionButtons^-Button@-Icon-BG}}"
+											  Recommended.IsActive="{{SelectedPanel-City-ProductionButtons^-Button@-IsRecommended}}false"
+											  RecommendedParticles.IsActive="{{SelectedPanel-City-ProductionButtons^-Button@-IsQueueEmpty}}false"
+											  IsInteractable="{{SelectedPanel-City-ProductionButtons^-Button@-IsInteractable}}"
+											  IsVisible="{{SelectedPanel-City-ProductionButtons^-Button@-IsActive}}"
+											  IsLayoutIgnoredWhenInvisible="true"
+											  IsHighlight="{{SelectedPanel-City-ProductionButtons^-Button@-IsHighlight}false"
+											  ITEM_TYPE="{{SelectedPanel-City-ProductionButtons^-Button@-ItemType}}"
+											  ITEM_DATA="{{SelectedPanel-City-ProductionButtons^-Button@-Data}}"/>
+										</loop>
+									</VGroup>
+								</UIContentToggle>
+							</VGroup>
+						</loop>
+						<template
+							  TEMPLATE="SelectedUnit-ActionButton"
+							  Height="46" FlexWidth="1" SiblingIndex="0"
+							  Label-BL.IsActive="false" Label-BR.IsActive="false" Help.IsActive="false"
+							  Text.Label="{{SelectedPanel-City-AutomateButton-Label}}"
+							  Icon.BackgroundImage="{{SelectedPanel-City-AutomateButton-Icon}}"
+							  IsVisible="{{SelectedPanel-City-AutomateButton-IsVisible}}"
+							  IsLayoutIgnoredWhenInvisible="true"
+							  ITEM_TYPE="ItemType.CITY_AUTOMATE"
+							  ITEM_DATA="{{SelectedCity}}"/>
+					</VGroup>
+				</template>
+			</UIRect>
+
+			<VGroup Height="325" Width="100%" Anchor="UIAnchor.BottomLeft" Pivot="UIPivot.BottomLeft" BackgroundImage="CityProjectFrame" Padding="2,6,5,6" Spacing="-1">
+				<!-- Projects Info -->
+				<HGroup FlexWidth="1" Height="55" ITEM_TYPE="ItemType.PROJECTS" ITEM_DATA="{{SelectedCity}}" Spacing="8" ForceChildExpandHeight="1" TOOLTIP_LOCATION="TooltipLocation.Right"
+						ChildAlignment="TextAnchor.MiddleLeft" Padding="3,10,8,10">
+					<UIText MinWidth="70" STYLE="Trajan" Alignment="Midline" FontColor="#a8a391" Label="TEXT_UI_CITY_SELECTION_PROJECTS_TAB_LABEL" FontSize="13" WordWrapping="false"/>
+					<UIText STYLE="Trajan" FontColor="#a8a391" Alignment="MidlineLeft" Label="{{SelectedPanel-City-Projects-Label}}" AutoSizeMin="10" AutoSizeMax="12" FontSize="12" FlexWidth="1" IconScale="2.5" LineSpacing="-100" OverflowMode="Ellipsis"/>
+				</HGroup>
+
+				<HGroup OBJECT_NAME="Progress Yield Bar" Anchor="UIAnchor.BottomLeft" Pivot="UIPivot.BottomLeft" ChildAlignment="TextAnchor.UpperCenter" Spacing="2" Padding="0,2,0,2" TOOLTIP_LOCATION="TooltipLocation.Right">
+					<!-- Yield Info -->
+					<VGroup FlexWidth="1" Spacing="5" Padding="3,3,3,3" ForceChildExpandWidth="true" TOOLTIP_LOCATION="TooltipLocation.Parent">
+						<loop start="0" end="3" placeholder="@">
+							<UIButton STYLE="HGroup" AllowNavigationSelection="false" FlexWidth="1" Height="42" BackgroundImage="CityProjectButton" BackgroundImageMode="Sliced"  Padding="2,5,2,0" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{SelectedPanel-City-ProgressYield@-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent">
+								<UIImage Width="24" Height="24" BackgroundImage="{{SelectedPanel-City-ProgressYield@-Icon}}" PreserveAspect="true"/>
+								<VGroup FlexWidth="1" Padding="3,8,1,5" Spacing="1" ForceChildExpandWidth="true">
+
+									<ProgressBar Height="16" STYLE="QueueProgressBar" FillAmounts="{{SelectedPanel-City-ProgressYield@-FillAmounts}}" UnfilledColor="#140F0B" FillColors="{{SelectedPanel-City-ProgressYield@-FillColors}}">
+										<UIImage BackgroundImage="bar gradient" Anchor="UIAnchor.StretchAll"/>
+										<UIText STYLE="AvalonOutline" Label="{{SelectedPanel-City-ProgressYield@-Progress}}" FontSize="12" Alignment="Left" Anchor="UIAnchor.StretchAll" TextMargin="0,6,0,0" NormalColor="#00000000" HighlightedColor="#FEFEFE"/>
+									</ProgressBar>
+									<HGroup Height="16" FlexWidth="1">
+										<UIText Anchor="UIAnchor.MiddleLeft" Pivot="UIPivot.MiddleLeft" AutoSizeMin="10" AutoSizeMax="13" FontSize="13" FontColor="#B8A89A" IconScale="1.2" Label="{{SelectedPanel-City-ProgressYield@-ExtraLabel}}" STYLE="ProgressYieldLevelLabel" FlexWidth="1" Alignment="Left"/>
+										<UIText Anchor="UIAnchor.MiddleRight" Pivot="UIPivot.MiddleRight" FontColor="#B8A89A" IconScale="1.2" AutoSizeMin="10" AutoSizeMax="13" FontSize="13" Label="{{SelectedPanel-City-ProgressYield@-Label}}" STYLE="ProgressYieldLevelLabel" Alignment="Right"/>
+									</HGroup>
+								</VGroup>
+							</UIButton>
+						</loop>
+
+						<!-- Luxury info-->
+						<HGroup FlexWidth="1" Height="42">
+							<UIContextControl FlexWidth="1" Height="35" ToggleEvent="OnClick" BackgroundColor="#ffffff00" AllowNavigationSelection="false" IsInteractable="{{CityLuxuryButtons-IsActive}}">
+								<template TEMPLATE="SelectedUnit-ContextMenu" Position="108,70" Anchor="UIAnchor.BottomRight" Pivot="UIPivot.BottomLeft" SortOrder="0">
+									<loop start="0" end="{{CityLuxuryButtons-Count}}" placeholder="@">
+										<template
+											TEMPLATE="SelectedUnit-ActionButton"
+											Text.Label="{{CityLuxuryButtons-@-Label}}"
+											IsInteractable="{{CityLuxuryButtons-@-IsInteractable}}"
+											Icon.BackgroundImage="{{CityLuxuryButtons-@-Icon}}"
+											IconBG.State="Normal"
+											Help.IsActive="false"
+											ITEM_TYPE="ItemType.TRADE_CITY_LUXURY"
+											ITEM_DATA="{{CityLuxuryButtons-@-Data}}"/>
+									</loop>
+								</template>
+
+								<HGroup Anchor="UIAnchor.HorStretchBottom" BackgroundImage="CityProjectButton" BackgroundImageMode="Sliced" Pivot="UIPivot.BottomLeft"  Spacing="12"  Height="40"
+										State="{{SelectedPanel-City-Governor-ButtonIsVisible}}" StateAttributes="[True_Padding:0,0,0,0][False_Padding:0,0,0,35]">
+									<UIButton Width="38" Height="38" NormalImage="LuxuryUp" BackgroundImageMode="sliced" HighlightedImage="LuxuryRoll" DisabledImage="LuxuryDisabled" PreserveAspect="true" IsInteractable="{{SelectedPanel-City-CanSendLuxuries}}"
+											  ITEM_TYPE="ItemType.MANAGE_LUXURIES" ITEM_DATA="{{CityLuxuryButtons-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Ignore"/>
+									<UIRect FlexWidth="1" FlexHeight="1">
+										<UIText Anchor="UIAnchor.StretchAll" TextMargin="1,1,1,1" STYLE="Liberation" Kerning="6" AutoSizeMin="10" FontSize="14" AutoSizeMax="14" IconScale="2.0" FontColor="#a8a391" Label="{{SelectedPanel-City-Luxuries}}" Alignment="MidlineLeft" LineSpacing="-20"/>
+									</UIRect>
+								</HGroup>
+							</UIContextControl>
+
+							<UIContextControl ToggleEvent="OnClick" ChildAlignment="TextAnchor.LowerCenter" PreserveAspect="true" Pivot="UIPivot.BottomLeft" Width="35" Height="35"
+											  BackgroundImageMode="Sliced" DisabledImage="GiftDisabled"  NormalImage="GiftUp" HighlightedImage="GiftRoll" NormalColor="#ffffff" ForceInactive="{{SelectedPanel-City-Governor-ButtonIsVisible}}"
+                                              ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_GIFT_CITY,{{SelectedCity}}" IsInteractable="{{CityGiftButtons-IsActive}}" ToggleWhileDisabled="false"
+											  TOOLTIP_LOCATION="TooltipLocation.Parent" StateAttributes="[IsOn_TooltipOffset:270,10][Default_TooltipOffset:0,10]">
+								<template TEMPLATE="SelectedUnit-ContextMenu" Position="22,38" Width="270" Anchor="UIAnchor.BottomRight" Pivot="UIPivot.BottomLeft">
+									<loop start="0" end="{{CityGiftButtons-Count}}" placeholder="@">
+										<template
+											TEMPLATE="SelectedUnit-ActionButton"
+											Text.Label="{{CityGiftButtons-@-Label}}"
+											IsInteractable="{{CityGiftButtons-@-IsInteractable}}"
+											Icon.BackgroundImage="{{CityGiftButtons-@-Icon}}"
+											Help.IsActive="false"
+											ITEM_TYPE="ItemType.GIFT_CITY"
+											ITEM_DATA="{{CityGiftButtons-@-Data}}" />
+									</loop>
+								</template>
+							</UIContextControl>
+						</HGroup>
+					</VGroup>
+					<VGroup Spacing="3" PaddingTop="3" Width="90" FlexWidth="0" PreserveAspect="true" IsActive="{{SelectedPanel-City-Governor-ButtonIsVisible}}">
+						<!-- Governor Info -->
+						<UIText Label="TEXT_SELECTED_CITY_GOVERNOR" Anchor="UIAnchor.TopCenter" Pivot="UIPivot.TopCenter" Width="85" Height="20" FontSize="14" Alignment="Midline" STYLE="Liberation" Kerning="6" FontColor="#a8a391" />
+						<UIButton HighlightedImage="Frame_Governor_Highlighted" DisabledImage="Frame_Governor_Disabled" BackgroundImageMode="Sliced" PreserveAspect="true" DisabledColor="#AAAAAA" Width="75" Height="75"
+								  ITEM_TYPE="{{SelectedPanel-City-Governor-ItemType}}" ITEM_DATA="{{SelectedPanel-City-Governor-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent"
+								  State="{{SelectedPanel-City-Governor-State}}" StateAttributes="[Default_NormalImage:Frame_Governor_Normal][Default_TweenID:Reset_Image]
+																								 [True_NormalImage:Frame_Governor_Highlighted][True_TweenID:Quick_Blink]">
+							<UIImage BackgroundImage="{{SelectedPanel-City-Governor-ImageBG}}" Width="69" Height="69" BackgroundImageMode="Sliced" PreserveAspect="true" IsActive="{{SelectedPanel-City-HasGovernor}}"/>
+							<UIImage BackgroundImage="{{SelectedPanel-City-Governor-Image}}" CharacterID="{{SelectedPanel-City-Governor-CharacterID}}" Width="69" Height="69" PreserveAspect="true" IsActive="{{SelectedPanel-City-HasGovernor}}"/>
+
+							<UIImage Width="28" Height="28" Anchor="UIAnchor.BottomLeft" Pivot="UIPivot.BottomLeft" Position="3,3" BackgroundImage="PortraitCorner" PreserveAspect="true" IsActive="{{SelectedPanel-City-HasGovernor}}">
+								<UIText Width="26" Height="26" FontSize="20" Alignment="BottomLeft" Label="{{SelectedPanel-City-Governor-Archetype}}" HOVER_EVENT_TYPE="Target"/>
+							</UIImage>
+						</UIButton>
+
+						<VGroup Width="90" Height="80" Spacing="3" PreserveAspect="true" >
+							<!--Gift City button-->
+							<UIContextControl ToggleEvent="OnClick" ChildAlignment="TextAnchor.LowerCenter" PreserveAspect="true" Pivot="UIPivot.BottomLeft" Width="75" Height="35" 
+											  BackgroundImageMode="Sliced" DisabledImage="GiftDisabled"  NormalImage="GiftUp" HighlightedImage="GiftRoll" NormalColor="#ffffff"
+                                              ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_GIFT_CITY,{{SelectedCity}}" IsInteractable="{{CityGiftButtons-IsActive}}" ToggleWhileDisabled="false" 
+											  TOOLTIP_LOCATION="TooltipLocation.Parent" StateAttributes="[IsOn_TooltipOffset:270,10][Default_TooltipOffset:0,10]">
+								<template TEMPLATE="SelectedUnit-ContextMenu" Position="22,38" Width="270" Anchor="UIAnchor.BottomRight" Pivot="UIPivot.BottomLeft">
+									<loop start="0" end="{{CityGiftButtons-Count}}" placeholder="@">
+										<template
+											TEMPLATE="SelectedUnit-ActionButton"
+											Text.Label="{{CityGiftButtons-@-Label}}"
+											IsInteractable="{{CityGiftButtons-@-IsInteractable}}"
+											Icon.BackgroundImage="{{CityGiftButtons-@-Icon}}"
+											Icon.BackgroundColor="{{CityGiftButtons-@-Icon-Color}}"
+											Help.IsActive="false"
+											ITEM_TYPE="ItemType.GIFT_CITY"
+											ITEM_DATA="{{CityGiftButtons-@-Data}}" />
+									</loop>
+								</template>
+							</UIContextControl>
+
+							<UIButton Height="35" Width="75" NormalImage="PacifyUp" HighlightedImage="PacifyRoll" BackgroundImageMode="Sliced" DisabledImage="PacifyDisabled" PreserveAspect="true" NormalColor="#ffffff"
+									  ITEM_TYPE="{{SelectedPanel-City-Pacify-Type}}" ITEM_DATA="{{SelectedPanel-City-Pacify-Data}}" IsInteractable="{{SelectedPanel-City-Pacify-IsInteractable}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+						</VGroup>
+					</VGroup>
+				</HGroup>
+				<HGroup FlexWidth="1" Height="75" Padding="5,0,-1,0">
+					<UIButton FlexWidth="1" Height="75" NormalImage="research_bar" HighlightedImage="research_bar_roll" BackgroundImageMaterial="UI/Materials/HudEffects" BackgroundImageMode="Sliced"
+						 AUDIO_CLICK="[disabled]" ITEM_TYPE="ItemType.TURN_STATE" TOOLTIP_LOCATION="TooltipLocation.Right">
+						<!-- Particle FX -->
+						<UIParticles ASSET_TYPE="Prefabs/Particles/EndTurnParticle" RaycastTarget="false" Position="148,33" Anchor="UIAnchor.BottomLeft" Pivot="UIAnchor.BottomLeft" Scale="13.3,14,1" IsActive="{{CycleTurnButton-ShowEffect}}"
+									 State="{{SelectedPanel-City-IsActive}}" StateAttributes="[Default_ForceInactive:true][True_ForceInactive:false]"/>
+						<UIText STYLE="Trajan,GradientBlue" Anchor="UIAnchor.StretchAll" Alignment="Midline" TextMargin="5,10,5,10" Label="{{CycleTurnButton-Label}}" AutoSizeMin="16" AutoSizeMax="20" WordWrapping="true" />
+					</UIButton>
+				</HGroup>
+			</VGroup>
+		</UIRect>
+
+		<!-- Queue -->
+		<HGroup OBJECT_NAME="Queue Group" IgnoreLayout="true" Position="325,0" Anchor="UIAnchor.BottomLeft" Pivot="UIPivot.BottomLeft" HorizontalFit="PreferredSize" VerticalFit="PreferredSize" ChildAlignment="TextAnchor.MiddleRight" Spacing="10" MinHeight="96">
+			<!-- Idle State -->
+			<replace placeholder="$" replacement="{{SelectedCity}}">
+				<HGroup STYLE="TitleBar" Height="155" MinWidth="270" BackgroundImage="Trim4" BackgroundImageMode="Sliced" ChildAlignment="TextAnchor.MiddleCenter" ITEM_TYPE="ItemType.IDLE_BUILD" TOOLTIP_LOCATION="TooltipLocation.TopLeft"
+							PaddingLeft="10" PaddingRight="10" Spacing="6" State="{{City$-HasBuild}}" IsLayoutIgnoredWhenInvisible="true" IsActive="true" ForceInactive="{{QueuePanel-IsDismissed}}" StateAttributes="[False_IsVisible:true][True_IsVisible:false]">
+					<UIImage BackgroundImage="TrimEdgeBottomLeft" IgnoreLayout="true" Width="36" Height="36" Anchor="UIAnchor.TopLeft" Pivot="UIAnchor.BottomLeft" PreserveAspect="true"/>
+
+					<UIParticles ASSET_TYPE="Prefabs/Particles/UIIdleCityParticles" IgnoreLayout="true" Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.BottomCenter" Height="0" Width="0" Position="0,0" Scale="10,11,1" RaycastTarget="false" State="{{SelectedPanel-City-IsActive}}" StateAttributes="[Default_ForceInactive:true][True_ForceInactive:false]"/>
+					<VGroup ChildAlignment="TextAnchor.MiddleCenter" Padding="0,10,0,10">
+						<UIText STYLE="Trajan,GradientYellow" IconScale="2" Label="{{CompletedBuilds-Label}}" FontSize="28" Alignment="Center" HOVER_EVENT_TYPE="Target"/>
+						<UIText STYLE="Liberation,GradientBlue" Label="TEXT_SELECTED_CITY_CHOOSE" AutoSizeMin="12" AutoSizeMax="18" Height="25" Alignment="Center"/>
+					</VGroup>
+				</HGroup>
+
+				<!-- Active State -->
+				<UIImage STYLE="QueProdutionTab,HGroup" Height="155" MinWidth="270" PreserveAspect="true" BackgroundImage="QueueTrim" BackgroundImageMode="Sliced" Padding="0,10,60,10" Spacing="8"
+							ChildAlignment="TextAnchor.MiddleLeft" TOOLTIP_LOCATION="TooltipLocation.LeftTop" ITEM_TYPE="ItemType.BUILD_QUEUE" ITEM_DATA="$,0" IsVisible="{{City$-HasBuild}}">
+
+					<UIImage BackgroundImage="TrimEdgeBottomLeft" IgnoreLayout="true" Width="36" Height="36" Anchor="UIAnchor.TopLeft" Pivot="UIAnchor.BottomLeft" PreserveAspect="true"/>
+					<UIRect Width="64" Height="64">
+						<UIImage Anchor="UIAnchor.StretchAll" BackgroundImage="{{City$-Production-BG}}" BackgroundImageMode="Sliced"/>
+						<UIImage Anchor="UIAnchor.StretchAll" BackgroundImage="{{City$-Production-Icon}}" PreserveAspect="true" BackgroundImageMaterial="UI/Materials/UINoMipImage"/>
+
+						<template
+							OBJECT_NAME="ProductionYieldCost"
+							TEMPLATE="CityRate"
+							BackgroundImage="Sprites/GuitarPickUp_Wide"
+							IgnoreLayout="true"
+							Anchor="UIAnchor.TopCenter"
+							Pivot="UIPivot.BottomCenter"
+							BackgroundColor="{{SelectedPanel-City-YieldCost-Color}}"
+							FlipY="true"
+							Padding="0,0,10,0"
+							Position="0,15"
+							ITEM_TYPE="{{SelectedPanel-City-YieldCost-ItemType}}"
+							ITEM_DATA="{{SelectedPanel-City-YieldCost-Data}}"
+							State="{{ActiveSelection}}"
+							StateAttributes="[CITY_IsVisible:true][Default_IsVisible:false]"
+							Text.Position="-10,0"
+							Text.Label="{{SelectedPanel-City-YieldCost-Label}}"/>
+					</UIRect>
+
+					<VGroup ChildAlignment="TextAnchor.LowerLeft" PaddingTop="5" Spacing="5">
+						<UIText STYLE="Trajan,GradientYellow" Width="125" Label="{{City$-ActiveProduction-Label}}" AutoSizeMin="12" FontSize="16" AutoSizeMax="16" OverflowMode="Ellipsis"/>
+						<UIButton STYLE="HGroup" Spacing="6" BackgroundColor="#00000000">
+							<UIText STYLE="Liberation" Kerning="5" Label="{{City$-TurnsLeft}}" FontSize="13" AutoSizeMin="10" AutoSizeMax="13" Wordwrapping="false" NormalColor="#B8A89A" Alignment="Center"/>
+							<ProgressBar STYLE="QueueProgressBar" Height="18" Width="120" FillAmounts="{{City$-Production-FillAmounts}}" FillColors="{{City$-Production-FillColors}}" HighlightedColor="#FFFFFF55">
+								<UIImage BackgroundImage="bar gradient" Anchor="UIAnchor.StretchAll"/>
+								<UIText STYLE="Liberation" Kerning="6" Label="{{City$-ProgressText}}" FontSize="13" AutoSizeMin="11" AutoSizeMax="13" WordWrapping="false"
+										Alignment="Center" Anchor="UIAnchor.StretchAll" TextMargin="0,6,0,0" NormalColor="#00000000" HighlightedColor="#FFFFFF"/>
+							</ProgressBar>
+						</UIButton>
+					</VGroup>
+
+					<UIButton STYLE="QueueCancelButton" IgnoreLayout="true" Anchor="UIAnchor.TopRight" Height="22" Width="22" PreserveAspect="true" Pivot="UIPivot.TopRight" Position="-10,-10" IsInteractable="{{City$-Cancel-IsInteractable}}" DisabledColor="#55555588" HOVER_EVENT_TYPE="Target" CLICK_EVENT_TYPE="Target" 
+							  ITEM_TYPE="ItemType.BUILD_QUEUE_CANCEL" ITEM_DATA="$,0" TOOLTIP_LOCATION="TooltipLocation.Parent" />
+
+					<UIGrid STYLE="HurryButtonGrid" Anchor="UIAnchor.BottomCenter"  Pivot="UIPivot.BottomCenter" TOOLTIP_LOCATION="TooltipLocation.LeftTop">
+						<HGroup BackgroundImage="ToolTip_BG1" Width="260" Height="18" IgnoreLayout="true"  BackgroundImageMode="Sliced" Position="0,35">
+							<UIText STYLE="Liberation" Kerning="6" FontSize="12" Alignment="Center" FontColor="#d7b987"  Label="TEXT_UI_CITY_SELECTION_HURRY_PRODUCTION" />
+						</HGroup>
+						<loop start="0" end="{{QueueHurryButtons-Count}}" placeholder="@">
+							<template
+								TEMPLATE="SimpleIconButton"
+								NormalImage="HurryButtonNormal"
+								BackgroundImageMode="Sliced"
+								DisabledImage="HurryButtonDisabled"
+								HighlightedImage="HurryButtonUP"
+								Icon.BackgroundImage="{{QueueHurryButtons-Button@-Icon}}"
+								IsInteractable="{{QueueHurryButtons-Button@-IsInteractable}}"
+								ITEM_TYPE="{{QueueHurryButtons-Button@-ItemType}}"
+								ITEM_DATA="{{SelectedCity}}"
+								CLICK_EVENT_TYPE="Target"
+								TOOLTIP_LOCATION="TooltipLocation.Parent" />
+						</loop>
+					</UIGrid>
+				</UIImage>
+			</replace>
+
+			<!-- Queued Items-->
+			<VGroup OBJECT_NAME="QueuePanel" STYLE="QueuePanel" IsVisible="{{QueuePanel-IsActive}}" IsLayoutIgnoredWhenInvisible="true" TOOLTIP_LOCATION="TooltipLocation.LeftTop" IgnoreLayout="true" Anchor="UIAnchor.BottomRight" Pivot="UIPivot.BottomLeft" Position="10,0" HorizontalFit="PreferredSize" VerticalFit="PreferredSize" Spacing="5" ChildAlignment="TextAnchor.UpperRight">
+				<CityQueueList STYLE="HGroup" Spacing="8" TOOLTIP_LOCATION="TooltipLocation.LeftTop" ChildAlignment="TextAnchor.UpperRight">
+					<loop start="1" end="5" placeholder="@">
+						<UIDraggable Width="85" Height="110" BackgroundImage="QueTab" BackgroundImageMode="Sliced" Index="{{QueuePanel-Button@-Order}}" IsVisible="{{QueuePanel-Button@-IsActive}}" IsLayoutIgnoredWhenInvisible="true" 
+									 ITEM_TYPE="ItemType.BUILD_QUEUE" ITEM_DATA="{{SelectedCity}},@" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Target">
+							<UIRaycastTarget Anchor="UIAnchor.MiddleLeft" Pivot="UIAnchor.MiddleRight" Width="20" Height="100" Position="15,-5" IsActive="{{QueuePanel-Button@-Arrow-IsActive}}">
+								<UIImage Width="36" Height="36"  NormalImage="QueArrow" HighlightedImage="QueArrowHighlighted" PreserveAspect="true"/>
+							</UIRaycastTarget>
+
+							<UIImage Width="60" Height="60" PreserveAspect="true" BackgroundImage="{{QueuePanel-Button@-Production-BG}}" BackgroundImageMode="Sliced" HighlightedColor="#AAAAAA">
+								<UIImage Anchor="UIAnchor.StretchAll" BackgroundImage="{{QueuePanel-Button@-Production-Icon}}" HighlightedColor="#AAAAAA" PreserveAspect="true" Pivot="UIPivot.BottomCenter" BackgroundImageMaterial="UI/Materials/UINoMipImage"/>
+							</UIImage>
+
+							<UIText Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" STYLE="QueueTurnLabel" Alignment="MidlineLeft" Position="11,-2" Width="35" Height="26" Label="{{QueuePanel-Button@-TurnsLeft}}" />
+							<ProgressBar Width="60" Height="14" Position="0,-40" STYLE="QueueProgressBar" FillAmounts="{{QueuePanel-Button@-Production-FillAmounts}}" FillColors="{{QueuePanel-Button@-Production-FillColors}}" IsVisible="{{QueuePanel-Button@-ProgressBar-IsActive}}" IsLayoutIgnoredWhenInvisible="true">
+								<UIImage BackgroundImage="bar gradient" Anchor="UIAnchor.StretchAll"/>
+								<UIText STYLE="Liberation" Label="{{QueuePanel-Button@-ProgressText}}" FontSize="12" AutoSizeMin="10" AutoSizeMax="12" WordWrapping="false" 
+										Alignment="Left" Anchor="UIAnchor.StretchAll" TextMargin="0,6,0,0" NormalColor="#00000000" HighlightedColor="#FFFFFF"/>
+							</ProgressBar>
+
+							<UIButton STYLE="QueueCancelButton" Position="-2,-2" Height="18" Width="18" IsInteractable="{{QueuePanel-Button@-Cancel-IsInteractable}}" DisabledColor="#55555588" CLICK_EVENT_TYPE="Target"
+									  ITEM_TYPE="ItemType.BUILD_QUEUE_CANCEL" ITEM_DATA="{{SelectedCity}},@" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+							<UIParticles ASSET_TYPE="Prefabs/Particles/QueuePanelParticle" RaycastTarget="false" IgnoreLayout="true" Position="0,0" Anchor="UIAnchor.MiddleCenter" Pivot="UIAnchor.MiddleCenter" Scale="13,14,1" IsActive="{{QueuePanel-Button@-Effect-IsActive}}" State="{{SelectedPanel-City-IsActive}}" StateAttributes="[Default_ForceInactive:true][True_ForceInactive:false]"/>
+						</UIDraggable>
+					</loop>
+				</CityQueueList>
+			</VGroup>
+		</HGroup>
+
+		<CityWidget
+		OBJECT_NAME="SelectedCityWidget"
+		Anchor="UIAnchor.TopCenter" Pivot="UIPivot.TopCenter"
+		Position="0,-65" Width="250" Height="60"
+		ChildAlignment="TextAnchor.MiddleCenter"
+		ChildControlWidth="true" ChildControlHeight="true"
+		CurrentHP="X{{SelectedCityWidget-CurrentHP}}"
+		MaxHP="X{{SelectedCityWidget-MaxHP}}"
+		DamagePreviewHP="X{{SelectedCityWidget-DamagePreviewHP}}"
+		HideHealthbarWhenFull="true"
+		State="{{ActiveSelection}}" StateType="CITY" StateToggleMode="StateToggleModeType.Visibility"
+		ForceInvisible="{{TabOverlay-IsAnyTabOrResearchOpen}}"
+		IsActive="true"
+		IgnoreCulling="true"
+		BatchCanvas="true" SortOrder="0"
+		TOOLTIP_LOCATION="TooltipLocation.BottomLeft">
+
+			<replace placeholder="$" replacement="{{SelectedCity}}">
+				<UIButton Anchor="UIAnchor.MiddleRight" Pivot="UIPivot.MiddleRight" Position="-5,0" Width="50" Height="50" HighlightedColor="#AAAAAA" BackgroundImage="{{City$-Production-BG}}" ITEM_TYPE="{{City$-Production-Type}}" ITEM_DATA="{{City$-Production-Data}}"
+						  TOOLTIP_LOCATION="TooltipLocation.Right" TooltipOffset="33,15">
+					<UIImage Anchor="UIAnchor.StretchAll" HighlightedColor="#AAAAAA" BackgroundImage="{{City$-Production-Icon}}" PreserveAspect="true" RaycastTarget="false"/>
+				</UIButton>
+
+				<UIImage Anchor="UIAnchor.StretchAll" BackgroundImageMaterial="UI/Materials/WorldImage" BackgroundImage="CityTab" RaycastTarget="false"/>
+
+				<!-- Middle Strip -->
+				<UIImage Anchor="UIAnchor.MiddleLeft" Position="0,2" Width="80" Height="80" BackgroundImage="{{City$-FamilyShape}}" PreserveAspect="true">
+					<UIButton Width="40" Height="40" BackgroundImage="{{City$-CityCrestSprite}}" BackgroundColor="{{City$-CityCrestSprite-Color}}" PreserveAspect="true"
+									 ITEM_TYPE="ItemType.CITY_CREST" ITEM_DATA="$" HighlightedColor="#777777" TooltipOffset="0,25"/>
+					<UIImage Width="30" Height="30" Anchor="UIAnchor.TopCenter" BackgroundImage="FamilySeat" PreserveAspect="true"
+							 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{City$-FamilySeat-Data}}" IsActive="{{City$-IsFamilySeat}}" TooltipOffset="0,15"/>
+					<UIImage Width="35" Height="35" Anchor="UIAnchor.TopCenter" BackgroundImage="CapitalStar" PreserveAspect="true"
+									 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_CAPITAL,$" IsActive="{{City$-IsCapital}}" TooltipOffset="0,15"/>
+				</UIImage>
+
+				<VGroup Anchor="UIAnchor.MiddleLeft" Pivot="UIPivot.MiddleLeft" Position="40,1" Height="46" Spacing="2" ChildAlignment="TextAnchor.MiddleCenter" Width="148">
+					<UIProgressBar OBJECT_NAME="CultureProgressBar" FlexWidth="1" Height="23" MinHeight="18" FillMaterial="UI/Materials/UIGradientWorldUI" FillBackgroundSprite="WorkerFillSquared" BackgroundColor="#00000000" FillAmounts="{{City$-Culture-FillAmounts}}" FillColors="#5e909e,#3b6c7a"
+								ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_CITY,$" TooltipOffset="0,15" UnfilledColor="#222524">
+						<UIText STYLE="Avalon,GradientBlue" Label="{{CityWidget$-Name}}" AutoSizeMin="12" AutoSizeMax="15" FontSize="15" Width="148" Height="23" OverflowMode="Ellipsis" WordWrapping="false" HighlightedColor="#777777"
+								Alignment="Midline" TextMargin="0,20,0,1"/>
+						<UIImage Anchor="UIAnchor.MiddleLeft" Pivot="UIPivot.MiddleLeft" Position="2,0" PreserveAspect="true" IsActive="{{City$-HasCulture}}" Width="18" Height="18" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{City$-CultureLevel-Data}}" BackgroundImage="{{City$-CultureLevel-Icon}}"/>
+						<UIButton  Width="15" Height="15" Anchor="UIAnchor.MiddleRight" Pivot="UIPivot.MiddleRight" Position="-3,0" HighlightColor="#ffffff" BackgroundImage="Sprites/UI_HUD_Icon_Atlas/RENAME" PreserveAspect="true" IsActive="{{City$-Rename-IsActive}}"
+						ITEM_TYPE="ItemType.RENAME_CITY" ITEM_DATA="$" TOOLTIP_LOCATION="TooltipLocation.TopLeft" CLICK_EVENT_TYPE="Target"/>
+					</UIProgressBar>
+
+					<Healthbar ASSIGN_TO_PARENT="CityWidget:Healthbar" STYLE="HGroup" MinHeight="6" HealthPerTick="{{Healthbars-HealthPerTick}}" ITEM_TYPE="ItemType.CITY_HEALTH" ITEM_DATA="$" BatchCanvas="true" Padding="-1,0,-1,0">
+						<UIProgressBar ASSIGN_TO_PARENT="Healthbar:HealthbarTick" FillMethod="{{Healthbars-FillDirection}}" FillOrigin="Left" BackgroundImageMode="Sliced" RaycastTarget="false"
+									   FillBackgroundSprite="Sprites/healthbarTick" BackgroundSprite="Sprites/whiteSolid" UnfilledColor ="#000000"/>
+						<HGroup ASSIGN_TO_PARENT="Healthbar:TicksContainer" Width="100" BackgroundColor="#000000" Padding="0,1,0,1" Spacing="0" ChildAlignment="TextAnchor.MiddleLeft" ForceChildExpandWidth="true" ForceChildExpandHeight="true"/>
+					</Healthbar>
+
+					<UIProgressBar OBJECT_NAME="ProductionProgressBar" FillMaterial="UI/Materials/UIGradientWorldUI" FillBackgroundSprite="WorkerFillSquared" BackgroundColor="#00000000" FlexWidth="1" Height="23" MinHeight="16" FillAmounts="{{City$-Production-FillAmounts}}" FillColors="{{City$-Production-FillColors}}"
+								ITEM_TYPE="{{City$-Production-Type}}" ITEM_DATA="{{City$-Production-Data}}" TOOLTIP_LOCATION="TooltipLocation.Right" TooltipOffset="50,-5" UnfilledColor="#222524">
+						<UIText STYLE="Avalon" Anchor="UIAnchor.StretchAll" Label="{{City$-Production-Label}}" AutoSizeMin="10" AutoSizeMax="15" FontSize="10" WordWrapping="false" RaycastTarget="true" Alignment="Midline" TextMargin="0,5,0,5" SiblingIndex="3"/>
+					</UIProgressBar>
+				</VGroup>
+
+				<!-- Lower Strip -->
+				<HGroup IgnoreLayout="true" OBJECT_NAME="PopulationInfo" HorizontalFit="PreferredSize" Height="20" Anchor="UIAnchor.TopLeft" Position="120,-75" ChildAlignment="TextAnchor.UpperCenter" Spacing="4" TOOLTIP_LOCATION="TooltipLocation.Bottom">
+					<HGroup Spacing="-3">
+						<UIButton OBJECT_NAME="CitizensIcon" Width="20" Height="20" BackgroundImage="GrowthCircle" PreserveAspect="true" ITEM_TYPE="ItemType.CITIZENS" ITEM_DATA="$" >
+							<UIText STYLE="Avalon" Label="{{City$-Citizens}}" HighlightedColor="#AAAAAA" FontSize="12" Alignment="Midline" WordWrapping="false"/>
+						</UIButton>
+
+						<UIButton OBJECT_NAME="SpecialistsIcon" Width="20" Height="20" BackgroundImage="SpecialistCircle" BackgroundColor="#A85B5B" PreserveAspect="true" ITEM_TYPE="ItemType.SPECIALISTS" ITEM_DATA="$">
+							<UIText STYLE="Avalon" Label="{{City$-Specialists}}" FontSize="12" Alignment="Midline" HighlightedColor="#AAAAAA" WordWrapping="false"/>
+						</UIButton>
+
+						<UIButton OBJECT_NAME="DiscontentIcon" Width="20" Height="20" BackgroundImage="DiscontentCircle" BackgroundColor="{{City$-Happiness-Color}}" PreserveAspect="true" ITEM_TYPE="ItemType.HAPPINESS" ITEM_DATA="$">
+							<UIText STYLE="Avalon" Label="{{City$-Happiness}}" HighlightedColor="#AAAAAA" FontSize="12" Alignment="Midline" WordWrapping="false"/>
+						</UIButton>
+					</HGroup>
+
+					<!-- Religions -->
+					<UIText HighlightedColor="#AAAAAA" Label="{{City$-ReligionList}}" FontSize="30" HorizontalFit="PreferredSize" Alignment="Midline" Kerning="12" IsActive="{{City$-HasReligion}}" TooltipOffset="0,5"/>
+
+					<!-- Everything Else -->
+					<UIButton OBJECT_NAME="ConnectedIcon" Width="20" Height="20" PreserveAspect="true"  BackgroundImage="TabIconCircle2" ITEM_TYPE="ItemType.CONNECTED" ITEM_DATA="$" IsActive="{{City$-IsConnected}}" IsLayoutIgnoredWhenInvisible="true">
+						<UIImage BackgroundImage="City_Connected" HighlightedColor="#AAAAAA" Width="16" Height="16"/>
+					</UIButton>
+
+					<UIButton OBJECT_NAME="AgentIcon" Width="20" Height="20" PreserveAspect="true" BackgroundImage="TabIconCircle2" ITEM_TYPE="ItemType.CHOOSE_AGENT" ITEM_DATA="{{CityWidget$-AgentMarker-Data}}" IsActive="{{CityWidget$-AgentMarker-IsActive}}false">
+						<UIImage Width="16" Height="16" PreserveAspect="true" BackgroundImage="{{CityWidget$-AgentMarker-Icon}}" HighlightedColor="#AAAAAA" State="{{CityWidget$-AgentMarker-CanAddAgent}}" StateAttributes="[Default_TweenID:Reset_Image][True_TweenID:Quick_Blink]"/>
+					</UIButton>
+
+					<UIButton OBJECT_NAME="ScoutReturnIcon" Width="20" Height="20" PreserveAspect="true" BackgroundImage="SCOUT_FILTER" BackgroundImageMaterial="UI/Materials/UIWorldOutline" IsActive="{{CityWidget$-Agent-ScoutReturn}}"
+							  ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_AGENT_RETURN,$"/>
+
+					<UIButton OBJECT_NAME="AutomatedIcon" Width="20" Height="20" PreserveAspect="true" BackgroundImage="STATUS_AUTOMATED" BackgroundImageMaterial="UI/Materials/UIWorldOutline" IsActive="{{CityWidget$-IsAutomated}}"
+							  ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_AUTOMATED"/>
+				</HGroup>
+			</replace>
+		</CityWidget>
+
+		<!-- CloseButton-->
+		<HGroup Height="65" HorizontalFit="PreferredSize" Anchor="UIAnchor.BottomCenter" Position="0,25" Pivot="UIPivot.BottomCenter">
+			<UIButton Width="53" Height="65" PreserveAspect="true" OBJECT_NAME="CYCLE_BACKWARD" NormalImage="CYCLE_BACKWARD" BackgroundImageMode="Sliced" HighlightedImage="CYCLE_BACKWARD_HIGHLIGHT" ITEM_TYPE="ItemType.CYCLE_PREVIOUS_CITIES" TOOLTIP_LOCATION="TooltipLocation.Top"/>
+			<UIButton STYLE="HGroup" NormalImage="CLOSE_BUTTON" FlexWidth="1" Height="65" HighlightedImage="CLOSE_BUTTON_HIGHLIGHT" BackgroundImageMode="Sliced" ITEM_TYPE="ItemType.DESELECT_CITY" Padding="3,12,3,12" TOOLTIP_LOCATION="TooltipLocation.Top">
+				<UIText Label="TEXT_SELECTED_CITY_CLOSE" STYLE="Trajan,GradientYellow" Position="0,3" Alignment="Midline" FontSize="21" AutoSizeMin="18" AutoSizeMax="22"/>
+			</UIButton>
+			<UIButton OBJECT_NAME="CYCLE_FORWARD" Width="53" Height="65" PreserveAspect="true" NormalImage="CYCLE_FORWARD" BackgroundImageMode="Sliced" HighlightedImage="CYCLE_FORWARD_HIGHLIGHT" ITEM_TYPE="ItemType.CYCLE_NEXT_CITIES" TOOLTIP_LOCATION="TooltipLocation.Top"/>
+		</HGroup>
+	</UIRect>
+</Root>

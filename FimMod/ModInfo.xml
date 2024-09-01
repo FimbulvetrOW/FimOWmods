@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>FimMod</displayName>
+  <description>  A collection of small changes that didn't get their own separate mod.
+  requires Base DLL Mod
+
+- Event "Influence of Money": The character asking to be bribed can't be honorable.
+- Adopting removes "Bastard" trait.
+- Info text is no longer ambiguous if it's about the Improvement Class or its lvl 1 Improvement (Hamlet, Odeon, Market, Library, Courthouse, Garrison)
+- Capitals get free Walls to make early rushing less viable, especially with low AI Development settings.
+- Special Unit abilities replacement: 2 Defense-oriented abilities were replaced with normal Defense boni.
+   Tactician (Melee Counter): +50% Defense vs. Melee (originally: does full Attack Damage when Defending against Melee)
+   (Critial Immune): +10% Defense (originally: Unit is immune to the extra Damage from Critial Strikes)
+- Schemer Leaders get flat +4 Orders now (originally: +1 Orders per War and the ability to sell 2 Legitimacy for 10 Orders every turn)
+- River bridging is unlocked by Polis Tech (originally: unlocked by enacting Engineering Law)
+- Improvement lists for selected Worker show as a grid of icons for all filters, not just "All". 
+- Wonder nerf:
+  Pyramids -25% adopt Law Cost (from -50%),
+  Apadanda -50% maint. reduction only to city (instead of all cities),
+  Ishtar Gate only +50 culture (from +100)
+  Cothon no longer produces Triremes, instead gives a -25% Train time reducting,
+  Colosseum doesn't produce Swordsmen and doesn't give +1 Training in City,
+    instead all new Infantry Units in the City start with Tough, and all Cities get flat +1 Training;
+  Heliopolis gives only +0.5 Order per Acolyte, instead of +1 per Shrine;
+  Al Khazneh now gives +20% Money and upgrades all Treasury I to Treasury II where possible and adds Treasury I 
+   to Cities that don't have it, no longer gives Luxuries;.
+- (Base DLL feature) some lvl 1 and a few lvl 2 improvements can now be unlocked earlier, in addition to their normal unlock Tech + Culture.
+   (Example: A City with Strong Culture can build a Courthouse at Tech Phalanx already, one Tech earlier.)
+   Ministry no longer needs to be right next to the Courthouse.
+- (Base DLL feature) Baths are stronger now, but every city can only have 1 Bath now. Which one, that is decided by City Biome: 
+   Cold Baths in Arid/Dessert, Hot Baths in Tundra, Warm Baths in Temperate regions. Biome is calculated from non-Urban Land Tiles in City territory.
+- (Base DLL feature) Embarking costs 1 Movement point, like crossing a river.
+- (Base DLL feature) Amphibious Units can cross Rivers, and Embark, without extra Movement costs. 
+- (Base DLL feature) Roads without Bridges inside your Territory reduce River Crossing extra cost by 1/3 Movement point.
+- (Base DLL feature) Hurrying: cost calculation factors in normal turn production, no overflow afterwards. Also, only 1x hurrying per turn.
+- Clergy Trait (Courtier Trait, not to be confused with the new type of Characters with the same name) is now part of Religious Trait group; 
+  removed Insane from Weak Trait group
+- Centralization Law keeps its +10 civics/turn
+- disabled Forts
+- Discontent reduction reverted, Citizens give no negative family opinion, Growth still gets reduced by Discontent (64759)
+- Roads no longer cost Stone, and with a Builder Leader a Worker can build multiple Roads per Turn
+- (Base DLL feature) Agent Networks Setup Cost is now: 200 + (50 * Number of Networks) + (100 * City Culture Level) (from: 200 + (100 * Number of Networks))
+- Ask to Declare War Mission is disabled. It's too strong, too cheap and doesn't come with enough limitations. It's just an exploit.
+- Fortify is now +10% Defense, 3 Turns max (from +5%, 5 Turns), Testudo is +25% Defense against Ranged, 2 Turns max (from +20%, 3 Turns max)
+- Wanton and Rightous Trait don't replace each other
+- (Base DLL feature) Enlisted Units don't get assigned to any Family.
+- AI Players recieve 33% more "fake" Events to better compensate for the fact that they don't get normal Events like human Players.
+- (Base DLL feature) Added Discontent Level 0
+- No more Techs from Ruins
+- for Competitive games, most Events that can give a free Tech are disabled,
+- for Competitive games, all Events that can give a free Settler are disabled,
+- for Competitive games, one more Event that can give is Tribal Alliance is disabled (Look upon my Armies and Despair),
+- most AI Leader Traits now affect their Diplomatic behavior, not just their Archetypes
+- all Events that were limited to at least Difficulty The Strong and up can now trigger as low as Difficulty The Good.
+- The Event that ends Exploration and founds a Religion was removed (too easy to get for how strong it is).
+- (Base DLL feature) no Raider ships will spawn, but Raider Land Units can pillage Water Improvements,
+    starting 30 Turns after they can start raiding.
+- (Base DLL feature) Regents' cognomen Legitimacy contribution to True Heir Legitimacy is halfed (was 100%, now 50%)
+- Persian UUs need Melee Range for Rout
+- Collateral damage calcalculation is precise again (reverting base game change from v1.0.69678);
+- Characters get 1 option to increase a stat point (Rating) even before filling out all 3 strength slots again (reverting base game change from v1.0.70024);
+- Event "Other World" now only triggers if the Leader follows a World Religion, and the event uses this religion
+- Event Hostile Garrison Expel will still trigger even if your nation gets stronger.
+- Event Thunder and Silence Option 1 target City fixed.
+- Zealot Leader Enlist Next ability replaced with +2 HP heal per attack against an adjacent Unit (only land-land and water-water)
+- AI's "fake" Events can still give Units (was removed in v1.0.72162)
+- Cults re-enabled for Competitive Mode (removed in v1.0.72162), most Cult Shrines nerfed: 
+  Pagan Statue: +2 Culture (from +4)
+  Cavalry Cult: -20% Train Time for Mounted Units, +10% Train Time for Infantry Units (from -50%, +50%)
+  Amazon Cult: +1 Order (from +2)
+  Martyr Cult: +12 Money, +2 Culture (from +15, +4)
+  Dual Cult: +3 Civics (from +5)
+  Cult of the Angelic Divine: +2 Culture, +1 Science (from +3, +3)
+  Cult of the Mother: +2 Culture (from +4)
+  Cult of Isis and Seraphis: +2 Culture, +2 Civics (from +15% Culture, +15% Civics)
+  Cult of Mithras: +2 Training, -10% Train time for Melee Units (from +4, -25%)
+- Rising Star only gives +1 to all stats (instead of +2),
+   as General only gives +1 Happiness per kill (instead of +5),
+   as Governor only gives +1 Culture and +2 Growth (instead of +1 Culture per Population and +25% Growth;
+- GV nerfed but no longer takes over City producion, and can be assigned at will;
+- Slums keep the -25% Unit training time modifiers for Militia and Worker but now also reduce Growth by -10%;
+- Estates still give their +1VP but only give +2 Culture and -40% Training, and +5 Family Opinion per Luxury sent to City
+   (instead of +1 Culture/-1 Training per Family Opinion Level and +2 Happiness for Luxury sent to City);
+
+
+-Siege-related Traits get Bonuses against Forts and Settlements but get reduced Bonus against plain Urban Tiles.
+(Siege-related Attack Bonuses: new values (original))
+  Besieger*: +25% Urban, +25% Fort (+25% Urban)
+  Besieger_all: +10% Urban, +10% Fort (+10% Urban)
+  Siege: +25% Settlement, +25% Urban, +50% Fort, 
+         +20% Garrison/Stronghold/Citadel (+50% Urban)
+  Assault: +25% Settlement, +25% Urban, +25% Fort, 
+           +20% Garrison/Stronghold/Citadel (+50% Urban, +50% Fort)
+*Besieger is no longer available for Siege Units
+
+When using this together with the Less Scaling Specialist Yields mod, load this mod afterwards, 
+otherwise you'd get the Specialist Train Time Discounts from the other mod for the Doctors.
+
+You can contact me on discord, and only there. 
+If you try any other way to contact me, my answer could take months.</description>
+  <modpicture>FimMod.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2226901</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.7.40</modversion>
+  <modbuild>1.0.73676</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo,Event,UI</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies>
+    <string>BetterAI-Base</string>
+  </modDependencies>
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

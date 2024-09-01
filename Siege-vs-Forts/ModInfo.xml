@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Siege vs Forts</displayName>
+  <description>Siege and related Promotions get Attack Bonus against Forts and Settlements but reduced Bonus vs plain Urban Tiles.
+  
+(Siege-related Attack Bonuses: new values [original])
+  Besieger*: +25% Urban, +25% Fort [+25% Urban]
+  Besieger_all: +10% Urban, +10% Fort [+10% Urban]
+  Siege: +25% Settlement, +25% Urban, +50% Fort, 
+         +20% Garrison/Stronghold/Citadel [+50% Urban]
+  Assault: +25% Settlement, +25% Urban, +25% Fort, 
+           +20% Garrison/Stronghold/Citadel [+50% Urban, +50% Fort]
+*Besieger is no longer available for Siege Units
+
+(this is also part of FimMod)</description>
+  <modpicture>SiegeVsForts.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2330313</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.3</modversion>
+  <modbuild>1.0.71309</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

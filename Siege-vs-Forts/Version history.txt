@@ -1,0 +1,7 @@
+Version history
+[0.3] reworked: removed bonus vs Tribal Settlement Improvements from Siege and Assault 
+      (already getting bonus because of Settlement Attack bonus),
+      Assault bonus vs Forts halved to 25% (Siege already gives +50%, and all Assault Units are also Siege).
+[0.2] Siege & Assault: +30% Attack vs. Tribal Sites.
+[0.1.1] XML tag name change in game version 1.0.64196: aiImprovementToModfier -> aiImprovementToModifier
+[0.1] Initial release

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>SUBJECT_CHARACTER_WEAK</zType>
+		<aeTraitAny>
+			<zValue>TRAIT_TIMID</zValue>
+			<zValue>TRAIT_SPOILED</zValue>
+			<!-- <zValue>TRAIT_INSANE</zValue> -->
+			<zValue>TRAIT_FOOLISH</zValue>
+		</aeTraitAny>
+	</Entry>
+	<Entry comment="City has 95% or less HP remaining">
+		<zType>SUBJECT_CITY_DAMAGED</zType>
+		<iMinDamagePercent>5</iMinDamagePercent>
+	</Entry>
+</Root>

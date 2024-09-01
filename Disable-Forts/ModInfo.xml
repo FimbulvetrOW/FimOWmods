@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Disable Forts</displayName>
+  <description>Just disables Forts.</description>
+  <modpicture>DisableForts.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2634909</modioID>
+  <modioFileID>3403584</modioFileID>
+  <modversion>0.2</modversion>
+  <modbuild>1.0.64602</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo,AI</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

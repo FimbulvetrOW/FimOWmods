@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Minimum Resource Count</displayName>
+  <description>Increases the minimum amount of Resource Tiles for every Resource
+  
+The unmodded game starts resource placements with attempts to place at least 1 of each Resource on the map.
+This mod increases this number based on the number of Players (human and AI), and does this special step
+ only AFTER normal Resource placement around City Sites has already taken place, and will try to only use 
+ unaffiliated Tiles (distance to City Site &gt; 5). 
+
+
+
+********************************************************************************************
+After City Site Resources are placed, the map generator will start placing Resources on Tiles
+ further than 5 Tiles away from City Sites (unaffiliated Tiles). It looks at the number of
+ present Resources per type, and if the number is too low, it will try to add more of those.
+
+Resources with high MinLatitude or low MaxLatitude will be modified and can be placed on at least 1/4th or
+ 1/5th of the map. This affects Olive and Citrus Resources on Arid Plateau and Cold Continent mapscripts.
+
+Luxury Resources: The minimum number of Luxury Resources that the game will aim for
+ is 1 + 2/5 * Player number (rounded down) [from 1]
+( 1-2 Players: min = 1, 3-4 Players: min = 2, 5-7 Players: min = 3, 8-9 Players: min = 4 )
+
+Non-Luxuries: The minimum number of non-Luxury Resources that the game will aim for
+ is 1 + 1/4 * Player number (rounded down) [from 1]
+( 1-3 Players: min = 1, 4-7 Players: min = 2, 8-11 Players: min = 3 )
+
+For Luxury Resources that can't get placed on unaffiliated Tiles, City Site tiles will be considered too,
+ in an extra step afterwards.
+Already placed Luxury resources that were placed in high enough number (at least equal to the number of players,
+ or otherwise defined minimum resource count) will be considered for replacement with a Luxury resource that has
+ not been placed enough yet. All Tiles that are equally far away from the City Site are possible placement
+ locations for the new Luxury resource, not just the Tile of the Resource considered for replacement.
+ 
+Because Resource placement restrictions other than latitude, not all attempts to get these minimum Resource
+ numbers will succeed. The process will be part of the logs in %USERPROFILE%\Documents\My Games\OldWorld\Logs\
+
+Secondary feature: Overabundance
+During normal placement, which takes place after priority placement for rare Resources,
+ the attempts for every Tile to place any overabundant Resources will only take place after
+ the attempts to place other Resources has failed.
+Since normal placement attempts are RNG-controlled and probabilities are low,
+ this feature probably has very little effect.
+Overabundance: Number of Resource Tiles greater than 2.5 * Player number (rounded down)
+********************************************************************************************
+
+
+The mod uses Harmony to patch and fully replace
+ the AddUnaffiliatedResources method of the DefaultMapScript class,
+ as well as WeightedShuffle (the one with the single argument),
+ and should therefore be compatible with all mods that don't change those same methods.
+It affects all Map Scripts because they all use the Resource distribution methods of DefaultMapScript.
+
+Source code is still included. After some clean-up I will probably upload to GitHub.
+
+Requires 0harmony mod for Harmony DLL</description>
+  <modpicture>MinRes.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2735764</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.5.1.1</modversion>
+  <modbuild>1.0.70671</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies>
+    <string>0harmony</string>
+  </modDependencies>
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

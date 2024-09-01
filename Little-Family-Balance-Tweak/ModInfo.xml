@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Little Family Balance Tweak</displayName>
+  <description>Many changes were made to Families lately. Some of these changes were reverted, other changes applied.
+
+Some features require Better AI Base DLL mod functionality
+
+Clerics: no longer gain access to the Project to found a Religion,
+  the free tier 4 Tech Bonus (Monasticism) was also removed. 
+ Instead they get a Court Soldier, and in their Seat they can rush Projects with Citizens.
+  The -50% training time for Disciples applies to all their cities, not just the Seat.
+  All Cities get +2 Happiness (instead of +1 (1.0.65965)
+ (Better AI feature) Clerics unlock in their own Cities:
+ -- State Religion's Monasteries with Divination Tech
+ -- State Religion's Temples with Metaphysics Tech and Strong Culture in the City
+
+Traders: 5 Bonuses were removed:
+  -10 turns for Hamlet Class Upgrades,
+  Road building without cooldown for Family Workers,
+  free Fair in Seat, 
+  +5 Money from Specialists (1.0.65965 added +2 Culture, 1.0.66355 changed it to Money),
+  +100% to Nets.
+ They were replaced with: 
+  5 Orders can be stored for the next turn (tied to the free Early Market (+15% Money, no Specialist) Improvement in seat), 
+  +400 Money when Founding a City, 
+  +2 Culture from Luxuries sent to City
+  +2 Culture from Precious Resources (1.0.65965 removed this)
+ (Better AI feature) Traders unlock in their own Cities:
+ -- Harbor with Navigation Tech and Developing Culture in the City
+ -- Market with Polis Tech and Developing Culture in the City
+ -- Grocer with Navigation Tech and Strong Culture in the City
+ -- Ferry Unit (immediately at game start)
+ 
+Patrons keep their +2 Culture from Specialists (1.0.65965 removed this), and don't get +25% Culture from Bullion Resources (1.0.71795 added this)
+ and their Cities only gain +1 Happiness Level on Culture Level upgrade (1.0.71795 changed this to +2)
+Statemen keep they Treasury I City founding bonus (1.0.66355 remved this), and don't get -25% Upfront Cost reduction for Specialists (1.0.66355 added this)
+Riders' import Projects don't add the Resource to the map, just enable building the respective Units,
+ and those Projects have Tech requirements: Husbandry for Import Horse, Land Consolidation for Import Elephant and Import Camel.
+  (In 1.0.70671 Riders' Seat spawned Horses, Elephants and Camels while removing the ability of the Seat to build the specific Units without the Resource,
+   and 1.0.70751 removed that and replaced it with Player-unique projects that add the Resources on the map.)
+Artisans keep their Ingenuity for Siege Units, only for Ships this is replaced with -25% Resource Cost (In 1.0.71309 Ingenuity was replaced for both Unit types)
+ 
+Sages: no longer gains a random Tech, gain Archive only in Seat, instead they keep their -20% Upfront Cost for Urban Specialists.
+
+You can contact me on discord, and only there. 
+If you try any other way to contact me, my answer could take months.</description>
+  <modpicture>FamilyBalance.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2226892</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.6.11</modversion>
+  <modbuild>1.0.73676</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>Family,GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies>
+    <string>Boat</string>
+  </modDependencies>
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

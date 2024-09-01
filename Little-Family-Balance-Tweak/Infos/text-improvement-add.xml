@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Root>
+<!--
+	<Entry>
+		<zType>TEXT_IMPROVEMENT_MARKET_00</zType>
+		<en-US>Market [Seat]~a Market [Seat]~Markets [Seat]</en-US>
+		<es>Rastro [Sede]~un rastro [Sede]~Rastros [Sede]</es>
+		<de>Markt [Sitz]~ein Markt [Sitz]~Märkte [Sitz]~des Markts [Sitz]</de>
+		<fr>marché [Siège]~un marché [Siège]~marchés [Siège]</fr>
+		<ja>市場 [邸宅]~市場 [邸宅]~市場 [邸宅]</ja>
+		<zh-TW>市場 [封地]~市場 [封地]~市場 [封地]</zh-TW>
+		<ru>Рынок [Резиденция]~Рынка [Резиденция]~Рынку [Резиденция]~Рынок [Резиденция]~Рынком [Резиденция]~Рынке [Резиденция]~Рынки [Резиденция]~Рынков [Резиденция]~Рынкам [Резиденция]~Рынки [Резиденция]~Рынками [Резиденция]~Рынках [Резиденция]</ru>
+		<zh-CN>市场 [封地]~市场 [封地]~市场 [封地]</zh-CN>
+	</Entry>
+-->
+	<Entry>
+		<zType>TEXT_IMPROVEMENT_MARKET_0</zType>
+		<en-US>Early Market~an Early Market~Early Markets</en-US>
+		<es>Rastro temprano~un rastro temprano~Rastros tempranos</es>
+		<de>Früher Markt~ein Früher Markt~Frühe Märkte~des Frühen Marktes</de>
+		<fr>marché de début~un marché  de début~marchés de début</fr>
+		<ja>原始市場~原始市場~原始市場</ja>
+		<zh-TW>原始市场~原始市场~原始市场</zh-TW>
+		<ru>ранний Рынок~ранний Рынка~ранний Рынку~ранний Рынок~ранний Рынком~ранний Рынке~ранний Рынки~ранний Рынков~ранний Рынкам~ранний Рынки~ранний Рынками~ранний Рынках</ru>
+		<zh-CN>原始市場~原始市場~原始市場</zh-CN>
+	</Entry>
+<!-- 
+	<Entry>
+		<zType>TEXT_FAMILYCLASS_TRADERS</zType>
+		<en-US>Traders~Trader</en-US>
+		<es>Mercaderes~Mercader</es>
+		<de>Händler~Händlers~Händler~Händler</de>
+		<fr>Commerçants~Commerçant</fr>
+		<ja>貿易商~貿易商</ja>
+		<zh-TW>商人~商人</zh-TW>
+		<ru>Торговцы~Торговцев~Торговцам~Торговцев~Торговцами~Торговцах</ru>
+		<zh-CN>商人~商人</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_FAMILY_SEAT</zType>
+		<en-US>{0_family} Seat</en-US>
+		<es>Sede de la familia {0_family}</es>
+		<de>Sitz der Familie {0_family}</de>
+		<fr>Siège de la famille des {0_family}</fr>
+		<ja>{0_family}の邸宅</ja>
+		<zh-TW>{0_family}封地</zh-TW>
+		<ru>Резиденция семьи {0,1_family}</ru>
+		<zh-CN>{0_family}封地</zh-CN>
+	</Entry>
+ -->
+</Root>

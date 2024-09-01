@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>FAMILYCLASS_PATRONS</zType>
+		<aiImprovementOpinion>
+			<Pair>
+				<zIndex>IMPROVEMENT_BATHS_3</zIndex>
+				<iValue>0</iValue>
+			</Pair>
+		</aiImprovementOpinion>
+		<aiImprovementClassOpinion>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_BATHS</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+		</aiImprovementClassOpinion>
+	</Entry>
+</Root>

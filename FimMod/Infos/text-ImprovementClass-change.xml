@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_HAMLET</zType>
+		<en-US>Suburb~Suburbs</en-US>
+<!--
+		<es>Aldea~una aldea~Aldeas</es>
+		<de>Weiler~ein Weiler~Weiler~des Weilers</de>
+		<fr>hameau~un hameau~hameaux</fr>
+		<ja>小集落~小集落~小集落</ja>
+		<zh-TW>村莊~村莊~村莊</zh-TW>
+		<ru>Деревня~Деревни~Деревне~Деревню~Деревней~Деревне~Деревни~Деревень~Деревням~Деревни~Деревнями~Деревнях</ru>
+		<zh-CN>村庄~村庄~村庄</zh-CN>
+-->
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_ODEON</zType>
+		<en-US>Entertainment Location~Entertainment Locations</en-US>
+<!--
+		<es>Odeón~un odeón~Odeones</es>
+		<de>Odeon~ein Odeon~Odeen~des Odeons</de>
+		<fr>odéon~un odéon~odéons</fr>
+		<ja>オデオン~オデオン~オデオン</ja>
+		<zh-TW>劇場~劇場~劇場</zh-TW>
+		<ru>Одеон~Одеона~Одеону~Одеон~Одеоном~Одеоне~Одеоны~Одеонов~Одеонам~Одеоны~Одеонами~Одеонах</ru>
+		<zh-CN>剧场~剧场~剧场</zh-CN>
+-->
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_MARKET</zType>
+		<en-US>Commerce Center~Commerce Centers</en-US>
+<!--
+		<es>Mercado~un mercado~Mercados</es>
+		<de>Markt~ein Markt~Märkte~des Markts</de>
+		<fr>marché~un marché~marchés</fr>
+		<ja>市場~市場~市場</ja>
+		<zh-TW>市場~市場~市場</zh-TW>
+		<ru>Рынок~Рынка~Рынку~Рынок~Рынком~Рынке~Рынки~Рынков~Рынкам~Рынки~Рынками~Рынках</ru>
+		<zh-CN>市场~市场~市场</zh-CN>
+-->
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_LIBRARY</zType>
+		<en-US>Educational Institution~Educational Institutions</en-US>
+<!-- 
+		<es>Biblioteca~una biblioteca~Bibliotecas</es>
+		<de>Bibliothek~eine Bibliothek~Bibliotheken~der Bibliothek</de>
+		<fr>bibliothèque~une bibliothèque~bibliothèques</fr>
+		<ja>図書館~図書館~図書館</ja>
+		<zh-TW>圖書館~圖書館~圖書館</zh-TW>
+		<ru>Библиотека~Библиотеки~Библиотеке~Библиотеку~Библиотекой~Библиотеке~Библиотеки~Библиотек~Библиотекам~Библиотеки~Библиотеками~Библиотеках</ru>
+		<zh-CN>图书馆~图书馆~图书馆</zh-CN>
+ -->
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_COURTHOUSE</zType>
+		<en-US>Government Department~Government Departments</en-US>
+<!-- 
+		<es>Tribunal~un tribunal~Tribunales</es>
+		<de>Gerichtsgebäude~ein Gerichtsgebäude~Gerichtsgebäude~des Gerichtsgebäudes</de>
+		<fr>tribunal~un tribunal~tribunaux</fr>
+		<ja>裁判所~裁判所~裁判所</ja>
+		<zh-TW>法院~法院~法院</zh-TW>
+		<ru>Суд~Суда~Суду~Суд~Судом~Суде~Суды~Судов~Судам~Суды~Судами~Судах</ru>
+		<zh-CN>法院~法院~法院</zh-CN>
+ -->
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_GARRISON</zType>
+		<en-US>Military Station~Military Stations</en-US>
+<!-- 
+		<es>Cuartel~un cuartel~Cuarteles</es>
+		<de>Garnison~eine Garnison~Garnisonen~der Garnison</de>
+		<fr>garnison~une garnison~garnisons</fr>
+		<ja>駐屯地~駐屯地~駐屯地</ja>
+		<zh-TW>駐軍~駐軍~駐軍</zh-TW>
+		<ru>Гарнизон~Гарнизона~Гарнизону~Гарнизон~Гарнизоном~Гарнизоне~Гарнизоны~Гарнизонов~Гарнизонам~Гарнизоны~Гарнизонами~Гарнизонах</ru>
+		<zh-CN>驻军~驻军~驻军</zh-CN>
+ -->
+	</Entry>
+</Root>

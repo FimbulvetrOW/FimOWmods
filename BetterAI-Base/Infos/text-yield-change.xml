@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_YIELD_DISCONTENT_HELP</zType>
+		<en-US>As time goes by and a City matures, its Population's {YIELD_DISCONTENT}Discontent of its Leader increases. When a City's {YIELD_DISCONTENT}Discontent bar fills up, its overall {YIELD_DISCONTENT}Discontent Level goes up by one, which increases link(YIELD_MAINTENANCE,1), and reduces link(YIELD_GROWTH,1), link(YIELD_SCIENCE,1) and also the link(CONCEPT_OPINION_FAMILY,3) of the City's ruling link(CONCEPT_FAMILY). {br} These effects are small enough to mostly ignore them, and they should be - but when there are no other pressing matters at hand, it is advisable to try to keep the Population happy, healthy and distracted, to slow down or even reverse this process. The possibilities include: Connecting your City with the link(CONCEPT_TRADE_NETWORK), sending link(CONCEPT_LUXURY) to the City, and building link(IMPROVEMENTCLASS_BATHS,2) and link(IMPROVEMENT_THEATER_2,2)/link(IMPROVEMENT_THEATER_3,2). Laws, and the Opinions of the present link(CONCEPT_RELIGION,2) affect {YIELD_DISCONTENT}Discontent as well. Also, the link(MISSION_PACIFY_CITY) Mission of the link(COUNCIL_CHANCELLOR) can directly reduce the {YIELD_DISCONTENT}Discontent Level of a City by 1.</en-US>
+	</Entry>
+</Root>

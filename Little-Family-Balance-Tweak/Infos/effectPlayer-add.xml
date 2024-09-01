@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTPLAYER_FAMILYCLASS_TRADERS</zType>
+		<Name>TEXT_IMPROVEMENT_MARKET_0</Name>		
+		<SourceImprovement>IMPROVEMENT_MARKET_0</SourceImprovement>
+		<iMaxActions>5</iMaxActions>
+	</Entry>
+<!-- 
+	<Entry>
+		<zType>EFFECTPLAYER_LAW_ELITES</zType>
+		<Name>TEXT_LAW_ELITES</Name>
+		<SourceLaw>LAW_ELITES</SourceLaw>
+		<EffectCity>EFFECTCITY_LAW_ELITES</EffectCity>
+		<iMaxActions>100</iMaxActions>
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_IMPROVEMENT_PYRAMIDS</zType>
+		<Name>TEXT_IMPROVEMENT_PYRAMIDS</Name>
+		<SourceImprovement>IMPROVEMENT_PYRAMIDS</SourceImprovement>
+		<iStartLawModifier>-50</iStartLawModifier>
+	</Entry>
+ -->
+</Root>

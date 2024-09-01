@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>No Bonus Techs</displayName>
+  <description>Removes all trashable Bonus Tech cards from the game.
+Allows you to focus on teching up without any distractions.
+
+So there should be no more Biremes stranded in lakes (unless from events).
+</description>
+  <modpicture>No Bonus T.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2126018</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>1.5</modversion>
+  <modbuild>1.0.72162</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

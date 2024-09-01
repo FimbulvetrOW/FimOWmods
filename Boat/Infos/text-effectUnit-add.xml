@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_EFFECTUNIT_EXPLORATION</zType>
+		<en-US>link(LAW_EXPLORATION)</en-US>
+		<es>link(LAW_EXPLORATION)</es>
+		<de>link(LAW_EXPLORATION)</de>
+		<fr>link(LAW_EXPLORATION)</fr>
+		<ja>link(LAW_EXPLORATION)</ja>
+		<zh-TW>link(LAW_EXPLORATION)</zh-TW>
+		<ru>link(LAW_EXPLORATION)</ru>
+		<zh-CN>link(LAW_EXPLORATION)</zh-CN>
+		<pt-BR>link(LAW_EXPLORATION)</pt-BR>
+	</Entry>
+</Root>

@@ -1,0 +1,9 @@
+Version history
+[1.5] Reduced number of techs required for cognomen The Enlightened and The Wise, 
+       because the lack of cheap bonus techs makes it significantly harder to hit these limits.
+[1.4] Update for new game version 1.0.70671: update was required for new Bonus Techs and changed XML structure. 
+[1.3] update for new game version 1.0.65497: Bonus Discontent Tech was renamed to TECH_VAULTING_BONUS_HAPPINESS.
+[1.2] Bonus Longbowman Tech was introduced in version 1.0.63890, it's now removed too.
+[1.1] Bonus Worker Tech changed name because it was moved to Administration, therefore this mod needed an update.
+[1.0] there were no changes, but the mod does what it should so I just bumped the version number up to 1.0
+[0.1] Initial release

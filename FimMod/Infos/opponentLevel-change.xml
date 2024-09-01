@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Root>
+<!-- Removed because turn 0 wonder is not a good use of the first worker -->
+<!-- 
+	<Entry>
+		<zType>OPPONENTLEVEL_COMPETITIVE</zType>
+		<iNoWonderTurns>0</iNoWonderTurns>
+	</Entry>
+ -->
+</Root>

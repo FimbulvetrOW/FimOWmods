@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>SPECIALISTCLASS_ACOLYTE</zType>
+		<EffectCity>EFFECTCITY_SPECIALISTCLASS_ACOLYTE</EffectCity>
+	</Entry>
+</Root>

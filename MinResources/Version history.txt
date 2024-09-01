@@ -1,0 +1,23 @@
+Version history
+[0.5.1.1] Actually removed 0Harmony.dll from mod folder now;
+          Updated code to mimic the changes in new game version 1.0.70671 (should have zero effect)
+[0.5.1.0] New dependency: Harmony is no longer in this mod, 
+          it now depends on the 0harmony mod.
+[0.5.0.0] Latitude limits override: 1/4th of the map is always available for luxury resource placement (1/5 for non-luxuries),
+          this affects Olives and Citrus on Arid Plateau and Cold Continent;
+          If placement for a luxury cannot be placed on unaffiliated tiles, already placed city luxuries will be considered for removal,
+          to be replaced by another luxury at the same distance to the city center.
+[0.4.1.1] Update for game version 1.0.66959:
+          disable new attempts to place at least 1 Resource at the earlier stages (starting sites, other City sites)
+		  keep using only Tiles further away from any City site.
+[0.4.1.0] Update for game version 1.0.66959
+[0.4.0.1] fixed tiny bug with logging
+[0.4] Update for game version 1.0.65497
+[0.3] Bug fix to invokation of CanPlaceResource method: it was called with checkTileMaxDistance value of int.MinValue instead of int.MaxValue
+      Added Overabundance mechanic: if resources were already placed  more than (2,5 * player count) times on the map, then other Resources
+      will be attempted to be placed first. Because of the low probability of placement, this probably doesn't have a lot of effect,
+      but it might still help a tiny bit to place more of the rarer and less of the more abundant Resources.
+[0.2] Luxury Resources placement will now be attempted in rounds: 
+      First round will try to place 1 item only for those Resources with currently 0 instances on the map, 
+	  then begins the next round for those those with 1 on map, etc.
+[0.1] Initial release

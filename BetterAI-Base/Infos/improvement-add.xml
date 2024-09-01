@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<CityBiomePrereq/>
+		<SecondaryUnlockTechPrereq/>
+		<SecondaryUnlockCulturePrereq/>
+		<iSecondaryUnlockPopulationPrereq/>
+		<SecondaryUnlockEffectCityPrereq/>
+		<TertiaryUnlockFamilyClassPrereq/>
+		<bTertiaryUnlockSeatOnly/>
+		<TertiaryUnlockTechPrereq/>
+		<TertiaryUnlockCulturePrereq/>
+		<TertiaryUnlockEffectCityPrereq/>
+		<BonusAdjacentImprovement/>
+		<BonusAdjacentImprovementClass/>
+		<bMakesAdjacentPassableLandTileValidForBonusImprovement/>
+	</Entry>
+</Root>

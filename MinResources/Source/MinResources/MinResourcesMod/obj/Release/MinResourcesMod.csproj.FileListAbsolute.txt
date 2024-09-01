@@ -1,0 +1,6 @@
+G:\Old World\Mod DLL source\repos\MinResources\MinResourcesMod\obj\Release\MinResourcesMod.csproj.AssemblyReference.cache
+G:\Old World\Mod DLL source\repos\MinResources\MinResourcesMod\obj\Release\MinResourcesMod.csproj.CoreCompileInputs.cache
+G:\Old World\Mod DLL source\repos\MinResources\MinResourcesMod\obj\Release\MinResources.dll
+G:\Old World\Mod DLL source\repos\MinResources\MinResourcesMod\obj\Release\MinResources.pdb
+G:\Old World\Mod DLL source\MinResources.dll
+G:\Old World\Mod DLL source\MinResources.pdb

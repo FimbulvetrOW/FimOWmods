@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Older World</displayName>
+  <description>A collection of changes, some of them small, some more significant.
+
+The intention behind all changes was not to make a complete overhaul
+ but to improve upon what was already there.
+Some changes simply revert changes from recent updates to the game.
+
+Requires my Base DLL mod, and incorporates many of my other mods.
+Base DLL mod folder name needs to be "BetterAI-Base",  
+ you will have to change that manually after first downloading that mod from mod.io
+Also requires 0harmony mod for the Harmony dll.
+
+Overview of all changes
+*Mission to ask AI to declare War on another player is disabled.  
+*Base Discontent generation is +9 for The Good, +14 on The Great, etc.
+*Range reduced: Ranged Mounted Units and Tribal Units have a Range of 1,
+ Ranged Infantry has Range of 2, Onager and Mangonel have a Range of 2-3.
+ Cataphract was nerfed to 8 Str, Circle removed and costs 120 Training. 
+*Increased Food consumption: All Units consume more Food, all Population
+ consumes 4 Food and nothing else, and no longer changes with Culture Level.
+*All Specialists start at Apprentice Level, and Elder Specialists no longer
+ give huge yields per Citizen - so no matter how many Elders you train,
+ Citizens will always stay useless and just eat your Food.
+*Overflow: In Rush Cost calculations, the next turn's Production is accounted for,
+ and in exchange no part of it gets added to Stockpile on the next turn.
+*Some Wonders were nerfed: Apadana and Lighthouse only affect City instead of the
+ whole Nation, and the effects of Pyramids and Ishtar Gate were halfed.
+*Only 1 type of Bath per City: Heated for Cold regions, Cold for Hot regions,
+ and Warm for Temperate regions. Stats of all Baths are changed. Most significant:
+ Heated Baths make Tundra Tiles valid for Urban Improvements.
+*There are no Bonus Techs in the Tech Tree.
+*Forts are disabled because the AI can still go crazy with them in some situations.
+*New Water Unit: the Ferry is an early Ship that can get your Land Units
+ across narrow seas, unlocks at Labor Force. Built with Growth, can't be upgraded.
+*Early Unlocks: Some Improvements unlock with an earlier Tech for Cities with
+ Strong Culture, and some Families have special Unlocks.
+*Family Bonuses: Traders, Clerics, Sages had their bonuses revised.
+- Clerics: 
+  no longer found a Religion, the free tier 4 Tech Bonus (Monasticism) was also removed. 
+  Instead they get a Court Soldier, and in their Seat they can rush Projects with Citizens.
+  The -50% training time for Disciples applies to all their cities, not just the Seat.
+  Clerics unlock in their own Cities:
+  -- State Religion's Monasteries with Divination Tech
+  -- State Religion's Temples with Metaphysics Tech and Strong Culture in the City
+- Traders: 5 Bonuses were removed:
+   -10 turns for Hamlet Class Upgrades,
+   Road building without cooldown for Family Workers,
+   +5 Money from Specialists,
+   free Fair in Seat,
+   +100% to Nets.
+  They were replaced with: 
+   5 Orders can be stored for the next turn (tied to the free Early Market Improvement)
+   (+15% Money) in Family Seat), 
+   +400 Money when Founding a City,
+   +2 Culture from Precious Resources,
+   +2 Culture from Luxuries sent to City
+  Traders unlock in their own Cities:
+  -- Ferry Unit (immediately at game start)
+  -- Harbor with Navigation Tech and Developing Culture in the City
+  -- Market with Polis Tech and Developing Culture in the City
+  -- Grocer with Navigation Tech and Strong Culture in the City
+- Sages: only Seat gets Archive I, no longer grants a random Tech,
+         -20% Upfront Resource Cost for Urban Specilaists
+- Patrons keep their +2 Culture from Specialists, and don't get +2 Culture from Precious Resources.
+- Statemen keep they Treasury I City founding bonus, and don't get -25% Upfront Cost reduction for Specialists.
+- Riders' import Projects don't add the Resource to the map, just enable building the respective Units, Tech requirements like the Units.
+- Artisans keep their Ingenuity for Siege Units, only for Ships this is replaced with -25% Resource Cost
+***************************************************************************************
+
+Included mods:
+*Reduced Range
+*More Food Consumption
+*Less Scaling Specialist Yields
+*Little Family Balance Tweak
+*Boat
+*No Bonus Techs
+*Buy Coastal Tiles
+*MinResources
+*FimMod
+
+Using all those mods will give you the same result as using this one.
+
+The mod "No Paganism" was not included because some of the new events require Paganism,
+ but that mod is compatible and can be used in addition to this mod.
+
+
+You can contact me on discord, and only there. 
+If you try any other way to contact me, my answer could take months.</description>
+  <modpicture>OlderWorld3.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2796259</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.2.2.20</modversion>
+  <modbuild>1.0.73676</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo,AI,UI</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies>
+    <string>0harmony</string>
+    <string>BetterAI-Base</string>
+  </modDependencies>
+  <modIncompatibilities>
+    <string>Boat</string>
+    <string>BuyCoastal</string>
+    <string>FimMod</string>
+    <string>Little-Family-Balance-Tweak</string>
+    <string>MinResources</string>
+    <string>More-Food-Consumption</string>
+    <string>No-Bonus-Techs</string>
+    <string>Reduced-Range</string>
+    <string>Specialist-Yields-Tweak</string>
+    <string>Unlimited-Autosaves</string>
+    <string>Worker-Extra-Valid</string>
+  </modIncompatibilities>
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

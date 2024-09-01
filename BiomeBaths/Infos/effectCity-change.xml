@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENT_BATHS_3</zType>
+		<SourceImprovement>IMPROVEMENT_BATHS_3</SourceImprovement>
+		<aiYieldModifier>
+			<Pair>
+				<zIndex>YIELD_GROWTH</zIndex>
+				<iValue>0</iValue>
+			</Pair>
+		</aiYieldModifier>
+		<abUrbanTerrainValid>
+			<Pair>
+				<zIndex>TERRAIN_TUNDRA</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abUrbanTerrainValid>
+	</Entry>
+</Root>

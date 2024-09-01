@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>TECH_FORESTRY</zType>
+		<EffectPlayer>EFFECTPLAYER_TECH_FORESTRY</EffectPlayer>
+	</Entry>
+	<Entry>
+		<zType>TECH_MANOR</zType>
+		<EffectPlayer>EFFECTPLAYER_TECH_MANOR</EffectPlayer>
+	</Entry>
+	<Entry>   <!-- costs less, but also requires Manor, not just Battle Line. Moved from c6,r7 to c5, r6 -->
+		<zType>TECH_INFANTRY_SQUARE</zType>
+		<iCost>1000</iCost>
+		<iColumn>5</iColumn>
+		<iRow>6</iRow>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_BATTLELINE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TECH_MANOR</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+	<Entry>   <!-- Requires Steel instead of Battle Line. -->
+		<zType>TECH_BARDING</zType>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_STEEL</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TECH_MARTIAL_CODE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+	<Entry>   <!-- Moved from c6,r6 to c6, r7 -->
+		<zType>TECH_COHORTS</zType>
+		<iColumn>6</iColumn>
+		<iRow>7</iRow>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_LAND_CONSOLIDATION</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TECH_BATTLELINE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+</Root>

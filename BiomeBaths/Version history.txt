@@ -1,0 +1,9 @@
+Version history
+[0.3.1] All Baths give +20 opinion for Patrons (you can only build 1 per city with this mod)
+[0.3] Heated Baths enable Urban on Tundra.
+[0.2.1] No actual changes, just an update for the new Yield name "Happiness" in the XML.
+[0.2] removed specialist discounts that were never meant to be there
+      updated for 1.0.62798: All Baths have to start with Apprentice Specialist
+	  Heated Baths consume more Wood (6 [up from 4])
+	  and Cold Baths consume more stone (4 [up from 3])
+[0.1] initial release

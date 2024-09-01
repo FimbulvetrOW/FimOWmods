@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Entry>
+		<zType>MISSION_MAKE_GRAND_VIZIER</zType>
+		<GameContentRequired>EVENTPACK_SCANDAL</GameContentRequired>
+		<Name>TEXT_MISSION_GRAND_VIZIER</Name>
+		<zIcon>MISSION_SEIZE_CONTROL</zIcon>
+		<bVisibleCharacter>1</bVisibleCharacter>
+		<bNoPopup>1</bNoPopup>
+		<bCharacterNoEvents>1</bCharacterNoEvents>
+		<SubjectCharacter>SUBJECT_NON_LEADER_US</SubjectCharacter>
+		<aiResultDie>
+			<Pair>
+				<zIndex>MISSIONRESULT_MAKE_GRAND_VIZIER</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+		</aiResultDie>
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_ORDERS</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCost>
+	</Entry>
+</Root>

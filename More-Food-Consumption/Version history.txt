@@ -1,0 +1,11 @@
+Version history
+[1.1.3] Update for new Units added with the new DLC which was added at version 1.0.68949;
+        Lighthouse Wonder Effect: Faster Development for Hamlet/Village is a Nation-Wide Bonus again, 
+		but the effect is halved (-5 development Turns instead of -10);
+		Food price increase from automatic inflation (price increase even when no one is buying) is reduced by 75%.
+[1.1.2] Update for new game version 1.0.65965
+[1.1.1] Update for new game version 1.0.65497 (Lighthouse Wonder Effects)
+[1.1.0] Vassalage only reduces Unit Consumption by 25% (the no extra from outside borders remain unchanged)
+[1.0.1] Pathfinder bonus yield reduced.
+[1.0] +100 food at start added, Lighthouse buffed to +100% to Nets in City.
+[0.1] Initial release

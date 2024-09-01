@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EVENTSTORY_INFLUENCE_OF_MONEY</zType>
+<!-- 
+		<aeSubjects>
+			<zValue>SUBJECT_LEADER_US</zValue>
+			<zValue>SUBJECT_CHARACTER_US</zValue>
+		</aeSubjects>
+ -->
+		<SubjectNotExtras>
+
+<!-- needed: not honorable -->
+			<Pair>
+				<First>1</First>
+				<Second>SUBJECT_CHARACTER_HONORABLE</Second>
+			</Pair>
+<!-- needed: not honorable -->
+		</SubjectNotExtras>
+	</Entry>
+<!-- remove all events that give free Settlers from Competitive games -->
+	<Entry>
+		<zType>EVENTSTORY_CHARACTER_WARMONGERS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_TRAIT_FRESH_EYES</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_NECROPOLIS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+<!-- remove events that give tribal alliance from Competitive games (this is also already in Test v1.0.70456) -->
+	<Entry>
+		<zType>EVENTSTORY_LOOK_UPON_MY_ARMIES_AND_DESPAIR</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+<!-- remove all events that give free Tech from Competitive games (trade events?) -->
+	<Entry>
+		<zType>EVENTSTORY_BATTERED</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- CHANCE_DISCOVERY requires a close Tribe with an inquistive leader and player leader need inquisitive too, so I'm leaving it in  -->
+	<Entry>
+		<zType>EVENTSTORY_AGENT_EXPOSED_SECRETS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_CULTURE_THRIVING</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- A_SCHOLAR_DENOUNCED only really requires a court scientist  -->
+	<Entry>
+		<zType>EVENTSTORY_A_SCHOLAR_DENOUNCED</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- EVENTSTORY_AGE_OF_EXPANSION only gives a free law now, no more tech  -->
+	<Entry>
+		<zType>EVENTSTORY_MECHANICAL_WONDERS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_GIFT_OF_THE_GODS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_THE_DIVINER</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_HIDDEN_LABORATORY</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_SUDDEN_INSIGHT</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- TRAIT_THE_FINER_THINGS requires EXOTIC OR EXTRAVAGANT, so I'm leaving it in  -->
+	<!-- FOREIGN_SCHOLAR requires INTELLIGENT, so I'm leaving it in after all -->
+	<!-- (TRAIT_MILITARY_MIND requires TACTICIAN, so I left it in. Since v1.0.72162 it gives Windlass, not a random tech)  -->
+	<!-- INQUIRING_MINDS_SUCCESS is an Ambition, so that's ok -->
+	<!-- Since v1.0.72162 EVENTSTORY_TECH_HYDRAULICS_THE_AUTOMATON no longer gives a tech -->
+	<Entry>
+		<zType>EVENTSTORY_RELATIONSHIP_A_NEW_METHOD</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_STUDY_UNCANNY</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_STEAL_PLAYER_DISCOVERY</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RALLY_OVERLOOKED_INNOVATORS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- A_QUIET_LIFE starts Ambition, but an easy one so it's even worse -->
+	<Entry>
+		<zType>EVENTSTORY_A_QUIET_LIFE</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_WHERE_AN_OAR_HAS_NO_NAME</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- CALLED_BY_THE_GODS gives superstitious so it's expensive lvl 0 tech -->
+	<Entry>
+		<zType>EVENTSTORY_THE_GODS_OF_PLAYER</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_RITUAL_PERFORMANCE</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_CARVED_WALL</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_HUNGRY_LOREKEEPERS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- RUINS_ELDERLY_COUPLE gives CURSED or SUPERSTITIOUS -->
+	<Entry>
+		<zType>EVENTSTORY_RUINS_BURLY_SMITH</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_GOOD_FENCES</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_OLD_SOLDIER</zType><!-- no Boudica -->
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_THE_FLOATING_CITY</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_THE_KINGS_ROADS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RUINS_BEADS_AND_FIGURINES</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_GP_THE_MECHANISM</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_WONDER_PUBLIC_SPECTACLE</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_TECH_WINDLASS_EARLY_ADOPTERS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_SEDITIOUS_MEETINGS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- Trade events: remove all that have an option for Random Tech -->
+	<!-- BETWEEN_US with COVERT no longer gives a whole tech, just science now -->
+	<!-- HEIR_TO_HEIR_OPTION requires CUNNING for stealing -->
+	<Entry>
+		<zType>EVENTSTORY_WORLD_TOUR</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_FACE_IN_GOLD</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_HEIR_TO_HEIR</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+</Root>

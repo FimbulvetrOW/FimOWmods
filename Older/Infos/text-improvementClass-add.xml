@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_SETTLEMENT</zType>
+		<en-US>Tribal Settlement~a Tribal Settlement~Tribal Settlements</en-US>
+<!--
+		<es>Fuerte~un fuerte~Fuertes</es>
+		<de>Fort~ein Fort~Forts~des Forts</de>
+		<fr>Fort~un Fort~Forts</fr>
+		<ja>要塞~要塞~要塞</ja>
+		<zh-TW>碉堡~碉堡~碉堡</zh-TW>
+		<ru>Форт~Форта~Форту~Форт~Фортом~Форте~Форты~Фортов~Фортам~Форты~Фортами~Фортах</ru>
+		<zh-CN>碉堡~碉堡~碉堡</zh-CN>
+		<pt-BR>Forte~um Forte~Fortes</pt-BR>
+-->
+	</Entry>
+</Root>

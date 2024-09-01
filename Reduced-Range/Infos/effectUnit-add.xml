@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTUNIT_SPEARMAN_DEFENCE1</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_SPEARMAN_DEFENCE1</GenderedName>
+		<zIconName>EFFECTUNIT_GUARD1</zIconName>
+		<iDefenseModifier>10</iDefenseModifier>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_SPEARMAN_DEFENCE2</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_SPEARMAN_DEFENCE2</GenderedName>
+		<zIconName>EFFECTUNIT_GUARD2</zIconName>
+		<iDefenseModifier>20</iDefenseModifier>
+	</Entry>
+</Root>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType/>
+		<Name/>
+		<Help/>
+		<iPercent/>
+		<iTurns/>
+	</Entry>
+	<Entry>
+		<zType>EVENTLEVEL_MINIMAL</zType>
+		<!-- <iPercent>0</iPercent> -->
+		<iTurns>12</iTurns>
+	</Entry>
+	<Entry>
+		<zType>EVENTLEVEL_LOW</zType>
+		<Name>TEXT_EVENTLEVEL_LOW</Name>
+		<Help>TEXT_EVENTLEVEL_LOW_HELP</Help>
+		<!-- <iPercent>50</iPercent> -->
+		<iTurns>6</iTurns>
+	</Entry>
+	<Entry>
+		<zType>EVENTLEVEL_MODERATE</zType>
+		<Name>TEXT_EVENTLEVEL_MODERATE</Name>
+		<Help>TEXT_EVENTLEVEL_MODERATE_HELP</Help>
+		<!-- <iPercent>75</iPercent> -->
+		<iTurns>4</iTurns>
+	</Entry>
+	<Entry>
+		<zType>EVENTLEVEL_HIGH</zType>
+		<Name>TEXT_EVENTLEVEL_HIGH</Name>
+		<Help>TEXT_EVENTLEVEL_HIGH_HELP</Help>
+		<!-- <iPercent>100</iPercent> -->
+		<iTurns>3</iTurns>
+	</Entry>
+</Root>

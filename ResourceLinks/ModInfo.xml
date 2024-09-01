@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Resource Links</displayName>
+  <description>Resource Helptext now shows how many of that type are on the map, and if you already revealed some, clickable links to their locations will also be included.
+
+Requires Base DLL mod.</description>
+  <modpicture>ResourceLinks.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2787836</modioID>
+  <modioFileID>3535294</modioFileID>
+  <modversion>0.1</modversion>
+  <modbuild>1.0.65077</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>UI</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies>
+    <string>BetterAI-Base</string>
+  </modDependencies>
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>FAMILYCLASS_CLERICS</zType>
+		<iNoReligionOpinion>0</iNoReligionOpinion>
+	</Entry>
+	<Entry>
+		<zType>FAMILYCLASS_TRADERS</zType>
+		<FoundBonus>BONUS_FAMILYCLASS_TRADERS</FoundBonus>
+	</Entry>
+	<Entry>
+		<zType>FAMILYCLASS_STATESMEN</zType>
+		<FoundBonus>BONUS_FAMILYCLASS_STATESMEN</FoundBonus>
+	</Entry>
+</Root>

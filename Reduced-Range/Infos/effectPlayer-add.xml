@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTPLAYER_TECH_FORESTRY</zType>
+		<Name>TEXT_EFFECTPLAYER_TECH_FORESTRY</Name>
+		<zIconName>EFFECTUNIT_ANTIMOUNTED2</zIconName>
+		<SourceTech>TECH_FORESTRY</SourceTech>
+		<aeEffectUnit>
+			<Pair>
+				<zIndex>UNIT_SPEARMAN</zIndex>
+				<zValue>EFFECTUNIT_SPEARMAN_DEFENCE1</zValue>
+			</Pair>
+		</aeEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_TECH_MANOR</zType>
+		<Name>TEXT_EFFECTPLAYER_TECH_MANOR</Name>
+		<zIconName>EFFECTUNIT_ANTIMOUNTED3</zIconName>
+		<SourceTech>TECH_MANOR</SourceTech>
+		<aeEffectUnit>
+			<Pair>
+				<zIndex>UNIT_SPEARMAN</zIndex>
+				<zValue>EFFECTUNIT_SPEARMAN_DEFENCE2</zValue>
+			</Pair>
+		</aeEffectUnit>
+	</Entry>
+</Root>

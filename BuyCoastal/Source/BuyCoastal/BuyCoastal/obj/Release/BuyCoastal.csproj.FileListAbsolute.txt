@@ -1,0 +1,8 @@
+C:\Users\Fim\source\repos\BuyCoastal\BuyCoastal\bin\Release\BuyCoastal.dll
+C:\Users\Fim\source\repos\BuyCoastal\BuyCoastal\bin\Release\BuyCoastal.pdb
+C:\Users\Fim\source\repos\BuyCoastal\BuyCoastal\bin\Release\0Harmony.dll
+C:\Users\Fim\source\repos\BuyCoastal\BuyCoastal\obj\Release\BuyCoastal.csproj.AssemblyReference.cache
+C:\Users\Fim\source\repos\BuyCoastal\BuyCoastal\obj\Release\BuyCoastal.csproj.CoreCompileInputs.cache
+C:\Users\Fim\source\repos\BuyCoastal\BuyCoastal\obj\Release\BuyCoastal.csproj.CopyComplete
+C:\Users\Fim\source\repos\BuyCoastal\BuyCoastal\obj\Release\BuyCoastal.dll
+C:\Users\Fim\source\repos\BuyCoastal\BuyCoastal\obj\Release\BuyCoastal.pdb

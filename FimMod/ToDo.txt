@@ -1,0 +1,5 @@
+ToDo List:
+ - (Mission) Ask to Declare War: You must already be at War, and target must be weaker than the Nation you are asking, completely disabled for Competitive Mode.
+ - Artist Archetype (gives Culture as Governor)
+ - Unique Urban Specialists (new mod)
+ - rework Warchance from Traits

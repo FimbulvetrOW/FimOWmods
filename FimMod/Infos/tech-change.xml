@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>TECH_POLIS</zType>
+<!--
+		<Name>TEXT_TECH_POLIS</Name>
+		<Advice>TEXT_GUIDE_TECH_POLIS</Advice>
+		<zIconName>TECH_POLIS</zIconName>
+		<iCost>120</iCost>
+-->
+		<EffectPlayer>EFFECTPLAYER_TECH_POLIS</EffectPlayer>
+<!--
+		<iColumn>1</iColumn>
+		<iRow>5</iRow>
+		<bValidAll>1</bValidAll>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_STONECUTTING</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+-->
+	</Entry>
+</Root>

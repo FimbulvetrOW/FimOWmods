@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>BONUS_START</zType>
+		<aeAddProjects>
+			<zValue>PROJECT_WALLS</zValue>
+		</aeAddProjects>
+	</Entry>
+	<Entry>
+		<zType>BONUS_MISSIONRESULT_ADOPT</zType>
+<!--
+		<iAdoptedBySubject>0</iAdoptedBySubject>
+-->
+		<aeRemoveTraits>
+			<zValue>TRAIT_BASTARD</zValue>
+		</aeRemoveTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_IMPROVEMENT_ISHTAR_GATE</zType>
+		<aiCityYields>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiCityYields>
+	</Entry>
+</Root>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Biome-specific Baths</displayName>
+  <description>restricts each type of Bath to a specific City Biome (Cold, Temperate, Hot)
+  requires Better AI Base DLL
+
+Only 1 Bath can be built per city, all of them need to start with Apprentice Specialist.
+Cold Baths in Arid/Dessert
+Heated Baths in Tundra (enables Urban Improvements on Tundra)
+Warm Baths in Temperate regions. 
+
+Biome is calculated from non-Urban Land Tiles in City territory.
+
+When using this together with the Less Scaling Specialist Yields mod, load this mod afterwards, 
+otherwise you'd get the Specialist Train Time Discounts from the other mod.
+
+(this is also part of FimMod)</description>
+  <modpicture>BiomeBaths.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2330317</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.3.1</modversion>
+  <modbuild>1.0.70751</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies>
+    <string>BetterAI-Base</string>
+  </modDependencies>
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

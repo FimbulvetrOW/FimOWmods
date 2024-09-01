@@ -1,0 +1,6 @@
+Version history
+[1.1.2] version 1.1 change for Courthouse was not active (commented out), that is now fixed.
+[1.1.1] fixed mod description
+[1.1] All Specialists start at Apprentice level (reverted the big change of game version 1.0.62798)
+[1.0.1] fixed Scribes, who had lost their Money per Citizen yield
+[1.0] Initial release

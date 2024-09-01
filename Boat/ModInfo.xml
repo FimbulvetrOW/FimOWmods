@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Boat</displayName>
+  <description>Adds a civilian Ship Unit that unlocks before the Bireme
+  
+  Especially in Archipelago Maps, the ability to get across a narrow Ocean 
+  can be critical. The new "Ferry" helps with this: it can Anchor and lets you 
+  cross seas up to 5 tiles wide with a single anchored Unit.
+  
+  It unlocks for everyone at Labor Force.
+  Trader Cities have access to it immediately.
+  
+  It's produced with Growth, can't attack and is really slow, 
+  but it does get a lot faster when adopting the Exploration Law.
+  
+Unit: Ferry (Ship)
+* 60 Growth Training Cost
+* 70 Wood Resource Cost
+* 2 Movement (+1 with Exploration)
+* 3 Vision (+2 with Exploration)
+* 0 extra Reveal Range  (+1 with Exploration)
+* 2 Fatigue (+1 with Exploration)
+* can Anchor: 2 Water Control Range
+* can Harvest
+* 3 Strength
+* 2 Food, 2 Wood Upkeep
+* No Upgrade, obsolete with Navigation (Bireme)
+
+You can contact me on discord, and only there. 
+If you try any other way to contact me, my answer could take months.</description>
+  <modpicture>Boat.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2703030</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.2.2</modversion>
+  <modbuild>1.0.73676</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTUNIT_ASSAULT</zType>
+<!-- 
+		<iUrbanAttackModifier>50</iUrbanAttackModifier>
+		<aiImprovementToModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_FORT</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiImprovementToModifier>
+ -->
+		<iSettlementAttackModifier>25</iSettlementAttackModifier>
+		<iUrbanAttackModifier>25</iUrbanAttackModifier>
+		<aiImprovementToModifier>
+		<!-- Fort bonus halved too -->
+			<Pair>
+				<zIndex>IMPROVEMENT_FORT</zIndex>
+				<iValue>25</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENT_GARRISON_1</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENT_GARRISON_2</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENT_GARRISON_3</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiImprovementToModifier>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_BESIEGER</zType>
+<!-- 
+		<iUrbanAttackModifier>25</iUrbanAttackModifier>
+ -->
+		<aiImprovementToModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_FORT</zIndex>
+				<iValue>25</iValue>
+			</Pair>
+		</aiImprovementToModifier>
+		<abUnitTraitValid>
+			<Pair>
+				<zIndex>UNITTRAIT_INFANTRY</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>UNITTRAIT_SIEGE</zIndex>
+				<bValue>0</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>UNITTRAIT_SHIP</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abUnitTraitValid>
+	</Entry>
+<!--
+	<Entry>
+		<zType>EFFECTUNIT_WARDEN</zType>
+
+		<aiTerrainFromModifier>
+			<Pair>
+				<zIndex>TERRAIN_URBAN</zIndex>
+				<iValue>25</iValue>
+			</Pair>
+		</aiTerrainFromModifier>
+
+	</Entry>
+-->
+	<Entry>
+		<zType>EFFECTUNIT_BESIEGER_ALL</zType>
+<!-- 
+		<iUrbanAttackModifier>10</iUrbanAttackModifier>
+ -->
+		<aiImprovementToModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_FORT</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+		</aiImprovementToModifier>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_SIEGE</zType>
+<!--
+		<iUrbanAttackModifier>50</iUrbanAttackModifier>
+-->
+		<iSettlementAttackModifier>25</iSettlementAttackModifier>
+		<iUrbanAttackModifier>25</iUrbanAttackModifier>
+		<aiImprovementToModifier>
+		<!-- Fort: 50%, some as iDefenseModifier -->
+			<Pair>
+				<zIndex>IMPROVEMENT_FORT</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		<!-- Garrison: 20%, same as iDefenseModifierFriendly, so 0% defense remain  -->
+			<Pair>
+				<zIndex>IMPROVEMENT_GARRISON_1</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		<!-- Stronghold/Citadel: 20% too, which is 10/20% less than their iDefenseModifierFriendly  -->
+			<Pair>
+				<zIndex>IMPROVEMENT_GARRISON_2</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENT_GARRISON_3</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiImprovementToModifier>
+	</Entry>
+</Root>

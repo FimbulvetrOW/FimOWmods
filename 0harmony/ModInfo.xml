@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>0harmony</displayName>
+  <description>Harmony DLL can be used by mods to patch C# methods at runtime.
+
+DLL mods that use Harmony are usually compatible with other DLL mods, so multiple mods of this type can be active at the same time,
+unlike DLL mods that don't use Harmony: only a single DLL mod that overrides the GameFactory class can be active at any time.
+
+This mod doesn't change anything by itself because it only contains the Harmony DLL and nothing else.
+0Harmony.dll v2.2.2 for .Net Framework 4.7.2
+taken directly from the Harmony homepage:
+https://github.com/pardeike/Harmony</description>
+  <modpicture>HarmonyLogo.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>3650745</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>2.2.2</modversion>
+  <modbuild>1.0.70360</modbuild>
+  <tags />
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

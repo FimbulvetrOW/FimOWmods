@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>    <!-- Reduced Range -->
+		<zType>EFFECTUNIT_SPEARMAN_DEFENCE1</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_SPEARMAN_DEFENCE1</GenderedName>
+		<zIconName>EFFECTUNIT_GUARD1</zIconName>
+		<iDefenseModifier>10</iDefenseModifier>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_SPEARMAN_DEFENCE2</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_SPEARMAN_DEFENCE2</GenderedName>
+		<zIconName>EFFECTUNIT_GUARD2</zIconName>
+		<iDefenseModifier>20</iDefenseModifier>
+	</Entry>
+	<Entry>   <!-- Boat -->
+		<zType>EFFECTUNIT_EXPLORATION</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_EXPLORATION</GenderedName>
+		<zIconName>EFFECTUNIT_SWIFT</zIconName>
+		<iVisionExtra>2</iVisionExtra>
+		<iRevealExtra>1</iRevealExtra>
+		<iMovementExtra>1</iMovementExtra>
+		<iFatigueExtra>1</iFatigueExtra>
+		<abUnitTraitValid>
+			<Pair>
+				<zIndex>UNITTRAIT_SHIP</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abUnitTraitValid>
+	</Entry>
+</Root>

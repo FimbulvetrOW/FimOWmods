@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_BONUS_CONVERT_LEGITIMACY</zType>
+		<en-US>Sell  icon(YIELD_LEGITIMACY)link(CONCEPT_LEGITIMACY) for  link(YIELD_ORDERS,1)</en-US>
+		<es>Vender  icon(YIELD_LEGITIMACY)link(CONCEPT_LEGITIMACY) para  link(YIELD_ORDERS,1)</es>
+		<de>Verkaufe  icon(YIELD_LEGITIMACY)link(CONCEPT_LEGITIMACY) für  link(YIELD_ORDERS,1)</de>
+		<fr>Vendre  icon(YIELD_LEGITIMACY)link(CONCEPT_LEGITIMACY) pour les  link(YIELD_ORDERS,1)</fr>
+		<ja>link(YIELD_ORDERS,1)のために icon(YIELD_LEGITIMACY)link(CONCEPT_LEGITIMACY)を売る</ja>
+		<zh-TW>出售 icon(YIELD_LEGITIMACY)link(CONCEPT_LEGITIMACY)以换取 link(YIELD_ORDERS,1)</zh-TW>
+		<ru>Продать  icon(YIELD_LEGITIMACY){lowercase:link(CONCEPT_LEGITIMACY)} в обмен на {lowercase:link(YIELD_ORDERS,1)}</ru>
+		<zh-CN>賣 icon(YIELD_LEGITIMACY)link(CONCEPT_LEGITIMACY)以換取 link(YIELD_ORDERS,1)</zh-CN>
+		<pt-BR>Vender  icon(YIELD_LEGITIMACY)link(CONCEPT_LEGITIMACY) por  link(YIELD_ORDERS,1)</pt-BR>
+	</Entry>
+</Root>

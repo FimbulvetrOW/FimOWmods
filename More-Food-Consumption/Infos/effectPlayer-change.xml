@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTPLAYER_IMPROVEMENT_LIGHTHOUSE</zType>
+		<EffectCity></EffectCity>
+		<!-- <EffectCityExtra>EFFECTCITY_IMPROVEMENT_LIGHTHOUSE_ALL_EXTRA</EffectCityExtra> -->
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_LAW_VASSALAGE</zType>
+		<iConsumptionModifier>-25</iConsumptionModifier>
+	</Entry>
+</Root>

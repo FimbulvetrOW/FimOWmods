@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Reduced Range</displayName>
+  <description>Reduced Attack Range for all Ranged Units
+
+* All Ranged Mounted Units and all Ranged Barbarian Units have a Range of 1 (originally 2)
+ (no change to Slingers, Range stays at 2)
+* Infantry Archers have a Range of 2 (originally 3)
+* Onagers and Mangonels have a Range of 2-3 (originally 2-4, 2-5)
+* all nations start with Warriors (no more Slingers at the start).
+* Polearm Units Spearman, Pikeman, Conscript, and the UUs Hoplite and Phalangite get Cleave (instead of Pierce)
+* Gaesata and Geja Archer no longer have Pierce (originally 1 Tile at 25%)
+* Crossbowman, Polybolos and Elite Gaesata only attack Pierce at 25% (down from 50%)
+* Ballista Pierce attack only reaches 1 Tile behind target (instead of 2)
+* Towers provide no Range increase (originally +1)
+ (no change to Hills Terrain and Marksman Promotion, they still increase Range by 1)
+* Spearman recieves +10% Defense from Tech Forestry and +20% Defense from Tech Manor.
+* Pikeman's +100% against Mounted Units is reduced to +50% (originally +100%).
+* Cataphract Strength reduced to 8 ! and Circle is removed, Training Cost reduced to 120 (originally 160)
+* Tech requirements for Pikeman and Cataphract adjusted: 
+ - Pikeman Tech Infantry Square now only costs 1000 Science but requires Manor too, not just Battle Line,
+ - Cataphract Tech Barding now requires Steel instead of Battle Line (in addition to Martial Code, which remains).
+
+
+Reduced Range makes movement more important, making the mobile Mounted Units even stronger, 
+which is why Spearman gets a buff (which was needed anyway, imo). And with Units in battle
+being closer together, routing is stronger, so the Cataphract gets a nerf to 8 Strength.
+Because the Cataphract has only 8 Strength now, the Pikeman no longer needs to have +100%
+against Mounted Units, and get's the same +50% as the other Polearm Units, making it equal
+to the Phalangite.
+
+You can contact me on discord, and only there. 
+If you try any other way to contact me, my answer could take months.</description>
+  <modpicture>ReducedRange.jpg</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2244402</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.3.7.1</modversion>
+  <modbuild>1.0.73676</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

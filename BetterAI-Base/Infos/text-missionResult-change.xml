@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_MISSIONRESULT_TEAM_ALLIANCE_EVENT</zType>
+		<en-US>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER) Event</en-US>
+		<es>Evento de  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)</es>
+		<de>Ereignis:  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)</de>
+		<fr>Événement de  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)</fr>
+		<ja>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)イベント</ja>
+		<zh-TW>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)事件</zh-TW>
+		<ru>Событие:  icon(DIPLOMACY_ALLIANCE){lowercase:link(CONCEPT_ALLIANCE_PLAYER,1)}</ru>
+		<zh-CN>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)事件</zh-CN>
+		<pt-BR>Evento por missão de  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)</pt-BR>
+	</Entry>
+	<Entry>
+		<zType>TEXT_MISSIONRESULT_TEAM_ALLIANCE_HUMAN_EVENT</zType>
+		<en-US>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER) Event</en-US>
+		<es>Evento de  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)</es>
+		<de>Ereignis:  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)</de>
+		<fr>Événement de  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)</fr>
+		<ja>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)イベント</ja>
+		<zh-TW>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)事件</zh-TW>
+		<ru>Событие:  icon(DIPLOMACY_ALLIANCE){lowercase:link(CONCEPT_ALLIANCE_PLAYER,1)}</ru>
+		<zh-CN>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)事件</zh-CN>
+		<pt-BR>Evento por missão de  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_PLAYER)</pt-BR>
+	</Entry>
+	<Entry>
+		<zType>TEXT_MISSIONRESULT_TRIBE_ALLIANCE_EVENT</zType>
+		<en-US>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_TRIBE) Event</en-US>
+		<es>Evento  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_TRIBE)</es>
+		<de>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_TRIBE)ereignis</de>
+		<fr>Événement de  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_TRIBE) </fr>
+		<ja>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_TRIBE) イベント</ja>
+		<zh-TW>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_TRIBE)事件</zh-TW>
+		<ru>Событие  icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_TRIBE)</ru>
+		<zh-CN>icon(DIPLOMACY_ALLIANCE)link(CONCEPT_ALLIANCE_TRIBE)事件</zh-CN>
+		<pt-BR>Evento por missão de  icon(DIPLOMACY_ALLIANCE) link(CONCEPT_ALLIANCE_TRIBE)</pt-BR>
+	</Entry>
+</Root>

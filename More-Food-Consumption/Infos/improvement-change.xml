@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>IMPROVEMENT_LIGHTHOUSE</zType>
+		<EffectCity>EFFECTCITY_IMPROVEMENT_LIGHTHOUSE</EffectCity>
+		<!-- <EffectPlayer></EffectPlayer> -->
+	</Entry>
+</Root>

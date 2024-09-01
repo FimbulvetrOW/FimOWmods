@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>COGNOMEN_ENLIGHTENED</zType>
+		<iMinValue>3500</iMinValue>   <!-- down from 4000 -->
+	</Entry>
+	<Entry>
+		<zType>COGNOMEN_WISE</zType>
+		<iMinValue>5000</iMinValue>   <!-- down from 6000 -->
+	</Entry>
+</Root>

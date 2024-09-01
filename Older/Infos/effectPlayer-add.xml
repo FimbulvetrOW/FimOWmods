@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTPLAYER_TECH_POLIS</zType>
+		<Name>TEXT_TECH_POLIS</Name>
+		<zIconName>ADD_ROAD</zIconName>
+		<SourceTech>TECH_POLIS</SourceTech>
+		<bRiverBridging>1</bRiverBridging>
+	</Entry>
+	<Entry>   <!-- Reduced Range -->
+		<zType>EFFECTPLAYER_TECH_FORESTRY</zType>
+		<Name>TEXT_EFFECTPLAYER_TECH_FORESTRY</Name>
+		<zIconName>EFFECTUNIT_ANTIMOUNTED2</zIconName>
+		<SourceTech>TECH_FORESTRY</SourceTech>
+		<aeEffectUnit>
+			<Pair>
+				<zIndex>UNIT_SPEARMAN</zIndex>
+				<zValue>EFFECTUNIT_SPEARMAN_DEFENCE1</zValue>
+			</Pair>
+		</aeEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_TECH_MANOR</zType>
+		<Name>TEXT_EFFECTPLAYER_TECH_MANOR</Name>
+		<zIconName>EFFECTUNIT_ANTIMOUNTED3</zIconName>
+		<SourceTech>TECH_MANOR</SourceTech>
+		<aeEffectUnit>
+			<Pair>
+				<zIndex>UNIT_SPEARMAN</zIndex>
+				<zValue>EFFECTUNIT_SPEARMAN_DEFENCE2</zValue>
+			</Pair>
+		</aeEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_FAMILYCLASS_TRADERS</zType>
+		<Name>TEXT_IMPROVEMENT_MARKET_0</Name>		
+		<SourceImprovement>IMPROVEMENT_MARKET_0</SourceImprovement>
+		<iMaxActions>5</iMaxActions>
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_IMPROVEMENT_COLOSSEUM</zType>
+		<Name>TEXT_IMPROVEMENT_COLOSSEUM</Name>
+		<SourceImprovement>IMPROVEMENT_COLOSSEUM</SourceImprovement>
+		<EffectCity>EFFECTCITY_IMPROVEMENT_COLOSSEUM_ALL</EffectCity>
+	</Entry>
+</Root>

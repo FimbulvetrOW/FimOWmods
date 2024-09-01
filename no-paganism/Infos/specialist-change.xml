@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>SPECIALIST_ACOLYTE_1</zType>
+		<iOpinionReligion>0</iOpinionReligion>
+	</Entry>
+	<Entry>
+		<zType>SPECIALIST_ACOLYTE_2</zType>
+		<iOpinionReligion>0</iOpinionReligion>
+	</Entry>
+	<Entry>
+		<zType>SPECIALIST_ACOLYTE_3</zType>
+		<iOpinionReligion>0</iOpinionReligion>
+	</Entry>
+</Root>

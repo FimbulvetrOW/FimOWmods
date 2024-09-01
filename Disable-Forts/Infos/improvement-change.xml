@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>IMPROVEMENT_FORT</zType>
+		<bBuild>0</bBuild>
+	</Entry>
+<!--
+	<Entry>
+		<zType>IMPROVEMENT_FORT</zType>
+		<Name>TEXT_IMPROVEMENT_FORT</Name>
+		<Class>IMPROVEMENTCLASS_FORT</Class>
+		<AssetVariation>ASSET_VARIATION_IMPROVEMENT_FORT</AssetVariation>
+		<zIconName>IMPROVEMENT_FORT</zIconName>
+		<iBuildTurns>1</iBuildTurns>
+		<iBuildCost>1</iBuildCost>
+		<iPillageTurns>10</iPillageTurns>
+		<iRevealChange>1</iRevealChange>
+		<iVisionChange>2</iVisionChange>
+		<iDefenseModifier>50</iDefenseModifier>
+		<bBuild>1</bBuild>
+		<bNoVegetation>1</bNoVegetation>
+		<bHeal>1</bHeal>
+		<bRemovePillage>1</bRemovePillage>
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_STONE</zIndex>
+				<iValue>40</iValue>
+			</Pair>
+		</aiYieldCost>
+		<aiYieldPillage>
+			<Pair>
+				<zIndex>YIELD_STONE</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiYieldPillage>
+		<abTerrainValid>
+			<Pair>
+				<zIndex>TERRAIN_LUSH</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_TEMPERATE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TERRAIN_ARID</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTerrainValid>
+	</Entry>
+-->
+</Root>

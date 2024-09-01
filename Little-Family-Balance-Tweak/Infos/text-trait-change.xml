@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_TRAIT_CLERGY</zType>
+		<en-US>Cleric</en-US>
+<!--
+		<es>Miembro del clero</es>
+		<de>Kleriker~Klerikers~Kleriker~Klerikern</de>
+		<fr>Clergé</fr>
+		<ja>聖職者</ja>
+		<zh-TW>神職人員</zh-TW>
+		<ru>Священнослужитель~Священнослужителя~Священнослужителю~Священнослужителя~Священнослужителем~Священнослужителе</ru>
+		<zh-CN>神职人员</zh-CN>
+		<pt-BR>Clérigo</pt-BR>
+-->
+	</Entry>
+</Root>
+

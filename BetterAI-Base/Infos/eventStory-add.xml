@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<Root>
+	<Entry>
+		<zType>EVENTSTORY_TUTORIAL_URBAN_DISCONTENT</zType>
+		<Name>TEXT_EVENTSTORY_TUTORIAL_URBAN_DISCONTENT_TITLE</Name>
+		<Text>TEXT_EVENTSTORY_TUTORIAL_URBAN_DISCONTENT</Text>
+		<zAuthor>Gabe Campbell</zAuthor>
+		<aeSubjects>
+			<zValue>SUBJECT_CITY_US</zValue>
+			<zValue>SUBJECT_CITY_US</zValue>
+		</aeSubjects>
+		<aeOptions>
+			<zValue>EVENTOPTION_TUTORIAL_URBAN_DISCONTENT_OPTION_0</zValue>
+		</aeOptions>
+		<Trigger>EVENTTRIGGER_CITY_FOUNDED</Trigger>
+		<iTriggerSubject>0</iTriggerSubject>
+		<iPriority>10</iPriority>
+		<iWeight>1</iWeight>
+		<iRepeatTurns>-1</iRepeatTurns>
+		<bNoCharacters>1</bNoCharacters>
+		<bIgnoreTriggerProb>1</bIgnoreTriggerProb>
+		<bTutorial>1</bTutorial>
+	</Entry>
+</Root>

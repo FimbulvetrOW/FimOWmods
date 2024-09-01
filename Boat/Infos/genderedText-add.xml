@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Root>
+ 	<Entry>
+		<zType>GENDERED_TEXT_EFFECTUNIT_EXPLORATION</zType>
+		<Texts>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_MASCULINE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_EXPLORATION</zValue>
+			</Pair>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_FEMININE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_EXPLORATION</zValue>
+			</Pair>
+		</Texts>
+	</Entry>
+</Root>

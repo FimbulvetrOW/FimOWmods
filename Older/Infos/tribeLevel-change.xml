@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>TRIBELEVEL_PASSIVE</zType>
+		<iEmptySites>4</iEmptySites>
+	</Entry>
+	<Entry>
+		<zType>TRIBELEVEL_WEAK</zType>
+		<iEmptySites>3</iEmptySites>
+	</Entry>
+	<Entry>
+		<zType>TRIBELEVEL_NORMAL</zType>
+		<iEmptySites>2</iEmptySites>
+	</Entry>
+	<Entry>
+		<zType>TRIBELEVEL_STRONG</zType>
+		<iEmptySites>1</iEmptySites>
+	</Entry>
+	<Entry>
+		<zType>TRIBELEVEL_RAGING</zType>
+		<iEmptySites>1</iEmptySites>
+	</Entry>
+</Root>

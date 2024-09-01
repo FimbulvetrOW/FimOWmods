@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_SPEARMAN_SELECTED</zType>
+		<en-US>The link(UNIT_SPEARMAN) is the first link(UNITTRAIT_POLEARM) Unit available to your nation. link(UNITTRAIT_POLEARM) Units excel against enemy link(UNITTRAIT_MOUNTED) Units. Only link(UNITTRAIT_POLEARM) Units can exert a link(CONCEPT_ZOC) on link(UNITTRAIT_MOUNTED) Units.</en-US>
+		<es>El link(UNIT_SPEARMAN) es la primera unidad con link(UNITTRAIT_POLEARM) disponible para tu nación. Las unidades con link(UNITTRAIT_POLEARM) son excelentes contra las unidades enemigas link(UNITTRAIT_MOUNTED,1). Solo las unidades con link(UNITTRAIT_POLEARM) pueden ejercer una link(CONCEPT_ZOC) a las unidades link(UNITTRAIT_MOUNTED,1).</es>
+		<de>link(UNIT_SPEARMAN,5) sind die ersten link(UNITTRAIT_POLEARM,2) Eurer Nation. link(UNITTRAIT_POLEARM,2) schlagen sich hervorragend gegen feindliche {lowercase:link(UNITTRAIT_MOUNTED,2)} Einheiten. link(UNITTRAIT_POLEARM,2) sind die einzigen Einheiten, deren link(CONCEPT_ZOC,1) sich auf {lowercase:link(UNITTRAIT_MOUNTED,2)} Einheiten auswirkt.</de>
+		<fr>Le link(UNIT_SPEARMAN) est la première unité de type link(UNITTRAIT_POLEARM) disponible pour votre nation. Les unités de type link(UNITTRAIT_POLEARM) sont très efficaces contre les ennemis link(UNITTRAIT_MOUNTED). Seules les unités link(UNITTRAIT_POLEARM) peuvent exercer une link(CONCEPT_ZOC) sur les unités link(UNITTRAIT_MOUNTED).</fr>
+		<ja>link(UNITTRAIT_POLEARM)のみがlink(UNITTRAIT_MOUNTED)にlink(CONCEPT_ZOC)を利用できます。</ja>
+		<zh-TW>link(UNIT_SPEARMAN)是你國家能培養第一個link(UNITTRAIT_POLEARM)單位。link(UNITTRAIT_POLEARM)單位擅長攻擊敵方link(UNITTRAIT_MOUNTED)單位。只有link(UNITTRAIT_POLEARM)單位能對link(UNITTRAIT_MOUNTED)單位使用link(CONCEPT_ZOC)。</zh-TW>
+		<ru>link(UNIT_SPEARMAN) — это первый юнит, использующий {lowercase:link(UNITTRAIT_POLEARM,3)}, который доступен вашей нации. Данный тип юнитов превосходно показывает себя в сражениях с {lowercase:link(UNITTRAIT_MOUNTED,4)}. Лишь юниты с {lowercase:link(UNITTRAIT_POLEARM,4)} могут накладывать {lowercase:link(CONCEPT_ZOC,3)} на {lowercase:link(UNITTRAIT_MOUNTED,3)}.</ru>
+		<zh-CN>link(UNIT_SPEARMAN)是你国家能培养第一个link(UNITTRAIT_POLEARM)单位。 link(UNITTRAIT_POLEARM)单位擅长攻击敌方link(UNITTRAIT_MOUNTED)单位。只有link(UNITTRAIT_POLEARM)单位能对link(UNITTRAIT_MOUNTED)单位使用link(CONCEPT_ZOC)。</zh-CN>
+		<pt-BR>O link(UNIT_SPEARMAN) é a primeira unidade com link(UNITTRAIT_POLEARM) disponível em sua nação. Unidades com link(UNITTRAIT_POLEARM) são excelentes contra unidades de link(UNITTRAIT_MOUNTED) inimigas. Apenas unidades com link(UNITTRAIT_POLEARM) podem exercer uma link(CONCEPT_ZOC) em unidades de link(UNITTRAIT_MOUNTED).</pt-BR>
+	</Entry>
+</Root>

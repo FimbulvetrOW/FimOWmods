@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENT_LIGHTHOUSE</zType>
+		<Name>TEXT_IMPROVEMENT_LIGHTHOUSE</Name>
+		<SourceImprovement>IMPROVEMENT_LIGHTHOUSE</SourceImprovement>
+		<bSingle>1</bSingle>
+		<aiImprovementModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_NETS</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiImprovementModifier>
+	</Entry>
+</Root>

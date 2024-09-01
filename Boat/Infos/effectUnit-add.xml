@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTUNIT_EXPLORATION</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_EXPLORATION</GenderedName>
+		<zIconName>EFFECTUNIT_SWIFT</zIconName>
+		<iVisionExtra>2</iVisionExtra>
+		<iRevealExtra>1</iRevealExtra>
+		<iMovementExtra>1</iMovementExtra>
+		<iFatigueExtra>1</iFatigueExtra>
+		<abUnitTraitValid>
+			<Pair>
+				<zIndex>UNITTRAIT_SHIP</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abUnitTraitValid>
+	</Entry>
+</Root>

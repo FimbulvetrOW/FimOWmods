@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_HAMLET</zType>
+		<en-US>Suburb~Suburbs</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_ODEON</zType>
+		<en-US>Entertainment Location~Entertainment Locations</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_MARKET</zType>
+		<en-US>Commerce Center~Commerce Centers</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_LIBRARY</zType>
+		<en-US>Educational Institution~Educational Institutions</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_COURTHOUSE</zType>
+		<en-US>Government Department~Government Departments</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_GARRISON</zType>
+		<en-US>Military Station~Military Stations</en-US>
+	</Entry>
+</Root>

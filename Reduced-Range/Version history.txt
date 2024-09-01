@@ -1,0 +1,24 @@
+Version history
+[0.3.7.1] Update for game version 1.0.73323: Gendered text format updated, Cohorts still requires Land Consolidation instead of Manor;
+[0.3.7] After recent base game changes to the Tech tree, 2 adjustments were made:
+        Infantry Square (Pikeman) was lowered 1 tier (cost 1000 instead of 1500) but also requires Manor in addition to Battle Line,
+        Barding no longer requires Battle Line, requires Steel instead (Martial Code requirement remains).
+[0.3.6] New nation with new DLC: Kush UUs get their range reduced to 2 like all other Ranged non-Siege Units, 
+        Kush UU 2 Beja Archer also loses Pierce. Kush also starts with Warrior like all other nations.
+[0.3.5] Tribal Units Gaesata: Piece removed, Elite Gaesata: Pierce strength reduced.
+[0.3.4] reverted change from game version 1.0.65965: Conscript keeps Cleave (doesn't get changed to Pierce).
+[0.3.3] Cataphract ability Circle removed, Training Production Cost reduced to 120.
+[0.3.2] Cataphract Training Production Cost reduced to 140.
+[0.3.1] Pikeman now gets +50% instead of +100% against Mounted Units.
+[0.3.0] all changes to Slingers removed, they are now basically an Archer with 1 less Strength.
+        Cataphracts were nerfed to 8 Strength.
+[0.2.5] all nations start with Warriors - no more Slingers. 
+        Slinger Stone cost is halved to 25 and this Unit type is obsolete as soon as Archers are available.
+[0.2.4] updated to new XML schema for game version 1.0.62422
+[0.2.3] fixed the NullReferenceException caused by the improper implementation of the Defense boost for Spearman
+[0.2.2] Hoplite and Phalangite also trade their Pierce for Cleave.
+[0.2.1] Only Spearman gets the Defense from Tech Bonus, and the Bonus from Forestry is reduced to +10%.
+[0.2] Changes to Polearm Units: Removed Pierce; they get +20% Defense each from 2 Techs.
+      Ballista Piere reduced to 1 Tile.
+      Reduced Pierce Strength for Crossbowman and Polybolos.
+[0.1] initial release

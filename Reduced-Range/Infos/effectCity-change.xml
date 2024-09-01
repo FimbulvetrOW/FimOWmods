@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTCITY_PROJECT_TOWERS</zType>
+<!-- 
+		<Name>TEXT_PROJECT_TOWERS</Name>
+		<SourceProject>PROJECT_TOWERS</SourceProject>
+		<iCityHP>10</iCityHP>
+ -->
+		<iRangeChange>0</iRangeChange>
+<!-- 
+		<iStrengthModifier>25</iStrengthModifier>
+		<aiYieldRateDefending>
+			<Pair>
+				<zIndex>YIELD_DISCONTENT</zIndex>
+				<iValue>-10</iValue>
+			</Pair>
+		</aiYieldRateDefending>
+ -->
+	</Entry>
+</Root>

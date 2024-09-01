@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTPLAYER_TECH_POLIS</zType>
+		<Name>TEXT_TECH_POLIS</Name>
+		<zIconName>ADD_ROAD</zIconName>
+		<SourceTech>TECH_POLIS</SourceTech>
+		<bRiverBridging>1</bRiverBridging>
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_IMPROVEMENT_COLOSSEUM</zType>
+		<Name>TEXT_IMPROVEMENT_COLOSSEUM</Name>
+		<SourceImprovement>IMPROVEMENT_COLOSSEUM</SourceImprovement>
+		<EffectCity>EFFECTCITY_IMPROVEMENT_COLOSSEUM_ALL</EffectCity>
+	</Entry>
+	<!-- what to do with those -->
+<!-- 
+	<Entry>
+		<zType>EFFECTPLAYER_IMPROVEMENT_VIA_RECTA_SOUK</zType>
+		<Name>TEXT_IMPROVEMENT_VIA_RECTA_SOUK</Name>
+		<SourceImprovement>IMPROVEMENT_VIA_RECTA_SOUK</SourceImprovement>
+		<EffectCity>EFFECTCITY_IMPROVEMENT_VIA_RECTA_SOUK_ALL</EffectCity>
+	</Entry>
+ -->
+</Root>

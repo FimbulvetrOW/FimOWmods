@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>No Paganism</displayName>
+  <description>Shrines don't found or spread Paganism
+  
+  Removes Religion Spread and Religion Opinion stats from all Shrines (and Acolytes),
+  so that they can be built without having to worry about keeping one more Religion happy.
+  
+  By being unable to found Pagan Religions, Events that require them will be disabled.
+  Divine Rule: Since Pagan religions won't exist, you can't adopt them as a State Religion.
+
+Version history
+[1.0] there were no changes, but the mod does what it should so I just bumped the version number up to 1.0
+[0.1] Initial release</description>
+  <modpicture>Unpagan_Shrines.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2073265</modioID>
+  <modioFileID>2778311</modioFileID>
+  <modversion>1.0</modversion>
+  <modbuild>1.0.62443</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

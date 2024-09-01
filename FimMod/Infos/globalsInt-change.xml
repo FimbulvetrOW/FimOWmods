@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>NUM_AUTOSAVES</zType> <!-- actually not needed since the Unlimited Autosaves Mod already uses the same number -->
+		<iValue>1000</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_HURRY_COST_REDUCED</zType> <!-- reduces hurry cost, locks hurried item in first build queue position -->
+		<!-- set to 1 to just lock the hurried item in first queue position, without changing hurry cost -->
+		<!-- set to 2 to reduce hurry cost by Overflow (hurried item is locked in first queue position) -->
+		<!-- set to 3 to reduce hurry cost by Overflow and City Production (hurried item is locked in first queue position, and there will be no build yield going to the stockpile the turn afterwards) -->
+		<iValue>2</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_EMBARKING_COST_EXTRA</zType> <!-- should be a multiple of 3 -->
+		 <!-- Any value > 0 will increase Movement Cost for Land Units for embarking (when they enter a Water Tile from a Land Tile) -->
+		<iValue>9</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_HARBOR_OR_AMPHIBIOUS_EMBARKING_DISCOUNT</zType> <!-- needs to be a multiple of 3, can't be higher than BAI_EMBARKING_MOVEMENT_COST -->
+		<!-- Any value > 0 will reduce the extra Movement Cost for embarking for Amphibious Units, or if the first Water Tile contains a Harbor / Colossus -->
+		<iValue>9</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_AMPHIBIOUS_RIVER_CROSSING_DISCOUNT</zType> <!-- needs to be a multiple of 3, can't be higher than RIVER_CROSSING_COST_EXTRA -->
+		<!-- Any value > 0 will reduce the extra Movement Cost for crossing a River for Amphibious Units -->
+		<iValue>9</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_AMPHIBIOUS_ZOC_CROSSES_RIVER</zType>
+		<!-- Set to 1 to make ZOC cross rivers for Amphibious Units -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_TEAM_TERRITORY_ROAD_RIVER_CROSSING_DISCOUNT</zType> <!-- needs to be a multiple of 3, can't be higher than RIVER_CROSSING_COST_EXTRA -->
+		<!-- Any value > 0 will reduce the extra Movement Cost for crossing a River without Bridges inside Team Territory if both Tiles have a Road -->
+		<iValue>3</iValue>
+	</Entry>
+	<Entry>
+		<zType>AGENT_NETWORK_COST_BASE</zType>
+		<iValue>200</iValue>
+	</Entry>
+	<Entry>
+		<zType>AGENT_NETWORK_COST_PER</zType>
+		<iValue>50</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_AGENT_NETWORK_COST_PER_CULTURE_LEVEL</zType>
+		<iValue>100</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_SHOW_RESOURCE_TILE_TOTAL_COUNT</zType> <!-- set to 1 to show the number of Resources of a type on the Map. Can be set independently of other options -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_SHOW_RESOURCE_TILE_COUNT</zType> <!-- Show the number of Resources of the selected type -->
+		<!-- set to 1 to show the number of Resources in your Territory. -->
+		<!-- set to 2 to also show the number of Resources in your Teammates' Territory. (if you have any) -->
+		<!-- set to 3 to also show the number of Resources on revealed Tiles outside your Teams' Territory. -->
+		<!-- set to 4 to also show the number of Resources still in fog. -->
+		<iValue>3</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_SHOW_RESOURCE_TILE_COORDINATES</zType> <!-- Provides clickable coordinates for Resource Tiles of the selected type -->
+		<!-- set to 1 to show the coordinates of Resource Tiles in your Territory. (clickable location links that center camera over selected Tile) -->
+		<!-- set to 2 to also show the ooordinates of Resource Tiles in your Teammates' Territory. (clickable location links) -->
+		<!-- set to 3 to also show the ooordinates of Resource Tiles on revealed Tiles outside your Teams' Territory, as (X,Y) (clickable location links) -->
+		<!-- set to 4 to show the corridinates of all Resources Tiles, even if these Tiles are not yet revealed, as [X,Y] (but not clickable) -->
+		<!-- set to 5 to show the corridinates of all Resources Tiles, even if these Tiles are not yet revealed, as [X,Y] (clickable location links) -->		
+		<iValue>4</iValue>
+	</Entry>
+	<Entry>
+		<zType>MAX_FORTIFY_TURNS</zType>
+		<iValue>3</iValue>
+	</Entry>
+	<Entry>
+		<zType>FORTIFY_BONUS_PER</zType>
+		<iValue>10</iValue>
+	</Entry>
+	<Entry>
+		<zType>MAX_TESTUDO_TURNS</zType>
+		<iValue>2</iValue>
+	</Entry>
+	<Entry>
+		<zType>TESTUDO_BONUS_PER</zType>
+		<iValue>25</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_ENLIST_NO_FAMILY</zType> <!-- In the unmodded game, a converted Unit gets assigned the Family of the nearest City. -->
+		<!-- When set to 1, converted Units get no Family -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_DISCONTENT_LEVEL_ZERO</zType>
+		<!-- When set to 1, there will be a Discontent Level 0 between Happiness Level 1 and Discontent Level 1 -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_RAIDER_WATER_PILLAGE_DELAY_TURNS</zType>
+		<!-- Raiding Land Units can enter Water Tiles and pillage Improvements there, while this is impossible for Player Units -->
+		<!-- When set to a value above 0, Raiders will not pillage Water until iMinRaidTurns + BAI_DELAY_RAIDER_WATER_PILLAGE_TURNS Turns have passed -->
+		<!-- recommendet setting between 15 and 30 (30 is when Distant Raids can happen) -->
+		<!-- Also: setting this to any non-zero value will permanently disable Ship Unit spawning for Distant Raids -->
+		<iValue>30</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_PROPER_REGENT_LEGITIMACY_DECAY</zType> <!-- set to 1 so true heirs only get 1/2 of the Regent's cognomen Legitimacy -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_RANGED_UNIT_ROUTING_REQUIRES_MELEE_RANGE</zType> <!-- set to 1 so Persian UUs can only attack at melee range after when routing -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_PRECISE_COLLATERAL_DAMAGE</zType> <!-- set to 1 to make Collaterale Damage calculation precise again, instead of double rounding -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_MIN_UPGRADE_RATINGS_OPTIONS</zType>
+		<!-- As for game version 1.0.70024 you only get 3 strength traits to choose from, instead of  -->
+		<!-- 2 strength traits and 1 stat point (=rating point: Wisdom/Charisma/Courage/Discipline). To get this rating option again, set this variable to 1. -->
+		<!-- You can also set it to 2 or 3, which will decrease the number of traits that are offered and increase the number of stat points offered. -->
+		<!-- (The total number of choices is controlled by UPGRADES_AVAILABLE variable) -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_USE_TRIANGLE_IN_COMPETITIVE</zType>
+		<!-- As of game version 1.0.70024, many Character yields and bonuses scale linearly in Competitive Mode -->
+		<!-- Set to 1 to restore the old "triangle" calculation (n * (n-1) / 2) -->
+		<!-- (To be used in conjunction with BAI_COMPETITIVE_COURT_YIELD_MODIFIER) -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_COMPETITIVE_COURT_YIELD_MODIFIER</zType>
+		<!-- Set to -50 to half Leader/Spouse/Heir/Courtier yields for Competitive mode again -->
+		<!-- (To be used in conjunction with BAI_USE_TRIANGLE_IN_COMPETITIVE) -->
+		<iValue>-50</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_BETTER_BOUNCE</zType>
+		<!-- When Diplomacy between 2 teems changes to Truce, or from Peace/Alliance to War, -->
+		<!-- enemy Units get bounced out of the Players' territories. Sometimes this can get a Unit stuck, away from its homeland. -->
+		<!-- If this value is set to anything but 0, an attempt will be made to prevent that, by bouncing units to a Tile closer to home than where they started from. -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_PLAYEREVENT_STAT_BONUS_GOES_TO_PRIMARY_STAT_PERCENT</zType>
+		<!-- In games with characters, the AI nations get pseudo-events to make up for the fact that they don't get any real events. -->
+		<!-- 4 bonuses for these events give stat points for the AI nation leader. The chances for these pseudo-events are static. -->
+		<!-- Setting this value to any value above 0 makes X% if these bonuses go to the leader's best stat, the same way human players -->
+		<!-- will prefer boosting a stat that is already high because of the non-linearity of the yields from stats. -->
+		<iValue>50</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_PLAYER_MAX_EXTRA_DEVELOPMENT_CITIES_PERCENT</zType>
+		<!-- If the AI Development setting is not None, AI players get extra cities. By default, the number of additional cities varies,  -->
+		<!-- and can be up to 2x the average, or 100% extra - which corresponds to the default setting of 100. -->
+		<!-- This setting allows finer control, results are rounded down: 40% will give 1 max extra city with average 3 or 4, and 2 max extra with average 5.  -->
+		<!-- Set to 0 to make all AI players start with the same number of cities. -->
+		<iValue>40</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_NUM_IMPROVEMENT_FINISHED_UNITS</zType>
+		<!-- Since version 1.0.72907, an improvement that continuously produces units will also spawn one the turn the improvement is completed. -->
+		<!-- To disable this behaviour, set to 0. -->
+		<!-- Numbers higher than 1 will cause more of those units to spawn on improvement completion.  -->
+		<iValue>0</iValue>
+	</Entry>
+</Root>

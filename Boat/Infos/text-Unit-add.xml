@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_UNIT_FERRY</zType>
+		<en-US>Ferry~a Ferry~Ferries</en-US>
+		<es>Transbordadore~un transbordadore~Transbordadores</es>
+		<de>Fähre~die Fähre~der Fähre~der Fähre~die Fähre~Fähre~die Fähren~der Fähren~den Fähren~die Fähren</de>
+		<fr>Bac~un bac~Bacs</fr>
+		<ja>通船~通船~通船</ja>
+		<zh-TW>渡船~渡船~渡船</zh-TW>
+		<ru>Паром~Паром~Паром~Паром~Паром~Паром~Паром~Паром~Паром~Паром~Паром~Паром</ru> <!-- sorry but wtf -->
+		<zh-CN>渡船~渡船~渡船</zh-CN>
+		<pt-BR>Barca~uma barca~Barcas~Unidade de Barcas</pt-BR>
+	</Entry>
+</Root>	

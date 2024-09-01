@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>YIELD_GROWTH</zType>
+		<iNegativeHappinessModifier>-5</iNegativeHappinessModifier>
+	</Entry>
+	<Entry>
+		<zType>YIELD_HAPPINESS</zType>
+		<iCityStart>1000</iCityStart>
+	</Entry>
+</Root>

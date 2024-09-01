@@ -1,0 +1,117 @@
+Version history
+[0.2.2.20] Rising Star only gives +1 to all stats (instead of +2),
+            as General only gives +1 Happiness per kill (instead of +5),
+            as Governor only gives +1 Culture and +2 Growth (instead of +1 Culture per Population and +25% Growth);
+           Al Khazneh now gives +20% Money and upgrades all Treasury I to Treasury II where possible and adds Treasury I 
+           to Cities that don't have it, no longer gives Luxuries; 
+           GV nerfed but no longer takes over City producion, and can be assigned at will;
+           Slums keep the -25% Unit training time modifiers for Militia and Worker but now also reduce Growth by -10%;
+           Estates still give their +1VP but only give +2 Culture and -40% Training, and +5 Family Opinion per Luxury sent to City (instead of +1 Culture/-1 Training per Family Opinion Level and +2 Happiness for Luxury sent to City);
+           Colosseum: +40% Training and new Infantry Units start with Tough in City, +2 Happiness in all defended Cities;
+           Heliopolis only gives +0.5 Orders per Acolyte;
+           finally removed old Boat Unit duplicate, might break very old savegames.
+[0.2.2.19] Update for new game version 1.0.73323: UI XML updated, Gendered text format updated, Cohorts still requires Land Consolidation instead of Manor;
+[0.2.2.18] Grand Vizier no longer takes over production, yields reduced.
+[0.2.2.17] Removed a UI XML file that was used for testing and was not meant for release.
+[0.2.2.16] Update for new game version 1.0.72357: UI XML file updated; 
+[0.2.2.15] Update for new game version 1.0.72162: UI XML file updated; 
+           EVENTSTORY_TECH_HYDRAULICS_THE_AUTOMATON reactivated for Competitive Mode (no longer gives a random tech);
+           AI's value for Walls reduced (v1.0.72162 multiplied it by 10, this mod divides it by 5, so it's only 2x the value from before);
+           AI's pseudo-events can still give units (was removed in v1.0.72162);
+           Cults re-enabled for Competitive Mode, most Cult Shrines nerfed: 
+           - Pagan Statue: +2 Culture (from +4)
+           - Cavalry Cult: -20% train time for Mounted Units, +10% train time for Infantry Units (from -50%, +50%)
+           - Amazon Cult: +1 Order (from +2)
+           - Martyr Cult: +12 Money, +2 Culture (from +15, +4)
+           - Dual Cult: +3 Civics (from +5)
+           - Cult of the Angelic Divine: +2 Culture, +1 Science (from +3, +3)
+           - Cult of the Mother: +2 Culture (from +4)
+           - Cult of Isis and Seraphis: +2 Culture, +2 Civics (from +15% Culture, +15% Civics)
+           - Cult of Mithras: +2 Training, -10% train time for Melee Units (from +4, -25%);
+           (No Bonus Techs) reduced number of techs required for cognomen The Enlightened and The Wise, 
+            because the lack of cheap bonus techs makes it significantly harder to hit these limits.
+[0.2.2.14] Update for new game version 1.0.71795: UI XML files updated; 
+           Patrons stay at +1 Happiness Level as Culture upgrade bonus, and don't get and yield modifier % either;
+           Riders Seat no longer gets free Horses (but can still build Horse Units without Horses);
+[0.2.2.13] Fixed Thunder and Silence Event Option 1: Project goes to the right city now;
+           Units with Zealot Leader General heal 2 HP per attack on an adjacent enemy Unit (land to land or water to water), 
+            Enlist Next ability is removed;
+           More Wonders nerfed: Cothon no longer produces Triremes, instead gives a -25% Train time reducting,
+          Colosseum doesn't produce Swordsmen and doesn't give +1 Training in City,
+           instead all new Infantry Units in the City start with Tough, and all Cities get flat +1 Training;
+          Heliopolis gives only +1 Order per Acolyte, instead of per Shrine.
+[0.2.2.12] Update for new game version 1.0.71309: UI XML updated;
+           Artisans keep their Ingenuity for Siege Units, only for Ships this is replaced with -25% Resource Cost;
+           removed Sages-specific early improvement unlocks (Library at Metaphysic & Strong and Academy in Seat with Citizenship and Strong);
+[0.2.2.11] Yazilikaya now requires both Holy City AND adjacent Mountain, not only one of these;
+           from Reduced Range mod: Added missing Spearman buffs (unlocked by Techs).
+            Infantry Square (Pikeman) was lowered 1 tier (cost 1000 instead of 1500) but also requires Manor in addition to Battle Line,
+            Barding no longer requires Battle Line, requires Steel instead (Martial Code requirement remains);
+           Siege unit effects reworked: removed bonus vs Tribal Settlement Improvements from Siege and Assault 
+            (already getting bonus because of Settlement Attack bonus),
+            Assault bonus vs Forts halved to 25% (Siege already gives +50%, and all Assault Units are also Siege);
+           Tactician General full counter ability replacement effect increased to +50% defense vs. Melee (from +20%), 
+		    Sword of the Gods critial immunity ability replacement effect now gives +10% defense (from +5%).
+[0.2.2.10] All Baths give +20 opinion for Patrons (you can only cuild 1 per city with this mod: BiomeBaths)
+[0.2.2.9] AI XML update
+[0.2.2.8] Reduced the Opinion bonus that Clerics get for Holy Cities to +20 (base game value)
+[0.2.2.7] Update for new game version 1.0.70671: UI xml updated;
+          Riders Seat only gets free Horses Resource;
+          Event Look upon my Armies and Despar removed from Competitive Mode;
+          new Bonus Techs disabled;
+          0Harmony.dll removed from mod folder ( 0harmony mod is a dependency now)
+[0.2.2.6] Ferry Unit duplicate removed; 
+          Event Witch Queen removed from Competitive Mode (this is also already on the Test branch)
+[0.2.2.5] Event Hostile Garrison Expel conditions fixed;
+          Event Closing the Deal bonuses fixed.
+[0.2.2.4] Update for new game version 1.0.70360: UI XML updated:
+          Event "Other World" now only triggers if the Leader follows a World Religion, and the event uses this religion
+[0.2.2.3] Collateral damage calcalculation is precise again; Characters get 1 option
+            to increase a stat point (Rating) even before filling out all 3 strength slots again;
+          Reverted changes to Competitive Mode Character yields.
+[0.2.2.2] Discontent generation for The New Difficulty adjusted to be in line with the others (from -2 to -6);
+          Event BETWEEN_US enabled again, since you can no longer gain a free tech from it
+[0.2.2.1] Removed 1 more event for Competitive Mode: A_SCHOLAR_DENOUNCED can give a free random tech with inquisitive
+[0.2.2.0] Updated MinResource Mod
+[0.2.1.9] Proper Regent Cognomen Legitimacy Decay (True Heir only inherits 50% of it now);
+          Persian UUs need melee range for Rout
+[0.2.1.8] More Food Consumption: new Kush UU also eats 2 Food now, 
+          Lighthouse effect on Hamlets halves but it applies to entire Nation again;
+          Food price increase from automatic inflation (price increase even when no one is buying) is greatly reduced.
+[0.2.1.7] Updated for new game version 1.0.69265: Ui xml and MinResource DLL updated.
+[0.2.1.6] Updated for new game version 1.0.68964:
+          New Buy Boastal DLL, Reduced Range components updated (new Nation)
+[0.2.1.5] Updated for new game version 1.0.68045:
+          UI xml change updated, and no longer needs to be an asset. 
+[0.2.1.4] Update for new game version 1.0.67757: UI Asset updated.
+[0.2.1.3] For competitive games, the Event A_QUIET_LIFE was disabled, while the Event FOREIGN_SCHOLAR was re-enabled. (thx NestorLN)
+          Tribal Units Gaesata loses Pierce and Elite Gaesata gets its Pierce strength reduced,
+          Siege & Assault: +30% Attack vs. Tribal Sites, 
+          Orator gets nerfed to +1 Orders per Friendly Family City [from +2] (now identical with base game again)
+          Improvement Classes now all have distinct names: 
+		  - Hamlet Class: Suburbs
+          - Odeon Class: Entertainment Locations
+          - Market Class: Commerce Centers
+          - Library Class: Educational Institutions
+          - Courthouse Class: Goverment Departments
+          - Garrison Class: Military Stations
+          This is now part of base game: [Surrounding a City Site to convert it to a Minor City no longer required Mountain/Volcano Tiles.]
+[0.2.1.2] Surrounding a City Site to convert it to a Minor City no longer required Mountain/Volcano Tiles.
+          Barbs can only pillage Water Improvements starting 30 Turns after they can start raiding,
+           so even on Tribe Level "Raging" no Nets will get pillaged before Turn 50.
+[0.2.1.1] forgot to update MinResources DLL
+[0.2.1.0] Update for new game version 1.0.66959 with new Unity Version 2021.3.24f1: UI Assets updated.
+[0.2.0.5] Update for new game version 1.0.66355: UI Asset updated, 
+          Worker Valid List Mod DLL removed (code is now in Base DLL). 
+[0.2.0.4] Removed Free Tier 1 Techs from Ruins,
+          for Competitive games, most Events that can give a free Tech are disabled,
+          for Competitive games, all Events that can give a free Settler are disabled,
+          most AI Leader Traits now affect their Diplomatic behavior, not just their Archetypes
+[0.2.0.3] fixed UI Asset, Added Discontent Level 0
+[0.2.0.2] Update for new game version 1.0.65965
+          reverted game change from version 1.0.65965: 
+          Patrons keep their +2 Culture from Specialist and don't get Culture from Bullion,
+          likewise Traders keep their +2 Culture from Bullion and don't get Culture from Specialists,
+          Clerics keep their +2 Happiness (had been nerfed to +1)
+[0.2.0.1] fixed tiny bug with MinResource logging
+[0.2] initial release

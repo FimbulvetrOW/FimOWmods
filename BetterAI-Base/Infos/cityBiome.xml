@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType/>
+		<Name/>
+	</Entry>
+	<Entry>
+		<zType>BIOME_COLD</zType>
+		<Name>TEXT_BIOME_COLD</Name>
+	</Entry>
+	<Entry>
+		<zType>BIOME_TEMPERATE</zType>
+		<Name>TEXT_BIOME_TEMPERATE</Name>
+	</Entry>
+	<Entry>
+		<zType>BIOME_HOT</zType>
+		<Name>TEXT_BIOME_HOT</Name>
+	</Entry>
+</Root>

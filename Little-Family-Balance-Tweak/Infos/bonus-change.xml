@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>BONUS_FAMILYCLASS_CLERICS_SEAT</zType>
+		<bFoundReligionCity>0</bFoundReligionCity>
+		<aeTechs></aeTechs>
+		<AddCourtier>
+			<Pair>
+				<First>COURTIER_SOLDIER</First>
+				<Second/>
+			</Pair>
+		</AddCourtier>
+	</Entry>
+	<Entry>
+		<zType>BONUS_FAMILYCLASS_SAGES_SEAT</zType>
+		<bRandomTech>0</bRandomTech>
+	</Entry>
+	<Entry>
+		<zType>BONUS_FAMILYCLASS_TRADERS_SEAT</zType>
+		<AddImprovement>IMPROVEMENT_MARKET_0</AddImprovement>
+	</Entry>
+	<Entry>
+		<zType>BONUS_EFFECTCITY_FAMILYCLASS_PATRONS_SEAT</zType>
+		<iHappinessLevels>1</iHappinessLevels>
+	</Entry>
+</Root>

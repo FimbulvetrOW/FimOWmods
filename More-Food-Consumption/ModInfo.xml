@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>More Food Consumption</displayName>
+  <description>An attempt to make Food relevant, by adding Food consumption to Units and reducing some bonuses to Food Yields.
+
+All starts get +100 food to offset initial demand a bit.
+
+Population consumes 4 Food (and nothing else), no longer tied to Culture Level.
+
+Lighthouse (Wonder): +100% for Nets in City, -5 Development Turns for Hamlet/Village in Nation
+ (from +100% for Nets in Nation, -10 Development Turns for Hamlet/Village in Nation)
+Hunters (Family): +25% to Nets (from +0%), +50% to Camps (from +100%)
+Traders (Family): removed bonus to Nets (from +100%)
+Pathfinder (Governor Trait): +50 to Nets and Camps (from +100%)
+Vassalage (Law): -25% Unit Upkeep, no extra Upkeep outside Borders
+ (from -50% Unit Upkeep, no extra Upkeep outside Borders)
+
+short Unit Upkeep change list: new Upkeep (original* Upkeep values)
+(*: original values, from before patch 1.0.61025 added +2 Food Upkeep to Mounted Units
+ except for Horse Archer and Camel Archer, and +1 Food Upkeep to all others.
+ **: Kush Nation was added afterwards so they always had 1 Food Upkeep)
+Militia: 1 Food (unchanged)
+Conscript: 1 Food (2 Food)
+all Infantry Units: +2 Food (0 Food)
+all Horse Units: 4 Food, +1-3 Iron/Wood (2-4 Food, 0 Iron/Wood)
+all Elephant Units: 5 Food, +1-3 Iron (2-4 Food, 0 Iron)
+Camel Archer: + 1 Wood
+
+Full Unit Upkeep List (with original* Upkeep values)
+Conscript: 1 Food (2 Food)
+Warrior: 1 Iron, 2 Food (1 Iron)
+Axeman: 2 Iron, 2 Food (2 Iron)
+Spearman: 2 Iron, 2 Food (2 Iron)
+Maceman: 1 Training, 3 Iron, 2 Food (1 Training, 3 Iron)
+Swordsman: 2 Training, 4 Iron, 2 Food (2 Training, 4 Iron)
+Pikeman: 1 Training, 3 Iron, 2 Food (1 Training, 3 Iron)
+Slinger: 1 Stone, 2 Food (1 Stone)
+Archer: 2 Wood, 2 Food (2 Wood)
+Longbowman: 1 Training, 3 Wood, 2 Food (1 Training, 3 Wood)
+Crossbowman: 1 Training, 3 Wood, 2 Food (1 Training, 3 Wood)
+Chariot: 1 Iron, 4 Food (2 Food)
+Horseman: 1 Training, 4 Food, 2 Iron (1 Training, 3 Food)
+Cataphract: 2 Training, 4 Food, 4 Iron (2 Training, 4 Food)
+Horse Archer: 1 Training, 4 Food, 2 Wood (1 Training, 3 Food)
+Camel Archer: 1 Training, 3 Food, 1 Wood (1 Training, 3 Food)
+War Elephant: 1 Training, 5 Food, 2 Iron (1 Training, 3 Food)
+Ballista: 1 Training, 3 Iron, 2 Food (1 Training, 3 Iron)
+Polybolos: 2 Training, 4 Iron, 2 Food (2 Training, 4 Iron)
+Onager: 1 Training, 3 Stone, 2 Food (1 Training, 3 Stone)
+Mangonel: 2 Training, 3 Stone, 2 Food (2 Training, 4 Stone)
+Bireme: 2 Wood, 2 Food (2 Wood)
+Trireme: 1 Training, 3 Wood, 2 Food (1 Training, 3 Wood)
+Dromon: 2 Training, 4 Wood, 2 Food (2 Training, 4 Wood)
+Battering Ram: 1 Training, 2 Wood, 2 Food (1 Training, 2 Wood) [Assyria UU1]
+Siege Tower: 2 Training, 4 Wood, 2 Food (1 Training, 2 Wood) [Assyria UU2]
+Akkadian Archer: 1 Training, 2 Wood, 2 Food (1 Training, 2 Wood) [Babylonia UU1]
+Cimmerian Archer: 2 Training, 4 Wood, 2 Food (2 Training, 4 Wood) [Babylonia UU2]
+African Elephant: 1 Training, 5 Food, 2 Iron (1 Training, 2 Food) [Carthage UU1]
+Turreted Elephant: 2 Training, 5 Food, 4 Iron (2 Training, 4 Food) [Carthage UU2]
+Light Chariot: 1 Training, 4 Food, 1 Wood (1 Training, 2 Food) [Egypt UU1]
+Kushite Cavalry: 2 Training, 4 Food, 2 Wood (2 Training, 4 Food) [Egypt UU2]
+Hoplite: 1 Training, 2 Iron, 2 Food (1 Training, 2 Iron) [Greece UU1]
+Phalangite: 2 Training, 4 Iron, 2 Food (2 Training, 4 Iron) [Greece UU2]
+Palton Cavalry: 1 Training, 4 Food, 2 Iron (1 Training, 2 Iron) [Persia UU1]
+Cataphract Archer: 2 Training, 4 Food, 4 Iron (2 Training, 4 Iron) [Persia UU2]
+Hastatus: 1 Training, 2 Iron, 2 Food (1 Training, 2 Iron) [Rome UU1]
+Legionary: 2 Training, 4 Iron, 2 Food (2 Training, 4 Iron) [Rome UU2]
+Heavy Chariot: 1 Training, 4 Food, 2 Iron (1 Training, 2 Food) [Hatti UU1]
+Three Man Chariot: 2 Training, 4 Food, 4 Iron (2 Training, 4 Food) [Hatti UU2]
+Medjay Archer: 1 Training, 2 Wood, 2 Food (1 Training, 2 Wood, 1 Food**) [Kush UU1]
+Beja Archer: 2 Training, 4 Wood, 2 Food (2 Training, 4 Wood, 1 Food**) [Kush UU2]
+
+Side note: Persian UU is still the only ranged unit with Iron upkeep instead of Wood
+</description>
+  <modpicture>More Food Cons.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2126019</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>1.1.3</modversion>
+  <modbuild>1.0.69265</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

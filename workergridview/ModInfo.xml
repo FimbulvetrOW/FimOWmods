@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Worker Grid View</displayName>
+  <description>All worker filters use grid view, not just the All filter.</description>
+  <modpicture />
+  <author>Fimbulvetr</author>
+  <modioID>0</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>0.1</modversion>
+  <modbuild>1.0.71865</modbuild>
+  <tags>UI</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

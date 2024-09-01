@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>Less Scaling Specialist Yields</displayName>
+  <description>Trying to tone down the possibly huge extra Yields per Citizen and per Culture Level that exist for many Specialists.
+
+All Specialists start at Apprentice level, 
+ but discount for higher level Improvements has been increased: 
+ lvl 2: -15 Civics [from -10 Civics], lvl 3: -30 Civics [from -20 Civics].
+
+Specialist Yields [original values]:
+Acolyte unchanged [+2/3/4 Culture, +0/0.5/1 Orders]
+A/M/E Poet: +3/4/5 Culture, +0/1/2 Culture/Citizen [+3/4/5 Culture, +0/0.5/1 Civics/Citizen]
+Officer unchanged [+2/3/4 Training, +0/20/50 XP for new Units]
+A/M/E Monk: +4/6/8 Culture, +0/0.5/1 Civics/Culture level [+4/6/8 Culture, +0/1/2 Civics/Culture level]
+A/M/E Priest: -1/1.5/2 Discontent, +0/1/2 Training [-1/1.5/2 Discontent, +0/1/2 Training/Citizen]
+A/M/E Scribe: unchanged [+2/3/4 Civics, +0/1/2 Money/Citizen]
+A/M/E Shopkeeper: +20/30/40 Money, +0/0.5/1 Growth/Culture level [+20/30/40 Money, +0/1/2 Growth/Culture level]
+A/M/E Philosopher: +2/3/4 Science, +0/1/2 Civics [+2/3/4 Science, +0/1/2 Culture/Citizen]
+A/M/E Doctor: +2/3/4 Growth, +0/1/2 Science [+2/3/4 Growth, +0/1/2 Science/Culture level]
+Bishop unchanged [+0/0.5/1 Orders, +10/15/20 Money/Culture level]
+
+Maximum additional Yields per Citizen from Specialists are now:
+6 Culture (3x Elder Poet)
+6 Money (3x Elder Scribe)
+(in addition to the 0.1 Orders that Citizen always produce)
+</description>
+  <modpicture>SpecialistScaling.png</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>2226891</modioID>
+  <modioFileID>3464115</modioFileID>
+  <modversion>1.1.2</modversion>
+  <modbuild>1.0.65077</modbuild>
+  <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies />
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

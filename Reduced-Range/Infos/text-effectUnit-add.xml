@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>TEXT_EFFECTUNIT_SPEARMAN_DEFENCE1</zType>
+		<en-US>Spearman Guard I</en-US>
+		<es>Lancero Defensa I</es>
+		<de>Speerkämpfer Verteidung I</de>
+		<fr>Lancier Garde I</fr>
+		<ja>槍兵 守衛 I</ja>
+		<zh-TW>長矛兵 防守 一</zh-TW>
+		<ru>Копейщик Стража I</ru>
+		<zh-CN>长矛兵 防守 一</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EFFECTUNIT_SPEARMAN_DEFENCE2</zType>
+		<en-US>Spearman Guard II</en-US>
+		<es>Lancero Defensa II</es>
+		<de>Speerkämpfer Verteidung II</de>
+		<fr>Lancier Garde II</fr>
+		<ja>槍兵 守衛 II</ja>
+		<zh-TW>長矛兵 防守 二</zh-TW>
+		<ru>Копейщик Стража II</ru>
+		<zh-CN>长矛兵 防守 二</zh-CN>
+	</Entry>
+</Root>
+

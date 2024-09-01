@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_HINT_70</zType>
+		<en-US>link(IMPROVEMENTCLASS_SHRINE,2) provide various benefits [MOD] but don't spread paganism.</en-US>
+<!-- 		
+		<es>Los link(IMPROVEMENTCLASS_SHRINE,2) otorgan diversos beneficios y sirven para extender el paganismo.</es>
+		<de>link(IMPROVEMENTCLASS_SHRINE,2) versorgen Euch mit verschiedenen Vorteilen und helfen bei der Verbreitung des Heidentums.</de>
+		<fr>Les link(IMPROVEMENTCLASS_SHRINE,2) offrent plusieurs avantages et peuvent servir à répandre le paganisme.</fr>
+		<ja>link(IMPROVEMENTCLASS_SHRINE,2)にはさまざまなメリットがあり、多神教を広めるのに役立ちます。</ja>
+		<zh-TW>link(IMPROVEMENTCLASS_SHRINE,2)能提供許多好處，也能協助散播異教。</zh-TW>
+		<ru>link(IMPROVEMENTCLASS_SHRINE,6) дают различные бонусы и помогают распространить язычество.</ru>
+		<zh-CN>link(IMPROVEMENTCLASS_SHRINE,2)能提供许多好处，也能协助散播异教。</zh-CN>
+-->
+	</Entry>
+</Root>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_EFFECTCITY_UNIT_FERRY</zType>
+		<en-US>link(UNIT_FERRY) Access</en-US>
+		<es>Acceso de link(UNIT_FERRY,2)</es>
+		<de>link(UNIT_FERRY)-Zugriff</de>
+		<fr>Accès à la link(UNIT_FERRY)</fr>
+		<ja>link(UNIT_FERRY)の通行</ja>
+		<zh-TW>link(UNIT_FERRY)權限</zh-TW>
+		<ru>Доступ к link(UNIT_FERRY,2)</ru>
+		<zh-CN>link(UNIT_FERRY)权限</zh-CN>
+		<pt-BR>Acesso a link(UNIT_FERRY)</pt-BR>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EFFECTCITY_FERRY_SOURCE</zType>
+		<en-US>link(FAMILYCLASS_TRADERS) or link(TECH_LABOR_FORCE)</en-US>
+		<es>link(FAMILYCLASS_TRADERS) o link(TECH_LABOR_FORCE)</es>
+		<de>link(FAMILYCLASS_TRADERS) oder link(TECH_LABOR_FORCE)</de>
+		<fr>link(FAMILYCLASS_TRADERS) ou link(TECH_LABOR_FORCE)</fr>
+		<ja>link(FAMILYCLASS_TRADERS)またはlink(TECH_LABOR_FORCE)</ja>
+		<zh-TW>link(FAMILYCLASS_TRADERS)或link(TECH_LABOR_FORCE)</zh-TW>
+		<ru>link(FAMILYCLASS_TRADERS) или link(TECH_LABOR_FORCE)</ru>
+		<zh-CN>link(FAMILYCLASS_TRADERS)或link(TECH_LABOR_FORCE)</zh-CN>
+		<pt-BR>link(FAMILYCLASS_TRADERS) ou link(TECH_LABOR_FORCE)</pt-BR>
+	</Entry>
+</Root>

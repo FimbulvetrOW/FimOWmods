@@ -1,0 +1,33 @@
+Version history
+[0.6.11] Removed the duplicate Boat unit entry. This will break savegames with Trader Ferry Units.
+[0.6.10] Update for new game version 1.0.71795: Patrons stay at +1 Happiness Level as Culture upgrade bonus, 
+         and don't get and yield modifier % either; Riders Seat no longer gets free Horses (but can still build Horse Units without Horses);
+[0.6.9] Riders Resource import Projects no longer spawn the resource, they just enable the Units,
+         and these projects also have Tech requirements now: Husbandry for Horses, and LAnd Consolidation for Elephants and Camels.
+[0.6.8] Artisans keep their Ingenuity for Siege Units, only for Ships this is replaced with -25% Resource Cost;
+        removed Sages-specific early improvement unlocks (Library at Metaphysic & Strong and Academy in Seat with Citizenship and Strong)
+[0.6.7] Reduced the Opinion bonus that Clerics get for Holy Cities to +20 (base game value)
+[0.6.6] Riders Seat only gets free Horses Resource (1.0.70671 also added Elephants and Camels while removing the ability of the Seat to build the specific Units without the Resource)
+[0.6.5] No changes, just an update required for new game version 1.0.69265
+[0.6.4] No changes, only description was updated.
+[0.6.3] reverted game change from version 1.0.66355: 
+        Statesmen keep their Treasury I City founding bonus
+		Cleric Religion founding Project removed
+		Since all Sages Cities now get Archive I there is no more need for Seat to give Archive I so that bonus was removed
+[0.6.2] reverted game change from version 1.0.65965: 
+        Patrons keep their +2 Culture from Specialist and don't get Culture from Bullion,
+		likewise Traders keep their +2 Culture from Bullion and don't get Culture from Specialists,
+        Clerics keep their +2 Happiness (had been nerfed to +1)
+[0.6.1] The No-Road-Building-Cooldown effect "Surveyor" is now properly removed from Traders again.
+[0.6.0] removed from Clerics "unlock a Project that makes recruiting Court Clerics* possible. ( Court Clerics come with State Religion, but also with the Trait "Cleric" which means they can't work or marry.)"
+		and added ability to rush Projects with Citizens to Clerics Seat instead
+[0.5.2] removed the doubled extra Culture from Buillion for Traders
+[0.5.1] Update for game version 64196: re-added Clergy Trait, which was removed in base game
+[0.5] Early Unlock mechanic added, requires Better AI Base DLL
+[0.4] Court Cleric now uses fields from BetterAI mod, but should still work without (logs should show extra fields but that doesn'T break anything)
+[0.3b] just updated descriptions
+[0.3] Cleric Seats get access to a Project that lets them generate a new type of Courtiers: Clerics (same as family name -_-).
+      Also their -50% Disciple train time now applies to all their Cities, not just the Seat.
+[0.2a] no real changes, just reordered XML tags for Clerics bonus.
+[0.2] Changed Trader Bonuses again. Removed Monasticism from Clerics.
+[0.1] Initial version

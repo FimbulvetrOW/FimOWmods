@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>AI_FAMILY_OPINION_VALUE_PER</zType>
+		<iValue>0</iValue> <!-- (new) default: 0 -->
+	</Entry>
+	<Entry>
+		<zType>AI_GROWTH_CITY_SPECIALIZATION_MODIFIER</zType>
+		<iValue>30</iValue> <!-- (new) default: 30 -->
+	</Entry>
+	<Entry>
+		<zType>AI_CIVICS_CITY_SPECIALIZATION_MODIFIER</zType>
+		<iValue>100</iValue> <!-- (new) default: 100 -->
+	</Entry>
+	<Entry>
+		<zType>AI_TRAINING_CITY_SPECIALIZATION_MODIFIER</zType>
+		<iValue>100</iValue> <!-- (new) default: 100 -->
+	</Entry>
+	<Entry>
+		<zType>AI_EXPANSION_OVERRIDES_ZERO_WAR_CHANCE</zType>
+		<iValue>0</iValue> <!-- (new) default: 0 -->
+	</Entry>
+</Root>

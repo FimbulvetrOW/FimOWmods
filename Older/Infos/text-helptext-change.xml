@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_HELPTEXT_IMPROVEMENT_HELP_FOR_ADJACENT_IMPROVEMENT_CLASS_MODIFIER</zType>
+		<en-US>{0_value} for Adjacent {LIST,2}</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_IMPROVEMENT_HELP_PER_ADJACENT_IMPROVEMENT_CLASS_MODIFIER</zType>
+		<en-US>{0_value} per Adjacent {LIST}</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_SAME_IMPROVEMENT_CLASS</zType>
+		<en-US>Already contains {0_improvement}</en-US>
+	</Entry>
+</Root>

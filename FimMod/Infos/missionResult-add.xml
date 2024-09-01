@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Entry>
+		<zType>MISSIONRESULT_MAKE_GRAND_VIZIER</zType>
+		<Name>TEXT_MISSION_GRAND_VIZIER</Name>
+		<TargetBonus>BONUS_MAKE_GRAND_VIZIER_COST</TargetBonus>
+	</Entry>
+</Root>

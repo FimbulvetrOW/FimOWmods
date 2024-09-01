@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>PROJECT_FOUND_RELIGION</zType>
+		<iCivics>0</iCivics>
+		<bHidden>1</bHidden>
+		<bUnique>1</bUnique>
+		<Bonus></Bonus>
+		<MinimumCulture>CULTURE_DEVELOPING</MinimumCulture>
+		<EffectCityPrereq></EffectCityPrereq>
+	</Entry>
+	<Entry>
+		<zType>PROJECT_IMPORT_HORSE</zType>
+		<Bonus></Bonus>
+		<CityProject>PROJECT_IMPORT_HORSE</CityProject>
+		<EffectCity>EFFECTCITY_PROJECT_IMPORT_HORSE</EffectCity>
+		<TechPrereq>TECH_HUSBANDRY</TechPrereq>
+		<EffectCityPrereq>EFFECTCITY_FAMILYCLASS_RIDERS</EffectCityPrereq>
+	</Entry>
+	<Entry>
+		<zType>PROJECT_IMPORT_ELEPHANT</zType>
+		<Bonus></Bonus>
+		<EffectCity>EFFECTCITY_PROJECT_IMPORT_ELEPHANT</EffectCity>
+		<TechPrereq>TECH_LAND_CONSOLIDATION</TechPrereq>
+		<EffectCityPrereq>EFFECTCITY_FAMILYCLASS_RIDERS</EffectCityPrereq>
+	</Entry>
+	<Entry>
+		<zType>PROJECT_IMPORT_CAMEL</zType>
+		<Bonus></Bonus>
+		<EffectCity>EFFECTCITY_PROJECT_IMPORT_CAMEL</EffectCity>
+		<TechPrereq>TECH_LAND_CONSOLIDATION</TechPrereq>
+		<EffectCityPrereq>EFFECTCITY_FAMILYCLASS_RIDERS</EffectCityPrereq>
+	</Entry>
+</Root>

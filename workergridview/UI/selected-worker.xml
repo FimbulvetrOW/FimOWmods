@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+	<VGroup OBJECT_NAME="selected-worker.xml" STYLE="SelectionPanelContainerScroll" Width="420" ForceInactive="{{UI-IsVideoCapture}}" 
+			State="{{ActiveSelection}}" StateType="WORKER" StateToggleMode="StateToggleModeType.Visibility" IsActive="true">
+		<UIRect FlexWidth="1" FlexHeight="1">
+			<template TEMPLATE="ScrollRect" STYLE="SelectionPanelScrollRect" IsVisible="{{SelectedPanel-Worker-IsActive}}" IsActive="{{SelectedPanel-WorkerActionPanel-IsActive}}">
+				<VGroup ASSIGN_TO_PARENT="UIScrollRect:Content" STYLE="SelectionPanelScrollRectContent"  Padding="16,4,4,6">
+					<UIImage IgnoreLayout="true" Anchor="UIAnchor.StretchAll" BackgroundImage="Trim5" BackgroundImageMode="Sliced" />
+
+					<UIGrid IsActive="true"
+							Constraint="Column" ConstraintCount="6" CellSize="65,65" Spacing="3,3" TOOLTIP_LOCATION="TooltipLocation.Right">
+						<loop start="0" end="{{SelectedPanel-NumWorkerButtons}}" placeholder="@">
+							<template
+								TEMPLATE="SelectedUnit-ImprovementButton"
+								Anchor="UIAnchor.StretchAll"
+								IconText.Label="{{SelectedPanel-WorkerButton@-Time}}"
+								Icon.BackgroundImage="{{SelectedPanel-WorkerButton@-Icon}}"
+								Icon.BackgroundColor="{{SelectedPanel-WorkerButton@-Icon-Color}}"
+								Icon.PreserveAspect="true"
+							
+								Recommended.IsActive="{{SelectedPanel-WorkerButton@-IsRecommended}}"
+								IsInteractable="{{SelectedPanel-WorkerButton@-IsInteractable}}"
+								IsActive="{{SelectedPanel-WorkerButton@-IsActive}}"
+								ImprovementType="{{SelectedPanel-WorkerButton@-ImprovementType}}"
+								ITEM_TYPE="{{SelectedPanel-WorkerButton@-ItemType}}"
+								ITEM_DATA="{{SelectedPanel-WorkerButton@-Data}}"
+								TOOLTIP_LOCATION="TooltipLocation.Parent"
+								TooltipOffset="12,0"/>
+						</loop>						
+					</UIGrid>
+
+					<template TEMPLATE="CategoryToggle" IsActive="{{SelectedPanel-WorkerActions-IsActive}}" TitleLabel.Label="TEXT_SELECTED_CHARACTER_ACTIONS">
+						<VGroup ASSIGN_TO_PARENT="UIContentToggle:Content">
+							<!--Road Button-->
+							<template
+								TEMPLATE="SelectedUnit-ActionButton"
+								Height="54" FlexHeight="0" FlexWidth="1"
+								Text.Label="{{SelectedPanel-RoadButton-Label}}"
+								Label-BL.IsActive="false"
+								IconText.Label="{{SelectedPanel-RoadButton-Time}}"
+								Label-R.Label="{{SelectedPanel-RoadButton-Cost}}"
+								Icon.BackgroundImage="ADD_ROAD"
+								Icon.IsActive="{{SelectedPanel-RoadButton-IconIsActive}}"
+								Icon.PreserveAspect="true"
+								Help.IsActive="false"
+								Recommended.IsActive="false"
+								State="{{SelectedPanel-RoadButton-State}}"
+								IsInteractable="{{SelectedPanel-RoadButton-IsInteractable}}"
+								IsActive="{{SelectedPanel-RoadButton-IsActive}}"
+								ITEM_TYPE="{{SelectedPanel-RoadButton-ItemType}}"
+								ITEM_DATA="{{SelectedPanel-RoadButton-Data}}"
+								TooltipOffset="12,0"/>
+
+							<loop start="0" end="{{SelectedPanel-Buttons-Count}}" placeholder="@">
+								<template
+									TEMPLATE="SelectedUnit-ActionButton"
+									Height="54" FlexHeight="0" FlexWidth="1"
+									Text.Label="{{SelectedPanel-Button@-Label}}"
+									Text.IconScale="1.4"
+									IconBG.BackgroundImage="ActionButton"
+									Label-BR.Label="{{SelectedPanel-Button@-Time}}"
+									Label-BR.IsActive="{{SelectedPanel-Button@-Time-IsActive}}"
+									Label-BL.Label="{{SelectedPanel-Button@-Cost}}"
+									Label-BL.IsActive="{{SelectedPanel-Button@-Cost-IsActive}}"
+									Icon.BackgroundImage="{{SelectedPanel-Button@-Icon}}"
+									Icon.BackgroundColor="{{SelectedPanel-Button@-Icon-Color}}"
+									Icon.IsActive="{{SelectedPanel-Button@-IconIsActive}}"
+									Icon.PreserveAspect="true"
+									Icon.State="{{SelectedPanel-Button@-State}}"
+									Help.IsActive="{{SelectedPanel-Button@-Help-IsActive}}"
+									Help.ITEM_DATA="{{SelectedPanel-Button@-Help-Data}}"
+									IsInteractable="{{SelectedPanel-Button@-IsInteractable}}"
+									State="{{SelectedPanel-Button@-State}}"
+									IsActive="{{SelectedPanel-Button@-IsActive}}"
+									ITEM_TYPE="{{SelectedPanel-Button@-ItemType}}"
+									ITEM_DATA="{{SelectedPanel-Button@-Data}}"
+									TooltipOffset="12,0"/>
+							</loop>
+
+							<!-- Upgrade -->
+							<template
+								TEMPLATE="SelectedUnit-ContextButton"
+								IsActive="{{SelectedPanel-UpgradeButtons-IsActive}}"
+								IsInteractable="{{SelectedPanel-UpgradeButtons-IsInteractable}}"
+								Text.Label="TEXT_SELECTED_UNIT_UPGRADE"
+								Label-BL.IsActive="False" Label-BR.IsActive="False"
+								Icon.BackgroundImage="UNIT_UPGRADE">
+								<template TEMPLATE="SelectedUnit-ContextMenu" CellSize="250,54">
+									<loop start="0" end="{{SelectedPanel-UpgradeButtons-Count}}" placeholder="@">
+										<template
+											TEMPLATE="SelectedUnit-UpgradeButton"
+											Text.Label="{{SelectedPanel-UpgradeButton@-Label}}"
+											Icon.BackgroundImage="{{SelectedPanel-UpgradeButton@-Icon}}"
+											IsInteractable="{{SelectedPanel-UpgradeButton@-IsInteractable}}"
+											IsActive="{{SelectedPanel-UpgradeButton@-IsActive}}"
+											ITEM_TYPE="{{SelectedPanel-UpgradeButton@-ItemType}}"
+											ITEM_DATA="{{SelectedPanel-UpgradeButton@-Data}}" />
+									</loop>
+								</template>
+							</template>
+						</VGroup>
+					</template>
+
+					<UIImage IgnoreLayout="true" Position="0,23" Anchor="UIAnchor.TopCenter" Pivot="UIPivot.TopCenter" Width="80" Height="35" BackgroundImage="WorkerWidgetDetail"/>
+				</VGroup>
+			</template>
+		</UIRect>
+		
+		<UIImage BackgroundImage="TrimTopper" BackgroundImageMode="Sliced" FlexWidth="1" Height="11" ForceInactive="{{SelectedPanel-WorkerActionPanel-IsActive}}">
+			<UIImage Anchor="UIAnchor.TopCenter" Pivot="UIPivot.BottomCenter" Position="0,-10" Width="80" Height="35" BackgroundImage="WorkerWidgetDetail" PreserveAspect="true"/>
+		</UIImage>
+
+		<!-- Secondary Actions-->
+		<template TEMPLATE="BasicUnitActionPanel" IsActive="{{SelectedPanel-SecondaryButtons-IsActive}}" PaddingBottom="0"/>
+
+		<!-- Worker Filter Buttons -->
+		<HGroup BackgroundImage="Trim12" Width="100%"  BackgroundImageMode="Sliced" Padding="0,2,2,2" ChildAlignment="TextAnchor.MiddleCenter" IsVisible="{{SelectedPanel-WorkerFilters-IsActive}}" Spacing="8" IsLayoutIgnoredWhenInvisible="true" BatchCanvas="true">
+			<UIText STYLE="Trajan" FontSize="12" Width="68" Height="38" Label="TEXT_WORKER_FILTERS_LABEL" FontColor="#a8a391" Alignment="Midline" WordWrapping="false"/>
+			<loop start="0" end="{{SelectedPanel-WorkerFilters-Count}}" placeholder="@">
+				<UIImage Width="4" Height="42" BackgroundImage="top-bar-divider-left"/>
+				<UIButton Width="25" Height="25" IsInteractable="{{SelectedPanel-WorkerFilters-Button@-IsInteractable}}" NormalImage="{{SelectedPanel-WorkerFilters-Button@-NormalImage}}" HighlightedImage="{{SelectedPanel-WorkerFilters-Button@-HighlightedImage}}" ITEM_TYPE="{{SelectedPanel-WorkerFilters-Button@-ItemType}}" ITEM_DATA="{{SelectedPanel-WorkerFilters-Button@-Data}}"/>
+			</loop>
+		</HGroup>
+		
+		<!-- Promotions -->
+		<template TEMPLATE="SelectedUnitPromotions" OBJECT_NAME="Promotions"/>
+
+		<!-- Selected Portrait -->
+		<template TEMPLATE="SelectedUnitFrame" OBJECT_NAME="SelectedWorker"/>
+	</VGroup>
+</Root>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>BONUS_FAMILYCLASS_TRADERS</zType>
+		<aiGlobalYields>
+			<Pair>
+				<zIndex>YIELD_MONEY</zIndex>
+				<iValue>400</iValue>
+			</Pair>
+		</aiGlobalYields>
+	</Entry>
+	<Entry>
+		<zType>BONUS_GIVE_TRAIT_CLERGY</zType>
+		<aeAddTraits>
+			<zValue>TRAIT_CLERGY</zValue>
+		</aeAddTraits>
+	</Entry>
+	<Entry>
+		<zType>BONUS_FAMILYCLASS_STATESMEN</zType>
+		<aeAddProjects>
+			<zValue>PROJECT_TREASURY_1</zValue>
+		</aeAddProjects>
+	</Entry>
+</Root>

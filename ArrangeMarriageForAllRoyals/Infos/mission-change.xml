@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>MISSION_PLAYER_MARRIAGE</zType>
+		<aeSubjectCharacterOn>
+			<zValue>SUBJECT_ROYAL_US</zValue>
+		</aeSubjectCharacterOn>
+	</Entry>
+	<Entry>
+		<zType>MISSION_TRIBE_MARRIAGE</zType>
+		<aeSubjectCharacterOn>
+			<zValue>SUBJECT_ROYAL_US</zValue>
+		</aeSubjectCharacterOn>
+	</Entry>
+	<Entry>
+		<zType>MISSION_FAMILY_MARRIAGE</zType>
+		<aeSubjectCharacterOn>
+			<zValue>SUBJECT_ROYAL_US</zValue>
+		</aeSubjectCharacterOn>
+	</Entry>
+	<Entry>
+		<zType>MISSION_MARRY_COURTIER</zType>
+		<aeSubjectCharacterOn>
+			<zValue>SUBJECT_ROYAL_US</zValue>
+		</aeSubjectCharacterOn>
+	</Entry>
+</Root>

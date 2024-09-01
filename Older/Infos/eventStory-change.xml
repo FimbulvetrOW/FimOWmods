@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>   <!-- Fix -->
+		<zType>EVENTSTORY_OTHER_WORLD</zType>
+		<SubjectExtras>
+			<Pair>
+				<First>0</First>
+				<Second>SUBJECT_TRIBE_NO_RELIGION</Second>
+			</Pair>
+			<Pair>
+				<First>2</First>
+				<Second>SUBJECT_CHARACTER_RELIGION</Second>
+			</Pair>
+			<Pair>
+				<First>2</First>
+				<Second>SUBJECT_ADULT</Second>
+			</Pair>
+			<Pair>
+				<First>0</First>
+				<Second>SUBJECT_TRIBE_GAULS</Second>
+			</Pair>
+			<Pair>
+				<First>3</First>
+				<Second>SUBJECT_RELIGION_LEADER</Second>
+			</Pair>
+		</SubjectExtras>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_CLOSING_THE_DEAL</zType>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CUNNING</zValue>
+			<zValue/>
+			<zValue/>   <!-- Fix -->
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_HOSTILE_GARRISON_EXPEL</zType>
+		<SubjectExtras></SubjectExtras>
+	</Entry>
+	<Entry>   <!-- Reduced Range -->
+		<zType>EVENTSTORY_TUTORIAL_SPEARMAN_SELECTED</zType>
+		<zVideoAsset>ASSET_TUTORIAL_MOVIE_AXEMAN</zVideoAsset>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_PLAYER_WAR_OFFER_ENEMY_TRAIT_HERO_FURIOUS</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_PLAYER_WAR_OFFER_ENEMY_TRAIT_ZEALOT_FURIOUS</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_PLAYER_WAR_OFFER_ENEMY_TRAIT_TACTICIAN_FURIOUS</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_PLAYER_WAR_OFFER_ENEMY_TRAIT_COMMANDER_FURIOUS</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_TRIBAL_HERO</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_YOUNG_RULER_COUP</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_YOUNG_RULER_SUCCESSOR_FACTION</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_THE_ERUPTION</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_THE_FLOOD</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_SLAVE_REVOLT_1_EUNUS</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_SLAVE_REVOLT_1_SPARTICUS</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_SLAVE_REVOLT_1_SALVIUS</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_TRAIT_KIDNAPPED_CONSORT</zType>
+		<MinDifficulty>DIFFICULTY_GOOD</MinDifficulty>
+	</Entry>
+	<Entry>   <!-- Re-enabling Shrine events for Competitive -->
+		<zType>EVENTSTORY_BONES_OF_THE_MARTYR</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_THE_FALLEN_GODDESS</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_HERO_CULT</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_SHIELDS_UNDER_THE_STARS</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_THE_ANGELIC_DIVINE</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_FOR_VICTORY</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_ARISTOCRATIC_CULT</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_CAVALRY_CULT</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_ECSTATIC_CULT</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_ELEUSIAN_MYSTERIES</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RETURNING_TO_THE_MYSTERIES</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_ISIS_AND_SERAPIS</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_THE_CULT_OF_MITHRAS</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_RITUAL_IN_THE_DARK</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_WANDERING_GODS</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_SHRINE_OF_THE_HEALING_GOD</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+</Root>

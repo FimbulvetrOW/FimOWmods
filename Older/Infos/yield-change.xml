@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>YIELD_GROWTH</zType>
+		<iNegativeHappinessModifier>-5</iNegativeHappinessModifier>
+	</Entry>
+	<Entry>
+		<zType>YIELD_HAPPINESS</zType>
+		<iCityStart>1000</iCityStart>
+	</Entry>
+	<Entry>   <!-- More Food Consumption -->
+		<zType>YIELD_FOOD</zType>
+		<iDemand>200</iDemand>
+	</Entry>
+</Root>

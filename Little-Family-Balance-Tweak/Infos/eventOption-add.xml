@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2019 rel. 3 sp1 (x64) (http://www.altova.com) by Leyla Johnson (Private) -->
+<Root>
+	<Entry>
+		<zType>EVENTOPTION_NEW_COURTIER_CLERGY</zType>
+		<Text>TEXT_EVENTOPTION_NEW_COURTIER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CLERGY</zValue>
+			<zValue>BONUS_EVENTOPTION_CONVERT_S0</zValue>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_NEW_COURTIER_CLERGY_NO_STATE</zType>
+		<Text>TEXT_EVENTOPTION_NEW_COURTIER</Text>
+		<aeBonuses>
+			<zValue>BONUS_GIVE_TRAIT_CLERGY</zValue>
+			<zValue/>
+		</aeBonuses>
+	</Entry>
+</Root>

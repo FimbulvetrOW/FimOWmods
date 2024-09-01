@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"?>
+<Root>
+	<using namespace="UnityEngine" prefix ="UnityEngine."/>
+	<using namespace="UnityEngine.UI" prefix ="UnityEngine.UI."/>
+	<using namespace="Assembly-CSharp" prefix ="Mohawk.UISystem."/>
+	<using namespace="Assembly-CSharp" prefix =""/>
+
+	<WorldSpaceUI TEMPLATE_TYPE="SpecialistWidget" Position="X{{SpecialistWidget$-WorldPosition}}" Offset="0,2,1" ScreenOffset="0, 0, -3" Scale=".3" LAYER_ID="WorldUI">
+		<Curve ASSET_TYPE="Prefabs/Misc/CityScaleCurve" ASSIGN_TO_PARENT="WorldSpaceUI:ScaleCurve"/>
+		<TileWidget OBJECT_NAME="SpecialistWidget" IsVisible="X{{SpecialistWidget$-IsVisible}}" IsActive="{{SpecialistWidget$-IsActive}}" SortOrder="0" Spacing="1" 
+				State="{{SpecialistWidget$-IsEmpty}}True" StateAttributes="[True_Width:30][True_Height:30][False_Width:60][False_Height:60]">
+			<UIImage OBJECT_NAME="SpecialistWidgetRecommended" BackgroundImage="Sprites/GuitarPickDown" BackgroundImageMaterial="UI/Materials/WorldImage" Width="40" Height="40" PreserveAspect="true"
+					 Pivot="UIPivot.BottomCenter" Anchor="UIAnchor.TopCenter" ITEM_TYPE="ItemType.RECOMMENDED" TOOLTIP_LOCATION="TooltipLocation.Mouse" IsActive="{{SpecialistWidget$-IsRecommended}}"/>
+
+			<UIRect>
+				<UIRaycastTarget Width="60" Height="60" State="{{SpecialistWidget$-IsEmpty}}" StateType="False" ITEM_TYPE="{{SpecialistWidget$-CurrentItemType}}" ITEM_DATA="{{SpecialistWidget$-CurrentData}}" TOOLTIP_LOCATION="TooltipLocation.Mouse">
+					<UIMask PreserveAspect="true" BackgroundImageMaterial="UI/Materials/WorldButton" Width="48" Height="48" State="{{SpecialistWidget$-ShowRadialProgress}}" StateAttributes="[True_BackgroundImage:Sprites/HUD_Atlas/Circle-Mask][False_BackgroundImage:SQUARE]">
+						<UIImage OBJECT_NAME="BG" BackgroundImage="queue_unit" Width="48" Height="48" PreserveAspect="true" BackgroundImageMaterial="UI/Materials/WorldButton" IsActive="{{SpecialistWidget$-ShowBG}}"/>
+						<UIImage OBJECT_NAME="Highlight" BackgroundImage="Sprites/HUD_Atlas/Circle-Mask" Width="52" Height="52" BackgroundColor="#ffffffaa" IsActive="{{SpecialistWidget$-IsHighlightActive}}" BackgroundImageMaterial="UI/Materials/WorldImage"/>
+						<UIImage OBJECT_NAME="Icon" IsActive="{{SpecialistWidget$-ShowSpecialistIcon}}" Position="0,3" BackgroundImage="{{SpecialistWidget$-Specialist-Icon}}" PreserveAspect="true" Width="45" Height="45" BackgroundImageMaterial="UI/Materials/WorldImage"/>
+					</UIMask>
+					<UIImage State="{{SpecialistWidget$-ShowRadialProgress}}" StateType="False" Anchor="UIAnchor.StretchAll" BackgroundImage="specialist-border-trim" ForceInactive="{{SpecialistWidget$-IsEmpty}}"/>
+					<UIProgressBar State="{{SpecialistWidget$-ShowRadialProgress}}" StateType="True" Anchor="UIAnchor.StretchAll" Outline="1,1" OutlineColor="#000000" BackgroundSprite="Sprites/City-Circle" BackgroundColor="#000000"
+								   UnfilledColor="#2f2a2a" FillBackgroundSprite="Sprites/City-Circle" FillMethod="Radial360" FillAmounts="{{SpecialistWidget$-Production-FillAmounts}}" FillColors="{{SpecialistWidget$-Production-FillColors}}" BackgroundImageMaterial="UI/Materials/WorldButton"/>
+					<UIText IsActive="{{SpecialistWidget$-ShowRadialProgress}}" STYLE="AvalonWorldUI" Label="{{SpecialistWidget$-TurnsLeft}}" Anchor="UIAnchor.StretchAll" TextMargin="0,0,6,0" FontSize="15" Alignment="Bottom"/>
+				</UIRaycastTarget>
+
+				<UIGrid Anchor="UIAnchor.MiddleLeft" Pivot="UIPivot.MiddleRight" Width="24" Height="60" Position="-1,0" IsActive="{{SpecialistWidget$-HasUpgradeLevels}}" ForceInactive="{{SpecialistWidget$-IsEmpty}}"
+						Constraint="Column" ConstraintCount="1" CellSize="10,10" StartCorner="LowerRight" Padding="1,1,1,1" ChildAlignment="TextAnchor.LowerRight" BackgroundImage="hud_panel_0_all_noutline"
+						BackgroundImageMode="Sliced" BackgroundImageMaterial="UI/Materials/UIWorldBlur" HorizontalFit="PreferredSize" VerticalFit="PreferredSize">
+					<UIImage IgnoreLayout="true" BackgroundImage="hud_panel_0_all" BackgroundImageMode="Sliced" Anchor="UIAnchor.StretchAll" BackgroundImageMaterial="UI/Materials/WorldImage"/>
+					<loop start="1" end="{{SpecialistWidget$-MaxLevel}}" placeholder="@">
+						<UIRect>
+							<UIImage State="{{SpecialistWidget$-Level@-State}}" StateAttributes="[empty_BackgroundColor:#88888888][queued_BackgroundColor:#1d5d5c][active_BackgroundColor:#00FFDD]" BackgroundImageMaterial="UI/Materials/WorldImage" Inset="1,1,1,1"/>
+						</UIRect>
+					</loop>
+
+					<UIButton OBJECT_NAME="Add" AllowNavigationSelection="false" IgnoreLayout="true" Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.TopCenter" Position="0,-1" Width="20" Height="20" TOOLTIP_LOCATION="TooltipLocation.Mouse"
+							  NormalImage="specialist_border" HighlightedImage="specialist-border-glow" DisabledImage="specialist_border" DisabledColor="#777777ff" PreserveAspect="true" BackgroundImageMaterial="UI/Materials/WorldImage"
+							  ITEM_TYPE="{{SpecialistWidget$-BuildItemType}}" ITEM_DATA="{{SpecialistWidget$-BuildData}}" IsActive="{{SpecialistWidget$-CanUpgrade}}" ForceInactive="{{SelectedPanel-City-HideSpecialistButtons}}" IsInteractable="{{SpecialistWidget$-Interactable}}"/>
+				</UIGrid>
+			</UIRect>
+
+			<UIButton OBJECT_NAME="Add" AllowNavigationSelection="false" IsActive="{{SpecialistWidget$-IsEmpty}}" NormalImage="specialist_border" HighlightedImage="specialist-border-glow" DisabledImage="specialist_border" DisabledColor="#777777ff" PreserveAspect="true" Width="30" Height="30" ForceInactive="{{SelectedPanel-City-HideSpecialistButtons}}"
+					  BackgroundImageMaterial="UI/Materials/WorldImage" IsInteractable="{{SpecialistWidget$-Interactable}}" ITEM_TYPE="{{SpecialistWidget$-BuildItemType}}" ITEM_DATA="{{SpecialistWidget$-BuildData}}" TOOLTIP_LOCATION="TooltipLocation.Mouse"/>
+			
+			<VGroup Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.TopCenter" Position="0,5" Spacing="1" HorizontalFit="PreferredSize" VerticalFit="PreferredSize" TOOLTIP_LOCATION="TooltipLocation.Right">
+				<loop start="0" end="{{SpecialistWidget$-NumYields}}" placeholder="@">
+					<TileWidgetText Height="17" IsVisible="{{SpecialistWidget$-Yield@-IsVisible}}" ITEM_TYPE="{{SpecialistWidget$-Yield@-ItemType}}" ITEM_DATA="{{SpecialistWidget$-Yield@-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent"
+								Rotation="0,0,0" RaycastTarget="{{SpecialistWidget$-Yield@-IsInteractable}}" State="{{SpecialistWidget$-Yield@-IsUnitPromotionsOrTitle}}" StateAttributes="[True_Width:95][Default_Width:60]">
+						<WorldImage OBJECT_NAME="WorldYieldBG" ASSIGN_TO_PARENT="TileWidgetText:BG" BackgroundImage="WorldYieldBG" BackgroundImageMaterial="UI/Materials/WorldImage"
+								Rotation="0,0,0" IsVisible="{{SpecialistWidget$-IsVisible}}" State="{{SpecialistWidget$-Yield@-IsUnitPromotionsOrTitle}}" StateAttributes="[True_Scale:120,80][Default_Scale:75,80]" SortOrder="0"/>
+						<WorldText OBJECT_NAME="WorldYieldText" ASSIGN_TO_PARENT="TileWidgetText:Text" STYLE="AvalonWorldUI" FontColor="#e3c08c" Height="25" WordWrapping="false" Alignment="Midline" Label="{{SpecialistWidget$-Yield@-Label}}"
+								State="{{SpecialistWidget$-Yield@-IsUnitPromotionsOrTitle}}" StateAttributes="[Default_FontSize:120][True_FontSize:100]" IsVisible="{{SpecialistWidget$-IsVisible}}" SortOrder="1"/>
+					</TileWidgetText>
+				</loop>
+			</VGroup>
+		</TileWidget>
+	</WorldSpaceUI>
+</Root>

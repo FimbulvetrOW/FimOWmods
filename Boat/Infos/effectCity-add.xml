@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTCITY_UNIT_FERRY</zType>
+		<Name>TEXT_EFFECTCITY_UNIT_FERRY</Name>
+		<Source>TEXT_EFFECTCITY_FERRY_SOURCE</Source>
+		<bSingle>1</bSingle>
+	</Entry>
+</Root>

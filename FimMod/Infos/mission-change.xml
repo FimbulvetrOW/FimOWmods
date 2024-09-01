@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>MISSION_CHOSEN_HEIR</zType>
+		<bDisabled>0</bDisabled> <!-- the AI overused this. It on again for now -->
+	</Entry>
+	<Entry>
+		<zType>MISSION_PLAYER_PLAYER_WAR</zType>
+		<bDisabled>1</bDisabled> <!-- too strong, not enough limitations -->
+	</Entry>
+</Root>

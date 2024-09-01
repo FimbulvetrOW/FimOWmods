@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EVENTOPTION_CLOSING_THE_DEAL_OPTION_0</zType>
+		<Text>TEXT_EVENTOPTION_CLOSING_THE_DEAL_OPTION_0</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue>BONUS_TRIBUTE_RECEIVE_SCIENCE_SMALL</zValue>
+			<zValue/>   <!-- Fix -->
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CLOSING_THE_DEAL_OPTION_1</zType>
+		<Text>TEXT_EVENTOPTION_CLOSING_THE_DEAL_OPTION_1</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue>BONUS_TRIBUTE_RECEIVE_CIVICS_SMALL</zValue>
+			<zValue/>   <!-- Fix -->
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CLOSING_THE_DEAL_OPTION_2</zType>
+		<Text>TEXT_EVENTOPTION_CLOSING_THE_DEAL_OPTION_2</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue>BONUS_TRIBUTE_RECEIVE_TRAINING_SMALL</zValue>
+			<zValue/>   <!-- Fix -->
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_CLOSING_THE_DEAL_OPTION_3</zType>
+		<Text>TEXT_EVENTOPTION_CLOSING_THE_DEAL_OPTION_3</Text>
+		<aeBonuses>
+			<zValue/>
+			<zValue>BONUS_LEADER_OWES_FAVOR_TO</zValue>
+			<zValue/>   <!-- Fix -->
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_THUNDER_AND_SILENCE_0</zType>
+		<Text>TEXT_EVENTOPTION_THUNDER_AND_SILENCE_0</Text>
+		<aeBonuses>
+			<zValue>BONUS_WOOD_LOSS_HUGE</zValue>
+			<zValue></zValue>   <!-- Fix -->
+			<zValue/>
+			<zValue>BONUS_CRUEL_SUMMER_COMMON_INTERESTS</zValue>
+			<zValue>BONUS_ANTICAVALRY_TACTICS</zValue>
+			<zValue/>
+		</aeBonuses>
+	</Entry>
+	<Entry>
+		<zType>EVENTOPTION_EXPLORING_ENDS</zType>
+		<aiEventOptionProb>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_MONEY</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_SCIENCE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_LEGITIMACY</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_ORDERS</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_GREAT_SOLDIER</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_BRAVE</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_BLESSED</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_ZEALOT</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_EXPLORATION</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+<!-- removed because too powerful
+			<Pair> 
+				<zIndex>EVENTOPTION_EXPLORING_ENDS_FOUND_RELIGION</zIndex>
+				<iValue>1000</iValue>
+			</Pair>
+-->
+		</aiEventOptionProb>
+	</Entry>
+</Root>

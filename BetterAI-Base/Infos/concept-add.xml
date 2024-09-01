@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>CONCEPT_CITY_BIOME</zType>
+		<GenderedName>GENDERED_TEXT_CONCEPT_CITY_BIOME</GenderedName>
+		<zHelpText>TEXT_HELPTEXT_LINK_HELP_CITY_BIOME</zHelpText>
+	</Entry>
+	<Entry>
+		<zType>CONCEPT_HEAL_ATTACK</zType>
+		<GenderedName>GENDERED_TEXT_CONCEPT_HEAL_ATTACK</GenderedName>
+		<zHelpText>TEXT_HELPTEXT_LINK_HELP_HEAL_ATTACK</zHelpText>
+	</Entry>
+
+	<Entry>
+		<zType>CONCEPT_HURT_ATTACK</zType>
+		<GenderedName>GENDERED_TEXT_CONCEPT_HURT_ATTACK</GenderedName>
+		<zHelpText>TEXT_HELPTEXT_LINK_HELP_HURT_ATTACK</zHelpText>
+	</Entry>
+</Root>

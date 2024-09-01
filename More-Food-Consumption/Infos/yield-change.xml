@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>   <!-- this should keep prices more stable -->
+		<zType>YIELD_FOOD</zType>
+		<iDemand>200</iDemand>
+	</Entry>
+<!-- 	
+	<Entry>
+		<zType>YIELD_FOOD</zType>
+		<iDemand>800</iDemand>
+	</Entry>
+	<Entry>
+		<zType>YIELD_IRON</zType>
+		<iDemand>600</iDemand>
+	</Entry>
+	<Entry>
+		<zType>YIELD_STONE</zType>
+		<iDemand>400</iDemand>
+	</Entry>
+	<Entry>
+		<zType>YIELD_WOOD</zType>
+		<iDemand>200</iDemand>
+	</Entry>
+-->
+</Root>

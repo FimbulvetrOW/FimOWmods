@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_PAGAN_SHRINE</zType>
+		<en-US>[MOD] You are in luck, one of your active mods prevents Pagan Religions from being founded, so you don't have to worry about them. Without that mod, link(CONCEPT_PAGAN_RELIGION,2) would be founded by building your first link(CONCEPT_SHRINE), and they'd spread by building more link(CONCEPT_SHRINE,2). They have no link(CONCEPT_DISCIPLE,2), link(CONCEPT_THEOLOGY,2), or access to special Religious link(CONCEPT_IMPROVEMENT,2), so they basically useless, but improving the Religion's link(CONCEPT_OPINION_RELIGION,3) will reduce link(YIELD_DISCONTENT) in Cities with the link(CONCEPT_RELIGION).
+
+A Nation's Pagan Religion can be adopted as a link(CONCEPT_STATE_RELIGION) and if you enact link(LAW_DIVINE_RULE) - it needs to be founded first, of course. Which won't happen as long as the No Paganism mod is active. </en-US>
+<!-- 
+		<es>Las link(CONCEPT_PAGAN_RELIGION,2) se fundan construyendo tu primer link(CONCEPT_SHRINE) y se difunden construyendo más link(CONCEPT_SHRINE,2). No tienen link(CONCEPT_DISCIPLE,2), link(CONCEPT_THEOLOGY,2) o acceso a link(CONCEPT_IMPROVEMENT,2) religiosos especiales, pero mejorar la link(CONCEPT_OPINION_RELIGION,3) de esta religión reducirá el link(YIELD_DISCONTENT) en las ciudades que la profesen.
+
+Se puede adoptar el paganismo como link(CONCEPT_STATE_RELIGION) si apruebas el link(LAW_DIVINE_RULE).</es>
+		<de>Sobald Ihr Euren ersten link(CONCEPT_SHRINE) baut, gründet Ihr eine link(CONCEPT_PAGAN_RELIGION) und mit jedem weiteren link(CONCEPT_SHRINE) verbreitet Ihr sie. Diese Religionen haben keine link(CONCEPT_DISCIPLE,2), keine link(CONCEPT_THEOLOGY,2) und keinen Zugang zu besonderen religiösen link(CONCEPT_IMPROVEMENT,2). Wie bei anderen Religionen könnt Ihr jedoch Euer link(CONCEPT_OPINION_RELIGION,3) bei dieser Religion verbessern, um die link(YIELD_DISCONTENT) in Städten mit dieser link(CONCEPT_RELIGION) zu senken.
+
+Ihr könnt das Heidentum als link(CONCEPT_STATE_RELIGION) ausrufen, wenn Ihr das Gesetz „link(LAW_DIVINE_RULE)“ verabschiedet.</de>
+		<fr>Les link(CONCEPT_PAGAN_RELIGION,2) se fondent lorsque vous construisez votre premier link(CONCEPT_SHRINE), et se diffusent avec la construction de nouveaux link(CONCEPT_SHRINE,2). Elles n'ont pas de link(CONCEPT_DISCIPLE,2), de link(CONCEPT_THEOLOGY,2) et ne donnent pas accès à des link(CONCEPT_IMPROVEMENT,2) religieuses spéciales, mais améliorer l'link(CONCEPT_OPINION_RELIGION,3) sur la religion permet de diminuer le link(YIELD_DISCONTENT) dans les villes liées à cette link(CONCEPT_RELIGION).
+
+Le paganisme peut devenir la link(CONCEPT_STATE_RELIGION) si vous adoptez la loi link(LAW_DIVINE_RULE).</fr>
+		<ja>link(CONCEPT_SHRINE)を建設することで、link(CONCEPT_PAGAN_RELIGION,2)が設けられます。そして、link(CONCEPT_SHRINE,2)を増やすことでlink(CONCEPT_PAGAN_RELIGION,2)が広まっていくのです。link(CONCEPT_SHRINE,2)はlink(CONCEPT_DISCIPLE,2)やlink(CONCEPT_THEOLOGY,2)を持たず、宗教関係のlink(CONCEPT_IMPROVEMENT,2)を建てることはできませんが、link(CONCEPT_OPINION_RELIGION,3)を高めることで、link(CONCEPT_RELIGION)を持つ都市のlink(YIELD_DISCONTENT,1)を減らすことが可能です。
+
+link(LAW_DIVINE_RULE)を制定すれば、多神教をlink(CONCEPT_STATE_RELIGION)として承認することができます。</ja>
+		<zh-TW>建造第一座link(CONCEPT_SHRINE)後便會創立link(CONCEPT_PAGAN_RELIGION,2)，建造更多link(CONCEPT_SHRINE,2)就能傳播該宗教。異教沒有link(CONCEPT_DISCIPLE,2)、link(CONCEPT_THEOLOGY,2)，也無法取得特殊宗教link(CONCEPT_IMPROVEMENT,2)，但提升該宗教的link(CONCEPT_OPINION_RELIGION,3)可降低信仰該link(CONCEPT_RELIGION)城市的link(YIELD_DISCONTENT)。
+
+如果頒布link(LAW_DIVINE_RULE)，即可將異教訂定為link(CONCEPT_STATE_RELIGION)。</zh-TW>
+		<ru>Строительство первого {lowercase:link(CONCEPT_SHRINE,1)} способствует появлению {lowercase:link(CONCEPT_PAGAN_RELIGION,7)}, которые могут распространяться все дальше и дальше при возведении новых {lowercase:link(CONCEPT_SHRINE,7)}. У них нет {lowercase:link(CONCEPT_DISCIPLE,7)}, {lowercase:link(CONCEPT_THEOLOGY,7)} или доступа к особым религиозным {lowercase:link(CONCEPT_IMPROVEMENT,8)}, однако увеличение показателя «link(CONCEPT_OPINION_RELIGION,0)» снижает уровень {lowercase:link(YIELD_DISCONTENT,1)} в городах, где исповедуется соответствующая {lowercase:link(CONCEPT_RELIGION)}.
+
+Язычество может быть утверждено в качестве {lowercase:link(CONCEPT_STATE_RELIGION,1)}, если вы примете {lowercase:link(LAW_DIVINE_RULE,3)}.</ru>
+		<zh-CN>建造第一座link(CONCEPT_SHRINE)后便会创立link(CONCEPT_PAGAN_RELIGION,2)，建造更多link(CONCEPT_SHRINE,2)就能传播该宗教。异教没有link(CONCEPT_DISCIPLE,2)、link(CONCEPT_THEOLOGY,2)，也无法取得特殊宗教link(CONCEPT_IMPROVEMENT,2)，但提升该宗教的link(CONCEPT_OPINION_RELIGION,3)可降低信仰该link(CONCEPT_RELIGION)城市的link(YIELD_DISCONTENT)。
+
+如果颁布link(LAW_DIVINE_RULE)，即可将异教订定为link(CONCEPT_STATE_RELIGION)。</zh-CN>
+ -->
+	</Entry>
+	
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_SHRINE</zType>
+		<en-US>[MOD] Shrines don't found or spread link(CONCEPT_PAGAN_RELIGION,2) but still provide various benefits. For example, link(IMPROVEMENT_SHRINE_MARS,1) gives link(CONCEPT_XP) to link(CONCEPT_IDLE) link(UNITTRAIT_INFANTRY) Units on its Tile and also provides the City extra {YIELD_TRAINING}link(YIELD_TRAINING).</en-US>
+<!-- 
+		<es>Los santuarios pueden establecer y extender link(CONCEPT_PAGAN_RELIGION,2) y conceder beneficios diversos. Por ejemplo, link(IMPROVEMENT_SHRINE_MARS,1) da link(CONCEPT_XP) a las unidades de link(UNITTRAIT_INFANTRY) link(CONCEPT_IDLE,2) y también da {YIELD_TRAINING}link(YIELD_TRAINING) extra a la ciudad.</es>
+		<de>Schreine können link(CONCEPT_PAGAN_RELIGION,2) begründen und verbreiten sowie verschiedene Vorteile liefern. Ein link(IMPROVEMENT_SHRINE_MARS) beispielsweise lässt link(CONCEPT_IDLE,4) link(UNITTRAIT_INFANTRY)-Einheiten, die auf dessen Feld stehen, link(CONCEPT_XP) sammeln und liefert der Stadt zusätzlich {YIELD_TRAINING}link(YIELD_TRAINING).</de>
+		<fr>Les sanctuaires peuvent fonder et répandre les link(CONCEPT_PAGAN_RELIGION,2), et octroyer des avantages variés. Par exemple, le link(IMPROVEMENT_SHRINE_MARS,1) octroie de l'link(CONCEPT_XP) aux unités d'link(UNITTRAIT_INFANTRY) link(CONCEPT_IDLE) sur ses tuiles, et donne également à la cité de l'{YIELD_TRAINING}link(YIELD_TRAINING) supplémentaire.</fr>
+		<ja>神殿は、link(CONCEPT_PAGAN_RELIGION,2)を設立させて広めることができ、様々な恩恵をもたらしてくれます。例えば、link(IMPROVEMENT_SHRINE_MARS,1)があるタイル上で、link(UNITTRAIT_INFANTRY)ユニットをlink(CONCEPT_IDLE)状態にさせると、ユニットはlink(CONCEPT_XP)を獲得します。さらに、link(IMPROVEMENT_SHRINE_MARS,1)は追加の{YIELD_TRAINING}link(YIELD_TRAINING)をもたらします。</ja>
+		<zh-TW>神殿可用於創立和傳播link(CONCEPT_PAGAN_RELIGION,2)，並提供多種優勢。舉例來說，link(IMPROVEMENT_SHRINE_MARS,1)可為其圖塊上的link(CONCEPT_IDLE)link(UNITTRAIT_INFANTRY)單位提供link(CONCEPT_XP)，也能為城市提供額外{YIELD_TRAINING}link(YIELD_TRAINING)。</zh-TW>
+		<ru>Святилища являются местом зарождения и способом распространения {lowercase:link(CONCEPT_PAGAN_RELIGION,7)}. Однако они также предоставляют различные бонусы. Например, {lowercase:link(IMPROVEMENT_SHRINE_MARS)} дает link(CONCEPT_XP) {lowercase:link(CONCEPT_IDLE,8)} юнитам {lowercase:link(UNITTRAIT_INFANTRY,1)} при нахождении на нем, а также снабжает город дополнительным {YIELD_TRAINING}{lowercase:link(YIELD_TRAINING,4)}.</ru>
+		<zh-CN>神殿可用于创立和传播link(CONCEPT_PAGAN_RELIGION,2)，并提供多种优势。举例来说，link(IMPROVEMENT_SHRINE_MARS,1)可为其图块上的link(CONCEPT_IDLE)link(UNITTRAIT_INFANTRY)单位提供link(CONCEPT_XP)，也能为城市提供额外{YIELD_TRAINING}link(YIELD_TRAINING)。</zh-CN>
+ -->
+	</Entry>
+	
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_RELIGION</zType>
+		<en-US>[MOD] There are Pagan Religions, only World Religions. link(CONCEPT_WORLD_RELIGION,2), such as link(RELIGION_JUDAISM), are founded by the first link(CONCEPT_NATION) to fulfill its specific requirements. link(CONCEPT_PAGAN_RELIGION,2) would normally be founded by building the first of your Nation's link(CONCEPT_SHRINE,2) but one of your active mods prevents that.
+		
+All Religions give {YIELD_CULTURE}link(YIELD_CULTURE) to their Cities, and a link(OPINIONRELIGION_PLEASED) or link(OPINIONRELIGION_FRIENDLY) Religion will reduce {YIELD_DISCONTENT}link(YIELD_DISCONTENT) while an link(OPINIONRELIGION_UPSET), link(OPINIONRELIGION_ANGRY), or link(OPINIONRELIGION_FURIOUS) Religion will increase {YIELD_DISCONTENT}link(YIELD_DISCONTENT).</en-US>
+<!-- 
+		<es>Hay dos tipos de religiones: mundiales y paganas. Las link(CONCEPT_WORLD_RELIGION,2), como el link(RELIGION_JUDAISM), se fundan por la primera link(CONCEPT_NATION) que cumpla los requisitos específicos. Las link(CONCEPT_PAGAN_RELIGION,2) se funda construyendo el primero de los link(CONCEPT_SHRINE,2) de tu nación.
+
+Todas las religiones aportan {YIELD_CULTURE}link(YIELD_CULTURE) a sus ciudades, y una religión link(OPINIONRELIGION_PLEASED) o link(OPINIONRELIGION_FRIENDLY) reducirá el {YIELD_DISCONTENT}link(YIELD_DISCONTENT) mientras que una opinión como link(OPINIONRELIGION_UPSET), link(OPINIONRELIGION_ANGRY) o link(OPINIONRELIGION_FURIOUS) aumentará el {YIELD_DISCONTENT}link(YIELD_DISCONTENT).</es>
+		<de>Religionen werden in zwei Arten unterschieden: Weltreligionen und Heidentum. link(CONCEPT_WORLD_RELIGION,2) wie link(RELIGION_JUDAISM) werden von der ersten Nation, die deren spezifischen Bedingungen erfüllt, gegründet. {sentencecase:link(CONCEPT_PAGAN_RELIGION,2)} werden gegründet, indem Ihr den ersten link(CONCEPT_SHRINE) Eurer Nation errichtet.
+		
+Alle Religionen bringen ihren Städten {YIELD_CULTURE}link(YIELD_CULTURE) ein. Des Weiteren verringert eine Religion, die {lowercase:link(OPINIONRELIGION_PLEASED)} oder {lowercase:link(OPINIONRELIGION_FRIENDLY)} ist, die {YIELD_DISCONTENT}link(YIELD_DISCONTENT). Eine Religion, die {lowercase:link(OPINIONRELIGION_UPSET), link(OPINIONRELIGION_ANGRY) oder link(OPINIONRELIGION_FURIOUS)} ist, erhöht dagegen die {YIELD_DISCONTENT}link(YIELD_DISCONTENT).</de>
+		<fr>Il existe deux types de religions : mondiale et païenne. Les link(CONCEPT_WORLD_RELIGION,2), comme le link(RELIGION_JUDAISM), sont fondées par la première link(CONCEPT_NATION) à remplir les conditions requises. Les link(CONCEPT_PAGAN_RELIGION,2) sont fondées en construisant le premier des link(CONCEPT_SHRINE,2) de votre nation.
+		
+Toutes les religions octroient de la {YIELD_CULTURE}link(YIELD_CULTURE) à leurs cités, et une religion link(OPINIONRELIGION_PLEASED) ou link(OPINIONRELIGION_FRIENDLY) diminuera le {YIELD_DISCONTENT}link(YIELD_DISCONTENT), alors qu'une religion link(OPINIONRELIGION_UPSET), link(OPINIONRELIGION_ANGRY), ou link(OPINIONRELIGION_FURIOUS) augmentera le {YIELD_DISCONTENT}link(YIELD_DISCONTENT).</fr>
+		<ja>宗教には、世界宗教・多神教と2つのタイプがあります。link(RELIGION_JUDAISM)のようなlink(CONCEPT_WORLD_RELIGION,2)は、あなたの国が特定の条件を満たした時に設立されます。link(CONCEPT_PAGAN_RELIGION,2)は、あなたの国が初めてlink(CONCEPT_SHRINE,2)を建てた時に設立されます。
+		
+全ての宗教は、その宗教を持つ都市に{YIELD_CULTURE}link(YIELD_CULTURE)をもたらします。そして、link(OPINIONRELIGION_PLEASED)あるいはlink(OPINIONRELIGION_FRIENDLY)状態にある宗教は{YIELD_DISCONTENT}link(YIELD_DISCONTENT)を下げ、反対にlink(OPINIONRELIGION_UPSET)やlink(OPINIONRELIGION_ANGRY)の状態にある宗教は{YIELD_DISCONTENT}link(YIELD_DISCONTENT)を上げてしまいます。</ja>
+		<zh-TW>宗教分為兩類：世界宗教和異教宗教。link(CONCEPT_WORLD_RELIGION,2)是由第一個滿足相關特定要求的link(CONCEPT_NATION)所創立的宗教，例如link(RELIGION_JUDAISM)。link(CONCEPT_PAGAN_RELIGION,2)是透過建造國家的第一座link(CONCEPT_SHRINE,2)來創立。
+		
+所有宗教均可為城市提供{YIELD_CULTURE}link(YIELD_CULTURE)，且link(OPINIONRELIGION_PLEASED)或link(OPINIONRELIGION_FRIENDLY)的宗教可降低{YIELD_DISCONTENT}link(YIELD_DISCONTENT)，而link(OPINIONRELIGION_UPSET)、link(OPINIONRELIGION_ANGRY)或link(OPINIONRELIGION_FURIOUS)的宗教會提高{YIELD_DISCONTENT}link(YIELD_DISCONTENT)。</zh-TW>
+		<ru>Существует два типа религий: мировые и языческие. link(CONCEPT_WORLD_RELIGION,6), например, {lowercase:link(RELIGION_JUDAISM)}, основываются той {lowercase:link(CONCEPT_NATION,4)}, которая первой выполнит особые условия той или иной религии. link(CONCEPT_PAGAN_RELIGION,6) основываются при строительстве первого {lowercase:link(CONCEPT_SHRINE,1)}.
+		
+Все религии приносят в свои города {YIELD_CULTURE}{lowercase:link(YIELD_CULTURE,3)}. Религии с уровнем отношения «link(OPINIONRELIGION_PLEASED)» или «link(OPINIONRELIGION_FRIENDLY)» снижают {YIELD_DISCONTENT}{lowercase:link(YIELD_DISCONTENT,3)}, в то время как религии с уровнем отношения «link(OPINIONRELIGION_UPSET)», «link(OPINIONRELIGION_ANGRY)» или «link(OPINIONRELIGION_FURIOUS)» повышают {YIELD_DISCONTENT}{lowercase:link(YIELD_DISCONTENT,3)} в городах.</ru>
+		<zh-CN>宗教分为两类：世界宗教和异教宗教。 link(CONCEPT_WORLD_RELIGION,2)是由第一个满足相关特定要求的link(CONCEPT_NATION)所创立的宗教，例如link(RELIGION_JUDAISM)。 link(CONCEPT_PAGAN_RELIGION,2)是透过建造国家的第一座link(CONCEPT_SHRINE,2)来创立。
+		
+所有宗教均可为城市提供{YIELD_CULTURE}link(YIELD_CULTURE)，且link(OPINIONRELIGION_PLEASED)或link(OPINIONRELIGION_FRIENDLY)的宗教可降低{YIELD_DISCONTENT}link(YIELD_DISCONTENT)，而link(OPINIONRELIGION_UPSET)、link(OPINIONRELIGION_ANGRY)或link(OPINIONRELIGION_FURIOUS)的宗教会提高{YIELD_DISCONTENT}link(YIELD_DISCONTENT)。</zh-CN>
+ -->
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_PAGAN_RELIGION</zType>
+		<en-US>[MOD] Pagan Religions are disabled by the No Paganism mod. link(LAW_POLYTHEISM) still allows building unlimited link(CONCEPT_SHRINE,2), but link(LAW_DIVINE_RULE) unlocking adopting Paganism as a link(CONCEPT_STATE_RELIGION) has no effect without those Religions. Pagan Religions don’t have the link(CONCEPT_DISCIPLE,2), link(CONCEPT_IMPROVEMENT,2), or link(CONCEPT_THEOLOGY,2) of link(CONCEPT_WORLD_RELIGION,2).</en-US>
+<!-- 
+		<es>Cada link(CONCEPT_NATION) tiene una religión pagana única que se funda y extiende construyendo link(IMPROVEMENTCLASS_SHRINE,1). El link(LAW_POLYTHEISM) permite construir link(CONCEPT_SHRINE,2) ilimitados y el link(LAW_DIVINE_RULE) desbloquea la opción de adoptar el paganismo como link(CONCEPT_STATE_RELIGION). Las religiones paganas no tienen los link(CONCEPT_DISCIPLE,2), link(CONCEPT_IMPROVEMENT,2) o link(CONCEPT_THEOLOGY,2) de link(CONCEPT_WORLD_RELIGION,2).</es>
+		<de>Jede link(CONCEPT_NATION) hat eine eigene heidnische Religion. Indem Ihr link(IMPROVEMENTCLASS_SHRINE,2) baut, wird sie gegründet und verbreitet. Der link(LAW_POLYTHEISM) ermöglicht es, unbegrenzt link(CONCEPT_SHRINE,2) zu errichten, und durch link(LAW_DIVINE_RULE) schaltet Ihr das Heidentum als link(CONCEPT_STATE_RELIGION) frei. Anders als link(CONCEPT_WORLD_RELIGION,2) besitzen heidnische keine link(CONCEPT_DISCIPLE,2), link(CONCEPT_IMPROVEMENT,2), oder link(CONCEPT_THEOLOGY,2).</de>
+		<fr>Chaque link(CONCEPT_NATION) a une religion païenne unique qui est créee et répandue en construisant un link(IMPROVEMENTCLASS_SHRINE,1). Le link(LAW_POLYTHEISM) permet de construire un nombre illimté de link(CONCEPT_SHRINE,2), et link(LAW_DIVINE_RULE) permet d'adopter le paganisme comme link(CONCEPT_STATE_RELIGION). Les religions païennes n'ont pas les link(CONCEPT_DISCIPLE,2), les link(CONCEPT_IMPROVEMENT,2), ou les link(CONCEPT_THEOLOGY,2) des link(CONCEPT_WORLD_RELIGION,2).</fr>
+		<ja>link(CONCEPT_NATION)はlink(IMPROVEMENTCLASS_SHRINE,1)を建設することで、それぞれ独自の多神教を設立し、広めることができます。link(LAW_POLYTHEISM)は無制限にlink(CONCEPT_SHRINE,2)を建てられるようになり、link(LAW_DIVINE_RULE)は多神教をlink(CONCEPT_STATE_RELIGION)として導入できるようになります。多神教にはlink(CONCEPT_DISCIPLE,2)やlink(CONCEPT_IMPROVEMENT,2)、またはlink(CONCEPT_WORLD_RELIGION,2)のlink(CONCEPT_THEOLOGY,2)がありません。</ja>
+		<zh-TW>透過建造link(IMPROVEMENTCLASS_SHRINE,1)，每個link(CONCEPT_NATION)均可建造及傳播獨特的異教宗教。link(LAW_POLYTHEISM)允許建立無限個link(CONCEPT_SHRINE,2)，link(LAW_DIVINE_RULE)則允許將異教宗教訂定為link(CONCEPT_STATE_RELIGION)。異教宗教不具有link(CONCEPT_WORLD_RELIGION,2)的link(CONCEPT_DISCIPLE,2)、link(CONCEPT_IMPROVEMENT,2)和link(CONCEPT_THEOLOGY,2)。</zh-TW>
+		<ru>У каждой {lowercase:link(CONCEPT_NATION,1)} есть особое языческое верование, которое можно основать и распространять при помощи {lowercase:link(IMPROVEMENTCLASS_SHRINE,1)}. «link(LAW_POLYTHEISM)» позволяет строить неограниченное количество {lowercase:link(CONCEPT_SHRINE,7)}, а «link(LAW_DIVINE_RULE)» открывает возможность утвердить язычество в качестве {lowercase:link(CONCEPT_STATE_RELIGION,1)}. Языческие верования не имеют {lowercase:link(CONCEPT_DISCIPLE,7)}, {lowercase:link(CONCEPT_IMPROVEMENT,7)} или {lowercase:link(CONCEPT_THEOLOGY,7)}, характерных для {lowercase:link(CONCEPT_WORLD_RELIGION,8)}.</ru>
+		<zh-CN>透过建造link(IMPROVEMENTCLASS_SHRINE,1)，每个link(CONCEPT_NATION)均可建造及传播独特的异教宗教。 link(LAW_POLYTHEISM)允许建立无限个link(CONCEPT_SHRINE,2)，link(LAW_DIVINE_RULE)则允许将异教宗教订定为link(CONCEPT_STATE_RELIGION)。异教宗教不具有link(CONCEPT_WORLD_RELIGION,2)的link(CONCEPT_DISCIPLE,2)、link(CONCEPT_IMPROVEMENT,2)和link(CONCEPT_THEOLOGY,2)。</zh-CN>
+ -->
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_SPREAD_RELIGION</zType>
+		<en-US>Each link(CONCEPT_WORLD_RELIGION) has a specific % chance (which can be modified by link(CONCEPT_THEOLOGY,2)) of spreading to one random City or Tribal Site each Turn. Cities and Tribal Sites are more likely to get the link(CONCEPT_RELIGION) if they are closer to the link(CONCEPT_HOLY_CITY) and less likely if they already have link(CONCEPT_RELIGION,2). link(CONCEPT_WORLD_RELIGION,2) can also be spread with link(CONCEPT_DISCIPLE,2), and [MOD] that's all there is to say about this.</en-US>
+<!-- 
+		<es>Cada una de las link(CONCEPT_WORLD_RELIGION,2) tiene una probabilidad específica (modificada por link(CONCEPT_THEOLOGY,2)), cada turno, de extenderse en una ciudad o sitio tribal al azar. Las ciudades y los sitios tribales son más propensos a recibir la link(CONCEPT_RELIGION) si están cerca de la link(CONCEPT_HOLY_CITY) y serán menos propensos si ya tienen link(CONCEPT_RELIGION,2). Las link(CONCEPT_WORLD_RELIGION,2) se extienden con link(CONCEPT_DISCIPLE,2) y las link(CONCEPT_PAGAN_RELIGION,2) con link(CONCEPT_SHRINE,2).</es>
+		<de>Alle link(CONCEPT_WORLD_RELIGION,2) besitzen jeden Zug eine bestimmte prozentuale Wahrscheinlichkeit (diese kann durch link(CONCEPT_THEOLOGY,2) verändert werden), sich zufällig in einer Stadt oder einer Stammessiedlung auszubreiten. Städte und Stammessiedlungen nehmen die link(CONCEPT_RELIGION) eher an, wenn eine link(CONCEPT_HOLY_CITY) in der Nähe liegt, während das Bestehen anderer link(CONCEPT_RELIGION,3) es weniger wahrscheinlich macht. link(CONCEPT_WORLD_RELIGION,2) können außerdem durch link(CONCEPT_DISCIPLE,2), link(CONCEPT_PAGAN_RELIGION,2) hingegen durch link(CONCEPT_SHRINE,2) verbreitet werden.</de>
+		<fr>Chaque link(CONCEPT_WORLD_RELIGION) a un % de chance (qui peut être modifié par les link(CONCEPT_THEOLOGY,2)) de se répandre à une cité ou à un site tribal aléatoire chaque tour. Les cités et les sites tribaux sont plus susceptibles d'être touchés par la link(CONCEPT_RELIGION) s'ils sont proches de la link(CONCEPT_HOLY_CITY), et moins susceptibles s'ils ont déjà une link(CONCEPT_RELIGION). Les link(CONCEPT_WORLD_RELIGION,2) peuvent également être répandues par des link(CONCEPT_DISCIPLE,2), et les link(CONCEPT_PAGAN_RELIGION,2) se répandent grâce à des link(CONCEPT_SHRINE,2).</fr>
+		<ja>各link(CONCEPT_WORLD_RELIGION)は、ターン毎に、ランダムな都市または部族拠点に広がる可能性があります（その確率はlink(CONCEPT_THEOLOGY,2)によって変動させることが可能）。link(CONCEPT_HOLY_CITY)に近い都市と部族拠点ほどlink(CONCEPT_RELIGION)が広まる可能性は高くなります。また、すでにlink(CONCEPT_RELIGION,2)を持っている場所であれば、布教される確率は低くなります。link(CONCEPT_WORLD_RELIGION,2)はlink(CONCEPT_DISCIPLE,2)によって布教され、link(CONCEPT_PAGAN_RELIGION,2)はlink(CONCEPT_SHRINE,2)によって広まります。</ja>
+		<zh-TW>各link(CONCEPT_WORLD_RELIGION)每回合均有特定百分比的機率可傳播至一個隨機城市或部落據點 (機率會隨link(CONCEPT_THEOLOGY,2)調整)。城市和部落據點越靠近link(CONCEPT_HOLY_CITY)，越可能改信該link(CONCEPT_RELIGION)；若已有信仰的link(CONCEPT_RELIGION,2)，就越不容易成功傳教。link(CONCEPT_WORLD_RELIGION,2)也可以透過link(CONCEPT_DISCIPLE,2)傳播，link(CONCEPT_PAGAN_RELIGION,2)則是透過link(CONCEPT_SHRINE,2)傳播。</zh-TW>
+		<ru>Каждый ход у любой {lowercase:link(CONCEPT_WORLD_RELIGION,1)} есть определенный шанс (который может быть повышен при помощи {lowercase:link(CONCEPT_THEOLOGY,7)}) распространиться на случайный город или стоянку племени. У городов и племенных стоянок без религии, находящихся близко к {lowercase:link(CONCEPT_HOLY_CITY,2)}, повышена вероятность получения какой-либо {lowercase:link(CONCEPT_RELIGION,1)} (вероятность меньше, если там уже исповедуются некие {lowercase:link(CONCEPT_RELIGION,6)}). link(CONCEPT_WORLD_RELIGION,6) также могут распространяться при помощи {lowercase:link(CONCEPT_DISCIPLE,7)}, а {lowercase:link(CONCEPT_PAGAN_RELIGION,6)} — при помощи {lowercase:link(CONCEPT_SHRINE,7)}.</ru>
+		<zh-CN>各link(CONCEPT_WORLD_RELIGION)每回合均有特定百分比的机率可传播至一个随机城市或部落据点 (机率会随link(CONCEPT_THEOLOGY,2)调整)。城市和部落据点越靠近link(CONCEPT_HOLY_CITY)，越可能改信该link(CONCEPT_RELIGION)；若已有信仰的link(CONCEPT_RELIGION,2)，就越不容易成功传教。 link(CONCEPT_WORLD_RELIGION,2)也可以透过link(CONCEPT_DISCIPLE,2)传播，link(CONCEPT_PAGAN_RELIGION,2)则是透过link(CONCEPT_SHRINE,2)传播。</zh-CN>
+ -->
+	</Entry>
+
+<!-- 
+	<Entry>
+		<zType>TEXT_HELPTEXT_EFFECT_PLAYER_HELP_PAGAN_STATE_RELIGION</zType>
+		<en-US>Can Adopt Pagan State Religions</en-US>
+		<es>Puede adoptar religiones nacionales paganas</es>
+		<de>Kann heidnische Staatsreligionen übernehmen</de>
+		<fr>Peut adopter les religions d'état païennes</fr>
+		<ja>多神教を国教として採用可能</ja>
+		<zh-TW>可改信異教國家宗教</zh-TW>
+		<ru>Может принимать языческие религии в качестве государственных</ru>
+		<zh-CN>可改信异教国家宗教</zh-CN>
+	</Entry>
+-->
+<!-- 
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_THEOLOGY</zType>
+		<en-US>Establishing a Theology grants additional bonuses to a link(CONCEPT_WORLD_RELIGION). (link(CONCEPT_PAGAN_RELIGION,2) cannot have Theologies.) They are established using link(CONCEPT_DISCIPLE,2), and the link(CONCEPT_RELIGION) must be your Nation's link(CONCEPT_STATE_RELIGION). The effects of the Theology are Global and will be active for all link(CONCEPT_NATION,2) with the associated Religion.</en-US>
+		<es>Fundar una teología otorga bonificaciones adicionales a la link(CONCEPT_WORLD_RELIGION). Las link(CONCEPT_PAGAN_RELIGION,2) no tienen teologías. Pueden fundarse usando link(CONCEPT_DISCIPLE,2) y la link(CONCEPT_RELIGION) debe ser la link(CONCEPT_STATE_RELIGION) de tu nación). Los efectos de la teología son globales y estarán activos para todas las link(CONCEPT_NATION,2) que sigan la religión en cuestión.</es>
+		<de>Das Einführen einer Theologie gewährt einer link(CONCEPT_WORLD_RELIGION) zusätzliche Boni. (link(CONCEPT_PAGAN_RELIGION,2) haben keine Theologien.) link(CONCEPT_DISCIPLE,2) sind dafür nötig, außerdem muss die link(CONCEPT_RELIGION) die link(CONCEPT_STATE_RELIGION) Eurer Nation sein. Die Effekte von Theologien wirken sich global aus und sind für alle link(CONCEPT_NATION,2) mit der entsprechenden Religion gültig.</de>
+		<fr>Établir une théologie octroie des bonus supplémentaires à une link(CONCEPT_WORLD_RELIGION) (les (link(CONCEPT_PAGAN_RELIGION,2) n'ont pas de théologies). Elles sont établies en utilisant des link(CONCEPT_DISCIPLE,2), et la link(CONCEPT_RELIGION) doit être la link(CONCEPT_STATE_RELIGION) de votre nation. Les effets de la théologie sont globaux et seront actifs pour toutes les link(CONCEPT_NATION,2) avec la religion associée.</fr>
+		<ja>神学を確立させると、link(CONCEPT_WORLD_RELIGION)に追加ボーナスをもたらします。（link(CONCEPT_PAGAN_RELIGION,2)では神学を持つことはできません）。神学は、link(CONCEPT_DISCIPLE,2)を使って確立させるもので、そのlink(CONCEPT_RELIGION)をlink(CONCEPT_STATE_RELIGION)化させている必要があります。神学の効果は全体に及び、関連する宗教を持つ全てのlink(CONCEPT_NATION,2)に対して適用されます。</ja>
+		<zh-TW>建立神學理論可讓link(CONCEPT_WORLD_RELIGION)獲得額外紅利。(link(CONCEPT_PAGAN_RELIGION,2)無法擁有神學理論。)若要建立神學理論，需使用link(CONCEPT_DISCIPLE,2)，且該link(CONCEPT_RELIGION)須為你國家的link(CONCEPT_STATE_RELIGION)。神學理論的效果涵蓋全球，且會施行於所有信仰相關宗教的link(CONCEPT_NATION,2)。</zh-TW>
+		<ru>После учреждения теологии {lowercase:link(CONCEPT_WORLD_RELIGION)} получит дополнительные бонусы. У {lowercase:link(CONCEPT_PAGAN_RELIGION,7)} теологий быть не может. Теологии учреждаются при помощи {lowercase:link(CONCEPT_DISCIPLE,7)}, однако {lowercase:link(CONCEPT_RELIGION)} должна быть {lowercase:link(CONCEPT_STATE_RELIGION,4)} вашей нации. Эффекты теологий распространяются на весь мир, и {lowercase:link(CONCEPT_NATION,6)}, исповедующие соответствующую религию, тоже смогут ими воспользоваться.</ru>
+		<zh-CN>建立神学理论可让link(CONCEPT_WORLD_RELIGION)获得额外红利。 (link(CONCEPT_PAGAN_RELIGION,2)无法拥有神学理论。)若要建立神学理论，需使用link(CONCEPT_DISCIPLE,2)，且该link(CONCEPT_RELIGION)须为你国家的link(CONCEPT_STATE_RELIGION)。神学理论的效果涵盖全球，且会施行于所有信仰相关宗教的link(CONCEPT_NATION,2)。</zh-CN>
+	</Entry>
+ -->
+</Root>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>TEXT_CONCEPT_CITY_BIOME</zType>
+		<en-US>City Biome</en-US>
+		<es>Ciudad Bioma</es>
+		<de>Stadt Biom</de>
+		<fr>cité Biome</fr>
+		<ja>都市の気候</ja>
+		<zh-TW>城市:生物群落</zh-TW>
+		<ru>Город Биом</ru>
+		<zh-CN>城市:生物群系</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CONCEPT_HEAL_ATTACK</zType>
+		<en-US>Attack</en-US>
+		<es>Ataque</es>
+		<de>Angriff</de>
+		<fr>Attaque</fr>
+		<ja>攻撃</ja>
+		<zh-TW>攻擊</zh-TW>
+		<ru>Атака</ru>
+		<zh-CN>攻击</zh-CN>
+		<pt-BR>Ataque</pt-BR>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CONCEPT_HURT_ATTACK</zType>
+		<en-US>Attack</en-US>
+		<es>Ataque</es>
+		<de>Angriff</de>
+		<fr>Attaque</fr>
+		<ja>攻撃</ja>
+		<zh-TW>攻擊</zh-TW>
+		<ru>Атака</ru>
+		<zh-CN>攻击</zh-CN>
+		<pt-BR>Ataque</pt-BR>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TUTORIAL_PROJECT_COUNCIL</zType>
+		<en-US>Project: Council</en-US>
+		<es>Proyecto: Consejo</es>
+		<de>Projekt: Rat</de>
+		<fr>Projet: Conseil</fr>
+		<ja>都市計画:評議会</ja>
+		<zh-TW>項目:理事會</zh-TW>
+		<ru>проект: Совет</ru>
+		<zh-CN>项目:理事会</zh-CN>
+		<pt-BR>Projeto: Conselho</pt-BR>
+	</Entry>
+</Root>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTUNIT_AMPHIBIOUS</zType>
+		<bAmphibiousEmbark>1</bAmphibiousEmbark>
+	</Entry>
+</Root>

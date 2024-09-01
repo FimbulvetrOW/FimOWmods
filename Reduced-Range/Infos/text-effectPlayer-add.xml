@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>TEXT_EFFECTPLAYER_TECH_FORESTRY</zType>
+		<en-US>link(UNIT_SPEARMAN) Defense</en-US>
+		<es>link(UNIT_SPEARMAN) Defensa</es>
+		<de>link(UNIT_SPEARMAN) Verteidigung</de>
+		<fr>link(UNIT_SPEARMAN) Défense</fr>
+		<ja>link(UNIT_SPEARMAN) 防御</ja>
+		<zh-TW>link(UNIT_SPEARMAN) 防禦力</zh-TW>
+		<ru>link(UNIT_SPEARMAN) Защита</ru>
+		<zh-CN>link(UNIT_SPEARMAN) 防御力</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EFFECTPLAYER_TECH_MANOR</zType>
+		<en-US>link(UNIT_SPEARMAN) Defense</en-US>
+		<es>link(UNIT_SPEARMAN) Defensa</es>
+		<de>link(UNIT_SPEARMAN) Verteidigung</de>
+		<fr>link(UNIT_SPEARMAN) Défense</fr>
+		<ja>link(UNIT_SPEARMAN) 防御</ja>
+		<zh-TW>link(UNIT_SPEARMAN) 防禦力</zh-TW>
+		<ru>link(UNIT_SPEARMAN) Защита</ru>
+		<zh-CN>link(UNIT_SPEARMAN) 防御力</zh-CN>
+	</Entry>
+</Root>

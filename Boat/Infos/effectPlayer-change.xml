@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTPLAYER_TECH_LABOR_FORCE</zType>
+		<EffectCity>EFFECTCITY_UNIT_FERRY</EffectCity>
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_LAW_EXPLORATION</zType>
+		<aeEffectUnit>
+			<Pair>
+				<zIndex>UNIT_FERRY</zIndex>
+				<zValue>EFFECTUNIT_EXPLORATION</zValue>
+			</Pair>
+		</aeEffectUnit>
+	</Entry>
+</Root>

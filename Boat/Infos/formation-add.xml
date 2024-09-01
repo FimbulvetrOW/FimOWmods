@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>FORMATION_FERRY</zType>
+		<UnitAsset>ASSET_UNIT_WORKER_WATER</UnitAsset>
+		<UnitPortraitAsset>ASSET_UNIT_PORTRAIT_BIREME</UnitPortraitAsset>
+		<bLand>1</bLand>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+			<f3Value>0, 0, 0</f3Value>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3FrontRow>
+	</Entry>
+	<Entry>
+		<zType>FORMATION_FERRY_WATER</zType>
+		<UnitAsset>ASSET_UNIT_WORKER_WATER</UnitAsset>
+		<bLand>0</bLand>
+		<bWater>1</bWater>
+		<lf3FrontRow>
+			<f3Value>2.4, -1.84, 0</f3Value>
+			<f3Value>-2.27, -1.84, 0</f3Value>
+			<f3Value>0, 0, 0</f3Value>
+			<f3Value>-2.27, 2.03, 0</f3Value>
+			<f3Value>1.79, 2.03, 0</f3Value>
+		</lf3FrontRow>
+	</Entry>
+</Root>

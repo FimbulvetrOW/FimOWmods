@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>TRAIT_CLERGY</zType>
+		<Name>TEXT_TRAIT_CLERGY</Name>
+		<GenderedNames>
+			<Pair>
+				<First>GENDER_FEMALE</First>
+				<Second>TEXT_TRAIT_CLERGY_F</Second>
+			</Pair>
+		</GenderedNames>
+		<bDisplay>1</bDisplay>
+		<bNoSpouse>1</bNoSpouse>
+		<bNoBirth>1</bNoBirth>
+		<bNoSuccession>1</bNoSuccession>
+		<bNoJob>1</bNoJob>
+		<aiRating>
+			<Pair>
+				<zIndex>RATING_DISCIPLINE</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiRating>
+	</Entry>
+</Root>

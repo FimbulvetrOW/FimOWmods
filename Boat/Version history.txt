@@ -1,0 +1,6 @@
+Version history
+[0.2.2] Old duplicate Unit entry removed. Might break very old savegames.
+[0.2.1] Update for game version 1.0.73323: Gendered text format updated
+[0.2] removed Unit duplicate 
+      because I realized I don't need it.
+[0.1] initial release

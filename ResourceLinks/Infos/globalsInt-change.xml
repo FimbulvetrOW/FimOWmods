@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>BAI_SHOW_RESOURCE_TILE_TOTAL_COUNT</zType> <!-- set to 1 to show the number of Resources of a type on the Map. Can be set independently of other options -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_SHOW_RESOURCE_TILE_COUNT</zType> <!-- Show the number of Resources of the selected type -->
+		<!-- set to 1 to show the number of Resources in your Territory. -->
+		<!-- set to 2 to also show the number of Resources in your Teammates' Territory. (if you have any) -->
+		<!-- set to 3 to also show the number of Resources on revealed Tiles outside your Teams' Territory. -->
+		<!-- set to 4 to also show the number of Resources still in fog. -->
+		<iValue>3</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_SHOW_RESOURCE_TILE_COORDINATES</zType> <!-- Provides clickable coordinates for Resource Tiles of the selected type -->
+		<!-- set to 1 to show the coordinates of Resource Tiles in your Territory. (clickable location links that center camera over selected Tile) -->
+		<!-- set to 2 to also show the ooordinates of Resource Tiles in your Teammates' Territory. (clickable location links) -->
+		<!-- set to 3 to also show the ooordinates of Resource Tiles on revealed Tiles outside your Teams' Territory, as (X,Y) (clickable location links) -->
+		<!-- set to 4 to show the corridinates of all Resources Tiles, even if these Tiles are not yet revealed, as [X,Y] (but not clickable) -->
+		<!-- set to 5 to show the corridinates of all Resources Tiles, even if these Tiles are not yet revealed, as [X,Y] (clickable location links) -->		
+		<iValue>3</iValue>
+	</Entry>
+</Root>

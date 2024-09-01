@@ -1,0 +1,895 @@
+<?xml version="1.0"?>
+<Root>
+	<using namespace="UnityEngine" prefix ="UnityEngine."/>
+	<using namespace="UnityEngine.UI" prefix ="UnityEngine.UI."/>
+	<using namespace="Assembly-CSharp" prefix =""/>
+	<using namespace="TMPro" prefix =""/>
+	<styles asset="UI/styles/hud-styles"/>
+	<styles asset="UI/styles/selected-unit-styles"/>
+
+	<UIButton TEMPLATE_TYPE="BuySellButton" STYLE="HGroup" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" Padding="0,10,0,10" NormalImage="TurnButton" HighlightedImage="TurnButtonRoll" BackgroundImageMode="sliced" 
+			  Height="43" Spacing="3,3" MinWidth="120" FlexWidth="1" CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent">
+		<UIText STYLE="Liberation" Kerning="6"  TEMPLATE_OBJECT="Text" FontColor="#e6d7ac" FlexWidth="1" DisabledColor="#787878" FontSize="16" WordWrapping="false" Alignment="Left" />
+		<UIText STYLE="Liberation" Kerning="6"  TEMPLATE_OBJECT="Price" FontColor="#e6d7ac" FlexWidth="1" DisabledColor="#787878" FontSize="16" WordWrapping="false" Alignment="Right" />
+	</UIButton>
+
+	<UIButton TEMPLATE_TYPE="SubheadingTitle" STYLE="HGroup" NormalImage="SubheadingBG" HighlightedImage="SubheadingBG_Highlighted" BackgroundImageMode="Sliced" ChildAlignment="TextAnchor.MiddleCenter" FlexWidth="1" Height="36" PaddingTop="2" PaddingLeft="10" Spacing="2"
+			  AllowNavigationSelection="false" ITEM_TYPE="{{CityCategory^-ItemType}}" ITEM_DATA="{{CityCategory^-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" AUDIO_ENTER="[disabled]">
+		<UIText TEMPLATE_OBJECT="Text" STYLE="TitleBarLabel" OverrideTags="true"/>
+	</UIButton>
+
+	<HGroup TEMPLATE_TYPE="CategoryTitle" TEMPLATE_OBJECT="TitleBG" Height="32" BackgroundImage="SubheadingBG" BackgroundImageMode="Sliced" TOOLTIP_LOCATION="TooltipLocation.Parent" FlexWidth="1">
+		<UIText TEMPLATE_OBJECT="TitleLabel" STYLE="TitleBarLabel"/>
+	</HGroup>
+
+	<UIContentToggle STYLE="VGroup" BackgroundColor="#00000000" TEMPLATE_TYPE="CategoryToggle" TOOLTIP_LOCATION="TooltipLocation.Parent" FlexWidth="1" AllowNavigationSelection="false">
+		<HGroup TEMPLATE_OBJECT="TitleBG" BackgroundImage="SubheadingBG" Height="32" BackgroundImageMode="Sliced" FlexWidth="1">
+			<UIText TEMPLATE_OBJECT="TitleLabel" STYLE="TitleBarLabel" TextMargin="5,20,5,45"/>
+			<UIImage NormalImage="OPEN_HIGHLIGHTED" HighlightedImage="OPEN_NORMAL" IgnoreLayout="true" Anchor="UIAnchor.MiddleRight" Pivot="UIPivot.MiddleRight" Position="-20,0" Width="20" Height="20" PreserveAspect="true" ASSIGN_TO_PARENT="UIContentToggle:OffGraphic"/>
+			<UIImage NormalImage="CLOSE_NORMAL" HighlightedImage="CLOSE_HIGHLIGHTED" IgnoreLayout="true" Anchor="UIAnchor.MiddleRight" Pivot="UIPivot.MiddleRight" Position="-20,0" Width="20" Height="20" PreserveAspect="true" ASSIGN_TO_PARENT="UIContentToggle:OnGraphic"/>
+		</HGroup>
+	</UIContentToggle>
+
+	<UIButton
+	  TEMPLATE_TYPE="Selection-ActionButton"
+	  STYLE="SelectionButton"
+	  CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+	  Width="100%"
+	  Height="46"
+	  IsLayoutIgnoredWhenInvisible="true"
+	  TOOLTIP_LOCATION="TooltipLocation.RightBottom"
+	  StateAttributes="[Highlight_IsHighlight:True][Default_IsHighlight:False]">
+		<UIImage TEMPLATE_OBJECT="IconBG" OBJECT_NAME="Icon" MinWidth="44" Width="44" NormalImage="ActionButton" HighlightedImage="ActionButtonRoll" PreserveAspect="true" BackgroundColor="#FFFFFF" BackgroundImageMode="Sliced" HighlightedColor="#FFFFFF" DisabledColor="#AAAAAA">
+			<UIImage TEMPLATE_OBJECT="Icon" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#848484"
+					 State="Default" StateAttributes="[Default_Width:36][Default_Height:36][Portrait_Width:44][Portrait_Height:44]"/>
+		</UIImage>
+		<UIText TEMPLATE_OBJECT="Label-BR" IgnoreLayout="true" STYLE="Liberation" Kerning="6"  NormalColor="#ffefbf" HighlightedColor="#FFFFFF" DisabledColor="#767676" OverrideTags="false" FontSize="12"
+				Anchor="UIAnchor.StretchAll" Pivot="UIPivot.MiddleRight" Alignment="Right" TextMargin="0,0,0,5" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Target"/>
+		<UIText TEMPLATE_OBJECT="Text" STYLE="Liberation" Kerning="6" FlexWidth="1" HoverOverrideTags="false" NormalColor="#ffefbf" DisabledColor="#767676" AutoSizeMin="9" AutoSizeMax="12" Alignment="Left" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Target"/>
+	</UIButton>
+
+	<UIButton
+	  TEMPLATE_TYPE="SelectedUnit-ActionButton"
+	  TEMPLATE_OBJECT="Button"
+	  STYLE="SelectionButton"
+	  CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+	  Padding="0,3,0,0"
+	  Width="100%"
+	  Height="54"
+	  IsLayoutIgnoredWhenInvisible="true"
+	  TOOLTIP_LOCATION="TooltipLocation.RightBottom"
+	  StateAttributes="[Highlight_IsHighlight:True][Default_IsHighlight:False]">
+		<UIImage TEMPLATE="IconBG" OBJECT_NAME="Icon" MinWidth="51" TEMPLATE_OBJECT="IconBG" Width="51" HighlightedImage="ActionButtonRoll" PreserveAspect="true" BackgroundColor="#FFFFFF" BackgroundImageMode="Sliced" HighlightedColor="#FFFFFF" DisabledColor="#AAAAAA"
+					 State="Default" StateAttributes="[Default_NormalImage:ActionButton][Available_NormalImage:AttentionRoll]">
+			<UIImage TEMPLATE_OBJECT="Icon" Width="40" Height="40" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#7a7a7a"/>
+		</UIImage>
+		<UIText TEMPLATE_OBJECT="Label-BR" STYLE="Liberation" Kerning="6" IconScale="1.2"  NormalColor="#ffefbf" HighlightedColor="#FFFFFF" DisabledColor="#767676" OverrideTags="false" FontSize="12"
+				IgnoreLayout="true" Anchor="UIAnchor.StretchAll" TextMargin="5,5,5,10" Alignment="Right" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Target"/>
+		<VGroup Padding="4,0,4,20" ChildAlignment="TextAnchor.MiddleLeft" FlexWidth="1" FlexHeight="1" TOOLTIP_LOCATION="TooltipLocation.Parent">
+			<UIText TEMPLATE_OBJECT="Text" STYLE="Liberation" IconScale="1.2" Kerning="6" NormalColor="#ffefbf" DisabledColor="#767676" OverrideTags="false" AutoSizeMin="10" AutoSizeMax="12" Alignment="MidlineLeft" HoverOverrideTags="False" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Target"/>
+			<UIText TEMPLATE_OBJECT="Label-BL" IconScale="1.2" STYLE="Liberation" Kerning="6" NormalColor="#ffefbf" HighlightedColor="#AAAAAA" DisabledColor="#767676" OverrideTags="false" FontSize="10" Alignment="MidlineLeft" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Target"/>
+			<UIButton TEMPLATE_OBJECT="Help" IgnoreLayout="true" Anchor="UIAnchor.TopRight" Pivot="UIPivot.TopRight" Position="8,-2" Width="20" Height="20" CLICK_EVENT_TYPE="Ignore"
+					  AllowNavigationSelection="false" PreserveAspect="true" NormalImage="HELP_NORMAL" HighlightedImage="HELP_HIGHLIGHTED" ITEM_TYPE="ItemType.HELP_LINK" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+		</VGroup>
+	</UIButton>
+
+	<UIButton
+	  TEMPLATE_TYPE="SelectedUnit-UpgradeButton"
+	  TEMPLATE_OBJECT="Button"
+	  STYLE="SelectionButton"
+	  CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+	  Width="100%"
+	  Height="54"
+	  IsLayoutIgnoredWhenInvisible="true"
+	  TOOLTIP_LOCATION="TooltipLocation.RightBottom">
+		<UIImage OBJECT_NAME="Icon" MinWidth="54" Width="54" NormalImage="ActionButton" HighlightedImage="ActionButtonRoll">
+			<UIImage TEMPLATE_OBJECT="IconBG" Width="46" Height="46" BackgroundImage="queue_unit" PreserveAspect="true" BackgroundColor="#FFFFFF" BackgroundImageMode="Sliced" HighlightedColor="#FFFFFF" DisabledColor="#AAAAAA"/>
+			<UIImage TEMPLATE_OBJECT="Icon" Width="46" Height="46" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#AAAAAA"/>
+		</UIImage>
+		<UIText TEMPLATE_OBJECT="Text" STYLE="Liberation" FlexWidth="1" Kerning="6" TextMargin="4,0,4,20" NormalColor="#ffefbf" DisabledColor="#767676"
+				OverrideTags="false" AutoSizeMin="10" AutoSizeMax="12" Alignment="Left" HoverOverrideTags="False" CLICK_EVENT_TYPE="Target"/>
+	</UIButton>
+
+	<UIButton
+		TEMPLATE_TYPE="SelectedUnit-PromotionButton"
+		TEMPLATE_OBJECT="Button"
+		STYLE="SelectionButtonSimple"
+		CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+		PreserveAspect="true"
+		Width="100%"
+		Height="46"
+		Padding="3,3,3,0"
+		Spacing="5"
+		IsLayoutIgnoredWhenInvisible="true"
+		TOOLTIP_LOCATION="TooltipLocation.RightBottom">
+		<UIImage OBJECT_NAME="Icon" TEMPLATE_OBJECT="IconBG" Width="40" Height="40" BackgroundImage="PromotionIconBG2" PreserveAspect="true" BackgroundColor="#FFFFFF" BackgroundImageMode="Simple" HighlightedColor="#FFFFFF" DisabledColor="#AAAAAA">
+			<UIImage TEMPLATE_OBJECT="Icon" Width="26" Height="26" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#848484"/>
+		</UIImage>
+		<UIText TEMPLATE_OBJECT="Text" FlexWidth="1" STYLE="Liberation" Kerning="6"  NormalColor="#ffefbf" DisabledColor="#767676" OverrideTags="false" Label="Test" AutoSizeMin="10" AutoSizeMax="12" Alignment="Left" HoverOverrideTags="False" CLICK_EVENT_TYPE="Target"/>
+	</UIButton>
+
+	<VGroup TEMPLATE_TYPE="SelectedUnit-SpecialActions">
+		<!-- Caravan -->
+		<template
+		  TEMPLATE="SelectedUnit-ContextButton"
+		  IsVisible="{{SelectedPanel-CaravanButtons-IsActive}}"
+		  Text.Label="TEXT_SELECTED_UNIT_CARAVAN"
+		  Label-BL.IsActive="False"
+		  Label-BR.IsActive="False"
+		  Icon.BackgroundImage="CARAVAN_MISSION_START"
+		  IsOn="{{SelectedPanel-CaravanButtons-IsOn}}">
+			<template TEMPLATE="SelectedUnit-ContextMenu" TEMPLATE_OBJECT="ContextMenu" CellSize="250,54">
+				<loop start="0" end="{{SelectedPanel-CaravanButtons-Count}}" placeholder="@">
+					<template
+						TEMPLATE="SelectedUnit-ActionButton"
+						Text.Label="{{SelectedPanel-CaravanButton@-Label}}"
+						Label-BL.IsActive="False"
+						Label-BR.Label="{{SelectedPanel-CaravanButton@-Opinion}}"
+						Icon.BackgroundImage="{{SelectedPanel-CaravanButton@-Icon}}"
+						Icon.BackgroundColor="{{SelectedPanel-CaravanButton@-Icon-Color}}"
+						Help.IsActive="false"
+						IsInteractable="{{SelectedPanel-CaravanButton@-IsInteractable}}"
+						ITEM_TYPE="{{SelectedPanel-CaravanButton@-ItemType}}"
+						ITEM_DATA="{{SelectedPanel-CaravanButton@-Data}}" />
+				</loop>
+			</template>
+		</template>
+
+		<!-- Promote -->
+		<template
+		   TEMPLATE="SelectedUnit-ContextButton"
+		   Label-BR.TintInlineSprites="true"
+		   Label-BR.FontColor="#000000"
+		   IsVisible="{{SelectedPanel-PromotionButtons-IsActive}}"
+		   IsInteractable="{{SelectedPanel-PromotionButtons-IsInteractable}}"
+		   Text.Label="{{SelectedPanel-PromotionButtons-Label}}"
+		   Text.TextMargin="0,0,0,13"
+		   Label-BL.IsActive="False"
+		   Label-BR.Label="{{SelectedPanel-PromotionButtons-IconList}}"
+		   Icon.BackgroundImage="UNIT_PROMOTE"
+		   IconBG.NormalImage="{{SelectedPanel-PromotionButtons-IconBG}}"
+		   IsOn="{{SelectedPanel-PromotionButtons-IsOn}}">
+
+			<template TEMPLATE="SelectedUnit-ContextMenu" TEMPLATE_OBJECT="ContextMenu">
+				<loop start="0" end="{{SelectedPanel-PromotionButtons-Count}}" placeholder="@">
+					<template
+					  TEMPLATE="SelectedUnit-PromotionButton"
+					  Text.Label="{{SelectedPanel-PromotionButton@-Label}}"
+					  Icon.BackgroundImage="{{SelectedPanel-PromotionButton@-Icon}}"
+					  IsVisible="{{SelectedPanel-PromotionButton@-IsActive}}"
+					  IsInteractable="{{SelectedPanel-PromotionButton@-IsInteractable}}"
+					  ITEM_TYPE="{{SelectedPanel-PromotionButton@-ItemType}}"
+					  ITEM_DATA="{{SelectedPanel-PromotionButton@-Data}}"/>
+				</loop>
+			</template>
+		</template>
+
+		<!-- Upgrade -->
+		<template
+		  TEMPLATE="SelectedUnit-ContextButton"
+		  IsVisible="{{SelectedPanel-UpgradeButtons-IsActive}}"
+		  IsInteractable="{{SelectedPanel-UpgradeButtons-IsInteractable}}"
+		  Text.Label="TEXT_SELECTED_UNIT_UPGRADE"
+		  Label-BL.IsActive="False"
+		  Label-BR.IsActive="False"
+		  Icon.BackgroundImage="UNIT_UPGRADE"
+		  IsOn="{{SelectedPanel-UpgradeButtons-IsOn}}">
+			<template TEMPLATE="SelectedUnit-ContextMenu" TEMPLATE_OBJECT="ContextMenu" CellSize="250,54">
+
+				<loop start="0" end="{{SelectedPanel-UpgradeButtons-Count}}" placeholder="@">
+					<template
+					  TEMPLATE="SelectedUnit-UpgradeButton"
+					  Text.Label="{{SelectedPanel-UpgradeButton@-Label}}"
+					  Icon.BackgroundImage="{{SelectedPanel-UpgradeButton@-Icon}}"
+					  IsInteractable="{{SelectedPanel-UpgradeButton@-IsInteractable}}"
+					  IsVisible="{{SelectedPanel-UpgradeButton@-IsActive}}"
+					  ITEM_TYPE="{{SelectedPanel-UpgradeButton@-ItemType}}"
+					  ITEM_DATA="{{SelectedPanel-UpgradeButton@-Data}}" />
+				</loop>
+			</template>
+		</template>
+	</VGroup>
+
+	<!-- Selected City Buttons -->
+	<UIContextControl TEMPLATE_TYPE="SelectedCity-ProductionContextButton" ToggleEvent="OnClick" CloseOnClick="true" Height="60" FlexHeight="0" FlexWidth="1" STYLE="SelectionButton" ChildAlignment="TextAnchor.MiddleLeft" CLICK_EVENT_TYPE="Target" 
+					  PaddingLeft="5" PaddingRight="-3" TooltipOffset="15,0">
+		<UIImage TEMPLATE_OBJECT="OnGraphic" STYLE="SelectionSelectedImage" Inset="0,52,0,0" StateType="IsOn"/>
+
+		<UIImage OBJECT_NAME="Icon" MinWidth="52" Width="52" TEMPLATE_OBJECT="IconBG" BackgroundImage="ActionButton" PreserveAspect="true" BackgroundColor="#FFFFFF" BackgroundImageMode="Sliced" HighlightedColor="#FFFFFF" DisabledColor="#AAAAAA">
+			<UIImage TEMPLATE_OBJECT="Icon" Anchor="UIAnchor.StretchAll" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#848484" BackgroundImageMaterial="UI/Materials/UINoMipImage" />
+		</UIImage>
+		<VGroup Padding="4,0,4,20" ChildAlignment="TextAnchor.MiddleLeft" FlexWidth="1" Spacing="2">
+			<UIText TEMPLATE_OBJECT="Text"  OBJECT_NAME="Text"  STYLE="Liberation" Kerning="6"  NormalColor="#ffefbf" DisabledColor="#767676" OverrideTags="false" Label="Test" AutoSizeMin="14" AutoSizeMax="14" Alignment="Left" HoverOverrideTags="False"/>
+			<UIText TEMPLATE_OBJECT="Label-BL" IconScale="1.8" STYLE="Liberation" Kerning="6"  NormalColor="#ffefbf" HighlightedColor="#AAAAAA" DisabledColor="#767676" OverrideTags="false" FontSize="10"/>
+		</VGroup>
+		<VGroup MinWidth="32" NormalImage="JobDivider" DisabledImage="JobDividerDisabled"  Pivot="UIPivot.MiddleRight" Anchor="UIAnchor.MiddleRight"  HighlightedImage="JobDividerRoll" BackgroundImageMode="Sliced">
+			<UIImage STYLE="ContextArrow"/>
+		</VGroup>
+	</UIContextControl>
+	
+	<UIButton
+		TEMPLATE_TYPE="SelectedCity-ProductionButton"
+		TEMPLATE_OBJECT="Button"
+		Padding="0,5,0,0"
+		STYLE="SelectionButton"
+		CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+		Width="100%" Height="52"
+		IsLayoutIgnoredWhenInvisible="true"
+		IsHighlight="false"
+		TOOLTIP_LOCATION="TooltipLocation.RightBottom" TooltipOffset="15,0">
+		<UIImage OBJECT_NAME="Icon" MinWidth="52" Width="52" TEMPLATE_OBJECT="IconBG" BackgroundImage="ActionButton" PreserveAspect="true" BackgroundColor="#FFFFFF" BackgroundImageMode="Sliced" HighlightedColor="#FFFFFF" DisabledColor="#AAAAAA">
+			<UIImage TEMPLATE_OBJECT="Icon" Anchor="UIAnchor.StretchAll" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#848484" BackgroundImageMaterial="UI/Materials/UINoMipImage" />
+		</UIImage>
+
+		<VGroup Padding="4,0,4,20" ChildAlignment="TextAnchor.MiddleLeft" FlexWidth="1" Spacing="2">
+			<UIText TEMPLATE_OBJECT="Text"  OBJECT_NAME="Text"  STYLE="Liberation" Kerning="6"  NormalColor="#ffefbf" DisabledColor="#767676" OverrideTags="false" Label="Test" AutoSizeMin="12" AutoSizeMax="14" Alignment="Left" HoverOverrideTags="False" IconScale="1.4" CLICK_EVENT_TYPE="Target"/>
+			<UIText TEMPLATE_OBJECT="Label-BL"  OBJECT_NAME="BL"  STYLE="Liberation" Kerning="6"  NormalColor="#B8A89A" HighlightedColor="#FFFFFF" DisabledColor="#767676" OverrideTags="false" AutoSizeMin="10" AutoSizeMax="12" FontSize="12" IconScale="1.25" WordWrapping="false" OverflowMode="Ellipsis" CLICK_EVENT_TYPE="Target"/>
+			<UIText TEMPLATE_OBJECT="Label-Bonus" OBJECT_NAME="Bonus" STYLE="Liberation" Kerning="6"  NormalColor="#B8A89A" HighlightedColor="#FFFFFF" DisabledColor="#767676" OverrideTags="false" AutoSizeMin="10" AutoSizeMax="12" FontSize="12" WordWrapping="false" OverflowMode="Ellipsis" CLICK_EVENT_TYPE="Target"/>
+		</VGroup>
+		<VGroup MinWidth="32" NormalImage="JobDivider" DisabledImage="JobDividerDisabled"  Pivot="UIPivot.MiddleRight" Anchor="UIAnchor.MiddleRight"  HighlightedImage="JobDividerRoll" BackgroundImageMode="Sliced">
+			<UIText TEMPLATE_OBJECT="Label-BR" IgnoreLayout="true" Anchor="UIAnchor.StretchAll" STYLE="Liberation" Kerning="3"  NormalColor="#B8A89A" HighlightedColor="#FFFFFF" DisabledColor="#767676" OverrideTags="false" FontSize="12" Alignment="Center" CLICK_EVENT_TYPE="Target"/>
+		</VGroup>
+		<UIParticles TEMPLATE_OBJECT="RecommendedParticles" ASSET_TYPE="Prefabs/UI/UIRecommendationParticles" Position="13,0" IgnoreLayout="true" Pivot="UIPivot.MiddleLeft" Anchor="UIAnchor.MiddleRight" IsActive="false"/>
+		<UIImage TEMPLATE_OBJECT="Recommended" BackgroundImage="Sprites/GuitarPickLeft" OBJECT_NAME="Recommended" Position="13,0" IgnoreLayout="true" Width="55" Height="55" Pivot="UIPivot.MiddleLeft" Anchor="UIAnchor.MiddleRight"
+				 TOOLTIP_LOCATION="TooltipLocation.Right" ITEM_TYPE="ItemType.RECOMMENDED" HOVER_EVENT_TYPE="Target"/>
+	</UIButton>
+
+	<UIButton
+		TEMPLATE_TYPE="SelectedUnit-WorkerButton"
+		TEMPLATE_OBJECT="Button"
+		STYLE="SelectionButton"
+		CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+		PreserveAspect="true"
+		Spacing="14"
+		Padding="0,3,0,-2"
+		Height="70"
+		IsLayoutIgnoredWhenInvisible="true"
+		TOOLTIP_LOCATION="TooltipLocation.RightBottom">
+		<UIImage TEMPLATE_OBJECT="Selection" STYLE="SelectionSelectedImage" />
+		<UIImage OBJECT_NAME="Icon" Width="70" BackgroundImage="JobDivider"  PreserveAspect="true" BackgroundImageMode="Sliced" >
+			<UIImage TEMPLATE_OBJECT="Icon" Width="63" Height="63" PreserveAspect="true" BackgroundImageMaterial="UI/Materials/UINoMipImage" WordWrapping="false" OverflowMode="Ellipsis" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#848484" />
+			<UIText TEMPLATE_OBJECT="IconText" STYLE="Avalon2" FontColor="#FFFFFF" FontSize="12" Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.BottomCenter" Width="50" Height="20" Alignment="Midline" CLICK_EVENT_TYPE="Target"/>
+		</UIImage>
+
+		<VGroup Spacing="5" ChildAlignment="TextAnchor.MiddleLeft" FlexWidth="1" ForceChildExpandWidth="true" Padding="0,0,0,0">
+			<UIText TEMPLATE_OBJECT="Text" STYLE="Liberation" IconScale="1.2" Kerning="6"  NormalColor="#ffefbf" DisabledColor="#767676" OverrideTags="false" Label="Test" FontSize="14" Alignment="Left" HoverOverrideTags="False" CLICK_EVENT_TYPE="Target"/>
+			<UIText TEMPLATE_OBJECT="Label-BL" STYLE="Liberation" IconScale="1.2" Kerning="6"  NormalColor="#B8A89A" HighlightedColor="#FFFFFF" DisabledColor="#767676" OverrideTags="true" HoverOverrideTags="true" FontSize="13" CLICK_EVENT_TYPE="Target"/>
+		</VGroup>
+		<VGroup MinWidth="56" NormalImage="JobDivider" DisabledImage="JobDividerDisabled"  Pivot="UIPivot.MiddleRight" Anchor="UIAnchor.MiddleRight"  HighlightedImage="JobDividerRoll" BackgroundImageMode="Sliced">
+			<UIText TEMPLATE_OBJECT="Label-R" IgnoreLayout="true" Anchor="UIAnchor.StretchAll" IconScale="1.2" STYLE="Liberation" Kerning="2"  NormalColor="#B8A89A" HighlightedColor="#FFFFFF" DisabledColor="#848484"  OverrideTags="false" FontSize="13"  Alignment="Center" CLICK_EVENT_TYPE="Target"/>
+		</VGroup>
+		<UIParticles TEMPLATE_OBJECT="RecommendedParticles" ASSET_TYPE="Prefabs/UI/UIRecommendationParticles" Position="13,0" IgnoreLayout="true" Pivot="UIPivot.MiddleLeft" Anchor="UIAnchor.MiddleRight" IsActive="false"/>
+		<UIImage TEMPLATE_OBJECT="Recommended" BackgroundImage="Sprites/GuitarPickLeft" OBJECT_NAME="Recommended" Position="13,0" IgnoreLayout="true" Width="55" Height="55" Pivot="UIPivot.MiddleLeft" Anchor="UIAnchor.MiddleRight" TOOLTIP_LOCATION="TooltipLocation.Right" ITEM_TYPE="ItemType.RECOMMENDED"/>
+	</UIButton>
+
+	<UIButton TEMPLATE_TYPE="SelectedUnit-ImprovementButton" TEMPLATE_OBJECT="Button"
+		CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+			BackgroundImage="JobDivider" BackgroundImageMode="Sliced"
+		IsLayoutIgnoredWhenInvisible="true"
+		TOOLTIP_LOCATION="TooltipLocation.RightBottom">
+		<UIImage TEMPLATE_OBJECT="Icon" Inset="3,3,3,3" PreserveAspect="true" BackgroundImageMaterial="UI/Materials/UINoMipImage"  BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#848484" />
+		<UIText TEMPLATE_OBJECT="IconText" STYLE="Avalon2" FontColor="#FFFFFF" FontSize="12" Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.BottomCenter" Width="30" Height="20" Alignment="Midline" CLICK_EVENT_TYPE="Target"/>
+		<UIImage TEMPLATE_OBJECT="Recommended" OBJECT_NAME="Recommended" Pivot="UIPivot.MiddleCenter" Anchor="UIAnchor.TopRight" Position="-3,-3" BackgroundImage="UI_HUD_Icon_Recommended" Width="15" Height="15" SortOrder="1" TOOLTIP_LOCATION="TooltipLocation.Right" ITEM_TYPE="ItemType.RECOMMENDED"/>
+	</UIButton>
+
+	<UIButton
+			TEMPLATE_TYPE="SelectedButton-NoIcon"
+			TEMPLATE_OBJECT="Button"
+			STYLE="SelectionButton"
+			Width="246" Height="25"
+			PaddingLeft="15"
+			ChildAlignment="TextAnchor.MiddleLeft"
+			CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+			IsLayoutIgnoredWhenInvisible="true"
+			TOOLTIP_LOCATION="TooltipLocation.RightBottom">
+		<UIImage TEMPLATE_OBJECT="Selection" STYLE="SelectionSelectedImage" />
+		<UIText TEMPLATE_OBJECT="Text"   OBJECT_NAME="Text"  STYLE="Liberation" Kerning="6"  NormalColor="#dfce9a" DisabledColor="#767676" OverflowMode="Ellipsis" OverrideTags="false" Label="Test" FontSize="18" Alignment="Left" HoverOverrideTags="False" CLICK_EVENT_TYPE="Target"/>
+	</UIButton>
+
+	<UIRect
+		TEMPLATE_TYPE="SelectedPanel-ListEntry"
+		Width="246"
+		Height="32"
+	  BackgroundImageMode="Sliced"
+	  BackgroundImageMaterial="UI/Materials/UIBlur2"
+		BackgroundImage="ListEntryBG"
+		TOOLTIP_LOCATION="TooltipLocation.Parent"
+		IsLayoutIgnoredWhenInvisible="true"
+		CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target">
+		<HGroup Anchor="UIAnchor.StretchAll" Padding="0,5,0,5" Spacing="10" CLICK_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent">
+			<UIText TEMPLATE_OBJECT="TypeText" OBJECT_NAME="TypeText" Width="120" STYLE="Liberation" Kerning="4"  FontColor="#dfce9a" OverflowMode="Ellipsis" FontSize="15" Alignment="Left" RaycastTarget="false"/>
+			<UIText TEMPLATE_OBJECT="ListText" OBJECT_NAME="ListText" FlexWidth="1"  STYLE="Liberation" Kerning="4"  FontColor="#dfce9a" OverflowMode="Ellipsis" FontSize="15" Alignment="Right" IconScale="1.4" CLICK_EVENT_TYPE="Target"/>
+		</HGroup>
+	</UIRect>
+
+	<UIImage TEMPLATE_TYPE="FramedCrest" BackgroundImage="CrestBackground" PreserveAspect="true" Width="75" Height="75">
+		<UIImage TEMPLATE_OBJECT="Icon"  Anchor="UIAnchor.MiddleCenter" Pivot="UIPivot.MiddleCenter" Width="45" Height="45" PreserveAspect="true" />
+		<UIImage BackgroundImage="ButtonGlare" Inset="8,8,8,8" PreserveAspect="true"/>
+	</UIImage>
+
+	<UIContextControl TEMPLATE_TYPE="SelectedUnit-ContextButton" ToggleEvent="OnClick" CloseOnClick="true" Height="54" FlexHeight="0" FlexWidth="1" STYLE="SelectionButton" ChildAlignment="TextAnchor.MiddleLeft" CLICK_EVENT_TYPE="Target" IsLayoutIgnoredWhenInvisible="true">
+		<UIImage TEMPLATE_OBJECT="OnGraphic" STYLE="SelectionSelectedImage" Inset="0,46,0,0" StateType="IsOn"/>
+
+		<UIImage TEMPLATE_OBJECT="IconBG" MinWidth="51" Width="51" Height="51" NormalImage="ActionButton" PreserveAspect="true" HighlightedImage="ActionButtonRoll" BackgroundImageMode="Sliced" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#555555FF" 
+				 StateAttributes="[Normal_BackgroundImage:ActionButton][Available_BackgroundImage:AttentionRoll]">
+			<UIImage TEMPLATE_OBJECT="Icon" Width="42" Height="42" BackgroundImage="UNIT_PROMOTE" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#BBBBBBFF" />
+		</UIImage>
+
+		<UIText TEMPLATE_OBJECT="Text"  STYLE="Liberation" Kerning="6"  FontSize="12"  Alignment="Left" FontColor="#ffefbf" Inset="0,57,0,32" NormalColor="#ffefbf" HighlightedColor="#AB9F7FFF" DisabledColor="#767676" OverrideTags="false" />
+		<UIText TEMPLATE_OBJECT="Label-BR" STYLE="Liberation" Kerning="6"  FontSize="28" Alignment="Right" FontColor="#ffefbf" Inset="0,0,0,32" NormalColor="#ffefbf" HighlightedColor="#AB9F7FFF" DisabledColor="#767676" OverrideTags="false" />
+		<UIImage TEMPLATE_OBJECT="Arrow" STYLE="ContextArrow"/>
+	</UIContextControl>
+
+	<UIContextControl TEMPLATE_TYPE="SelectedFound-ContextButton" ToggleEvent="OnClick" CloseOnClick="true" Height="54" FlexHeight="0" FlexWidth="1" STYLE="SelectionButtonPersistent" ChildAlignment="TextAnchor.MiddleLeft" CLICK_EVENT_TYPE="Target" IsLayoutIgnoredWhenInvisible="true">
+		<UIImage TEMPLATE_OBJECT="OnGraphic" STYLE="SelectionSelectedImage" Inset="0,46,0,0" StateType="IsOn"/>
+
+		<UIImage TEMPLATE_OBJECT="IconBG" Width="51" Height="51" NormalImage="ActionButton" PreserveAspect="true" HighlightedImage="ActionButtonRoll" BackgroundImageMode="Sliced" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#BBBBBBFF">
+			<UIImage TEMPLATE_OBJECT="Icon" Width="42" Height="42" BackgroundImage="UNIT_PROMOTE" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#BBBBBBFF" 
+					 State="Default" StateAttributes="[Default_Width:42][Default_Height:42][Portrait_Width:51][Portrait_Height:51]"/>
+		</UIImage>
+
+		<UIText TEMPLATE_OBJECT="Text"  STYLE="Liberation" Kerning="6"  FontSize="12"  Alignment="Left" FontColor="#ffefbf" Inset="0,57,0,10" NormalColor="#ffefbfff" HighlightedColor="#AB9F7FFF" DisabledColor="#ffefbfaa" OverrideTags="false" />
+		<UIText TEMPLATE_OBJECT="Label-BR" STYLE="Liberation" Kerning="6"  FontSize="28" Alignment="Right" FontColor="#ffefbf" Inset="0,0,0,32" NormalColor="#ffefbfff" HighlightedColor="#AB9F7FFF" DisabledColor="#ffefbfaa" OverrideTags="false" />
+		<UIImage TEMPLATE_OBJECT="Arrow" STYLE="ContextArrow"/>
+	</UIContextControl>
+
+	<UIButton
+	  TEMPLATE_TYPE="SelectedFound-ActionButtonNoIcon"
+	  STYLE="SelectionButton"
+	  CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+	  Width="200"
+	  Height="46"
+	  PaddingLeft="10"
+	  IsLayoutIgnoredWhenInvisible="true"
+	  TOOLTIP_LOCATION="TooltipLocation.RightBottom"
+	  StateAttributes="[Highlight_IsHighlight:True][Default_IsHighlight:False]">
+		<UIText TEMPLATE_OBJECT="Label-BR" IgnoreLayout="true" STYLE="Liberation" Kerning="6"  NormalColor="#ffefbf" HighlightedColor="#FFFFFF" DisabledColor="#767676" OverrideTags="false" FontSize="12"
+				Anchor="UIAnchor.StretchAll" Pivot="UIPivot.MiddleRight" Alignment="Right" TextMargin="0,0,0,5" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Target"/>
+		<UIText TEMPLATE_OBJECT="Text" STYLE="Liberation" Kerning="6" FlexWidth="1" HoverOverrideTags="false" NormalColor="#ffefbf" DisabledColor="#767676" AutoSizeMin="9" AutoSizeMax="12" Alignment="Left" TOOLTIP_LOCATION="TooltipLocation.Parent" CLICK_EVENT_TYPE="Target"/>
+	</UIButton>
+
+	<UIButton
+	  TEMPLATE_TYPE="SelectedFound-ActionButtonPortrait"
+	  STYLE="SelectionButton"
+	  CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target"
+	  Width="92"
+	  Height="92"
+	  IsLayoutIgnoredWhenInvisible="true"
+	  TOOLTIP_LOCATION="TooltipLocation.RightBottom"
+	  StateAttributes="[Highlight_IsHighlight:True][Default_IsHighlight:False]">
+		<UIImage TEMPLATE_OBJECT="IconBG" OBJECT_NAME="Icon" MinWidth="90" Width="90" NormalImage="ActionButton" HighlightedImage="ActionButtonRoll" PreserveAspect="true" BackgroundColor="#FFFFFF" BackgroundImageMode="Sliced" HighlightedColor="#FFFFFF" DisabledColor="#AAAAAA">
+			<UIImage TEMPLATE_OBJECT="Icon" PreserveAspect="true" BackgroundColor="#FFFFFF" HighlightedColor="#FFFFFF" DisabledColor="#848484"
+					 State="Default" StateAttributes="[Default_Width:90][Default_Height:90][Portrait_Width:90][Portrait_Height:90]"/>
+		</UIImage>
+	</UIButton>
+
+	<UIGrid
+	  TEMPLATE_TYPE="SelectedFound-ContextMenuPortrait"
+	  ASSIGN_TO_PARENT="UIContextControl:Content"
+	  TOOLTIP_LOCATION="TooltipLocation.TopLeft"
+	  BackgroundImage="TrimBlurRounded"
+	  BackgroundImageMode="Sliced"
+	  BackgroundImageMaterial="UI/Materials/UIBlur2"
+	  Constraint="Column"
+	  ConstraintCount="5"
+	  CellSize="92,92"
+	  Spacing="0"
+	  IgnoreLayout="true"
+	  Anchor="UIAnchor.TopRight"
+	  Pivot="UIPivot.TopLeft"
+	  HorizontalFit="PreferredSize"
+	  VerticalFit="PreferredSize"
+	  Position="12,0"
+	  Padding="5,5,5,5"
+	  SortOrder="3"
+	  HOVER_EVENT_TYPE="Target"
+	  CLICK_EVENT_TYPE="Ignore">
+	</UIGrid>
+
+	<UIGrid
+	  TEMPLATE_TYPE="SelectedUnit-ContextMenu"
+	  ASSIGN_TO_PARENT="UIContextControl:Content"
+	  TOOLTIP_LOCATION="TooltipLocation.TopLeft"
+	  BackgroundImage="TrimBlurRounded"
+	  BackgroundImageMode="Sliced"
+	  BackgroundImageMaterial="UI/Materials/UIBlur2"
+	  Constraint="Column"
+	  ConstraintCount="1"
+	  CellSize="200,46"
+	  Spacing="0"
+	  IgnoreLayout="true"
+	  Anchor="UIAnchor.TopRight"
+	  Pivot="UIPivot.TopLeft"
+	  HorizontalFit="PreferredSize"
+	  VerticalFit="PreferredSize"
+	  Position="12,0"
+	  Padding="5,5,5,5"
+	  SortOrder="3"
+	  HOVER_EVENT_TYPE="Target"
+	  CLICK_EVENT_TYPE="Ignore">
+	</UIGrid>
+
+	<UIButton TEMPLATE_TYPE="CharacterListCharacter" STYLE="SelectionCharacterButton,HGroup" FlexWidth="1" Height="85" Spacing="6" Padding="0,2,0,2" IsLayoutIgnoredWhenInvisible="true"
+			  CLICK_EVENT_TYPE="Target" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent">
+
+		<replace TEMPLATE_OBJECT="CharacterID" placeholder="(ID)">
+			<UIImage TEMPLATE_OBJECT="QuickSelectionEffect" STYLE="SelectionSelectedImage" BackgroundColor="#BBBBBBBB" State="{{QuickActions-ID}}" StateType="(ID)"/>
+			<UIImage TEMPLATE_OBJECT="SelectionEffect" STYLE="SelectionSelectedImage" State="{{SelectedCharacter}}" StateType="(ID)"/>
+
+			<UIImage BackgroundImage="Character_Tab_Portrait_BG" BackgroundImageMode="Sliced" MinWidth="85" Width="85" Height="85">
+				<UIImage STYLE="SelectionSelectedImage" BackgroundColor="#BBBBBBBB" State="{{QuickActions-ID}}" StateType="(ID)"/>
+				<UIImage STYLE="SelectionSelectedImage" State="{{SelectedCharacter}}" StateType="(ID)"/>
+				<UIImage Width="72" Height="72" BackgroundImage="{{Character(ID)-PortraitBG}}"  NormalColor="#FFFFFF" HighlightedColor="#AAAAAA" PreserveAspect="true">
+					<UIImage Anchor="UIAnchor.StretchAll" BackgroundImage="{{Character(ID)-Portrait}}" CharacterID="{{Character(ID)-CharacterID}}" NormalColor="#FFFFFF" HighlightedColor="#AAAAAA" PreserveAspect="true"/>
+
+					<UIImage Width="21" Height="21" BackgroundImage="MissionIcon" Position="-4,2" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" IsActive="{{Character(ID)-HasMission}}"
+								 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Mission-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target">
+						<UIParticles ASSET_TYPE="Prefabs/Particles/OnMission-Particle" Inset="0,0,0,0" IsPlaying="true" SortOrder="1" RaycastTarget="false" Scale="16,16,1" IsActive="{{Character(ID)-Mission-ShowEffect}}" ForceInactive="{{Mission-HideEffect}}"/>
+					</UIImage>
+
+					<UIImage Width="21" Height="21" BackgroundImage="MISSION_TUTOR_Courtier" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" IsActive="{{Character(ID)-IsCourtierTutor}}false" ForceInactive="{{Character(ID)-HasMission}}"
+							ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Mission-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" Outline="2,2" OutlineColor="#000000" HOVER_EVENT_TYPE="Target"
+							State="{{Character(ID)-IsLeaderTutor}}False" StateAttributes="[Default_Position:-4,4][True_Position:0,4]"/>
+
+					<UIImage Width="21" Height="21" BackgroundImage="MISSION_TUTOR" Position="-4,4" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" IsActive="{{Character(ID)-IsLeaderTutor}}false" ForceInactive="{{Character(ID)-HasMission}}"
+								 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Mission-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" Outline="2,2" OutlineColor="#000000" HOVER_EVENT_TYPE="Target"/>
+
+					<UIImage Width="21" Height="21" BackgroundImage="Sprites/CC_logo" BackgroundImageMaterial="UI/Materials/UINoMipImage" Position="-2,2" Anchor="UIAnchor.BottomRight" Pivot="UIPivot.BottomRight" IsActive="{{Character(ID)-Portrait-IsCC}}false"
+											 ITEM_TYPE="ItemType.COMMUNITY_CONTRIBUTION" ITEM_DATA="{{Character(ID)-Portrait-CC-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target"/>
+
+					<UIImage Width="36" Height="36" Position="0,0" Anchor="UIAnchor.BottomLeft" Pivot="UIPivot.BottomLeft" BackgroundImage="PortraitCorner" PreserveAspect="true" IsActive="{{Character(ID)-Family-IsActive}}">
+						<UIText Inset="1,1,1,1" FontSize="18" Alignment="BottomLeft" Label="{{Character(ID)-Family}}" HOVER_EVENT_TYPE="Target"/>
+					</UIImage>
+
+					<UIImage Width="16" Height="16" Anchor="UIAnchor.TopRight" Pivot="UIPivot.TopRight" BackgroundImage="OpinionEdge" BackgroundColor="{{Character(ID)-Opinion-Color}}"
+							 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Opinion-Data}}" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent" IsActive="{{Character(ID)-Opinion-NotCautious}}"/>
+				</UIImage>
+			</UIImage>
+
+			<VGroup FlexWidth="1" Height="75" ChildAlignment="TextAnchor.UpperLeft" Padding="5,0,0,5">
+				<HGroup FlexWidth="1" MinHeight="18" Spacing="20">
+					<UIText STYLE="Liberation" FlexWidth="1" Kerning="4" Label="{{Character(ID)-NameAge}}" FontSize="15" Alignment="MidlineLeft" OverflowMode="Ellipsis" RaycastTarget="false"/>
+					<UIText MinWidth="22" Label="{{Character(ID)-Opinion}}" STYLE="Liberation" Kerning="6" FontSize="11" Alignment="Midline" WordWrapping="false" IsActive="{{Character(ID)-HasOpinion}}"/>
+				</HGroup>
+				<HGroup FlexWidth="1" FlexHeight="1" Spacing="3" Padding="5,0,0,0">
+					<VGroup FlexWidth="1" ChildAlignment="TextAnchor.MiddleLeft" ChildControlHeight="false" Spacing="5" Padding="0,0,7,0">
+						<UIText STYLE="Liberation" Height="14" Kerning="4" Label="{{Character(ID)-Traits}}" FontColor="#b8a89a" FontSize="12" Alignment="Left" TextMargin="2,2,2,2"/>
+						<UIImage BackgroundImage="Character_Tab_Rating_BG" Height="26" FlexWidth="1" BackgroundImageMode="Sliced">
+							<UIText Anchor="UIAnchor.MiddleLeft" Pivot="UIPivot.MiddleLeft" Position="10,0"  Label="{{Character(ID)-Archetype}}" Height="22" Width="22" FontSize="22" Alignment="Midline" HOVER_EVENT_TYPE="Target"/>
+							<UIText Anchor="UIAnchor.MiddleLeft" Pivot="UIPivot.MiddleLeft" Position="42,0"  Label="{{Character(ID)-RatingsFull}}" Height="22" Width="172" 
+									DisabledColor="#AAAAAA" STYLE="Liberation" Kerning="6" FlexWidth="1" FontSize="15" Alignment="Left" WordWrapping="false"/>
+							<UIText Anchor="UIAnchor.MiddleLeft" Pivot="UIPivot.MiddleLeft" Position="220,0" Label="{{Character(ID)-ItemsIcon}}" Height="22" Width="22" FontSize="22" Alignment="Midline" IsVisible="{{Character(ID)-ItemsIcon-IsVisible}}" HOVER_EVENT_TYPE="Target"/>
+						</UIImage>
+					</VGroup>
+
+					<VGroup MinWidth="30" Spacing="8" FlexHeight="1" NormalImage="CharacterDivider_Normal" HighlightedImage="CharacterDivider_Highlighted" BackgroundImageMode="Sliced" Padding="5,0,10,0" IsActive="{{Character(ID)-HasIcons}}">
+						<UIImage IsActive="{{Character(ID)-IsRoyal}}" BackgroundImage="{{Character(ID)-RoyalIcon}}" Height="20" Width="20" PreserveAspect="true" ITEM_TYPE="ItemType.CHARACTER_ROLE_SLOT" ITEM_DATA="(ID),{{Character(ID)-Royal-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target">
+							<UIImage Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopRight" Position="4,4" Height="16" Width="16" PreserveAspect="true"
+							 State="{{Character(ID)-PlaceInLine}}" StateType="1,2,3,4" StateAttributes="[1_BackgroundImage:Place1][2_BackgroundImage:Place2][3_BackgroundImage:Place3][4_BackgroundImage:Place4]"/>
+						</UIImage>
+						<UIImage IsActive="{{Character(ID)-HasJob}}" BackgroundImage="{{Character(ID)-JobIcon}}" Height="20" Width="20" PreserveAspect="true" CLICK_EVENT_TYPE="Ignore" ITEM_TYPE="{{Character(ID)-Job-Type}}" ITEM_DATA="{{Character(ID)-Job-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target"/>
+					</VGroup>
+
+					<UIRect MinWidth="22" Height="100%">
+						<UIText MinWidth="22" Label="{{Character(ID)-Religion}}" FontSize="22" Alignment="Midline" IsActive="{{Character(ID)-HasReligion}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+					</UIRect>
+				</HGroup>
+			</VGroup>
+		</replace>
+	</UIButton>
+
+
+	<!--Selected Character  ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_CHARACTER,{{SelectedCharacter}}"-->
+	<HGroup TEMPLATE_TYPE="SelectedCharacter" Spacing="8" FlexWidth="1" BackgroundImage="Trim6" Width="400" Height="105" FlexHeight="0" BackgroundImageMode="Sliced" ChildAlignment="TextAnchor.MiddleLeft" Padding="4,6,10,6" TOOLTIP_LOCATION="TooltipLocation.RightBottom" 
+			BatchCanvas="true">
+		<replace TEMPLATE_OBJECT="CharacterID" placeholder="(ID)" replacement="{{SelectedCharacter}}">
+			<UIImage BackgroundImage="Character_Tab_Portrait_BG" BackgroundImageMode="Sliced" MinWidth="91" Width="91" Height="91" TOOLTIP_LOCATION="TooltipLocation.Parent">
+				<UIImage Width="72" Height="72" BackgroundImage="{{Character(ID)-PortraitBG}}"  NormalColor="#FFFFFF" HighlightedColor="#AAAAAA" PreserveAspect="true" TOOLTIP_LOCATION="TooltipLocation.Parent">
+					<UIImage Anchor="UIAnchor.StretchAll" BackgroundImage="{{Character(ID)-Portrait}}" CharacterID="{{Character(ID)-CharacterID}}" NormalColor="#FFFFFF" HighlightedColor="#AAAAAA" PreserveAspect="true" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_CHARACTER,(ID)" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+
+					<UIImage Width="21" Height="21" BackgroundImage="MissionIcon" Position="-4,2" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" IsActive="{{Character(ID)-HasMission}}"
+								 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Mission-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target">
+						<UIParticles ASSET_TYPE="Prefabs/Particles/OnMission-Particle" Inset="0,0,0,0" IsPlaying="true" SortOrder="1" RaycastTarget="false" Scale="16,16,1" IsActive="{{Character(ID)-Mission-ShowEffect}}" ForceInactive="{{Mission-HideEffect}}"/>
+					</UIImage>
+					
+					<UIImage Width="21" Height="21" BackgroundImage="MISSION_TUTOR_Courtier" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" IsActive="{{Character(ID)-IsCourtierTutor}}false" ForceInactive="{{Character(ID)-HasMission}}"
+							ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Mission-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" Outline="2,2" OutlineColor="#000000" HOVER_EVENT_TYPE="Target"
+							State="{{Character(ID)-IsLeaderTutor}}False" StateAttributes="[Default_Position:-4,4][True_Position:0,4]"/>
+
+					<UIImage Width="21" Height="21" BackgroundImage="MISSION_TUTOR" Position="-4,4" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" IsActive="{{Character(ID)-IsLeaderTutor}}false" ForceInactive="{{Character(ID)-HasMission}}"
+								 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Mission-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" Outline="2,2" OutlineColor="#000000" HOVER_EVENT_TYPE="Target"/>
+
+					<UIImage Width="21" Height="21" BackgroundImage="Sprites/CC_logo" BackgroundImageMaterial="UI/Materials/UINoMipImage" Position="-2,2" Anchor="UIAnchor.BottomRight" Pivot="UIPivot.BottomRight" IsActive="{{Character(ID)-Portrait-IsCC}}false"
+											 ITEM_TYPE="ItemType.COMMUNITY_CONTRIBUTION" ITEM_DATA="{{Character(ID)-Portrait-CC-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target"/>
+
+					<UIImage Width="36" Height="36" Position="0,0" Anchor="UIAnchor.BottomLeft" Pivot="UIPivot.BottomLeft" BackgroundImage="PortraitCorner" PreserveAspect="true" IsActive="{{Character(ID)-Family-IsActive}}" TOOLTIP_LOCATION="TooltipLocation.Parent">
+						<UIText Inset="1,1,1,1" FontSize="18" Alignment="BottomLeft" Label="{{Character(ID)-Family}}" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+					</UIImage>
+
+					<UIImage Width="16" Height="16" Anchor="UIAnchor.TopRight" Pivot="UIPivot.TopRight" BackgroundImage="OpinionEdge" BackgroundColor="{{Character(ID)-Opinion-Color}}"
+							 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Opinion-Data}}" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent" IsActive="{{Character(ID)-Opinion-NotCautious}}"/>
+				</UIImage>
+			</UIImage>
+
+			<VGroup FlexWidth="1" Height="80" ChildAlignment="TextAnchor.UpperLeft" TOOLTIP_LOCATION="TooltipLocation.Parent">
+				<HGroup BackgroundImage="BlurrBG" FlexWidth="1" MinHeight="18" Spacing="20" PaddingRight="5" TOOLTIP_LOCATION="TooltipLocation.Parent">
+					<UIText STYLE="Liberation" FlexWidth="1" Kerning="4" Label="{{Character(ID)-Name}}" FontSize="15" Alignment="MidlineLeft" OverflowMode="Ellipsis" RaycastTarget="false" TextMargin="0,5,0,0" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+					<UIText MinWidth="22" Label="{{Character(ID)-Opinion}}" STYLE="Liberation" Kerning="6" FontSize="11" Alignment="Midline" WordWrapping="false" IsActive="{{Character(ID)-HasOpinion}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+				</HGroup>
+				<HGroup FlexWidth="1" FlexHeight="1" Spacing="3" Padding="0,0,0,0" TOOLTIP_LOCATION="TooltipLocation.Parent">
+					<VGroup FlexWidth="1" ChildAlignment="TextAnchor.MiddleLeft" Spacing="5" Padding="5,0,7,0" TOOLTIP_LOCATION="TooltipLocation.Parent">
+						<UIText STYLE="Liberation" FlexWidth="1" Kerning="4" Label="{{Character(ID)-Traits}}" FontColor="#b8a89a" FontSize="12" Alignment="Left" TextMargin="2,2,2,2" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+						<HGroup BackgroundImage="Character_Tab_Rating_BG" Height="26" BackgroundImageMode="Sliced" Padding="0,10,0,0" Spacing="10" TOOLTIP_LOCATION="TooltipLocation.Parent">
+							<UIText Label="{{Character(ID)-Archetype}}" Height="22" Width="22" FontSize="22" Alignment="Midline" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+							<UIText Label="{{Character(ID)-RatingsFull}}" DisabledColor="#AAAAAA" STYLE="Liberation" Kerning="6" FlexWidth="1" FontSize="15" Alignment="Left" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+							<UIText Label="{{Character(ID)-ItemsIcon}}" Height="22" Width="22" FontSize="22" Alignment="Midline" HOVER_EVENT_TYPE="Target" IsActive="{{Character(ID)-ItemsIcon-IsVisible}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+						</HGroup>
+					</VGroup>
+
+					<VGroup MinWidth="30" Spacing="12" FlexHeight="1" NormalImage="CharacterDivider_Normal" HighlightedImage="CharacterDivider_Highlighted" BackgroundImageMode="Sliced" Padding="5,0,10,0" IsActive="{{Character(ID)-HasIcons}}">
+						<UIImage IsActive="{{Character(ID)-IsRoyal}}" BackgroundImage="{{Character(ID)-RoyalIcon}}" Height="20" Width="20" PreserveAspect="true" ITEM_TYPE="ItemType.CHARACTER_ROLE_SLOT" ITEM_DATA="(ID),{{Character(ID)-Royal-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target">
+							<UIImage Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopRight" Position="4,4" Height="16" Width="16" PreserveAspect="true"
+							 State="{{Character(ID)-PlaceInLine}}" StateType="1,2,3,4" StateAttributes="[1_BackgroundImage:Place1][2_BackgroundImage:Place2][3_BackgroundImage:Place3][4_BackgroundImage:Place4]"/>
+						</UIImage>
+						<UIImage IsActive="{{Character(ID)-HasJob}}" BackgroundImage="{{Character(ID)-JobIcon}}" Height="20" Width="20" PreserveAspect="true" CLICK_EVENT_TYPE="Ignore" ITEM_TYPE="{{Character(ID)-Job-Type}}" ITEM_DATA="{{Character(ID)-Job-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target"/>
+					</VGroup>
+
+					<UIRect MinWidth="22" Height="100%">
+						<UIText Anchor="UIAnchor.TopCenter" Pivot="UIPivot.TopCenter" MinWidth="22" Label="{{Character(ID)-Religion}}" FontSize="22" Alignment="Top" IsActive="{{Character(ID)-HasReligion}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+						<UIButton Width="20" Height="20" Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.BottomCenter" Position="0,2" NormalImage="CharacterRenameNormal" HighlightedImage="CharacterRenameRoll"
+							 AllowNavigationSelection="false" ITEM_TYPE="ItemType.RENAME_CHARACTER" ITEM_DATA="(ID)" IsActive="{{SelectedCharacter-Rename-IsActive}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+					</UIRect>
+				</HGroup>
+			</VGroup>
+		</replace>
+	</HGroup>
+
+	<VGroup TEMPLATE_TYPE="RelativeGridCharacter" TOOLTIP_LOCATION="TooltipLocation.Parent" Spacing="1" Padding="2,2,2,2" IsLayoutIgnoredWhenInvisible="true">
+		<replace TEMPLATE_OBJECT="CharacterID" placeholder="(ID)">
+			<UIButton Width="56" Height="56" PreserveAspect="true" InsetBottom="8" BackgroundImageMode="Sliced" BackgroundImage="{{Character(ID)-PortraitBG}}" HighlightedColor="#AAAAAA"
+					  ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_SELECT_CHARACTER,{{Character(ID)-Data}}" CLICK_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent">
+				<UIImage BackgroundImage="{{Character(ID)-Portrait}}" CharacterID="{{Character(ID)-CharacterID}}" Width="56" Height="56" PreserveAspect="true" HighlightedColor="#AAAAAA"/>
+
+				<UIImage Width="14" Height="14" BackgroundImage="MissionIcon" Position="0,-2" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopLeft" IsActive="{{Character(ID)-HasMission}}"
+								 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Mission-Data}}"/>
+
+				<UIImage Width="14" Height="14" BackgroundImage="Sprites/CC_logo" BackgroundImageMaterial="UI/Materials/UINoMipImage" Position="-2,2" Anchor="UIAnchor.BottomRight" Pivot="UIPivot.BottomRight" IsActive="{{Character(ID)-Portrait-IsCC}}false"
+								 ITEM_TYPE="ItemType.COMMUNITY_CONTRIBUTION" ITEM_DATA="{{Character(ID)-Portrait-CC-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+
+				<UIImage Width="14" Height="14" Anchor="UIAnchor.TopRight" Pivot="UIPivot.TopRight" BackgroundImage="OpinionEdge" BackgroundColor="{{Character(ID)-Opinion-Color}}"
+						 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character(ID)-Opinion-Data}}" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent" IsActive="{{Character(ID)-Opinion-NotCautious}}"/>
+			</UIButton>
+		</replace>
+		<UIText TEMPLATE_OBJECT="RelativeText" STYLE="Liberation" Kerning="6" FontSize="11" FontColor="#a6a08f" Alignment="BottomCenter" WordWrapping="false"/>
+	</VGroup>
+
+	<VGroup TEMPLATE_TYPE="SelectedCharacterActions" BackgroundImage="TrimBGBlur2" BackgroundImageMode="Sliced" BackgroundImageMaterial="UI/Materials/UIBlur2" Padding="16,6,4,6" FlexWidth="1" Spacing="2" ChildAlignment="TextAnchor.UpperLeft" TOOLTIP_LOCATION="TooltipLocation.RightBottom">
+		<UIImage BackgroundImage="Trim5" Width="400" BackgroundImageMode="Sliced" IgnoreLayout="true" Anchor="UIAnchor.StretchAll"/>
+
+		<!--Relatives-->
+		<template TEMPLATE="CategoryToggle" IsActive="{{SelectedCharacterPanel-Relatives-IsVisible}}" TitleLabel.Label="TEXT_UI_CHARACTER_ACTIONS_RELATIVES_TITLE">
+			<UIGrid STYLE="SelectedCharacter-RelativeButtonGrid" ASSIGN_TO_PARENT="UIContentToggle:Content" Padding="5,5,5,5" TOOLTIP_LOCATION="TooltipLocation.Parent" CellSize="70,70" Spacing="-3,0" ConstraintCount="5" IsActive="{{SelectedCharacterPanel-Relatives-IsVisible}}">
+				<loop start="0" end="{{SelectedCharacterPanel-Relatives-Count}}" placeholder="@">
+					<template
+						TEMPLATE="RelativeGridCharacter"
+						CharacterID.replacement="{{SelectedCharacterPanel-Relative@-ID}}"
+						RelativeText.Label="{{SelectedCharacterPanel-Relative@-Label}}"
+						IsActive="{{SelectedCharacterPanel-Relative@-IsActive}}"
+						TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+				</loop>
+			</UIGrid>
+		</template>
+
+		<!--Actions-->
+		<template TEMPLATE="CategoryToggle" TitleLabel.Label="TEXT_SELECTED_CHARACTER_ACTIONS" IsActive="{{SelectedCharacterActions-HasActions}}">
+			<VGroup ASSIGN_TO_PARENT="UIContentToggle:Content">
+				<VGroup TOOLTIP_LOCATION="TooltipLocation.Right">
+					<loop start="0" end="{{SelectedCharacterActions-Buttons-Count}}" placeholder="@">
+						<template
+						  TEMPLATE="Selection-ActionButton"
+						  Text.Label="{{SelectedCharacterActions-Button@-Label}}"
+						  Label-BR.Label="{{SelectedCharacterActions-Button@-Time}}"
+						  Icon.BackgroundImage="{{SelectedCharacterActions-Button@-Icon}}"
+						  Icon.IsActive="true"
+						  Icon.PreserveAspect="true"
+						  State="{{SelectedCharacterActions-Button@-State}}"
+						  IsInteractable="{{SelectedCharacterActions-Button@-IsInteractable}}"
+						  ITEM_TYPE="{{SelectedCharacterActions-Button@-ItemType}}"
+						  ITEM_DATA="{{SelectedCharacterActions-Button@-Data}}"
+						  IsVisible="{{SelectedCharacterActions-Button@-IsActive}}"
+						  TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+					</loop>
+
+					<loop start="0" end="{{SelectedCharacterActions-ContextButtons-Count}}" placeholder="@">
+						<template
+						  TEMPLATE="SelectedUnit-ContextButton"
+						  IsVisible="{{SelectedCharacterActions-ContextButton@-IsActive}}"
+						  IsInteractable="{{SelectedCharacterActions-ContextButton@-IsInteractable}}"
+						  Text.Label="{{SelectedCharacterActions-ContextButton@-Label}}"
+						  Label-BR.IsActive="False"
+						  Icon.BackgroundImage="{{SelectedCharacterActions-ContextButton@-Icon}}">
+							<template TEMPLATE="ScrollRect" ASSIGN_TO_PARENT="UIContextControl:Content" STYLE="SelectionPanelContextScroll" State="{{TabOverlay-CurrentOverlay}}"
+									  StateAttributes="[INHERITANCE_Inset:-322,360,0,-315][Default_Inset:0,360,-322,-315]">
+								<VGroup ASSIGN_TO_PARENT="UIScrollRect:Content" STYLE="SelectionPanelContextScrollContent" State="{{TabOverlay-CurrentOverlay}}" 
+										StateAttributes="[INHERITANCE_Anchor:UIAnchor.HorStretchBottom][INHERITANCE_Pivot:UIPivot.BottomLeft]
+										[Default_Anchor:UIAnchor.HorStretchTop][Default_Pivot:UIPivot.TopLeft]">
+									<loop start="0" end="{{SelectedCharacterActions-ContextButton@-Buttons-Count}}" placeholder="$">
+										<template
+										  TEMPLATE="Selection-ActionButton"
+										  Width="284"
+										  Text.Label="{{SelectedCharacterActions-ContextButton@-Button$-Label}}"
+										  Label-BR.Label="{{SelectedCharacterActions-ContextButton@-Button$-Label-Extra}}"
+										  Label-BR.IsActive="{{SelectedCharacterActions-ContextButton@-Button$-Label-HasExtra}}"
+										  IconBG.NormalImage="{{SelectedCharacterActions-ContextButton@-Button$-IconBG}}"
+										  IconBG.HighlightedImage="{{SelectedCharacterActions-ContextButton@-Button$-IconBG}}"
+										  Icon.BackgroundImage="{{SelectedCharacterActions-ContextButton@-Button$-Icon}}"
+										  Icon.BackgroundColor="{{SelectedCharacterActions-ContextButton@-Button$-IconColor}}"
+										  Icon.CharacterID="{{SelectedCharacterActions-ContextButton@-Button$-CharacterID}}"
+										  Icon.State="{{SelectedCharacterActions-ContextButton@-Button$-IconState}}"
+										  IsInteractable="{{SelectedCharacterActions-ContextButton@-Button$-IsInteractable}}"
+										  ITEM_TYPE="{{SelectedCharacterActions-ContextButton@-Button$-ItemType}}"
+										  ITEM_DATA="{{SelectedCharacterActions-ContextButton@-Button$-Data}}"
+										  TOOLTIP_LOCATION="TooltipLocation.Parent" />
+									</loop>
+								</VGroup>
+							</template>
+						</template>
+					</loop>
+
+					<loop start="0" end="{{SelectedCharacterActions-MissionClassButtons-Count}}"  placeholder="@">
+						<template
+						  TEMPLATE="SelectedUnit-ContextButton"
+						  IsActive="{{SelectedCharacterActions-MissionClassButton@-IsActive}}"
+						  IsInteractable="{{SelectedCharacterActions-MissionClassButton@-IsInteractable}}"
+						  Text.Label="{{SelectedCharacterActions-MissionClassButton@-Label}}"
+						  Label-Bonus.IsActive="false"
+						  Label-BL.IsActive="false"
+						  Label-BR.IsActive="False"
+						  Icon.BackgroundImage="{{SelectedCharacterActions-MissionClassButton@-Icon}}"
+						  ITEM_TYPE="{{SelectedCharacterActions-MissionClassButton@-Type}}"
+						  ITEM_DATA="{{SelectedCharacterActions-MissionClassButton@-Data}}">
+							<template TEMPLATE="ScrollRect" ASSIGN_TO_PARENT="UIContextControl:Content" STYLE="SelectionPanelContextScroll" State="{{TabOverlay-CurrentOverlay}}"
+									  StateAttributes="[INHERITANCE_Inset:-322,360,0,-315][Default_Inset:0,360,-322,-315]">
+								<VGroup ASSIGN_TO_PARENT="UIScrollRect:Content" STYLE="SelectionPanelContextScrollContent" State="{{TabOverlay-CurrentOverlay}}"
+										StateAttributes="[INHERITANCE_Anchor:UIAnchor.HorStretchBottom][INHERITANCE_Pivot:UIPivot.BottomLeft]
+										[Default_Anchor:UIAnchor.HorStretchTop][Default_Pivot:UIPivot.TopLeft]">
+									<loop start="0" end="{{SelectedCharacterActions-MissionClassButton@-ContextButtons-Count}}" placeholder="$">
+										<template
+										  TEMPLATE="SelectedUnit-ContextButton"
+										  IsActive="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-IsActive}}"
+										  IsInteractable="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-IsInteractable}}"
+										  Text.Label="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Label}}"
+										  Label-BR.IsActive="False"
+										  Icon.BackgroundImage="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Icon}}">
+											<template TEMPLATE="ScrollRect" ASSIGN_TO_PARENT="UIContextControl:Content" STYLE="SelectionPanelContextScroll" InsetLeft="308">
+												<VGroup ASSIGN_TO_PARENT="UIScrollRect:Content" STYLE="SelectionPanelContextScrollContent" Anchor="UIAnchor.HorStretchTop" Pivot="UIPivot.TopLeft">
+												<loop start="0" end="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Buttons-Count}}" placeholder="%">
+													<template
+													  TEMPLATE="Selection-ActionButton"
+													  Text.Label="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-Label}}"
+													  Label-BR.IsActive="false"
+													  Label-Bonus.IsActive="False"
+													  Label-BL.IsActive="false"
+													  Icon.BackgroundImage="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-Icon}}"
+														  Icon.CharacterID="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-CharacterID}}"
+													  Icon.State="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-IconState}}"
+													  IconBG.BackgroundImage="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-IconBG}}"
+													  Icon.BackgroundColor="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-IconColor}}"
+													  Icon.IsActive="true"
+													  Icon.PreserveAspect="true"
+													  IsInteractable="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-IsInteractable}}"
+													  ITEM_TYPE="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-ItemType}}"
+													  ITEM_DATA="{{SelectedCharacterActions-MissionClassButton@-ContextButton$-Button%-Data}}"
+													  TOOLTIP_LOCATION="TooltipLocation.Parent" />
+												</loop>
+												</VGroup>
+											</template>
+										</template>
+									</loop>
+
+									<loop start="0" end="{{SelectedCharacterActions-MissionClassButton@-Buttons-Count}}" placeholder="%">
+										<template
+										  TEMPLATE="Selection-ActionButton"
+										  Text.Label="{{SelectedCharacterActions-MissionClassButton@-Button%-Label}}"
+										  Label-BR.IsActive="false"
+										  Label-Bonus.IsActive="False"
+										  Label-BL.IsActive="false"
+										  Icon.BackgroundImage="{{SelectedCharacterActions-MissionClassButton@-Button%-Icon}}"
+										  Icon.State="{{SelectedCharacterActions-MissionClassButton@-Button%-IconState}}"
+										  IconBG.BackgroundImage="{{SelectedCharacterActions-MissionClassButton@-Button%-IconBG}}"
+										  Icon.BackgroundColor="{{SelectedCharacterActions-MissionClassButton@-Button%-IconColor}}"
+										  Icon.IsActive="true"
+										  Icon.PreserveAspect="true"
+										  IsInteractable="{{SelectedCharacterActions-MissionClassButton@-Button%-IsInteractable}}"
+										  ITEM_TYPE="{{SelectedCharacterActions-MissionClassButton@-Button%-ItemType}}"
+										  ITEM_DATA="{{SelectedCharacterActions-MissionClassButton@-Button%-Data}}"
+										  TOOLTIP_LOCATION="TooltipLocation.Parent" />
+									</loop>
+								</VGroup>
+							</template>
+						</template>
+					</loop>
+				</VGroup>
+			</VGroup>
+		</template>
+		
+		<UIImage IgnoreLayout="true" Anchor="UIAnchor.TopCenter" Position="0,27" Pivot="UIPivot.TopCenter" Width="72" Height="41" BackgroundImage="FamilyTopDetail" BackgroundImageMode="Sliced"/>
+	</VGroup>
+
+	<!-- Selected Unit -->
+	<HGroup TEMPLATE_TYPE="SelectedUnitPromotions" Width="325" VerticalFit="PreferredSize" ChildAlignment="TextAnchor.UpperCenter" BackgroundImage="Trim12" BackgroundImageMode="Sliced" Spacing="3" Padding="8,8,8,8" BatchCanvas="true"
+			IsVisible="{{SelectedPanel-Unit-HasUnitEffectsAny}}" IsLayoutIgnoredWhenInvisible="true" State="{{ActiveSelection}}" StateAttributes="[Default_ForceInvisible:true][UNIT_ForceInvisible:false][WORKER_ForceInvisible:false]">
+		<UIGrid VerticalFit="PreferredSize" FlexWidth="1" Constraint="Column" Anchor="UIAnchor.TopLeft" ChildAlignment="TextAnchor.UpperLeft" Pivot="UIPivot.TopLeft" CellSize="35,35" Spacing="3,4"
+				 ConstraintCount="{{SelectedPanel-Unit-Effects-Constraint}}" State="{{SelectedPanel-Unit-Effects-Constraint}}" StateType="0" StateValueMode="StateValueModeType.Inverse">
+			<loop start="0" end="{{SelectedPanel-Unit-NumUnitEffects}}" placeholder="@">
+				<UIButton AllowNavigationSelection="false" Anchor="UIAnchor.StretchAll" HighlightedColor="#AAAAAA" PreserveAspect="true" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{SelectedPanel-Unit-UnitEffect@-Data}}" TOOLTIP_LOCATION="TooltipLocation.TopLeft" BackgroundImage="PromotionIconBG">
+					<UIImage Width="26" Height="26" PreserveAspect="true" BackgroundImage="{{SelectedPanel-Unit-UnitEffect@-Icon}}">
+						<UIImage Anchor="UIAnchor.TopRight" Width="20" Height="20" State="{{SelectedPanel-Unit-UnitEffect@-Source}}" StateType="Leader,General"
+								 StateAttributes="[Leader_BackgroundImage:Banner_General_Icon][General_BackgroundImage:Banner_General_Icon2]"/>
+					</UIImage>
+					<UIParticles ASSET_TYPE="Prefabs/Particles/PromotionIcon-Particle2" RaycastTarget="false" IsActive="{{SelectedPanel-Unit-UnitEffect@-ShowEffect}}False" Scale="17,17,1"/>
+				</UIButton>
+			</loop>
+		</UIGrid>
+		<UIGrid VerticalFit="PreferredSize" Constraint="Column" Anchor="UIAnchor.TopRight"  ChildAlignment="TextAnchor.UpperRight" Pivot="UIPivot.TopRight" CellSize="35,35" Spacing="3,4"
+				ConstraintCount="{{SelectedPanel-Unit-Promotions-Constraint}}" State="{{SelectedPanel-Unit-Promotions-Constraint}}" StateType="0" StateValueMode="StateValueModeType.Inverse">
+			<loop start="0" end="{{SelectedPanel-Unit-NumPromotions}}" placeholder="@">
+				<UIButton AllowNavigationSelection="false" Anchor="UIAnchor.StretchAll" HighlightedColor="#AAAAAA" PreserveAspect="true" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{SelectedPanel-Unit-Promotion@-Data}}" TOOLTIP_LOCATION="TooltipLocation.TopLeft" BackgroundImage="PromotionIconBG2">
+					<UIImage Width="26" Height="26" PreserveAspect="true" Position="0,2" BackgroundImage="{{SelectedPanel-Unit-Promotion@-Icon}}">
+						<UIImage Anchor="UIAnchor.TopRight" Width="20" Height="20" State="{{SelectedPanel-Unit-Promotion@-Source}}" StateType="Leader,General"
+								 StateAttributes="[Leader_BackgroundImage:Banner_General_Icon][General_BackgroundImage:Banner_General_Icon2]"/>
+					</UIImage>
+					<UIParticles ASSET_TYPE="Prefabs/Particles/PromotionIcon-Particle1" RaycastTarget="false" IsActive="{{SelectedPanel-Unit-Promotion@-ShowEffect}}False" Scale="17,17,1"/>
+				</UIButton>
+			</loop>
+		</UIGrid>
+	</HGroup>
+	
+	<HGroup TEMPLATE_TYPE="SelectedUnitFrame" Pivot="UIPivot.TopCenter" BackgroundImage="UnitSelectionTrim" BackgroundImageMode="Sliced" BatchCanvas="true"
+			ChildAlignment="TextAnchor.MiddleLeft" TOOLTIP_LOCATION="TooltipLocation.RightBottom" FlexWidth="1" VerticalFit="PreferredSize"  Padding="5,8,13,13" Spacing="10">
+		<replace TEMPLATE_OBJECT="UnitID" placeholder="(ID)" replacement="{{SelectedPanel-Unit-ID}}">
+			<UIImage MinWidth="105" MinHeight="100" PreserveAspect="true" BackgroundImageMode="Sliced" BackgroundImage="{{SelectedPanel-Unit-PortraitBG}}">
+<!-- start of the changes -->
+				<UIImage Anchor="UIAnchor.StretchAll" PreserveAspect="true" BackgroundImage="{{SelectedPanel-Unit-Portrait}}" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_UNIT,(ID)" BackgroundImageMaterial="UI/Materials/UINoMipImage"/>
+<!-- 
+				<UIImage Anchor="UIAnchor.StretchAll" PreserveAspect="true" BackgroundImage="{{SelectedPanel-Unit-Portrait}}" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_UNIT,(ID)" BackgroundImageMaterial="UI/Materials/UINoMipImage"
+						  ForceInactive="{{Unit(ID)-HasGeneral}}"/>
+
+				<replace placeholder="$" replacement="{{Unit(ID)-GeneralID}}">
+					<UIImage Anchor="UIAnchor.StretchAll" PreserveAspect="true" BackgroundImage="{{Character$-Portrait}}" CharacterID="{{Character$-CharacterID}}" ITEM_TYPE="ItemType.UNIT_GENERAL" ITEM_DATA="{{Unit(ID)-General-Data}}" BackgroundImageMaterial="UI/Materials/UINoMipImage"
+							  IsActive="{{Unit(ID)-HasGeneral}}">
+						<UIImage Width="24" Height="24" Anchor="UIAnchor.TopRight" Pivot="UIPivot.TopRight" BackgroundImage="OpinionEdge" BackgroundColor="{{Character$-Opinion-Color}}"
+								 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character$-Opinion-Data}}" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent" IsActive="{{Character$-Opinion-NotCautious}}"/>
+					</UIImage>
+				</replace>
+-->
+				
+				<UIImage Width="100" Height="105" Anchor="UIAnchor.MiddleRight" Position="0,0" Pivot="UIPivot.MiddleRight" BackgroundImage="TrimUnitEdge" BackgroundImageMode="Sliced" RaycastTarget="false"/>
+<!-- 
+				<UIButton Width="50" Height="50" Anchor="UIAnchor.MiddleCenter" Pivot="UIPivot.MiddleCenter" Position="-29,-50" BackgroundImage="GeneralFrame" IsActive="{{Unit(ID)-HasGeneral}}"
+						  AllowNavigationSelection="false" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_UNIT,(ID)" TOOLTIP_LOCATION="TooltipLocation.Parent">
+					<UIImage BackgroundImage="{{SelectedPanel-Unit-PortraitBG}}" PreserveAspect="true" Inset="-6,10,5,11" HighlightedColor="#888888">
+						<UIImage Anchor="UIAnchor.StretchAll" PreserveAspect="true" BackgroundImage="{{SelectedPanel-Unit-Portrait}}" BackgroundImageMaterial="UI/Materials/UINoMipImage"/>
+					</UIImage>
+					<UIParticles ASSET_TYPE="Prefabs/Particles/AddGeneral-Particle" IsPlaying="true" RaycastTarget="false" Scale="17,17,1" IsActive="{{SelectedPanel-Unit-ShowGeneralEffect}}false"/>
+				</UIButton>
+-->
+
+				<UIButton Width="50" Height="50" Anchor="UIAnchor.MiddleCenter" Pivot="UIPivot.MiddleCenter" Position="-29,-50" BackgroundImage="GeneralFrame" IsActive="{{Unit(ID)-HasGeneral}}"
+						  AllowNavigationSelection="false" ITEM_TYPE="ItemType.UNIT_GENERAL" ITEM_DATA="{{Unit(ID)-General-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent">
+					<UIImage BackgroundImage="{{SelectedPanel-Unit-PortraitBG}}" PreserveAspect="true" Inset="-6,10,5,11" HighlightedColor="#888888">
+						<replace placeholder="$" replacement="{{Unit(ID)-GeneralID}}">
+							<UIImage Anchor="UIAnchor.StretchAll" PreserveAspect="true" BackgroundImage="{{Character$-Portrait}}"  CharacterID="{{Character$-CharacterID}}" BackgroundImageMaterial="UI/Materials/UINoMipImage"/>
+						</replace>
+					</UIImage>
+					<UIParticles ASSET_TYPE="Prefabs/Particles/AddGeneral-Particle" IsPlaying="true" RaycastTarget="false" Scale="17,17,1" IsActive="{{SelectedPanel-Unit-ShowGeneralEffect}}false"/>
+				</UIButton>
+
+			</UIImage>
+			<VGroup ChildAlignment="TextAnchor.MiddleLeft" Spacing="4">
+				<!-- Unit Text -->
+				<HGroup ChildAlignment="TextAnchor.MiddleLeft" Spacing="2" FlexWidth="1">
+					<UIRaycastTarget STYLE="HGroup" ChildAlignment="TextAnchor.MiddleLeft" Spacing="3" Width="166" Height="18" TOOLTIP_LOCATION="TooltipLocation.Parent">
+						<UIText FontSize="16" IconScale="1.2" Label="{{Unit(ID)-Family}}" IsActive="{{Unit(ID)-Family-IsActive}}" Alignment="Midline"/>
+<!-- 
+						<UIText STYLE="Trajan,GradientBlue" Height="18" FontSize="14" AutoSizeMin="11" AutoSizeMax="14" Alignment="Midline" Label="{{Unit(ID)-Name}}" WordWrapping="false" OverflowMode="Ellipsis" ForceInactive="{{Unit(ID)-HasGeneral}}"/>
+						<UIText STYLE="Trajan,GradientBlue" Height="18" FontSize="14" AutoSizeMin="11" AutoSizeMax="14" Alignment="Midline" Label="{{Unit(ID)-General-Name}}" WordWrapping="false" OverflowMode="Ellipsis" IsActive="{{Unit(ID)-HasGeneral}}"/>
+ -->
+						<UIText STYLE="Trajan,GradientBlue" Height="18" FontSize="14" AutoSizeMin="11" AutoSizeMax="14" Alignment="Midline" Label="{{Unit(ID)-Name}}" WordWrapping="false" OverflowMode="Ellipsis"/>
+<!-- end of the changes -->
+					</UIRaycastTarget>
+				</HGroup>
+
+				<VGroup Spacing="0" Padding="2,2,2,2">
+					<Healthbar Width="175" Height="13" HealthPerTick="{{Healthbars-HealthPerTick}}" CurrentHealth="{{SelectedPanel-Unit-CurrentHP}}" MaxHealth="{{SelectedPanel-Unit-MaxHP}}"
+						   DamagePreview="{{SelectedPanel-Unit-DamagePreviewHP}}" TOOLTIP_LOCATION="TooltipLocation.Parent" ITEM_TYPE="ItemType.UNIT_HEALTH" ITEM_DATA="(ID)">
+						<UIProgressBar Width="20" Height="13" ASSIGN_TO_PARENT="Healthbar:HealthbarTick" BackgroundSprite="Sprites/wideTick" BackgroundImageMode="Sliced"
+									   FillMethod="{{Healthbars-FillDirection}}" FillOrigin="Left" FillBackgroundSprite="Sprites/wideTick" UnfilledColor="#22100c" IsActive="false"/>
+						<HGroup ASSIGN_TO_PARENT="Healthbar:TicksContainer" Anchor="UIAnchor.StretchAll" BackgroundColor="#000000" ChildAlignment="TextAnchor.MiddleLeft" ForceChildExpandWidth="true" ForceChildExpandHeight="true"/>
+					</Healthbar>
+
+					<UIProgressBar Width="175" Height="12" Anchor="UIAnchor.TopLeft" Pivot="UIPivot.MiddleCenter" FillMethod="Horizontal" FillAmounts="{{SelectedPanel-Unit-LevelFillAmounts}}"
+								   UnfilledColor="#22100c" FillColors="#b5713c" BackgroundSprite="Sprites/whiteSolid" FillBackgroundSprite="Sprites/whiteSolid" RaycastTarget="true" IsActive="{{SelectedPanel-Unit-CanPromote}}">
+						<UIImage BackgroundImage="bar gradient" Anchor="UIAnchor.StretchAll"/>
+						<UIButton AllowNavigationSelection="false" BackgroundColor="#FFFFFF00" Anchor="UIAnchor.StretchAll" ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="HELP_UNIT_LEVEL,(ID)" HOVER_EVENT_TYPE="UIEventCaptureType.Target" TOOLTIP_LOCATION="TooltipLocation.Parent">
+							<UIText STYLE="Liberation" Kerning="6"  Anchor="UIAnchor.StretchAll" FontSize="11" FontColor="#dfdbd1" Label="{{SelectedPanel-Unit-LevelProgress}}" Alignment="Midline"/>
+						</UIButton>
+					</UIProgressBar>
+
+					<UIImage IgnoreLayout="true" RaycastTarget="false" Anchor="UIAnchor.StretchAll" BackgroundImage="panel_border_overlay" BackgroundImageMode="Sliced" />
+				</VGroup>
+
+				<HGroup ChildAlignment="TextAnchor.MiddleLeft" Spacing="5">
+					<UIText STYLE="Liberation" Kerning="3" FontSize="13" IconScale="1.2" WordWrapping="false" Label="{{Unit(ID)-Strength}}" IsActive="{{Unit(ID)-Strength-IsActive}}"/>
+					<UIText STYLE="Liberation" Kerning="3" FontSize="13" IconScale="1.2" WordWrapping="false" Label="{{Unit(ID)-Defense}}" IsActive="{{Unit(ID)-Defense-IsActive}}"/>
+					<UIText STYLE="Liberation" Kerning="3" FontSize="13" IconScale="1.2" WordWrapping="false" Label="{{Unit(ID)-Movement}}"/>
+					<UIText STYLE="Liberation" Kerning="3" FontSize="13" IconScale="1.2" WordWrapping="false" Label="{{Unit(ID)-Range}}" IsActive="{{Unit(ID)-Range-IsActive}}"/>
+					<UIText STYLE="Liberation" Kerning="3" FontSize="13" IconScale="1.2" WordWrapping="false" Label="{{Unit(ID)-Critical}}" IsActive="{{Unit(ID)-Critical-IsActive}}"/>
+					<UIText STYLE="Liberation" Kerning="3" FontSize="13" IconScale="1.2" WordWrapping="false" Label="{{Unit(ID)-Religion}}" IsActive="{{Unit(ID)-Religion-IsActive}}"/>
+					<UIText FlexWidth="1" FontSize="16" Height="15" Alignment="MidlineRight" Label="{{Unit(ID)-Cooldown}}" TOOLTIP_LOCATION="TooltipLocation.RightBottom" IsActive="{{Unit(ID)-Cooldown-IsActive}}"/>
+				</HGroup>
+
+				<UIRaycastTarget Anchor="UIAnchor.BottomRight" ChildAlignment="TextAnchor.MiddleRight" Pivot="UIPivot.BottomRight" FlexWidth="1" Height="15"
+							IsActive="{{SelectedPanel-Unit-IsFatigued}}" ITEM_TYPE="ItemType.UNIT_FATIGUE" ITEM_DATA="(ID)">
+					<UIText Anchor="UIAnchor.StretchAll" FontSize="13" Alignment="MidlineRight" STYLE="Liberation" Kerning="6"  Label="TEXT_UI_UNIT_COOLDOWN_FATIGUED" TweenID="Text_Fade"/>
+				</UIRaycastTarget>
+
+				<!--Movement-->
+				<HGroup Anchor="UIAnchor.BottomRight" ChildAlignment="TextAnchor.MiddleRight" Pivot="UIPivot.BottomRight" Height="15" FlexWidth="1" Width="70" IsActive="{{SelectedPanel-Unit-ShowMovement}}">
+					<loop start="0" end="{{UnitWidget(ID)-Moves-Limit}}" placeholder="@">
+						<UIImage Width="10" Height="10" PreserveAspect="true" BackgroundColor="{{UnitWidget(ID)-Move@-Color}}" BackgroundImage="Sprites/movementPip" ITEM_TYPE="ItemType.UNIT_FATIGUE" ITEM_DATA="(ID)" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+					</loop>
+				</HGroup>
+			</VGroup>
+
+			<UIButton IgnoreLayout="true" Width="20" Height="20" Anchor="UIAnchor.TopRight" Pivot="UIPivot.TopRight" Position="-3,-1" NormalImage="CharacterRenameNormal" HighlightedImage="CharacterRenameRoll"
+					  AllowNavigationSelection="false" ITEM_TYPE="ItemType.RENAME_UNIT" ITEM_DATA="(ID)" IsActive="{{SelectedPanel-Unit-Rename-IsActive}}"/>
+		</replace>
+	</HGroup>
+
+	<HGroup TEMPLATE_TYPE="BasicUnitActionPanel" Width="350" Height="40" Padding="4,8,0,8" Spacing="2" BackgroundImage="Trim4_NoBottom" BackgroundImageMode="Sliced" BatchCanvas="true">
+		<loop start="0" end="{{SelectedPanel-BasicActionButtons-Count}}" placeholder="@">
+			<UIButton FlexWidth="1" Height="28" NormalImage="TurnButton" BackgroundImageMode="Sliced" HighlightedImage="TurnButtonRoll" ITEM_TYPE="{{SelectedPanel-BasicActionButton@-ItemType}}" ITEM_DATA="{{SelectedPanel-BasicActionButton@-Data}}" TOOLTIP_LOCATION="TooltipLocation.TopLeft"
+					  IsVisible="{{SelectedPanel-BasicActionButton@-IsActive}}" IsInteractable="{{SelectedPanel-BasicActionButton@-IsInteractable}}" IsLayoutIgnoredWhenInvisible="true">
+				<UIImage Width="20" Height="20" BackgroundImage="{{SelectedPanel-BasicActionButton@-Icon}}" NormalColor="#ffffff" DisabledColor="#777777" PreserveAspect="true"/>
+			</UIButton>
+		</loop>
+
+		<UIContextControl FlexWidth="1" Height="28" NormalImage="TurnButton" BackgroundImageMode="Sliced" HighlightedImage="TurnButtonRoll" ToggleEvent="OnClick" IsActive="{{SelectedPanel-CanGift}}"
+						  ITEM_TYPE="ItemType.GIFT_UNIT" ITEM_DATA="-1" TOOLTIP_LOCATION="TooltipLocation.TopLeft">
+			<UIImage Width="20" Height="20" BackgroundImage="GIFT_UNIT" PreserveAspect="true"/>
+
+			<VGroup ASSIGN_TO_PARENT="UIContextControl:Content" BackgroundImage="TrimBlurRoundedLight" BackgroundImageMaterial="UI/Materials/UIBlur2" Padding="2,2,2,2" BackgroundImageMode="Sliced" Anchor="UIAnchor.BottomRight" Pivot="UIPivot.BottomLeft"
+					Width="288" VerticalFit="PreferredSize" Position="8,0" Spacing="0"  ChildControlWidth="true" ChildControlHeight="true" ChildAlignment="TextAnchor.LowerLeft">
+				<loop start="0" end="{{SelectedPanel-NumGiftButtons}}" placeholder="$">
+					<template
+					  TEMPLATE="Selection-ActionButton"
+						  Width="284"
+						  Text.Label="{{SelectedPanel-GiftButton$-Label}}"
+						  Label-BR.IsActive="false"
+						  IconBG.BackgroundImage="ActionButton"
+						  Icon.BackgroundImage="{{SelectedPanel-GiftButton$-Icon}}"
+						  Icon.BackgroundColor="{{SelectedPanel-GiftButton$-Icon-Color}}"
+						  IsInteractable="{{SelectedPanel-GiftButton$-IsInteractable}}"
+						  ITEM_TYPE="{{SelectedPanel-GiftButton$-ItemType}}"
+						  ITEM_DATA="{{SelectedPanel-GiftButton$-Data}}"
+						  TOOLTIP_LOCATION="TooltipLocation.Right"/>
+				</loop>
+			</VGroup>
+		</UIContextControl>
+	</HGroup>
+
+	<HGroup TEMPLATE_TYPE="CityRate" Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.TopCenter" Position="0,4" IgnoreLayout="true" Padding="8,0,0,0" Height="40" Width="70" PreserveAspect="true" ChildAlignment="TextAnchor.MiddleCenter" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.TopLeft"
+			StateAttributes="[True_BackgroundImage:Sprites/GuitarPickUp][False_BackgroundImage:Sprites/GuitarPick]">
+		<UIText TEMPLATE_OBJECT="Text" STYLE="Liberation" Kerning="6" FontSize="13" Label="Test"/>
+	</HGroup>
+	
+	<!-- Attack Preview Templates-->
+	<UIRect OBJECT_NAME="Templates" IsActive="false">
+		<Healthbar TEMPLATE_TYPE="UnitHealthbar" Width="130" MinHeight="18" HealthPerTick="{{Healthbars-HealthPerTick}}">
+			<UIProgressBar ASSIGN_TO_PARENT="Healthbar:HealthbarTick" Width="13" Height="18" BackgroundSprite="Sprites/wideTick" BackgroundImageMode="Sliced"
+						   FillMethod="{{Healthbars-FillDirection}}Vertical" FillOrigin="Bottom" FillBackgroundSprite="Sprites/wideTick" UnfilledColor="#252525" IsActive="false"/>
+			<HGroup ASSIGN_TO_PARENT="Healthbar:TicksContainer" Anchor="UIAnchor.StretchAll" Padding="2,2,2,2" Spacing="2" ChildAlignment="TextAnchor.MiddleLeft" ForceChildExpandWidth="true" ForceChildExpandHeight="true"/>
+		</Healthbar>
+	</UIRect>
+</Root>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>PLAYEROPTION_DEBUG_HELP</zType>
+		<bDebug>0</bDebug>
+	</Entry>
+</Root>

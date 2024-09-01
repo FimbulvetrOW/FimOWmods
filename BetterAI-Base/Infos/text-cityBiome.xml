@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType />
+		<en-US />
+		<es />
+		<de />
+		<fr />
+		<ja />
+		<zh-TW />
+		<ru />
+		<zh-CN />
+	</Entry>
+	<Entry>
+		<zType>TEXT_BIOME_COLD</zType>
+		<en-US>Cold</en-US>
+		<es>Frío</es>
+		<de>Kalt</de>
+		<fr>Froid</fr>
+		<ja>冷気</ja>
+		<zh-TW>寒冷</zh-TW>
+		<ru>Холодный</ru>
+		<zh-CN>寒冷</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_BIOME_TEMPERATE</zType>
+		<en-US>Temperate</en-US>
+		<es>Templado</es>
+		<de>Gemäßigt</de>
+		<fr>Tempéré</fr>
+		<ja>温暖</ja>
+		<zh-TW>温带</zh-TW>
+		<ru>умеренный</ru>
+		<zh-CN>溫帶</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_BIOME_HOT</zType>
+		<en-US>Hot</en-US>
+		<es>Caliente</es>
+		<de>Heiß</de>
+		<fr>Chaud</fr>
+		<ja>乾燥気候</ja>
+		<zh-TW>热</zh-TW>
+		<ru>Горячий</ru>
+		<zh-CN>熱</zh-CN>
+	</Entry>
+</Root>

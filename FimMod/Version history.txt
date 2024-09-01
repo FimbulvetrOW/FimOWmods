@@ -1,0 +1,127 @@
+Version history
+[0.7.40] Rising Star only gives +1 to all stats (instead of +2),
+          as General only gives +1 Happiness per kill (instead of +5),
+          as Governor only gives +1 Culture and +2 Growth (instead of +1 Culture per Population and +25% Growth;
+         Al Khazneh now gives +20% Money and upgrades all Treasury I to Treasury II where possible and adds Treasury I 
+          to Cities that don't have it, no longer gives Luxuries;
+         GV nerfed but no longer takes over City producion, and can be assigned at will;
+         Slums keep the -25% Unit training time modifiers for Militia and Worker but now also reduce Growth by -10%;
+         Estates still give their +1VP but only give +2 Culture and -40% Training, and +5 Family Opinion per Luxury sent to City (instead of +1 Culture/-1 Training per Family Opinion Level and +2 Happiness for Luxury sent to City);
+         Colosseum: +40% Training and new Infantry Units start with Tough in City, +2 Happiness in all defended Cities;
+         Heliopolis only gives +0.5 Orders per Acolyte;
+         finally removed old Boat Unit duplicate, might break very old savegames.
+[0.7.39] Update for new game version 1.0.73323: UI XML updated
+[0.7.38] Update for new game version 1.0.72357: UI XML updated
+[0.7.37] Update for new game version 1.0.72162: UI XML file updated;
+         EVENTSTORY_TECH_HYDRAULICS_THE_AUTOMATON reactivated for Competitive Mode (no longer gives a random tech);
+         AI's value for Walls reduced (v1.0.72162 multiplied it by 10, this mod divides it by 5, so it's only 2x the value from before);
+         AI's pseudo-events can still give units (was removed in v1.0.72162);
+         Cults re-enabled for Competitive Mode, most Cult Shrines nerfed: 
+         - Pagan Statue: +2 Culture (from +4)
+         - Cavalry Cult: -20% train time for Mounted Units, +10% train time for Infantry Units (from -50%, +50%)
+         - Amazon Cult: +1 Order (from +2)
+         - Martyr Cult: +12 Money, +2 Culture (from +15, +4)
+         - Dual Cult: +3 Civics (from +5)
+         - Cult of the Angelic Divine: +2 Culture, +1 Science (from +3, +3)
+         - Cult of the Mother: +2 Culture (from +4)
+         - Cult of Isis and Seraphis: +2 Culture, +2 Civics (from +15% Culture, +15% Civics)
+         - Cult of Mithras: +2 Training, -10% train time for Melee Units (from +4, -25%)
+[0.7.36] Update for new game version 1.0.71795: UI XML file updated.
+[0.7.35] Fixed Thunder and Silence Event Option 1: Project goes to the right city now;
+         Units with Zealot Leader General heal 2 HP per attack on an adjacent enemy Unit (land to land or water to water), 
+          Enlist Next ability is removed;
+         More Wonders nerfed: Cothon no longer produces Triremes, instead gives a -25% Train time reducting,
+          Colosseum doesn't produce Swordsmen and doesn't give +1 Training in City,
+           instead all new Infantry Units in the City start with Tough, and all Cities get flat +1 Training;
+          Heliopolis gives only +1 Order per Acolyte, instead of per Shrine.
+[0.7.34] Update for new game version 1.0.71309: UI XML updated
+[0.7.33] Yazilikaya now requires both Holy City AND adjacent Mountain, not only one of these;
+         Siege unit effects reworked: removed bonus vs Tribal Settlement Improvements from Siege and Assault 
+          (already getting bonus because of Settlement Attack bonus),
+          Assault bonus vs Forts halved to 25% (Siege already gives +50%, and all Assault Units are also Siege);
+         Tactician General full counter ability replacement effect increased to +50% defense vs. Melee (from +20%), 
+          Sword of the Gods critial immunity ability replacement effect now gives +10% defense (from +5%)
+[0.7.32] AI XML update
+[0.7.31] Update for new game version 1.0.70671: UI xml updated;;
+         Event Look upon my Armies and Despair removed from Competitive Mode
+[0.7.30] Event Witch Queen removed from Competitive Mode (this is also already on the Test branch)
+[0.7.29] Event Hostile Garrison Expel conditions fixed,
+         Event Closing the Deal bonuses fixed.
+[0.7.28] Update for new game version 1.0.70360: UI XML updated
+         Event "Other World" now only triggers if the Leader follows a World Religion, and the event uses this religion
+[0.7.27] Collateral damage calcalculation is precise again (reverting base game change from v1.0.69678);
+         Characters get 1 option to increase a stat point (Rating) even before filling out all 3 strength slots again
+          (reverting base game change from v1.0.70024);
+[0.7.26] Discontent generation for The New Difficulty adjusted to be in line with the others (from -2 to -6);
+         Event BETWEEN_US enabled again, since you can no longer gain a free tech from it
+[0.7.25] Removed 1 more event for Competitive Mode: A_SCHOLAR_DENOUNCED
+[0.7.24] Using Proper Regent Legitimacy Decay, Persian UUs need melee range for Rout
+[0.7.23] Updated for new game version 1.0.69265:
+         UI xml updated.
+[0.7.22] Updated for new game version 1.0.68045:
+         UI xml updated, and no longer needs to be an asset. 
+[0.7.21] Updated Asset for new game version 1.0.67757
+[0.7.20] For competitive games, the Event A_QUIET_LIFE was disabled, while the Event FOREIGN_SCHOLAR was re-enabled. (thx NestorLN)
+         Siege & Assault: +30% Attack vs. Tribal Sites, 
+          Orator gets nerfed to +1 Orders per Friendly Family City [from +2] (now identical with base game again)
+         Improvement Classes now all have distinct names: 
+         - Hamlet Class: Suburbs
+         - Odeon Class: Entertainment Locations
+         - Market Class: Commerce Centers
+         - Library Class: Educational Institutions
+         - Courthouse Class: Goverment Departments
+         - Garrison Class: Military Stations
+         This is now part of base game: [Surrounding a City Site to convert it to a Minor City no longer required Mountain/Volcano Tiles.]
+[0.7.19] Surrounding a City Site to convert it to a Minor City no longer required Mountain/Volcano Tiles.
+         Barbs can only pillage Water Improvements starting 30 Turns after they can start raiding,
+          so even on Tribe Level "Raging" no Nets will get pillaged before Turn 50.
+[0.7.18] Update for new game version 1.0.66959 with new Unity Version 2021.3.24f1: UI Assets updated.
+[0.7.17] Update for new game version 1.0.66355: UI Asset updated
+         Events that were previously limited to The Strong+ are now The Good+.
+         Previous resources are as rare as they were before 1.0.66355
+[0.7.16] Removed Free Tier 1 Techs from Ruins
+         for Competitive games, most Events that can give a free Tech are disabled,
+         for Competitive games, all Events that can give a free Settler are disabled,
+         most AI Leader Traits now affect their Diplomatic behavior, not just their Archetypes
+[0.7.15] Added Discontent Level 0
+[0.7.14b] fixed UI Asset
+[0.7.14] Update for new game version 1.0.65965: XML and UI Assets
+[0.7.13] No Family for Enlisted Units,
+         +33% fake Events for AI players.
+[0.7.12b] Updated Asset for new game version 1.0.65077
+[0.7.12] Resource Tile Count and List (Base DLL feature)
+[0.7.11] Update for game version 1.0.64777, Forts stay disabled, Roads cost no Stone, Ask To Declare War Mission disabled, 
+         Fortify Bonus and max Turns changed, Character Traits Wanton and Rightous don't exclude each again (another recent change reverted)
+[0.7.10] Update for game version 1.0.64602 - Discontent reduction reverted, Citizens give no negative family opinion, 
+         Growth still gets reduced by Discontent, updated UI asset files again
+[0.7.9] Update for game version 1.0.64602 - updated UI asset files again
+[0.7.8] Update for game version 1.0.64196 - Centralization Law: re-added +10 civics/turn bonus
+[0.7.6] Update for game version 1.0.63420 - updated UI asset files
+[0.7.5] Update for game version 1.0.63201
+        Added Clergy to Religious;
+        removed Insane from Weak because it's not considered a Weakness anymore.
+[0.7.4] Cold and Heated Baths cost more Upkeep.
+        Flat Order Bonus for Schemer leaders increased to +4.
+[0.7.3] Removed Family-specific Early Unlocks, those are now part of my Family mod.
+[0.7.2] Using new Base DLL features.
+[0.7.1] Fixed hud-templates UI asset.
+[0.7.0] Mod now requires Base DLL mod:  Added early unlock for some improvements; Only 1 Bath per City.
+        The Worker Valid Filter List part is an extra mod now.
+        Nerf to 3 early Wonders.
+[0.6.4] Improvements to Worker Valid Filter when on improved Tile: now also doesn't show Improvements that would rely on Resources that already have Improvements on their Tile.
+[0.6.3] Improvements to Worker Valid Filter when on improved Tile: now doesn't show Improvements that would rely on Resources that are not present in the City.
+[0.6.2] Improvements to Worker Valid Filter when on improved Tile: now properly only shows Improvements that could potentially be built in the city.
+[0.6.1] Worker Valid List when standing on improved tile now contains all Improvements valid in City. (Harmony DLL)
+[0.6] Improvement lists for selected Worker now show as a grid of icons. No more scrolling (for most views, for most HUD scales). 
+[0.5.1] Disabled Make Chosen Heir mission because the AI uses it too often (to be re-enabled when AI is fixed).
+[0.5] Removed Unlimited Autosaves part again, that part remains stand-alone.
+      Reduced attack bonus of Siege against Stronghold/Citadel from 25 to 20% (now same as Garrison).
+      Schemer Leaders give flat +2 Orders.
+      River bridging is unlocked by Polis Tech, not Engineering law
+[0.3] Removed Ironworking again for No-Starting-Tech games. 
+      Restored Zealot Generals' Last Stand ability to normal. Maybe I can catch the AI-doesn't-kill-Zealot-Unit bug again.
+      Removed Schemer Leaders' +2 Orders/War and Legitimacy selling abilities, replaced it with a flat +2 Orders.
+[0.2c] hotfix for yet another XML error, this time in ModInfo file.
+[0.2b] hotfix for XML error
+[0.2] Various XML modifications.
+[0.1] Initially: DLL mod to reduce AI_NO_WONDER_TURNS from 50 to 0 (obsolete).

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>BONUS_START</zType>
+		<aiGlobalYields>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiGlobalYields>
+	</Entry>
+</Root>
