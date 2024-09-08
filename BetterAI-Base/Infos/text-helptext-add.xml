@@ -402,6 +402,30 @@ To complete the encirclement you don't need to own water Tiles or impassable Til
 		<zh-CN>排隊</zh-CN>
 		<pt-BR>em fila</pt-BR>
 	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_JOB</zType>
+		<en-US>As {0_job}: {1_playereffect}</en-US>
+		<es>Como {0}: {1}</es>
+		<de>Als {0}: {1}</de>
+		<fr>Comme {0} : {1}</fr>
+		<ja>{0}として：{1}</ja>
+		<zh-TW>作為{0}：{1}</zh-TW>
+		<ru>Будучи {0}: {1}</ru>
+		<zh-CN>作为{0}：{1}</zh-CN>
+		<pt-BR>Como {0}: {1}</pt-BR>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_TRAIT_TRAIT</zType>
+		<en-US>With {0_trait}: {1_playereffect}</en-US>
+		<es>Con {0}: {1}</es>
+		<de>Mit {0}: {1}</de>
+		<fr>Avec {0}: {1}</fr>
+		<ja>{0}と共に：{1}</ja>
+		<zh-TW>和{0}：{1}</zh-TW>
+		<ru>с {0}: {1}</ru>
+		<zh-CN>和{0}：{1}</zh-CN>
+		<pt-BR>Com {0}: {1}</pt-BR>
+	</Entry>
 	
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_URBAN_RESTRICTIONS</zType>

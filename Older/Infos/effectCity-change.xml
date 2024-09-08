@@ -17,6 +17,15 @@
 		</abUrbanTerrainValid>
 	</Entry>
 	<Entry>
+		<zType>EFFECTCITY_LAW_CENTRALIZATION</zType>
+		<abUrbanTerrainValid>
+			<Pair>
+				<zIndex>TERRAIN_MARSH</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abUrbanTerrainValid>
+	</Entry>
+	<Entry>
 		<zType>EFFECTCITY_DIFFICULTY_NEW</zType>
 		<aiYieldRate>
 			<Pair>

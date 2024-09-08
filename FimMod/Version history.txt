@@ -1,4 +1,6 @@
 Version history
+[0.7.41] Hagia Sophia: only +1 Happiness Level in all Cities (but keeps +2 Happiness in all Cities);
+           Centralisation Law makes Marsh Terrain valid for Urban too (not just Farms);
 [0.7.40] Rising Star only gives +1 to all stats (instead of +2),
           as General only gives +1 Happiness per kill (instead of +5),
           as Governor only gives +1 Culture and +2 Growth (instead of +1 Culture per Population and +25% Growth;

@@ -24,4 +24,8 @@
 			</Pair>
 		</aiCityYields>
 	</Entry>
+	<Entry>
+		<zType>BONUS_IMPROVEMENT_HAGIA_SOPHIA</zType>
+		<iHappinessLevels>1</iHappinessLevels>
+	</Entry>
 </Root>

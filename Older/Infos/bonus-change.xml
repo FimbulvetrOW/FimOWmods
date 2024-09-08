@@ -28,6 +28,10 @@
 		</aiCityYields>
 	</Entry>
 	<Entry>
+		<zType>BONUS_IMPROVEMENT_HAGIA_SOPHIA</zType>
+		<iHappinessLevels>1</iHappinessLevels>
+	</Entry>
+	<Entry>
 		<zType>BONUS_FAMILYCLASS_CLERICS_SEAT</zType>
 		<bFoundReligionCity>0</bFoundReligionCity>
 		<aeTechs></aeTechs>
