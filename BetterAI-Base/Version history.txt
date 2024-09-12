@@ -1,4 +1,10 @@
 Version history
+[0.1.8.0] Fixed a critial bug with the bonusImprovement mod feature that caused AI turn hangs;
+[0.1.7.9] Implemented EffectPlayerEffectPlayer for EffectPlayer (player effect + player effect spawns new player effect);
+          implemented JobEffectPlayer abd TraitEffectPlayer for Trait (trait + job (or another trait) spawns player effect;
+          potential improvement bonuses stay in hover text directly; re-added RNG part of religion founding (removed in base game);
+          re-added option to give AI the ability to declare war based on expansion alone (removed in base game);
+          ZOC for amphibious units extends over Rivers; added first letters of Religious Improvement (Class) names to City names in Religion selection City list
 [0.1.7.8] Update for game version 1.0.73676: DLL updated: added option to enable AI war declaration for expansion only;
           Tribe Level empty sites setting: if set, it will override difficulty settings' empty sites number;
           added option to set maximum variation of number of cities for AI players with development;

@@ -15,7 +15,8 @@ Features (NOT active by default, but can be used/activated by mods)
 - City Biome as an Improvement Prereq (at the moment City Biome is calculated dynamically, based on Terrain of non-urban Territory Land Tiles)
 - Movement Cost for Embarking (no change to disembarking)
 - Movement Cost Discount for River Crossing for Amphibious Units, 
-   and Discount for Embarking for Amphibious Units or Harbor Type Improvements (Harbor + Colossus as first Water Tile)
+   and Discount for Embarking for Amphibious Units or Harbor Type Improvements (Harbor + Colossus as first Water Tile),
+   also ZOC can extend over Rivers
 - Courtier: added field for forced Trait and State Religion (previously used for Cleric Courtier of my Family Balance Mod)
   added a third field to exclude specific Courtier types from gettting randomly selected.
   (AI knows about Courtiers that can never have jobs and value them 2/3 less than fully employable Courtiers)
@@ -23,62 +24,64 @@ Features (NOT active by default, but can be used/activated by mods)
     Hurried item stays in the City's first queue slot: only 1 item per Turn 
    (AI knows about lack of overflow, value should be calculated correctly)
 - Agent Network Costs: The Costs to establish an Agent Network in a foreign City can now scale with that City's Culture Level too, 
-   in addition to the base Cost and the standard scaling by number of Agent Networks.
-- Number and location (Tile coordinates) of Resources on the Map added to Resource Help Text. 
+   in addition to the base Cost and the standard scaling by number of Agent Networks
+- Number and location (Tile coordinates) of Resources on the Map added to Resource Help Text.
    This feature can be turned on in steps (territory, revealed, all)
-- Swap Unit Exploit Fix: By assigning 1 to Swap Unit Fatigue Cost (globalsInt), the Unit that gets passively swapped uses up 1 Fatigue point too, 
-   not just the Unit that initiated the swapping.
 - Enlisted Units don't gain any Family association.
 - Discontent or Happiness Level 0 between Happiness Level 1 and Discontent Level 1
 - Raiding Barbarian Land Units' ability to start pillaging Water Improvements can be restored, which also disables ship Units for Distant Raids, 
-   but that ability is delayed by a fixed number of Turns (leaving setting at 0 means the feature is off, and Distant Raids can spawn ships).
+   but that ability is delayed by a fixed number of Turns (leaving setting at 0 means the feature is off, and Distant Raids can spawn ships)
 - Legitimacy from Cognomen from previous Leaders: Regent cognomen only count half
 - Legitimacy from Cognomen from previous Leaders: alternative, time-based decay method added. customizable
 - The old, more precise Collateral Damage calculation is available as an alternative to the new double rounding method
 - Characters can get options to increase their stat points (Ratings) even before filling out all 3 strength slots
 - Character yields from stats can increase by standard "triangle" formula in Competitive Mode
 - Court Characters (Leader/Spouse/Heir/Courtier) can have their yields from stats be decreased for Competitive Mode again (modifier, not hardcoded /2)
-- Better Bounce: when Diplo status changes to Truce, or from Peace/Alliance to War, Units get bounced to a Tile closer to home, if possible
+- Better Bounce: when Diplo status changes from Peace/Alliance to Truce or War, Units get bounced to a Tile closer to home, if possible
 - Unit Effect iHealAttack can restore Unit HP when attacking an adjacent enemy Unit
 - Maximum variation of city numbers for AI with development can be set via XML
-- Number of empty sites can be set in Tribe Level again (XML), and if present will override any settings from Difficulty.
+- Number of empty sites can be set in Tribe Level again (XML), and if present will override any settings from Difficulty
 - Number of units generated on the turn a unit-generating improvement is finished can be set via XML (globally, not per improvement)
+- Trait + Job = Player Effect: Character Traits, in conjunction with that character's Job or other Traits, can now add Player Effects (base game Traits only have Leader Effects)
+- Player Effect + Player Effect = Player Effect: Two Player Effects together can now add another Player Effect
 
 Mods that activate/showcase some of these features are avaiable.
 
 *General AI improvements (these are always active): 
--  total Yield Modifiers are no longer ignored for calculateCityYieldValue calculations for Yields other than Growth, Civics and Training.
--  AI (probably) didn't occupy human starting Cities. This is no longer the case.
--  AI will not snipe other AI's Cities in War, it will respect the player with the higher number of attacks as the owner - same as with human players.
--  To clear Barbarian sites faster, AI will not defend its free City Sites during the first few turns of the game with its main military Units - but might do it with Militia Units.
--  Before all Religions are founded, the AI will value Holy City Agent Networks (Oracle Bonus) a lot less.
+-  total Yield Modifiers are no longer ignored for calculateCityYieldValue calculations for Yields other than Growth, Civics and Training
+-  AI (probably) didn't occupy human starting Cities. This is no longer the case
+-  AI will not snipe other AI's Cities in War, it will respect the player with the higher number of attacks as the owner - same as with human players
+-  To clear Barbarian sites faster, AI will not defend its free City Sites during the first few turns of the game with its main military Units - but might do it with Militia Units
+-  Before all Religions are founded, the AI will value Holy City Agent Networks (Oracle Bonus) a lot less
 -  AI should act a bit less cowardly when planning to expand into Tribal territories
 -  better support for circular Unit upgrade options (for real this time)
 -  Segmented AI nations will know exactly how many Settlers they need as a nation, not just on City level
 -  AI will value Family Opinion less if Opinion is already higher than +240. At +340 the value fur further increases is 0
 -  Improved City Effect calculations for overlapping Unit unlocks und Hurry unlocks
+-  AI can declare War for expansion alone, even with 0% War chance otherwise (base game removed that ability)
 
 *Also always active
-- City List Screen: Sort by Culture Level (CTRL + click on Culture) now sorts by Turns left to next Culture level, and only then by progress, and
-   Sort by Happiness Level now properly accounts for Discontent progress being negative, and also sorts by Turns left to next level, before sorting by progress.
+- City List Screen: Sort by Culture Level (CTRL + click on Culture) now sorts by Turns left to next Culture level, and only then by progress, 
+   and Sort by Happiness Level now properly accounts for Discontent progress being negative, and also sorts by Turns left to next level, before sorting by progress.
 - Improvement property Specialist Discount now shows up in Helptext (was invisible. and this effect was removed from all improvements in base game)
 - If a Resource removes the base Output of an Improvement (Gems, Gold, Silver, Salt), the Helptext for the Improvement shows that info now (was invisible)
 - Fixed Helptext formatting and modifiers not showing for Terrain Yield (Wood from Farm on Marsh)
-- Added Tutorial and Helptext for Discontent Yield, mentioned High Synod in Ambassador Tutorial text, tried to clarify Family Opinion Levels in Family Opinion Helptext.
+- Added Tutorial and Helptext for Discontent Yield, mentioned High Synod in Ambassador Tutorial text, tried to clarify Family Opinion Levels in Family Opinion Helptext
 - You can't have more Settlers (built, building and in queue all count) than available free City Sites (reverting change of version 1.0.65497)
    But you can still rush the last ones even with 0 progress (you couldn't before version 1.0.65497)
-- When a City Effect is added to its own aaiEffectCityYieldRate, yield rate calculations are now always accurate.
+- When a City Effect is added to its own aaiEffectCityYieldRate, yield rate calculations are now always accurate
    AI evaluation can accurately account for the gain or loss of 1x of such an effect. (don't worry if you have no idea what any of this means)
-- Helptext for Urban contains Urban placement restrictions (base game now has improved upon this but I'm keeping my own version).
+- Helptext for Urban contains Urban placement restrictions (base game now has improved upon this but I'm keeping my own version)
 - Helptext for the Ignore ZOC Unit ability will tell you about exceptions
 - no Yield signs will be flipped (Discontent, Maintenance)
-- Character Rating Yield preview for "Leader" position no longer factors in Opinion.
-- modmod XML loading: changes are consistantly applied in mod load order, no matter if they come in the form of -append or -change.
+- Character Rating Yield preview for "Leader" position no longer factors in Opinion
+- modmod XML loading: changes are consistantly applied in mod load order, no matter if they come in the form of -append or -change
 - Helptext for Attributes mentions the non-linear nature of their effects. (Does not mention that this does not apply to unmodded Competitive Mode)
 - Helptext for Range of a Ranged Unit with fixed Range will show a "|" after the Range number, indicting that it is fixed and can't be increased;
 - Dynasty's Prefered Religion will be chosen over alternatives when founding Religion through a bonus (project), it just needs to be valid
-   (Christianity needs 2 global Jewish cities, Menachaeism needs 2 global cities with Zoroastrianism and 2 global cities with Christianity).
-- eBonusCities (from improvement) only applies valid bonuses.
+   (Christianity needs 2 global Jewish cities, Menachaeism needs 2 global cities with Zoroastrianism and 2 global cities with Christianity)
+- eBonusCities (from improvement) only applies valid bonuses
+- First letters of Religious Improvement (class) names are displayed next to City names in Religion selection City list
 
 Incompatible with all other exclusive DLL mods - Harmony DLL mods should still work.
 
@@ -94,7 +97,7 @@ If you try any other way to contact me, my answer could take months.</descriptio
   <modplatform>Modio</modplatform>
   <modioID>2302466</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.1.7.8</modversion>
+  <modversion>0.1.8.0</modversion>
   <modbuild>1.0.73676</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo,AI,UI</tags>
