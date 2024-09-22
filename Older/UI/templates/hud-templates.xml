@@ -464,8 +464,9 @@
 
 					<VGroup MinWidth="30" Spacing="8" FlexHeight="1" NormalImage="CharacterDivider_Normal" HighlightedImage="CharacterDivider_Highlighted" BackgroundImageMode="Sliced" Padding="5,0,10,0" IsActive="{{Character(ID)-HasIcons}}">
 						<UIImage IsActive="{{Character(ID)-IsRoyal}}" BackgroundImage="{{Character(ID)-RoyalIcon}}" Height="20" Width="20" PreserveAspect="true" ITEM_TYPE="ItemType.CHARACTER_ROLE_SLOT" ITEM_DATA="(ID),{{Character(ID)-Royal-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target">
-							<UIImage Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopRight" Position="4,4" Height="16" Width="16" PreserveAspect="true"
-							 State="{{Character(ID)-PlaceInLine}}" StateType="1,2,3,4" StateAttributes="[1_BackgroundImage:Place1][2_BackgroundImage:Place2][3_BackgroundImage:Place3][4_BackgroundImage:Place4]"/>
+							<UIImage IgnoreLayout="true" Anchor="UIAnchor.TopLeft" Height="16" Width="16" PreserveAspect="true" BackgroundImage="EventLogCount" IsActive="{{Character(ID)-IsSuccessor}}">
+								<UIText Style="Avalon" Label="{{Character(ID)-PlaceInLine-Label}}" FontSize="15" Alignment="Midline" WordWrapping="false"/>
+							</UIImage>
 						</UIImage>
 						<UIImage IsActive="{{Character(ID)-HasJob}}" BackgroundImage="{{Character(ID)-JobIcon}}" Height="20" Width="20" PreserveAspect="true" CLICK_EVENT_TYPE="Ignore" ITEM_TYPE="{{Character(ID)-Job-Type}}" ITEM_DATA="{{Character(ID)-Job-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target"/>
 					</VGroup>
@@ -528,17 +529,19 @@
 
 					<VGroup MinWidth="30" Spacing="12" FlexHeight="1" NormalImage="CharacterDivider_Normal" HighlightedImage="CharacterDivider_Highlighted" BackgroundImageMode="Sliced" Padding="5,0,10,0" IsActive="{{Character(ID)-HasIcons}}">
 						<UIImage IsActive="{{Character(ID)-IsRoyal}}" BackgroundImage="{{Character(ID)-RoyalIcon}}" Height="20" Width="20" PreserveAspect="true" ITEM_TYPE="ItemType.CHARACTER_ROLE_SLOT" ITEM_DATA="(ID),{{Character(ID)-Royal-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target">
-							<UIImage Anchor="UIAnchor.TopLeft" Pivot="UIPivot.TopRight" Position="4,4" Height="16" Width="16" PreserveAspect="true"
-							 State="{{Character(ID)-PlaceInLine}}" StateType="1,2,3,4" StateAttributes="[1_BackgroundImage:Place1][2_BackgroundImage:Place2][3_BackgroundImage:Place3][4_BackgroundImage:Place4]"/>
+							<UIImage IgnoreLayout="true" Anchor="UIAnchor.TopLeft" Height="16" Width="16" PreserveAspect="true" BackgroundImage="EventLogCount" IsActive="{{Character(ID)-IsSuccessor}}">
+								<UIText Style="Avalon" Label="{{Character(ID)-PlaceInLine-Label}}" FontSize="15" Alignment="Midline" WordWrapping="false"/>
+							</UIImage>
 						</UIImage>
 						<UIImage IsActive="{{Character(ID)-HasJob}}" BackgroundImage="{{Character(ID)-JobIcon}}" Height="20" Width="20" PreserveAspect="true" CLICK_EVENT_TYPE="Ignore" ITEM_TYPE="{{Character(ID)-Job-Type}}" ITEM_DATA="{{Character(ID)-Job-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target"/>
 					</VGroup>
 
-					<UIRect MinWidth="22" Height="100%">
-						<UIText Anchor="UIAnchor.TopCenter" Pivot="UIPivot.TopCenter" MinWidth="22" Label="{{Character(ID)-Religion}}" FontSize="22" Alignment="Top" IsActive="{{Character(ID)-HasReligion}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
+					<VGroup MinWidth="22" Height="100%" ChildAlignment="TextAnchor.MiddleCenter" Spacing="10">
+						<UIButton Width="20" Height="20" Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.BottomCenter" Position="0,2" NormalImage="CharacterPin" HighlightedImage="CharacterPin"
+							 AllowNavigationSelection="false" ITEM_TYPE="ItemType.PIN_CHARACTER" ITEM_DATA="(ID)" IsActive="{{SelectedCharacter-Pin-IsActive}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
 						<UIButton Width="20" Height="20" Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.BottomCenter" Position="0,2" NormalImage="CharacterRenameNormal" HighlightedImage="CharacterRenameRoll"
 							 AllowNavigationSelection="false" ITEM_TYPE="ItemType.RENAME_CHARACTER" ITEM_DATA="(ID)" IsActive="{{SelectedCharacter-Rename-IsActive}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
-					</UIRect>
+					</VGroup>
 				</HGroup>
 			</VGroup>
 		</replace>

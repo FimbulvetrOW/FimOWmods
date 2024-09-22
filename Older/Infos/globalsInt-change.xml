@@ -172,4 +172,13 @@
 		<!-- Numbers higher than 1 will cause more of those units to spawn on improvement completion.  -->
 		<iValue>0</iValue>
 	</Entry>
+	<Entry>
+		<zType>BAI_ALT_CHARACTER_SORT</zType>
+		<!-- Activates alternative Character list sorting. Characters in the lists will be sorted based on the following properties, priority is in the order of listing: -->
+		<!-- Leader > (Leader Spouse > Heirs > )* Council > Courtiers > Families (Characters without Family first) > -->
+		<!-- > Jobs (Generals, Governors, Agents, can be Genral, can be Governor, can be Agent) > age > Character ID  -->
+		<!-- Leader Spouse and Heir status are only checked for the filters default, Court and Notables -->
+		<!-- To disable this behaviour, set to 0. -->
+		<iValue>1</iValue>
+	</Entry>
 </Root>

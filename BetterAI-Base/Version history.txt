@@ -1,4 +1,7 @@
 Version history
+[0.1.8.2] Update for new game version 1.0.74111; Yield icons only, no more superflous yield name text next to it; 
+          Improvement bonus Units always spawn at Improvement Tile, or near it
+[0.1.8.1] Added alternative Character list sorting (optional)
 [0.1.8.0] Fixed a critial bug with the bonusImprovement mod feature that caused AI turn hangs;
 [0.1.7.9] Implemented EffectPlayerEffectPlayer for EffectPlayer (player effect + player effect spawns new player effect);
           implemented JobEffectPlayer abd TraitEffectPlayer for Trait (trait + job (or another trait) spawns player effect;

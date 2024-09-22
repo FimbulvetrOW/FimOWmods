@@ -26,6 +26,9 @@
 	</Entry>
 	<Entry>
 		<zType>TECH_BARDING</zType>
+		<iCost>1500</iCost>
+		<iColumn>6</iColumn>
+		<iRow>3</iRow>
 		<abTechPrereq>
 			<Pair>
 				<zIndex>TECH_STEEL</zIndex>
@@ -39,6 +42,7 @@
 	</Entry>
 	<Entry>
 		<zType>TECH_COHORTS</zType>
+		<iCost>1500</iCost>
 		<iColumn>6</iColumn>
 		<iRow>7</iRow>
 		<abTechPrereq>
@@ -51,6 +55,110 @@
 				<bValue>1</bValue>
 			</Pair>
 		</abTechPrereq>
+	</Entry>
+	<!-- keeping pre-74111 versions.  -->
+	<Entry>
+		<zType>TECH_PORTCULLIS</zType>
+		<iColumn>3</iColumn>
+		<iRow>4</iRow>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_SPOKED_WHEEL</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TECH_DRAMA</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+	<Entry>
+		<zType>TECH_STIRRUPS</zType>
+		<iColumn>4</iColumn>
+		<iRow>3</iRow>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_SPOKED_WHEEL</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TECH_CITIZENSHIP</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+	<Entry>
+		<zType>TECH_ARCHITECTURE</zType>
+		<iCost>600</iCost>
+		<iColumn>4</iColumn>
+		<iRow>4</iRow>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_PORTCULLIS</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+	<Entry>
+		<zType>TECH_MARTIAL_CODE</zType>
+		<iColumn>5</iColumn>
+		<iRow>3</iRow>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_STIRRUPS</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+	<Entry>
+		<zType>TECH_VAULTING</zType>
+		<iCost>1000</iCost>
+		<iColumn>5</iColumn>
+		<iRow>4</iRow>
+	</Entry>
+	<Entry>
+		<zType>TECH_WINDLASS</zType>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_ARCHITECTURE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TECH_HYDRAULICS</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+	<Entry>
+		<zType>TECH_FISCAL_POLICY</zType>
+		<iCost>1500</iCost>
+	</Entry>
+<!--
+ moved to above: Reduced Range changes Barding
+	<Entry>
+		<zType>TECH_BARDING</zType>
+		<iCost>1500</iCost>
+		<iColumn>6</iColumn>
+		<iRow>3</iRow>
+	</Entry>
+ Reduced Range changes Infantry Square
+	<Entry>
+		<zType>TECH_INFANTRY_SQUARE</zType>
+		<iCost>1500</iCost>
+	</Entry>
+ moved to above: Reduced Range changes Barding
+	<Entry>
+		<zType>TECH_COHORTS</zType>
+		<iCost>1500</iCost>
+	</Entry>
+ -->
+	<Entry>
+		<zType>TECH_CHAIN_DRIVE</zType>
+		<iCost>1500</iCost>
+	</Entry>
+	<Entry>
+		<zType>TECH_BALLISTICS</zType>
+		<iCost>1500</iCost>
 	</Entry>
 	<Entry>   <!-- FimMod: Bridge building unlock -->
 		<zType>TECH_POLIS</zType>

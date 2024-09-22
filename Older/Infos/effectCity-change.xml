@@ -763,4 +763,48 @@
 -->
 		</aeLuxuryResources>
 	</Entry>
+	<!-- keeping pre-74111 versions. Tyranny, Pilgrimage change can stay -->
+	<Entry>
+		<zType>EFFECTCITY_LAW_SLAVERY</zType>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_DISCONTENT</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+		</aiYieldRate>
+		<aiImprovementModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_MINE</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENT_QUARRY</zIndex>
+				<iValue>20</iValue>
+			</Pair>
+		</aiImprovementModifier>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_LAW_FREEDOM</zType>
+		<aiYieldRate />
+		<aiYieldRateSpecialist>
+			<Pair>
+				<zIndex>YIELD_MONEY</zIndex>
+				<iValue>40</iValue>
+			</Pair>
+		</aiYieldRateSpecialist>
+		<aiYieldModifier />
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_LAW_DIVINE_RULE</zType>
+		<aiYieldRatePaganReligion />
+		<aaiImprovementClassYield>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_SHRINE</zIndex>
+				<SubPair>
+					<zSubIndex>YIELD_HAPPINESS</zSubIndex>
+					<iValue>10</iValue>
+				</SubPair>
+			</Pair>
+		</aaiImprovementClassYield>
+	</Entry>
 </Root>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Root>
+	<!-- keeping pre-74111 tiers, since techs stay the same -->
+	<Entry>
+		<zType>GOAL_PHILOSOPHY</zType>
+		<iMinTier>4</iMinTier>
+		<iMaxTier>5</iMaxTier>
+	</Entry>
+	<Entry>
+		<zType>GOAL_ENGINEERING</zType>
+		<iMinTier>4</iMinTier>
+		<iMaxTier>5</iMaxTier>
+	</Entry>
+	<Entry>
+		<zType>GOAL_ICONOGRAPHY</zType>
+		<iMinTier>6</iMinTier>
+		<iMaxTier>7</iMaxTier>
+	</Entry>
+	<Entry>
+		<zType>GOAL_CALLIGRAPHY</zType>
+		<iMinTier>6</iMinTier>
+		<iMaxTier>7</iMaxTier>
+	</Entry>
+	<Entry>
+		<zType>GOAL_TWO_DOCTORS</zType>
+		<iMinTier>5</iMinTier>
+		<iMaxTier>6</iMaxTier>
+	</Entry>
+	<Entry>
+		<zType>GOAL_SCHOLARSHIP_VAULTING</zType>
+		<iMinTier>6</iMinTier>
+		<iMaxTier>7</iMaxTier>
+	</Entry>
+	<Entry>
+		<zType>GOAL_ARCHITECTURE_JURISPRUDENCE</zType>
+		<iMinTier>6</iMinTier>
+		<iMaxTier>7</iMaxTier>
+		<aeTechsAcquired>
+			<zValue>TECH_ARCHITECTURE</zValue>
+			<zValue>TECH_JURISPRUDENCE</zValue>
+		</aeTechsAcquired>
+	</Entry>
+</Root>

@@ -44,6 +44,8 @@ Features (NOT active by default, but can be used/activated by mods)
 - Number of units generated on the turn a unit-generating improvement is finished can be set via XML (globally, not per improvement)
 - Trait + Job = Player Effect: Character Traits, in conjunction with that character's Job or other Traits, can now add Player Effects (base game Traits only have Leader Effects)
 - Player Effect + Player Effect = Player Effect: Two Player Effects together can now add another Player Effect
+- Alternative Character list sorting: Leader - (Leader Spouse - Heirs - ) Council - Courtiers - Families (Characters without Family first)
+  - Jobs (Generals, Governors, Agents, can be Genral, can be Governor, can be Agent) - age - Character ID
 
 Mods that activate/showcase some of these features are avaiable.
 
@@ -82,6 +84,8 @@ Mods that activate/showcase some of these features are avaiable.
    (Christianity needs 2 global Jewish cities, Menachaeism needs 2 global cities with Zoroastrianism and 2 global cities with Christianity)
 - eBonusCities (from improvement) only applies valid bonuses
 - First letters of Religious Improvement (class) names are displayed next to City names in Religion selection City list
+- Yield icons only, no more superflous yield name text next to it
+- Improvement bonus Units always spawn at Improvement Tile, or near it
 
 Incompatible with all other exclusive DLL mods - Harmony DLL mods should still work.
 
@@ -97,8 +101,8 @@ If you try any other way to contact me, my answer could take months.</descriptio
   <modplatform>Modio</modplatform>
   <modioID>2302466</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.1.8.0</modversion>
-  <modbuild>1.0.73676</modbuild>
+  <modversion>0.1.8.2</modversion>
+  <modbuild>1.0.74111</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo,AI,UI</tags>
   <singlePlayer>true</singlePlayer>

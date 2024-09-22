@@ -81,6 +81,7 @@
 - Slums keep the -25% Unit training time modifiers for Militia and Worker but now also reduce Growth by -10%;
 - Estates still give their +1VP but only give +2 Culture and -40% Training, and +5 Family Opinion per Luxury sent to City
    (instead of +1 Culture/-1 Training per Family Opinion Level and +2 Happiness for Luxury sent to City);
+- (Base DLL feature) Alternative Character list sorting
 
 
 -Siege-related Traits get Bonuses against Forts and Settlements but get reduced Bonus against plain Urban Tiles.
@@ -103,7 +104,7 @@ If you try any other way to contact me, my answer could take months.</descriptio
   <modplatform>Modio</modplatform>
   <modioID>2226901</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.7.40</modversion>
+  <modversion>0.7.43</modversion>
   <modbuild>1.0.73676</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo,Event,UI</tags>

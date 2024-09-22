@@ -1,4 +1,6 @@
 Version history
+[0.2.2.23] Update for new game version 1.0.74111: UI XML updated; reverted law and tech changes of 1.0.74111
+[0.2.2.22]  Activated Alternative Character list sorting
 [0.2.2.21] Hagia Sophia: only +1 Happiness Level in all Cities (but keeps +2 Happiness in all Cities);
            Centralisation Law makes Marsh Terrain valid for Urban too (not just Farms);
 [0.2.2.20] Rising Star only gives +1 to all stats (instead of +2),
