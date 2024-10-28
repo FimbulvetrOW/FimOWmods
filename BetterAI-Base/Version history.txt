@@ -1,4 +1,6 @@
 Version history
+[0.1.8.3] Update for new game version 1.0.74622: changes from 0.1.8.2 are now in base game so they were removed again;
+          added option to make Cities immune to Critical Hits again.
 [0.1.8.2] Update for new game version 1.0.74111; Yield icons only, no more superflous yield name text next to it; 
           Improvement bonus Units always spawn at Improvement Tile, or near it
 [0.1.8.1] Added alternative Character list sorting (optional)

@@ -238,9 +238,5 @@
 	<Entry>
 		<zType>UNIT_BEJA_ARCHER</zType>
 		<iRangeMax>2</iRangeMax>
-		<aeEffectUnit>
-			<zValue>EFFECTUNIT_VOLLEY</zValue>
-			<!-- <zValue>EFFECTUNIT_PIERCE1</zValue> -->    <!-- PIERCE1 removed -->
-		</aeEffectUnit>
 	</Entry>
 </Root>

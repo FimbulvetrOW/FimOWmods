@@ -173,4 +173,8 @@
 		<!-- To disable this behaviour, set to 0. -->
 		<iValue>0</iValue>
 	</Entry>
+	<Entry>
+		<zType>BAI_CITIES_IMMUNE_TO_CRITICAL</zType> <!-- Set to 1 to make Cities immune to critial hits again, -->
+		<iValue>0</iValue>
+	</Entry>
 </Root>

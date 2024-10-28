@@ -471,9 +471,7 @@
 						<UIImage IsActive="{{Character(ID)-HasJob}}" BackgroundImage="{{Character(ID)-JobIcon}}" Height="20" Width="20" PreserveAspect="true" CLICK_EVENT_TYPE="Ignore" ITEM_TYPE="{{Character(ID)-Job-Type}}" ITEM_DATA="{{Character(ID)-Job-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent" HOVER_EVENT_TYPE="Target"/>
 					</VGroup>
 
-					<UIRect MinWidth="22" Height="100%">
-						<UIText MinWidth="22" Label="{{Character(ID)-Religion}}" FontSize="22" Alignment="Midline" IsActive="{{Character(ID)-HasReligion}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
-					</UIRect>
+					<UIText MinWidth="22" FlexHeight="1" Label="{{Character(ID)-Religion}}" FontSize="22" Alignment="Midline" IsActive="{{Character(ID)-HasReligion}}" TOOLTIP_LOCATION="TooltipLocation.Parent"/>
 				</HGroup>
 			</VGroup>
 		</replace>

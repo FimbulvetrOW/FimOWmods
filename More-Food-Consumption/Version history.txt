@@ -1,4 +1,5 @@
 Version history
+[1.1.4] Update for new game version 1.0.74622: Food Yield iDemand value changed to compensate for base game demand calculation change. 
 [1.1.3] Update for new Units added with the new DLC which was added at version 1.0.68949;
         Lighthouse Wonder Effect: Faster Development for Hamlet/Village is a Nation-Wide Bonus again, 
 		but the effect is halved (-5 development Turns instead of -10);

@@ -809,8 +809,5 @@
 				<iValue>4</iValue>
 			</Pair>
 		</aiYieldConsumption>
-		<aeEffectUnit>
-			<zValue>EFFECTUNIT_VOLLEY</zValue>
-		</aeEffectUnit>
 	</Entry>
 </Root>

@@ -1,4 +1,7 @@
 Version history
+[0.2.2.24] Update for new game version 1.0.74622: UI XML updated; reverted 4 base game changes: 
+           re-enabled Grand Vizier for Competitive Mode: deactivating is an independent option; re-enabled 3 tech trade events for Competitive Mode;
+           Cities are immune to Critial Hits again, Missions that were changed cost Civics again (Slander, Trade, High Synod);
 [0.2.2.23] Update for new game version 1.0.74111: UI XML updated; reverted law and tech changes of 1.0.74111
 [0.2.2.22]  Activated Alternative Character list sorting
 [0.2.2.21] Hagia Sophia: only +1 Happiness Level in all Cities (but keeps +2 Happiness in all Cities);

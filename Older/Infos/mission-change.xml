@@ -8,4 +8,35 @@
 		<zType>MISSION_PLAYER_PLAYER_WAR</zType>
 		<bDisabled>1</bDisabled> <!-- too strong, not enough limitations -->
 	</Entry>
+	<Entry>
+		<zType>MISSION_SLANDER</zType>
+		<aiYieldCostOpinion>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCostOpinion>
+	</Entry>
+	<Entry>
+		<zType>MISSION_TRADE_MISSION</zType>
+		<aiYieldCostOpinion>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCostOpinion>
+	</Entry>
+	<Entry>
+		<zType>MISSION_HIGH_SYNOD</zType>
+		<aiYieldCostOpinion>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCostOpinion>
+	</Entry>
+	<Entry>
+		<zType>MISSION_DEMAND_TRIBUTE_ANY</zType>
+		<bNoPopup>0</bNoPopup>
+	</Entry>
 </Root>

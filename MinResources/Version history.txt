@@ -1,4 +1,5 @@
 Version history
+[0.5.1.2] Re-compiled for new game version 1.0.74622 (TileData class property mID is now int)
 [0.5.1.1] Actually removed 0Harmony.dll from mod folder now;
           Updated code to mimic the changes in new game version 1.0.70671 (should have zero effect)
 [0.5.1.0] New dependency: Harmony is no longer in this mod, 

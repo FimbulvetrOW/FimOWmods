@@ -1,4 +1,5 @@
 Version history
+[0.3.7.2] Update for game version 1.0.74622: Geja Archer no longer has Pierce in base game, so it's no longer necessary for this mod to remove it.
 [0.3.7.1] Update for game version 1.0.73323: Gendered text format updated, Cohorts still requires Land Consolidation instead of Manor;
 [0.3.7] After recent base game changes to the Tech tree, 2 adjustments were made:
         Infantry Square (Pikeman) was lowered 1 tier (cost 1000 instead of 1500) but also requires Manor in addition to Battle Line,

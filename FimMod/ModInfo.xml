@@ -82,6 +82,10 @@
 - Estates still give their +1VP but only give +2 Culture and -40% Training, and +5 Family Opinion per Luxury sent to City
    (instead of +1 Culture/-1 Training per Family Opinion Level and +2 Happiness for Luxury sent to City);
 - (Base DLL feature) Alternative Character list sorting
+- re-enabled Grand Vizier for Competitive Mode (disabled in 74622 update)
+- re-enabled 3 tech trade events for Competitive Mode (disabled in 74622 update)
+- Cities are immune to Critial Hits again (changed in 74622 update)
+- Missions that were changed (in 74622 update) cost Civics again (Slander, Trade, High Synod).
 
 
 -Siege-related Traits get Bonuses against Forts and Settlements but get reduced Bonus against plain Urban Tiles.

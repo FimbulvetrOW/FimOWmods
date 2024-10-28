@@ -170,4 +170,16 @@
 		<zType>EVENTSTORY_SHRINE_OF_THE_HEALING_GOD</zType>
 		<aeGameOptionInvalid />
 	</Entry>
+	<Entry>   <!-- Re-enabling Tech Trade events for Competitive -->
+		<zType>EVENTSTORY_TECH_KNOWLEDGE_OF_POWER</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_TECH_THE_LAST_PIECE</zType>
+		<aeGameOptionInvalid />
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_TECH_TRADE_OFF</zType>
+		<aeGameOptionInvalid />
+	</Entry>
 </Root>

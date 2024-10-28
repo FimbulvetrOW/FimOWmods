@@ -60,8 +60,8 @@ Requires 0harmony mod for Harmony DLL</description>
   <modplatform>Modio</modplatform>
   <modioID>2735764</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.5.1.1</modversion>
-  <modbuild>1.0.70671</modbuild>
+  <modversion>0.5.1.2</modversion>
+  <modbuild>1.0.74622</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo</tags>
   <singlePlayer>true</singlePlayer>

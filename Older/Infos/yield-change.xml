@@ -10,6 +10,6 @@
 	</Entry>
 	<Entry>   <!-- More Food Consumption -->
 		<zType>YIELD_FOOD</zType>
-		<iDemand>200</iDemand>
+		<iDemand>10</iDemand>
 	</Entry>
 </Root>

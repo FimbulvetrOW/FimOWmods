@@ -1,4 +1,7 @@
 Version history
+[0.7.44] Update for new game version 1.0.74622: UI XML updated; reverted 4 base game changes: 
+         re-enabled Grand Vizier for Competitive Mode: deactivating is an independent option; re-enabled 3 tech trade events for Competitive Mode;
+         Cities are immune to Critial Hits again, Missions that were changed cost Civics again (Slander, Trade, High Synod).
 [0.7.43] Update for new game version 1.0.74111: UI XML updated; reverted law and tech changes of 1.0.74111
 [0.7.42] Activated Alternative Character list sorting
 [0.7.41] Hagia Sophia: only +1 Happiness Level in all Cities (but keeps +2 Happiness in all Cities);
@@ -10,7 +13,8 @@ Version history
           to Cities that don't have it, no longer gives Luxuries;
          GV nerfed but no longer takes over City producion, and can be assigned at will;
          Slums keep the -25% Unit training time modifiers for Militia and Worker but now also reduce Growth by -10%;
-         Estates still give their +1VP but only give +2 Culture and -40% Training, and +5 Family Opinion per Luxury sent to City (instead of +1 Culture/-1 Training per Family Opinion Level and +2 Happiness for Luxury sent to City);
+         Estates still give their +1VP but only give +2 Culture and -40% Training, and +5 Family Opinion per Luxury sent to City
+          (instead of +1 Culture/-1 Training per Family Opinion Level and +2 Happiness for Luxury sent to City);
          Colosseum: +40% Training and new Infantry Units start with Tough in City, +2 Happiness in all defended Cities;
          Heliopolis only gives +0.5 Orders per Acolyte;
          finally removed old Boat Unit duplicate, might break very old savegames.

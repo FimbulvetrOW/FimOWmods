@@ -231,6 +231,7 @@
 		</aeGameOptionInvalid>
 	</Entry>
 	<!-- Trade events: remove all that have an option for Random Tech -->
+	<!-- Trade events: re-enable those that don't - in eventStory-change.xml -->
 	<!-- BETWEEN_US with COVERT no longer gives a whole tech, just science now -->
 	<!-- HEIR_TO_HEIR_OPTION requires CUNNING for stealing -->
 	<Entry>

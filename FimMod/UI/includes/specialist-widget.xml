@@ -16,13 +16,15 @@
 				<UIRaycastTarget Width="60" Height="60" State="{{SpecialistWidget$-IsEmpty}}" StateType="False" ITEM_TYPE="{{SpecialistWidget$-CurrentItemType}}" ITEM_DATA="{{SpecialistWidget$-CurrentData}}" TOOLTIP_LOCATION="TooltipLocation.Mouse">
 					<UIMask PreserveAspect="true" BackgroundImageMaterial="UI/Materials/WorldButton" Width="48" Height="48" State="{{SpecialistWidget$-ShowRadialProgress}}" StateAttributes="[True_BackgroundImage:Sprites/HUD_Atlas/Circle-Mask][False_BackgroundImage:SQUARE]">
 						<UIImage OBJECT_NAME="BG" BackgroundImage="queue_unit" Width="48" Height="48" PreserveAspect="true" BackgroundImageMaterial="UI/Materials/WorldButton" IsActive="{{SpecialistWidget$-ShowBG}}"/>
-						<UIImage OBJECT_NAME="Highlight" BackgroundImage="Sprites/HUD_Atlas/Circle-Mask" Width="52" Height="52" BackgroundColor="#ffffffaa" IsActive="{{SpecialistWidget$-IsHighlightActive}}" BackgroundImageMaterial="UI/Materials/WorldImage"/>
+						<UIImage OBJECT_NAME="Highlight" BackgroundImage="Sprites/HUD_Atlas/Circle-Mask" Width="52" Height="52" BackgroundColor="#ffffffaa" IsActive="{{SpecialistWidget$-IsHighlightActive}}" BackgroundImageMaterial="UI/Materials/WorldImage"
+								 State="{{SpecialistWidget$-Pillaged}}" StateAttributes="[Default_BackgroundColor:#ffffff][True_BackgroundColor:#777777]"/>
 						<UIImage OBJECT_NAME="Icon" IsActive="{{SpecialistWidget$-ShowSpecialistIcon}}" Position="0,3" BackgroundImage="{{SpecialistWidget$-Specialist-Icon}}" PreserveAspect="true" Width="45" Height="45" BackgroundImageMaterial="UI/Materials/WorldImage"/>
 					</UIMask>
-					<UIImage State="{{SpecialistWidget$-ShowRadialProgress}}" StateType="False" Anchor="UIAnchor.StretchAll" BackgroundImage="specialist-border-trim" ForceInactive="{{SpecialistWidget$-IsEmpty}}"/>
-					<UIProgressBar State="{{SpecialistWidget$-ShowRadialProgress}}" StateType="True" Anchor="UIAnchor.StretchAll" Outline="1,1" OutlineColor="#000000" BackgroundSprite="Sprites/City-Circle" BackgroundColor="#000000"
+					<UIImage IsActive="{{SpecialistWidget$-IsComplete}}" Anchor="UIAnchor.StretchAll" BackgroundImage="specialist-border-trim" ForceInactive="{{SpecialistWidget$-IsEmpty}}"
+							 State="{{SpecialistWidget$-Pillaged}}" StateAttributes="[Default_BackgroundColor:#FFFFFF][True_BackgroundColor:#C83232]"/>
+					<UIProgressBar State="{{SpecialistWidget$-IsComplete}}" StateType="False" Anchor="UIAnchor.StretchAll" Outline="1,1" OutlineColor="#000000" BackgroundSprite="Sprites/City-Circle" BackgroundColor="#000000"
 								   UnfilledColor="#2f2a2a" FillBackgroundSprite="Sprites/City-Circle" FillMethod="Radial360" FillAmounts="{{SpecialistWidget$-Production-FillAmounts}}" FillColors="{{SpecialistWidget$-Production-FillColors}}" BackgroundImageMaterial="UI/Materials/WorldButton"/>
-					<UIText IsActive="{{SpecialistWidget$-ShowRadialProgress}}" STYLE="AvalonWorldUI" Label="{{SpecialistWidget$-TurnsLeft}}" Anchor="UIAnchor.StretchAll" TextMargin="0,0,6,0" FontSize="15" Alignment="Bottom"/>
+					<UIText State="{{SpecialistWidget$-IsComplete}}" StateType="False" STYLE="AvalonWorldUI" Label="{{SpecialistWidget$-TurnsLeft}}" Anchor="UIAnchor.StretchAll" TextMargin="0,0,6,0" FontSize="15" Alignment="Bottom"/>
 				</UIRaycastTarget>
 
 				<UIGrid Anchor="UIAnchor.MiddleLeft" Pivot="UIPivot.MiddleRight" Width="24" Height="60" Position="-1,0" IsActive="{{SpecialistWidget$-HasUpgradeLevels}}" ForceInactive="{{SpecialistWidget$-IsEmpty}}"
