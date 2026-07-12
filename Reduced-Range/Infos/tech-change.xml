@@ -24,6 +24,21 @@
 			</Pair>
 		</abTechPrereq>
 	</Entry>
+
+	<Entry>   <!-- Requires Manor instead of Coinage. reverts a change from last year. -->
+		<zType>TECH_WINDLASS</zType>
+		<abTechPrereq>
+			<Pair>
+				<zIndex>TECH_MANOR</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TECH_HYDRAULICS</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTechPrereq>
+	</Entry>
+
 	<Entry>   <!-- Requires Steel instead of Battle Line. -->
 		<zType>TECH_BARDING</zType>
 		<abTechPrereq>

@@ -3,7 +3,6 @@
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_LIGHTHOUSE</zType>
 		<Name>TEXT_IMPROVEMENT_LIGHTHOUSE</Name>
-		<SourceImprovement>IMPROVEMENT_LIGHTHOUSE</SourceImprovement>
 		<bSingle>1</bSingle>
 		<aiImprovementModifier>
 			<Pair>

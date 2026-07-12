@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTUNIT_BESIEGER</zType>
+		<abUnitTraitInvalid>
+			<Pair>
+				<zIndex>UNITTRAIT_SIEGE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abUnitTraitInvalid>
+	</Entry>
+</Root>

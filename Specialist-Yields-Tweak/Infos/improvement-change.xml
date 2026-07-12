@@ -304,5 +304,122 @@
 		<zType>IMPROVEMENT_SHRINE_SERAPIS</zType>
 		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
 	</Entry>
+	
+	<Entry>
+		<zType>IMPROVEMENT_ALTAR_ATEN</zType>
+		<Specialist>SPECIALIST_PRIEST_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_AMUN</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_APEDEMEK</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_SEBIUMEKER</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_MANDULIS</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_ASTAR</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_MAHREM</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_BEHER</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_MEDR</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_YAMA</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_THE_MARUTS</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_INDRA</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_SURYA</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_ORLAGNO</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_OESHO</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_NANA</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_ARDAKSHO</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_MAYON</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_TIRUMAL</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_MURUGAN</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_SHRINE_VARUNA</zType>
+		<Specialist>SPECIALIST_ACOLYTE_1</Specialist>
+	</Entry>
+	
+
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_HINDUISM</zType>
+		<Specialist>SPECIALIST_MONK_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_HINDUISM</zType>
+		<Specialist>SPECIALIST_PRIEST_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_HINDUISM</zType>
+		<Specialist>SPECIALIST_BISHOP_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_BUDDHISM</zType>
+		<Specialist>SPECIALIST_MONK_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_BUDDHISM</zType>
+		<Specialist>SPECIALIST_PRIEST_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_BUDDHISM</zType>
+		<Specialist>SPECIALIST_BISHOP_1</Specialist>
+	</Entry>
  -->
+ 
+ 
+
+	<Entry>
+		<zType>IMPROVEMENT_GODS_CONSORT_SHRINE</zType>
+	</Entry>
 </Root>

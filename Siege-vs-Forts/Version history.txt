@@ -1,4 +1,7 @@
 Version history
+[0.4] reworked again: Assault bonus vs Forts and Urban reduced to 10% (Siege already gives +50%),
+       and only +10% vs Stronghold and Citadel (Siege already gives +20% vs Garrison/Stronghold/Citadel),
+       and only +10% vs Urban (Siege already gives +25% vs Urban).
 [0.3] reworked: removed bonus vs Tribal Settlement Improvements from Siege and Assault 
       (already getting bonus because of Settlement Attack bonus),
       Assault bonus vs Forts halved to 25% (Siege already gives +50%, and all Assault Units are also Siege).

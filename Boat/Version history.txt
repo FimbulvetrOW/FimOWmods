@@ -1,4 +1,5 @@
 Version history
+[0.2.2a] Just removed 2 tags that are no longer needed.
 [0.2.2] Old duplicate Unit entry removed. Might break very old savegames.
 [0.2.1] Update for game version 1.0.73323: Gendered text format updated
 [0.2] removed Unit duplicate 

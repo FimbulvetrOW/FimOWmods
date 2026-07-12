@@ -1,17 +1,6 @@
 <?xml version="1.0"?>
 <Root>
 	<Entry>
-		<zType>BONUS_FAMILYCLASS_CLERICS_SEAT</zType>
-		<bFoundReligionCity>0</bFoundReligionCity>
-		<aeTechs></aeTechs>
-		<AddCourtier>
-			<Pair>
-				<First>COURTIER_SOLDIER</First>
-				<Second/>
-			</Pair>
-		</AddCourtier>
-	</Entry>
-	<Entry>
 		<zType>BONUS_FAMILYCLASS_SAGES_SEAT</zType>
 		<bRandomTech>0</bRandomTech>
 	</Entry>

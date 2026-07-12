@@ -19,6 +19,8 @@ A/M/E Philosopher: +2/3/4 Science, +0/1/2 Civics [+2/3/4 Science, +0/1/2 Culture
 A/M/E Doctor: +2/3/4 Growth, +0/1/2 Science [+2/3/4 Growth, +0/1/2 Science/Culture level]
 Bishop unchanged [+0/0.5/1 Orders, +10/15/20 Money/Culture level]
 
+God's Consort Shrine: +1 Orders [+0,5 Orders/Citizen]
+
 Maximum additional Yields per Citizen from Specialists are now:
 6 Culture (3x Elder Poet)
 6 Money (3x Elder Scribe)
@@ -29,8 +31,8 @@ Maximum additional Yields per Citizen from Specialists are now:
   <modplatform>Modio</modplatform>
   <modioID>2226891</modioID>
   <modioFileID>3464115</modioFileID>
-  <modversion>1.1.2</modversion>
-  <modbuild>1.0.65077</modbuild>
+  <modversion>1.1.3</modversion>
+  <modbuild>1.0.84044</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo</tags>
   <singlePlayer>true</singlePlayer>

@@ -68,11 +68,12 @@
 	</Entry>
 	<Entry>
 		<zType>UNIT_CROSSBOWMAN</zType>
+		<iStrength>80</iStrength>
 		<iRangeMax>1</iRangeMax>
 		<bRangeFlat>1</bRangeFlat>
 		<aeEffectUnit>
 			<zValue>EFFECTUNIT_ANTIMELEE</zValue>
-			<zValue>EFFECTUNIT_PIERCE1</zValue> <!-- instead of PIERCE2 -->
+			<!-- no more PIERCE2 -->
 		</aeEffectUnit>
 	</Entry>
 	<Entry>
@@ -134,7 +135,7 @@
 		<iRangeMax>1</iRangeMax>
 	</Entry>
 	<Entry>
-		<zType>UNIT_KUSHITE_CAVALRY</zType>
+		<zType>UNIT_MOUNTED_LANCER</zType>
 		<iRangeMax>1</iRangeMax>
 	</Entry>
 	<Entry>
@@ -238,5 +239,17 @@
 	<Entry>
 		<zType>UNIT_BEJA_ARCHER</zType>
 		<iRangeMax>2</iRangeMax>
+	</Entry>
+	<Entry>
+		<zType>UNIT_STEPPE_RIDER</zType>
+		<iRangeMax>1</iRangeMax>
+	</Entry>
+	<Entry>
+		<zType>UNIT_HUNNIC_CAVALRY_1</zType>
+		<iRangeMax>1</iRangeMax>
+	</Entry>
+	<Entry>
+		<zType>UNIT_HUNNIC_CAVALRY_2</zType>
+		<iRangeMax>1</iRangeMax>
 	</Entry>
 </Root>

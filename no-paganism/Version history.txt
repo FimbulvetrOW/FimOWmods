@@ -1,0 +1,5 @@
+Version history
+[1.1] Update for new game version 1.0.84044: So many new Shrines. Hinduism is removed too.
+      Added EFFECTCITY_RELIGION_PAGAN to all shrines, so you at least get the 2 Culture per city (not per Shrine).
+[1.0] there were no changes, but the mod does what it should so I just bumped the version number up to 1.0
+[0.1] Initial release

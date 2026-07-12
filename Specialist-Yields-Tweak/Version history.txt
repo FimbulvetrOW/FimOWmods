@@ -1,4 +1,5 @@
 Version history
+[1.1.3] God's Consort shrine had lost its +0.5 Orders/citicen, now get flat +1 Orders.
 [1.1.2] version 1.1 change for Courthouse was not active (commented out), that is now fixed.
 [1.1.1] fixed mod description
 [1.1] All Specialists start at Apprentice level (reverted the big change of game version 1.0.62798)

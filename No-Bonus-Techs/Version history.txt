@@ -1,4 +1,5 @@
 Version history
+[1.6] Update for new game version 1.0.84044: Fixed one Tech that was renamed, added new UU Bonus Techs from DLCs.
 [1.5] Reduced number of techs required for cognomen The Enlightened and The Wise, 
        because the lack of cheap bonus techs makes it significantly harder to hit these limits.
 [1.4] Update for new game version 1.0.70671: update was required for new Bonus Techs and changed XML structure. 

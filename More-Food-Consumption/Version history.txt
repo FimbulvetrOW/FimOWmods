@@ -1,4 +1,7 @@
 Version history
+[1.1.5] Update for new game version 1.0.84044: New DLC units: 2 Food consumption for infantry, 
+         3 for Yuezhi Horse Units, 5 for all Elephant units.
+        Pathfinder bonus to Nets and Camp was reduced to 50% (20%) in base game, so this value is no longer modded.
 [1.1.4] Update for new game version 1.0.74622: Food Yield iDemand value changed to compensate for base game demand calculation change. 
 [1.1.3] Update for new Units added with the new DLC which was added at version 1.0.68949;
         Lighthouse Wonder Effect: Faster Development for Hamlet/Village is a Nation-Wide Bonus again, 

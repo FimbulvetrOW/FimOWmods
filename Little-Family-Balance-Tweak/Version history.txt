@@ -1,4 +1,7 @@
 Version history
+[0.7] Update for new game version 1.0.84044: Clerics' -50% training time for Disciples now only applies to State Religion (base game change),
+      new Cleric ability to build Christian/Manichaean Disciples without Religion was removed, 
+      replaced Traders' +2 Culture per Luxury to City with +1 Culture from Connected.
 [0.6.11] Removed the duplicate Boat unit entry. This will break savegames with Trader Ferry Units.
 [0.6.10] Update for new game version 1.0.71795: Patrons stay at +1 Happiness Level as Culture upgrade bonus, 
          and don't get and yield modifier % either; Riders Seat no longer gets free Horses (but can still build Horse Units without Horses);
@@ -24,7 +27,7 @@ Version history
 [0.5.2] removed the doubled extra Culture from Buillion for Traders
 [0.5.1] Update for game version 64196: re-added Clergy Trait, which was removed in base game
 [0.5] Early Unlock mechanic added, requires Better AI Base DLL
-[0.4] Court Cleric now uses fields from BetterAI mod, but should still work without (logs should show extra fields but that doesn'T break anything)
+[0.4] Court Cleric now uses fields from BetterAI mod, but should still work without (logs should show extra fields but that doesn't break anything)
 [0.3b] just updated descriptions
 [0.3] Cleric Seats get access to a Project that lets them generate a new type of Courtiers: Clerics (same as family name -_-).
       Also their -50% Disciple train time now applies to all their Cities, not just the Seat.

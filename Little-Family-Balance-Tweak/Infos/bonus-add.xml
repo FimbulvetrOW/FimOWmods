@@ -1,6 +1,15 @@
 <?xml version="1.0"?>
 <Root>
 	<Entry>
+		<zType>BONUS_FAMILYCLASS_CLERICS_SEAT</zType>
+		<AddCourtier>
+			<Pair>
+				<First>COURTIER_SOLDIER</First>
+				<Second/>
+			</Pair>
+		</AddCourtier>
+	</Entry>
+	<Entry>
 		<zType>BONUS_FAMILYCLASS_TRADERS</zType>
 		<aiGlobalYields>
 			<Pair>

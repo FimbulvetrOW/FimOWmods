@@ -3,28 +3,28 @@
   <displayName>Little Family Balance Tweak</displayName>
   <description>Many changes were made to Families lately. Some of these changes were reverted, other changes applied.
 
-Some features require Better AI Base DLL mod functionality
+Some features require Base DLL mod functionality
 
-Clerics: no longer gain access to the Project to found a Religion,
-  the free tier 4 Tech Bonus (Monasticism) was also removed. 
- Instead they get a Court Soldier, and in their Seat they can rush Projects with Citizens.
-  The -50% training time for Disciples applies to all their cities, not just the Seat.
+Clerics: Removed Tech requirement exemption for Monasteries, 
+  instead it gets unlocked earlier (requires Base DLL)
+  -- State Religion's Monasteries with Divination Tech
+  -- State Religion's Temples with Metaphysics Tech and Strong Culture in the City
+  The ability to build Christian and Manichaean Disciples without Relgion was removed.
+  Instead they get a Court Soldier, and in their Seat they can rush Projects with Citizens.
+  The -50% training time for State Religion Disciples applies to all their Cities, not just the Seat.
   All Cities get +2 Happiness (instead of +1 (1.0.65965)
- (Better AI feature) Clerics unlock in their own Cities:
- -- State Religion's Monasteries with Divination Tech
- -- State Religion's Temples with Metaphysics Tech and Strong Culture in the City
+
 
 Traders: 5 Bonuses were removed:
-  -10 turns for Hamlet Class Upgrades,
   Road building without cooldown for Family Workers,
   free Fair in Seat, 
-  +5 Money from Specialists (1.0.65965 added +2 Culture, 1.0.66355 changed it to Money),
-  +100% to Nets.
+  +6 Money from Specialists (1.0.65965 added +2 Culture, 1.0.66355 changed it to Money),
+  +100% to Nets. (load this mod after More Food Consumption when using both)
  They were replaced with: 
-  5 Orders can be stored for the next turn (tied to the free Early Market (+15% Money, no Specialist) Improvement in seat), 
+  5 Orders can be stored for the next turn (tied to the free Early Market Improvement (+20% Money, no Specialist) in seat), 
   +400 Money when Founding a City, 
-  +2 Culture from Luxuries sent to City
   +2 Culture from Precious Resources (1.0.65965 removed this)
+  +1 Culture from Connected
  (Better AI feature) Traders unlock in their own Cities:
  -- Harbor with Navigation Tech and Developing Culture in the City
  -- Market with Polis Tech and Developing Culture in the City

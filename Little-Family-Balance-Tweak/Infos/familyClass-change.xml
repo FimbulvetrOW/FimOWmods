@@ -3,6 +3,7 @@
 	<Entry>
 		<zType>FAMILYCLASS_CLERICS</zType>
 		<iNoReligionOpinion>0</iNoReligionOpinion>
+		<SeatFoundBonus>BONUS_FAMILYCLASS_CLERICS_SEAT</SeatFoundBonus>
 	</Entry>
 	<Entry>
 		<zType>FAMILYCLASS_TRADERS</zType>

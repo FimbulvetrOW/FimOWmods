@@ -833,7 +833,7 @@
 		</aiYieldConsumption>
 	</Entry>
 	<Entry>
-		<zType>UNIT_KUSHITE_CAVALRY</zType>
+		<zType>UNIT_MOUNTED_LANCER</zType>
 <!--
 		<aiYieldCost>
 			<Pair>
@@ -1088,7 +1088,7 @@
 	</Entry>
 	<Entry>
 		<zType>UNIT_MEDJAY_ARCHER</zType>
-<!-- 		
+<!--
 		<aiYieldCost>
 			<Pair>
 				<zIndex>YIELD_WOOD</zIndex>
@@ -1113,7 +1113,7 @@
 	</Entry>
 	<Entry>
 		<zType>UNIT_BEJA_ARCHER</zType>
-<!-- 
+<!--
 		<aiYieldCost>
 			<Pair>
 				<zIndex>YIELD_WOOD</zIndex>
@@ -1129,6 +1129,259 @@
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
 				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_DMT_WARRIOR</zType>
+<!--
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>150</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_SHOTELAI</zType>
+<!--
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>200</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<!-- MAURYA -->
+	<Entry>
+		<zType>UNIT_ASSAULT_ELEPHANT</zType>
+<!--
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_ARMOURED_ELEPHANT</zType>
+<!-- 
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<!-- YUEZHI -->
+	<Entry> 
+		<zType>UNIT_STEPPE_RIDER</zType>
+		<!-- This is a growth unit! -->
+<!--
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>25</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>3</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_KUSHAN_CAVALRY</zType>
+<!--
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>3</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_KUSHAN_WARLORDS</zType>
+<!--
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>3</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<!-- TAMIL -->
+	<Entry>
+		<zType>UNIT_JAVELIN_ELEPHANT</zType>
+<!--
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>50</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_ARCHER_ELEPHANT</zType>
+<!--
+		<aiYieldCost>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiYieldCost>
+-->
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>5</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_WOOD</zIndex>

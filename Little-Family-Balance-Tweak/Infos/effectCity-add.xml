@@ -3,12 +3,11 @@
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_MARKET_0</zType>
 		<Name>TEXT_IMPROVEMENT_MARKET_0</Name>
-		<SourceImprovement>IMPROVEMENT_MARKET_0</SourceImprovement>
 		<bSingle>1</bSingle>
 		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>15</iValue> <!-- this improvement exists mostly for the + 5 orders storage functionality -->
+				<iValue>20</iValue> <!-- this improvement exists mostly for the + 5 orders storage functionality -->
 			</Pair>
 		</aiYieldModifier>
 	</Entry>

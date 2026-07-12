@@ -6,19 +6,22 @@
   Removes Religion Spread and Religion Opinion stats from all Shrines (and Acolytes),
   so that they can be built without having to worry about keeping one more Religion happy.
   
+  Hinduism is also removed since it's founded by Shrines.
+
+  If any Shrine is present in a City, you still get the 2 Culture per Turn even without the Religion.
+  
   By being unable to found Pagan Religions, Events that require them will be disabled.
   Divine Rule: Since Pagan religions won't exist, you can't adopt them as a State Religion.
-
-Version history
-[1.0] there were no changes, but the mod does what it should so I just bumped the version number up to 1.0
-[0.1] Initial release</description>
+  
+  Dynasty Akhenaten's Altar is an exception and remains.
+  </description>
   <modpicture>Unpagan_Shrines.png</modpicture>
   <author>Fimbulvetr</author>
   <modplatform>Modio</modplatform>
   <modioID>2073265</modioID>
   <modioFileID>2778311</modioFileID>
-  <modversion>1.0</modversion>
-  <modbuild>1.0.62443</modbuild>
+  <modversion>1.1</modversion>
+  <modbuild>1.0.84044</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo</tags>
   <singlePlayer>true</singlePlayer>

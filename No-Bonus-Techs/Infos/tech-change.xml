@@ -101,14 +101,6 @@
 	</Entry>
 
 	<Entry>
-		<zType>TECH_CARTOGRAPHY_BONUS_TRIREME</zType>
-		<bDisable>1</bDisable>
-	</Entry>
-	<Entry>
-		<zType>TECH_LATEEN_SAIL_BONUS_DROMON</zType>
-		<bDisable>1</bDisable>
-	</Entry>
-	<Entry>
 		<zType>TECH_JURISPRUDENCE_BONUS_MINISTER</zType>
 		<bDisable>1</bDisable>
 	</Entry>
@@ -165,7 +157,7 @@
 		<bDisable>1</bDisable>
 	</Entry>
 	<Entry>
-		<zType>TECH_KUSHITE_CAVALRY_BONUS</zType>
+		<zType>TECH_MOUNTED_LANCER_BONUS</zType>
 		<bDisable>1</bDisable>
 	</Entry>
 	<Entry>
@@ -208,6 +200,16 @@
 		<zType>TECH_BEJA_ARCHER_BONUS</zType>
 		<bDisable>1</bDisable>
 	</Entry>
+	
+	<Entry>
+		<zType>TECH_DMT_WARRIOR_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	<Entry>
+		<zType>TECH_SHOTELAI_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	
 	<Entry>
 		<zType>TECH_RESOURCE_SILK_BONUS</zType>
 		<bDisable>1</bDisable>
@@ -228,4 +230,34 @@
 		<zType>TECH_RESOURCE_PERFUME_BONUS</zType>
 		<bDisable>1</bDisable>
 	</Entry>
+	
+	<Entry>
+		<zType>TECH_MAURYA_ASSAULT_ELEPHANT_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	<Entry>
+		<zType>TECH_MAURYA_ARMOURED_ELEPHANT_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	<Entry>
+		<zType>TECH_YUEZHI_STEPPE_RIDERS_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	<Entry>
+		<zType>TECH_YUEZHI_KUSHAN_CAVALRY_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	<Entry>
+		<zType>TECH_YUEZHI_KUSHAN_WARLORD_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	<Entry>
+		<zType>TECH_TAMIL_JAVELIN_ELEPHANT_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	<Entry>
+		<zType>TECH_TAMIL_ARCHER_ELEPHANT_BONUS</zType>
+		<bDisable>1</bDisable>
+	</Entry>
+	
 </Root>

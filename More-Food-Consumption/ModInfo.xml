@@ -10,21 +10,21 @@ Population consumes 4 Food (and nothing else), no longer tied to Culture Level.
 Lighthouse (Wonder): +100% for Nets in City, -5 Development Turns for Hamlet/Village in Nation
  (from +100% for Nets in Nation, -10 Development Turns for Hamlet/Village in Nation)
 Hunters (Family): +25% to Nets (from +0%), +50% to Camps (from +100%)
-Traders (Family): removed bonus to Nets (from +100%)
-Pathfinder (Governor Trait): +50 to Nets and Camps (from +100%)
+Traders (Family): +25% to Nets (from +100%),
 Vassalage (Law): -25% Unit Upkeep, no extra Upkeep outside Borders
  (from -50% Unit Upkeep, no extra Upkeep outside Borders)
 
 short Unit Upkeep change list: new Upkeep (original* Upkeep values)
 (*: original values, from before patch 1.0.61025 added +2 Food Upkeep to Mounted Units
  except for Horse Archer and Camel Archer, and +1 Food Upkeep to all others.
- **: Kush Nation was added afterwards so they always had 1 Food Upkeep)
+ **: Kush, Aksum, Mauria, Yuezhi and Tamil Nations were added afterwards so they always had 1 Food Upkeep)
 Militia: 1 Food (unchanged)
 Conscript: 1 Food (2 Food)
 all Infantry Units: +2 Food (0 Food)
-all Horse Units: 4 Food, +1-3 Iron/Wood (2-4 Food, 0 Iron/Wood)
-all Elephant Units: 5 Food, +1-3 Iron (2-4 Food, 0 Iron)
-Camel Archer: + 1 Wood
+Yuezhi UU Horse Units: 3 Food (1-2 Food)
+all other Horse Units: 4 Food, +1-3 Iron/Wood (2-4 Food, 0 Iron/Wood)
+all Elephant Units: 5 Food, 2-4 Iron/Wood (2-4 Food, 0-4 Iron/Wood)
+Camel Archer: +1 Wood
 
 Full Unit Upkeep List (with original* Upkeep values)
 Conscript: 1 Food (2 Food)
@@ -58,7 +58,7 @@ Cimmerian Archer: 2 Training, 4 Wood, 2 Food (2 Training, 4 Wood) [Babylonia UU2
 African Elephant: 1 Training, 5 Food, 2 Iron (1 Training, 2 Food) [Carthage UU1]
 Turreted Elephant: 2 Training, 5 Food, 4 Iron (2 Training, 4 Food) [Carthage UU2]
 Light Chariot: 1 Training, 4 Food, 1 Wood (1 Training, 2 Food) [Egypt UU1]
-Kushite Cavalry: 2 Training, 4 Food, 2 Wood (2 Training, 4 Food) [Egypt UU2]
+Mounted Lancer: 2 Training, 4 Food, 2 Wood (2 Training, 4 Food) [Egypt UU2]
 Hoplite: 1 Training, 2 Iron, 2 Food (1 Training, 2 Iron) [Greece UU1]
 Phalangite: 2 Training, 4 Iron, 2 Food (2 Training, 4 Iron) [Greece UU2]
 Palton Cavalry: 1 Training, 4 Food, 2 Iron (1 Training, 2 Iron) [Persia UU1]
@@ -69,6 +69,15 @@ Heavy Chariot: 1 Training, 4 Food, 2 Iron (1 Training, 2 Food) [Hatti UU1]
 Three Man Chariot: 2 Training, 4 Food, 4 Iron (2 Training, 4 Food) [Hatti UU2]
 Medjay Archer: 1 Training, 2 Wood, 2 Food (1 Training, 2 Wood, 1 Food**) [Kush UU1]
 Beja Archer: 2 Training, 4 Wood, 2 Food (2 Training, 4 Wood, 1 Food**) [Kush UU2]
+D'mt Warrior: 1 Training, 2 Iron, 2 Food (1 Training, 2 Iron, 1 Food**) [Aksum UU1]
+Shotelai: 2 Training, 4 Iron, 2 Food (2 Training, 4 Iron, 1 Food**) [Aksum UU2]
+Assault Elephant: 1 Training, 2 Iron, 5 Food (1 Training, 2 Iron, 2 Food**) [Mauria UU1]
+Armoured Elephant: 2 Training, 4 Iron, 5 Food (2 Training, 4 Iron, 2 Food**) [Mauria UU2]
+Steppe Rider: 1 Training, 3 Food (1 Training, 2 Food**) [Yuezhi UU0]
+Kushan Cavalry: 1 Training, 2 Iron, 3 Food (1 Training, 2 Iron, 1 Food**) [Yuezhi UU1]
+Kushan Warlords: 2 Training, 4 Iron, 3 Food (2 Training, 4 Iron, 1 Food**) [Yuezhi UU2]
+Javelin Elephant: 1 Training, 2 Wood, 5 Food (1 Training, 2 Wood, 2 Food**) [Tamil UU1]
+Archer Elephant: 2 Training, 4 Wood, 5 Food (2 Training, 4 Wood, 2 Food**) [Tamil UU2]
 
 Side note: Persian UU is still the only ranged unit with Iron upkeep instead of Wood
 </description>
@@ -77,8 +86,8 @@ Side note: Persian UU is still the only ranged unit with Iron upkeep instead of 
   <modplatform>Modio</modplatform>
   <modioID>2126019</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>1.1.4</modversion>
-  <modbuild>1.0.74622</modbuild>
+  <modversion>1.1.5</modversion>
+  <modbuild>1.0.84044</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo</tags>
   <singlePlayer>true</singlePlayer>

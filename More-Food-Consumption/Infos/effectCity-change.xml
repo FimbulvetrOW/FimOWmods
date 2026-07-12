@@ -73,7 +73,12 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_FAMILYCLASS_TRADERS</zType>
-		<aiImprovementModifier></aiImprovementModifier>
+		<aiImprovementModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_NETS</zIndex>
+				<iValue>25</iValue>
+			</Pair>
+		</aiImprovementModifier>
 	</Entry>
 
 <!-- EFFECTCITY_IMPROVEMENT_LIGHTHOUSE no longer exists, so need to go to -add file -->
@@ -116,7 +121,8 @@
 			</Pair>
 		</aiImprovementClassUpgradeTurnChange>
 	</Entry>
-	
+	<!-- Pathfinder bonus was reduced to 50/20 in base game -->
+<!--
 	<Entry>
 		<zType>EFFECTCITY_TRAIT_PATHFINDER</zType>
 		<aiImprovementModifier>
@@ -143,4 +149,5 @@
 			</Pair>
 		</aiImprovementModifier>
 	</Entry>
+-->
 </Root>

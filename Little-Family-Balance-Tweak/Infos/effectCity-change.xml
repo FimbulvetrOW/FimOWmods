@@ -2,15 +2,15 @@
 <Root>
 	<Entry>
 		<zType>EFFECTCITY_FAMILYCLASS_TRADERS</zType>
-		<SourceUnlock>EFFECTCITY_UNIT_FERRY</SourceUnlock>
+		<EffectCityUnlock>EFFECTCITY_UNIT_FERRY</EffectCityUnlock>
 		<aiYieldRateSpecialist></aiYieldRateSpecialist>
+		<aiImprovementModifier></aiImprovementModifier>
 		<aiImprovementClassUpgradeTurnChange>
 			<Pair>
 				<zIndex>IMPROVEMENTCLASS_HAMLET</zIndex>
 				<iValue>0</iValue>
 			</Pair>
 		</aiImprovementClassUpgradeTurnChange>
-		<aeTraitPromotion></aeTraitPromotion>
 		<aeTraitEffectUnit></aeTraitEffectUnit>
 		<aaiEffectCityYieldRate>
 			<Pair>
@@ -21,10 +21,10 @@
 				</SubPair>
 			</Pair>
 			<Pair>
-				<zIndex>EFFECTCITY_LUXURY</zIndex>
+				<zIndex>EFFECTCITY_CONNECTED</zIndex>
 				<SubPair>
 					<zSubIndex>YIELD_CULTURE</zSubIndex>
-					<iValue>20</iValue>
+					<iValue>10</iValue>
 				</SubPair>
 			</Pair>
 		</aaiEffectCityYieldRate>
@@ -37,21 +37,21 @@
 				<iValue>20</iValue>
 			</Pair>
 		</aiYieldRate>
-		<aiUnitTraitTrainModifier>
+		<aiStateReligionUnitTraitTrainModifier>
 			<Pair>
 				<zIndex>UNITTRAIT_DISCIPLE</zIndex>
 				<iValue>-50</iValue>
 			</Pair>
-		</aiUnitTraitTrainModifier>
+		</aiStateReligionUnitTraitTrainModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_FAMILYCLASS_CLERICS_SEAT</zType>
-		<aiUnitTraitTrainModifier>
+		<aiStateReligionUnitTraitTrainModifier>
 			<Pair>
 				<zIndex>UNITTRAIT_DISCIPLE</zIndex>
 				<iValue>0</iValue>
 			</Pair>
-		</aiUnitTraitTrainModifier>
+		</aiStateReligionUnitTraitTrainModifier>
 		<aeHurryPopulation>
 			<zValue>BUILD_PROJECT</zValue>
 		</aeHurryPopulation>
@@ -90,11 +90,11 @@
 				<iValue>-25</iValue>
 			</Pair>
 		</aiUnitTraitCostModifier>
-		<aeTraitPromotion>
+		<aeTraitEffectUnit>
 			<Pair>
 				<zIndex>UNITTRAIT_SIEGE</zIndex>
-				<zValue>PROMOTION_INGENUITY</zValue>
+				<zValue>EFFECTUNIT_INGENUITY</zValue>
 			</Pair>
-		</aeTraitPromotion>
+		</aeTraitEffectUnit>
 	</Entry>
 </Root>

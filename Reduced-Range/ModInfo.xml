@@ -10,16 +10,19 @@
 * all nations start with Warriors (no more Slingers at the start).
 * Polearm Units Spearman, Pikeman, Conscript, and the UUs Hoplite and Phalangite get Cleave (instead of Pierce)
 * Gaesata no longer has Pierce (originally 1 Tile at 25%)
-* Crossbowman, Polybolos and Elite Gaesata only attack Pierce at 25% (down from 50%)
+* Crossbowman stays at 8 Strength but loses all Pierce (down from 50%)
+* Polybolos and Elite Gaesata only attack Pierce at 25% (down from 50%)
 * Ballista Pierce attack only reaches 1 Tile behind target (instead of 2)
 * Towers provide no Range increase (originally +1)
  (no change to Hills Terrain and Marksman Promotion, they still increase Range by 1)
 * Spearman recieves +10% Defense from Tech Forestry and +20% Defense from Tech Manor.
 * Pikeman's +100% against Mounted Units is reduced to +50% (originally +100%).
 * Cataphract Strength reduced to 8 ! and Circle is removed, Training Cost reduced to 120 (originally 160)
+* Charge Ability of Yuezhi UUs reduced to +25% Attack (from +50%).
 * Tech requirements for Pikeman and Cataphract adjusted: 
  - Pikeman Tech Infantry Square now only costs 1000 Science but requires Manor too, not just Battle Line,
  - Cataphract Tech Barding now requires Steel instead of Battle Line (in addition to Martial Code, which remains).
+* Windlass requires Manor and Hydraulics (instead of Coinage and Hydraulics).
 
 
 Reduced Range makes movement more important, making the mobile Mounted Units even stronger, 
@@ -36,8 +39,8 @@ If you try any other way to contact me, my answer could take months.</descriptio
   <modplatform>Modio</modplatform>
   <modioID>2244402</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.3.7.1</modversion>
-  <modbuild>1.0.73676</modbuild>
+  <modversion>0.3.8</modversion>
+  <modbuild>1.0.84044</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo</tags>
   <singlePlayer>true</singlePlayer>
