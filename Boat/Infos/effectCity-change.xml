@@ -2,5 +2,6 @@
 <Root>
 	<Entry>
 		<zType>EFFECTCITY_FAMILYCLASS_TRADERS</zType>
+		<EffectCityUnlock>EFFECTCITY_UNIT_FERRY</EffectCityUnlock>
 	</Entry>
 </Root>
