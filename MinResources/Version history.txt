@@ -1,4 +1,7 @@
 Version history
+[0.5.2.0] Re-compiled for new game version 1.0.84044 (TileData class property meResource
+          is now private and had to be replaced by Resource).
+          Also added the bugfix for Luxury resources from test version 1.0.84169 (2026-07-15).
 [0.5.1.2] Re-compiled for new game version 1.0.74622 (TileData class property mID is now int)
 [0.5.1.1] Actually removed 0Harmony.dll from mod folder now;
           Updated code to mimic the changes in new game version 1.0.70671 (should have zero effect)

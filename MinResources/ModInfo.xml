@@ -6,7 +6,7 @@
 The unmodded game starts resource placements with attempts to place at least 1 of each Resource on the map.
 This mod increases this number based on the number of Players (human and AI), and does this special step
  only AFTER normal Resource placement around City Sites has already taken place, and will try to only use 
- unaffiliated Tiles (distance to City Site &gt; 5). 
+ unaffiliated Tiles (distance to City Site greater than 5). 
 
 
 
@@ -33,7 +33,7 @@ Already placed Luxury resources that were placed in high enough number (at least
  not been placed enough yet. All Tiles that are equally far away from the City Site are possible placement
  locations for the new Luxury resource, not just the Tile of the Resource considered for replacement.
  
-Because Resource placement restrictions other than latitude, not all attempts to get these minimum Resource
+Because of Resource placement restrictions other than latitude, not all attempts to get these minimum Resource
  numbers will succeed. The process will be part of the logs in %USERPROFILE%\Documents\My Games\OldWorld\Logs\
 
 Secondary feature: Overabundance
@@ -52,7 +52,7 @@ The mod uses Harmony to patch and fully replace
  and should therefore be compatible with all mods that don't change those same methods.
 It affects all Map Scripts because they all use the Resource distribution methods of DefaultMapScript.
 
-Source code is still included. After some clean-up I will probably upload to GitHub.
+Source code is now on GitHub: https://github.com/FimbulvetrOW/MinResources
 
 Requires 0harmony mod for Harmony DLL</description>
   <modpicture>MinRes.png</modpicture>
@@ -60,8 +60,8 @@ Requires 0harmony mod for Harmony DLL</description>
   <modplatform>Modio</modplatform>
   <modioID>2735764</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.5.1.2</modversion>
-  <modbuild>1.0.74622</modbuild>
+  <modversion>0.5.2.0</modversion>
+  <modbuild>1.0.84044</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo</tags>
   <singlePlayer>true</singlePlayer>

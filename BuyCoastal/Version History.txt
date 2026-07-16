@@ -1,9 +1,8 @@
 Version history
-
+[1.1] Update for game version 1.0.84044: 
+      There's now support for unit types that buy tiles.
 [1.0.3.1] 0Harmony.dll removed from mod folder
-
 [1.0.3.0] New dependency: Harmony is no longer in this mod,
- 
           it now depends on the 0harmony mod.
 [1.0.2.0] Update for game version 1.0.68964
 [1.0.1.1] fix, which should have been part of 1.0.1.0

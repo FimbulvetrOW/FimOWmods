@@ -1,13 +1,16 @@
-<?xml version="1.0"?>
+	<?xml version="1.0"?>
 <ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <displayName>Buy Coastal Tiles</displayName>
   <description>Allows buying Water Tiles, if they are either Costal or Lake.
-Ocean tiles are explicitly excluded.
+Water Tiles can now be bought even in base game, which makes the mod pretty much obsolete.
+The only remaining differences:
+ - You can buy Coastal or Lake tiles, even if they are not adjacent to Land. 
+ - The buy action is only allowed for true Water Units, not for Exploration-powered Scouts.
+But you can't build true Water Units on Lakes, so really you can just buy Coastal Tiles further away from Land.
+This can still be useful to connect to other islands without having to permanently Anchor Ships.
 
-The buy action is only allowed for true Water Units, not for Exploration-powered Scouts.
-
-This mod uses Harmony, sourcecode is included.
 Patched methods: City.canBuyTile, Unit.canBuyTile
+Source is on github: https://github.com/FimbulvetrOW/BuyCoastal
 
 Requires 0harmony mod for Harmony DLL</description>
   <modpicture>BuyCoastal.jpg</modpicture>
@@ -15,8 +18,8 @@ Requires 0harmony mod for Harmony DLL</description>
   <modplatform>Modio</modplatform>
   <modioID>2229052</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>1.0.3.1</modversion>
-  <modbuild>1.0.72162</modbuild>
+  <modversion>1.1</modversion>
+  <modbuild>1.0.84044</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo</tags>
   <singlePlayer>true</singlePlayer>
