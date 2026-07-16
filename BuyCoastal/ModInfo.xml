@@ -1,4 +1,4 @@
-	<?xml version="1.0"?>
+<?xml version="1.0"?>
 <ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <displayName>Buy Coastal Tiles</displayName>
   <description>Allows buying Water Tiles, if they are either Costal or Lake.
