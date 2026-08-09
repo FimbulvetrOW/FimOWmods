@@ -1,17 +1,40 @@
 <?xml version="1.0"?>
 <Root>
 	<Entry>
-		<zType>EFFECTCITY_CITIZEN</zType>
+		<zType>EFFECTCITY_POPULATION</zType>
 <!-- 
+		<Name>TEXT_EFFECTCITY_POPULATION</Name>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_MAINTENANCE</zIndex>
+				<iValue>40</iValue>
+			</Pair>
+		</aiYieldRate>
+-->
+		<aaiEffectCityYieldRate>
+<!--
+			<Pair>
+				<zIndex>EFFECTCITY_IMPROVEMENTCLASS_CATHEDRAL_ENLIGHTENMENT</zIndex>
+				<SubPair>
+					<zSubIndex>YIELD_GROWTH</zSubIndex>
+					<iValue>10</iValue>
+				</SubPair>
+			</Pair>
+-->
+		</aaiEffectCityYieldRate>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_CITIZEN</zType>
+<!--
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
 				<iValue>1</iValue>
 			</Pair>
 		</aiYieldRate>
- -->
+-->
 		<aaiEffectCityYieldRate>
-<!-- 
+<!--
 			<Pair>
 				<zIndex>EFFECTCITY_IMPROVEMENT_GODS_CONSORT_SHRINE</zIndex>
 				<SubPair>
@@ -26,7 +49,7 @@
 					<iValue>10</iValue>
 				</SubPair>
 			</Pair>
- -->
+-->
 			<Pair>
 				<zIndex>EFFECTCITY_SPECIALIST_POET_2</zIndex>
 				<SubPair>
@@ -60,14 +83,14 @@
 				<zIndex>EFFECTCITY_SPECIALIST_SCRIBE_2</zIndex>
 				<SubPair>
 					<zSubIndex>YIELD_MONEY</zSubIndex>
-					<iValue>10</iValue>
+					<iValue>20</iValue>
 				</SubPair>
 			</Pair>
 			<Pair>
 				<zIndex>EFFECTCITY_SPECIALIST_SCRIBE_3</zIndex>
 				<SubPair>
 					<zSubIndex>YIELD_MONEY</zSubIndex>
-					<iValue>20</iValue>
+					<iValue>40</iValue>
 				</SubPair>
 			</Pair>
 			<Pair>
@@ -86,11 +109,10 @@
 			</Pair>
 		</aaiEffectCityYieldRate>
 	</Entry>
-<!-- 
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_ACOLYTE_1</zType>
 		<Name>TEXT_SPECIALIST_ACOLYTE_1</Name>
-		<SourceSpecialist>SPECIALIST_ACOLYTE_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -101,7 +123,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_ACOLYTE_2</zType>
 		<Name>TEXT_SPECIALIST_ACOLYTE_2</Name>
-		<SourceSpecialist>SPECIALIST_ACOLYTE_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -116,7 +137,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_ACOLYTE_3</zType>
 		<Name>TEXT_SPECIALIST_ACOLYTE_3</Name>
-		<SourceSpecialist>SPECIALIST_ACOLYTE_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -128,12 +148,11 @@
 			</Pair>
 		</aiYieldRate>
 	</Entry>
- -->
-<!-- 
+-->
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_POET_1</zType>
 		<Name>TEXT_SPECIALIST_POET_1</Name>
-		<SourceSpecialist>SPECIALIST_POET_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -144,7 +163,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_POET_2</zType>
 		<Name>TEXT_SPECIALIST_POET_2</Name>
-		<SourceSpecialist>SPECIALIST_POET_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -155,7 +173,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_POET_3</zType>
 		<Name>TEXT_SPECIALIST_POET_3</Name>
-		<SourceSpecialist>SPECIALIST_POET_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -163,12 +180,11 @@
 			</Pair>
 		</aiYieldRate>
 	</Entry>
- -->
-<!-- 
+-->
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_OFFICER_1</zType>
 		<Name>TEXT_SPECIALIST_OFFICER_1</Name>
-		<SourceSpecialist>SPECIALIST_OFFICER_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_TRAINING</zIndex>
@@ -179,7 +195,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_OFFICER_2</zType>
 		<Name>TEXT_SPECIALIST_OFFICER_2</Name>
-		<SourceSpecialist>SPECIALIST_OFFICER_2</SourceSpecialist>
 		<iUnitXP>20</iUnitXP>
 		<aiYieldRate>
 			<Pair>
@@ -191,7 +206,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_OFFICER_3</zType>
 		<Name>TEXT_SPECIALIST_OFFICER_3</Name>
-		<SourceSpecialist>SPECIALIST_OFFICER_3</SourceSpecialist>
 		<iUnitXP>50</iUnitXP>
 		<aiYieldRate>
 			<Pair>
@@ -200,12 +214,11 @@
 			</Pair>
 		</aiYieldRate>
 	</Entry>
- -->
-<!-- 
+-->
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_MONK_1</zType>
 		<Name>TEXT_SPECIALIST_MONK_1</Name>
-		<SourceSpecialist>SPECIALIST_MONK_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -213,17 +226,17 @@
 			</Pair>
 		</aiYieldRate>
 	</Entry>
- -->
+-->
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_MONK_2</zType>
-<!-- 
+<!--
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
 				<iValue>60</iValue>
 			</Pair>
 		</aiYieldRate>
- -->
+-->
 		<aiYieldRateCulture>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
@@ -233,14 +246,14 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_MONK_3</zType>
-<!-- 
+<!--
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
 				<iValue>80</iValue>
 			</Pair>
 		</aiYieldRate>
- -->
+-->
 		<aiYieldRateCulture>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
@@ -251,7 +264,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PRIEST_1</zType>
 		<Name>TEXT_SPECIALIST_PRIEST_1</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_HAPPINESS</zIndex>
@@ -262,7 +274,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PRIEST_2</zType>
 		<Name>TEXT_SPECIALIST_PRIEST_2</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_HAPPINESS</zIndex>
@@ -277,7 +288,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PRIEST_3</zType>
 		<Name>TEXT_SPECIALIST_PRIEST_3</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_HAPPINESS</zIndex>
@@ -289,11 +299,10 @@
 			</Pair>
 		</aiYieldRate>
 	</Entry>
-<!-- 
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_SCRIBE_1</zType>
 		<Name>TEXT_SPECIALIST_SCRIBE_1</Name>
-		<SourceSpecialist>SPECIALIST_SCRIBE_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
@@ -304,7 +313,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_SCRIBE_2</zType>
 		<Name>TEXT_SPECIALIST_SCRIBE_2</Name>
-		<SourceSpecialist>SPECIALIST_SCRIBE_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
@@ -315,7 +323,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_SCRIBE_3</zType>
 		<Name>TEXT_SPECIALIST_SCRIBE_3</Name>
-		<SourceSpecialist>SPECIALIST_SCRIBE_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CIVICS</zIndex>
@@ -323,12 +330,11 @@
 			</Pair>
 		</aiYieldRate>
 	</Entry>
- -->
+-->
 <!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_SHOPKEEPER_1</zType>
 		<Name>TEXT_SPECIALIST_SHOPKEEPER_1</Name>
-		<SourceSpecialist>SPECIALIST_SHOPKEEPER_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -337,16 +343,17 @@
 		</aiYieldRate>
 	</Entry>
 -->
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_SHOPKEEPER_2</zType>
-<!--
+
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>300</iValue>
 			</Pair>
 		</aiYieldRate>
- -->
+
 		<aiYieldRateCulture>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -354,17 +361,19 @@
 			</Pair>
 		</aiYieldRateCulture>
 	</Entry>
+-->
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_SHOPKEEPER_3</zType>
 
-<!--
+
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>400</iValue>
 			</Pair>
 		</aiYieldRate>
- -->
+
 		<aiYieldRateCulture>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -372,11 +381,11 @@
 			</Pair>
 		</aiYieldRateCulture>
 	</Entry>
-<!-- 
+-->
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PHILOSOPHER_1</zType>
 		<Name>TEXT_SPECIALIST_PHILOSOPHER_1</Name>
-		<SourceSpecialist>SPECIALIST_PHILOSOPHER_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
@@ -384,11 +393,10 @@
 			</Pair>
 		</aiYieldRate>
 	</Entry>
- -->
+-->
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PHILOSOPHER_2</zType>
 		<Name>TEXT_SPECIALIST_PHILOSOPHER_2</Name>
-		<SourceSpecialist>SPECIALIST_PHILOSOPHER_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
@@ -403,7 +411,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PHILOSOPHER_3</zType>
 		<Name>TEXT_SPECIALIST_PHILOSOPHER_3</Name>
-		<SourceSpecialist>SPECIALIST_PHILOSOPHER_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
@@ -418,7 +425,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_DOCTOR_1</zType>
 		<Name>TEXT_SPECIALIST_DOCTOR_1</Name>
-		<SourceSpecialist>SPECIALIST_DOCTOR_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -429,7 +435,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_DOCTOR_2</zType>
 		<Name>TEXT_SPECIALIST_DOCTOR_2</Name>
-		<SourceSpecialist>SPECIALIST_DOCTOR_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -450,7 +455,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_DOCTOR_3</zType>
 		<Name>TEXT_SPECIALIST_DOCTOR_3</Name>
-		<SourceSpecialist>SPECIALIST_DOCTOR_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -469,11 +473,10 @@
 		</aiYieldRateCulture>
 	</Entry>
 
-<!-- 
+<!--
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_BISHOP_1</zType>
 		<Name>TEXT_SPECIALIST_BISHOP_1</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_1</SourceSpecialist>
 		<aiYieldRateCulture>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -484,7 +487,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_BISHOP_2</zType>
 		<Name>TEXT_SPECIALIST_BISHOP_2</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
@@ -501,7 +503,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_BISHOP_3</zType>
 		<Name>TEXT_SPECIALIST_BISHOP_3</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_ORDERS</zIndex>
@@ -515,5 +516,5 @@
 			</Pair>
 		</aiYieldRateCulture>
 	</Entry>
- -->
+-->
 </Root>

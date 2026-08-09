@@ -5,4 +5,13 @@
 		<EffectCity>EFFECTCITY_IMPROVEMENT_LIGHTHOUSE</EffectCity>
 		<!-- <EffectPlayer></EffectPlayer> -->
 	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_HARBOR</zType>
+		<aiAdjacentImprovementModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_NETS</zIndex>
+				<iValue>60</iValue>
+			</Pair>
+		</aiAdjacentImprovementModifier>
+	</Entry>
 </Root>

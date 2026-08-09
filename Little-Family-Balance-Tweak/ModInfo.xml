@@ -30,6 +30,8 @@ Traders: 5 Bonuses were removed:
  -- Market with Polis Tech and Developing Culture in the City
  -- Grocer with Navigation Tech and Strong Culture in the City
  -- Ferry Unit (immediately at game start)
+For Trader early unlocks to make sense again, Culture prereqs are restored (Market requires Developing, etc.)
+ 
  
 Patrons keep their +2 Culture from Specialists (1.0.65965 removed this), and don't get +25% Culture from Bullion Resources (1.0.71795 added this)
  and their Cities only gain +1 Happiness Level on Culture Level upgrade (1.0.71795 changed this to +2)
@@ -49,8 +51,8 @@ If you try any other way to contact me, my answer could take months.</descriptio
   <modplatform>Modio</modplatform>
   <modioID>2226892</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.6.11</modversion>
-  <modbuild>1.0.73676</modbuild>
+  <modversion>0.7.2</modversion>
+  <modbuild>1.0.84044</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>Family,GameInfo</tags>
   <singlePlayer>true</singlePlayer>

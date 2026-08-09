@@ -1,4 +1,6 @@
 Version history
+[0.7.2] Traders's special extra Market upkeep cost reduced to 1 Wood, Culture prereqs for other Markets restored.
+[0.7.1] Traders get their Court Merchant again.
 [0.7] Update for new game version 1.0.84044: Clerics' -50% training time for Disciples now only applies to State Religion (base game change),
       new Cleric ability to build Christian/Manichaean Disciples without Religion was removed, 
       replaced Traders' +2 Culture per Luxury to City with +1 Culture from Connected.

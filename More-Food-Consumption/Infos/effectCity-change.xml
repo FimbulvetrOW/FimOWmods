@@ -17,7 +17,6 @@
 	<Entry>
 		<zType>EFFECTCITY_CULTURE_WEAK</zType>
 		<Name>TEXT_EFFECTCITY_CULTURE_WEAK</Name>
-		<SourceCulture>CULTURE_WEAK</SourceCulture>
 		<aiYieldRatePopulation>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -28,7 +27,6 @@
 	<Entry>
 		<zType>EFFECTCITY_CULTURE_DEVELOPING</zType>
 		<Name>TEXT_EFFECTCITY_CULTURE_DEVELOPING</Name>
-		<SourceCulture>CULTURE_DEVELOPING</SourceCulture>
 		<aiYieldRatePopulation>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -39,7 +37,6 @@
 	<Entry>
 		<zType>EFFECTCITY_CULTURE_STRONG</zType>
 		<Name>TEXT_EFFECTCITY_CULTURE_STRONG</Name>
-		<SourceCulture>CULTURE_STRONG</SourceCulture>
 		<aiYieldRatePopulation>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -50,7 +47,6 @@
 	<Entry>
 		<zType>EFFECTCITY_CULTURE_LEGENDARY</zType>
 		<Name>TEXT_EFFECTCITY_CULTURE_LEGENDARY</Name>
-		<SourceCulture>CULTURE_LEGENDARY</SourceCulture>
 		<aiYieldRatePopulation>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -86,7 +82,6 @@
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_LIGHTHOUSE</zType>
 		<Name>TEXT_IMPROVEMENT_LIGHTHOUSE</Name>
-		<SourceImprovement>IMPROVEMENT_LIGHTHOUSE</SourceImprovement>
 		<aiImprovementModifier>
 			<Pair>
 				<zIndex>IMPROVEMENT_NETS</zIndex>

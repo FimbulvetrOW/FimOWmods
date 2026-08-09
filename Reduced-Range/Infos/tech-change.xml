@@ -10,7 +10,7 @@
 	</Entry>
 	<Entry>   <!-- costs less, but also requires Manor, not just Battle Line. Moved from c6,r7 to c5, r6 -->
 		<zType>TECH_INFANTRY_SQUARE</zType>
-		<iCost>1000</iCost>
+		<iCost>1100</iCost>
 		<iColumn>5</iColumn>
 		<iRow>6</iRow>
 		<abTechPrereq>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ModInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <displayName>One Bonus Tech</displayName>
+  <description>Guarantees that no more than a single Bonus Tech (trashable Tech) is ever available for research.
+That way you can research them all, if you want to. 
+Skipping them will be more comfortable too because all other Techs will be non-trashable Techs.
+
+Tech Offer generation in detailed steps:
+1.) If any trashable Techs are in Draw Pile, one of them gets selected.
+2.) Then only non-trashable Techs get selected as long as there are such Techs in Draw Pile and the required number of Techs is not yet reached.
+3.) If Draw Pile has no more non-trashable Techs but the required number of Techs has not been reached yet, all Techs get reshuffled (Discard Pile goes into Draw Pile).
+4.) After reshuffle: If there has been no trashable Tech selected yet but there are such Techs available after reshuffle, one of them gets selected.
+5.) Then again, only non-trashable Techs get selected as long as the required number of Techs is not yet reached.
+
+
+Source is on github: https://github.com/FimbulvetrOW/OneBonus
+
+Requires 0harmony mod for Harmony DLL
+
+Version history
+[1.0.1] Just a bit of code cleanup
+[1.0] Initial release</description>
+  <modpicture>OneBonus.jpg</modpicture>
+  <author>Fimbulvetr</author>
+  <modplatform>Modio</modplatform>
+  <modioID>6233280</modioID>
+  <modioFileID>0</modioFileID>
+  <modversion>1.0.1</modversion>
+  <modbuild>1.0.84044</modbuild>
+  <homepage>https://github.com/FimbulvetrOW/OneBonus</homepage>
+  <tags>GameInfo</tags>
+  <singlePlayer>true</singlePlayer>
+  <multiplayer>true</multiplayer>
+  <scenario>false</scenario>
+  <scenarioToggle>false</scenarioToggle>
+  <blocksMods>false</blocksMods>
+  <modDependencies>
+    <string>0harmony</string>
+  </modDependencies>
+  <modIncompatibilities />
+  <modWhitelist />
+  <gameContentRequired>NONE</gameContentRequired>
+</ModInfo>

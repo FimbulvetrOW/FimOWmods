@@ -18,6 +18,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_1</zType>
+		<CulturePrereq>CULTURE_DEVELOPING</CulturePrereq>
 <!--
 		<!-- <CityBiomePrereq></CityBiomePrereq> -->
 		<!-- <SecondaryUnlockTechPrereq>TECH_NAVIGATION</SecondaryUnlockTechPrereq> -->
@@ -32,6 +33,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_2</zType>
+		<CulturePrereq>CULTURE_STRONG</CulturePrereq>
 <!-- 
 		<CityBiomePrereq></CityBiomePrereq>
 		<SecondaryUnlockTechPrereq></SecondaryUnlockTechPrereq>
@@ -45,10 +47,11 @@
 		<TertiaryUnlockCulturePrereq>CULTURE_STRONG</TertiaryUnlockCulturePrereq>
 		<!-- <TertiaryUnlockEffectCityPrereq></TertiaryUnlockEffectCityPrereq> -->
 	</Entry>
-<!-- 
+
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_3</zType>
-
+		<CulturePrereq>CULTURE_LEGENDARY</CulturePrereq>
+<!--
 		<CityBiomePrereq></CityBiomePrereq>
 		<SecondaryUnlockTechPrereq></SecondaryUnlockTechPrereq>
 		<SecondaryUnlockCulturePrereq></SecondaryUnlockCulturePrereq>
@@ -59,8 +62,9 @@
 		<TertiaryUnlockTechPrereq></TertiaryUnlockTechPrereq>
 		<TertiaryUnlockCulturePrereq></TertiaryUnlockCulturePrereq>
 		<TertiaryUnlockEffectCityPrereq></TertiaryUnlockEffectCityPrereq>
+-->		
 	</Entry>
- -->
+
 <!-- removed because Sages are strong enough
 	<Entry>
 		<zType>IMPROVEMENT_LIBRARY_1</zType>

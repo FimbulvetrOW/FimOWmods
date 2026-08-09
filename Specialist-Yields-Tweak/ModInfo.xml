@@ -13,7 +13,7 @@ A/M/E Poet: +3/4/5 Culture, +0/1/2 Culture/Citizen [+3/4/5 Culture, +0/0.5/1 Civ
 Officer unchanged [+2/3/4 Training, +0/20/50 XP for new Units]
 A/M/E Monk: +4/6/8 Culture, +0/0.5/1 Civics/Culture level [+4/6/8 Culture, +0/1/2 Civics/Culture level]
 A/M/E Priest: -1/1.5/2 Discontent, +0/1/2 Training [-1/1.5/2 Discontent, +0/1/2 Training/Citizen]
-A/M/E Scribe: unchanged [+2/3/4 Civics, +0/1/2 Money/Citizen]
+A/M/E Scribe: unchanged [+2/3/4 Civics, +0/2/4 Money/Citizen]
 A/M/E Shopkeeper: +20/30/40 Money, +0/0.5/1 Growth/Culture level [+20/30/40 Money, +0/1/2 Growth/Culture level]
 A/M/E Philosopher: +2/3/4 Science, +0/1/2 Civics [+2/3/4 Science, +0/1/2 Culture/Citizen]
 A/M/E Doctor: +2/3/4 Growth, +0/1/2 Science [+2/3/4 Growth, +0/1/2 Science/Culture level]
@@ -23,7 +23,7 @@ God's Consort Shrine: +1 Orders [+0,5 Orders/Citizen]
 
 Maximum additional Yields per Citizen from Specialists are now:
 6 Culture (3x Elder Poet)
-6 Money (3x Elder Scribe)
+12 Money (3x Elder Scribe)
 (in addition to the 0.1 Orders that Citizen always produce)
 </description>
   <modpicture>SpecialistScaling.png</modpicture>
@@ -31,7 +31,7 @@ Maximum additional Yields per Citizen from Specialists are now:
   <modplatform>Modio</modplatform>
   <modioID>2226891</modioID>
   <modioFileID>3464115</modioFileID>
-  <modversion>1.1.3</modversion>
+  <modversion>1.1.4</modversion>
   <modbuild>1.0.84044</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo</tags>

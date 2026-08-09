@@ -1,4 +1,5 @@
 Version history
+[1.1.6] Harbor nerf: only +60% to Nets
 [1.1.5] Update for new game version 1.0.84044: New DLC units: 2 Food consumption for infantry, 
          3 for Yuezhi Horse Units, 5 for all Elephant units.
         Pathfinder bonus to Nets and Camp was reduced to 50% (20%) in base game, so this value is no longer modded.

@@ -7,6 +7,12 @@
 	<Entry>
 		<zType>BONUS_FAMILYCLASS_TRADERS_SEAT</zType>
 		<AddImprovement>IMPROVEMENT_MARKET_0</AddImprovement>
+		<AddCourtier>
+			<Pair>
+				<First>COURTIER_MERCHANT</First>
+				<Second/>
+			</Pair>
+		</AddCourtier>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EFFECTCITY_FAMILYCLASS_PATRONS_SEAT</zType>

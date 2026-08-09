@@ -4,7 +4,6 @@
 		<zType>EFFECTCITY_PROJECT_TOWERS</zType>
 <!-- 
 		<Name>TEXT_PROJECT_TOWERS</Name>
-		<SourceProject>PROJECT_TOWERS</SourceProject>
 		<iCityHP>10</iCityHP>
  -->
 		<iRangeChange>0</iRangeChange>
