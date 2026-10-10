@@ -98,8 +98,8 @@
   Besieger_all: +10% Urban, +10% Fort (+10% Urban)
   Siege: +25% Settlement, +25% Urban, +50% Fort, 
          +20% Garrison/Stronghold/Citadel (+50% Urban)
-  Assault: +25% Settlement, +25% Urban, +25% Fort, 
-           +20% Garrison/Stronghold/Citadel (+50% Urban, +50% Fort)
+  Assault: +25% Settlement, +10% Urban, +10% Fort, 
+           +10% Garrison/Stronghold/Citadel (+50% Urban, +50% Fort)
 *Besieger is no longer available for Siege Units
 
 When using this together with the Less Scaling Specialist Yields mod, load this mod afterwards, 

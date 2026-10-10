@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTUNIT_CHARGE</zType>
+		<aiMeleeToClearTerrainTargetModifier>
+			<Pair>
+				<zIndex>TERRAIN_TARGET_BARE</zIndex>
+				<iValue>25</iValue>
+			</Pair>
+		</aiMeleeToClearTerrainTargetModifier>
+	</Entry>
+</Root>
