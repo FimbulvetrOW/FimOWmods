@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Soren Johnson (private) -->
+<Root>
+	<Entry>
+		<zType/>
+		<Name/>
+		<Help/>
+		<iInitLeaderSafeTurns/>
+		<!-- For the AI, to calculate remaining life expectancy of healthy characters. The first 7 fields are for Generals because they have a retirement age, the other 7 fields are for others -->
+		<!-- Max Age (average dying age for healthy Character at a certain age) is determined with a polynomial function: a + bx + cx² (x = Character age) -->
+		<!-- The first 3 fields determine how the max age for Generals older than iMaxAgeGenOld is calculated -->
+		<iMaxAgeGenOldaX10/>     <!-- These fields only take integer. Fill out with 10 * a -->
+		<iMaxAgeGenOldbX1000/>   <!-- 1000 * b -->
+		<iMaxAgeGenOldcX100000/> <!-- 100000 * c  -->
+		<iMaxAgeGenOld/>         <!-- Characters younger than this will use the factors below -->
+		<iMaxAgeGenYoungaX10/>
+		<iMaxAgeGenYoungbX1000/>
+		<iMaxAgeGenYoungcX100000/>
+		<iMaxAgeGenYoungMinAge/><!-- Characters younger than this will assume same max age as Characters that are exactly this old -->
+		<!-- The following fields are used for Characters/jobs without retirement age -->
+		<iMaxAgeOldaX10/>
+		<iMaxAgeOldbX1000/>
+		<iMaxAgeOldcX100000/>
+		<iMaxAgeOld/>            <!-- Characters younger than this will use the factors below -->
+		<iMaxAgeYoungaX10/>
+		<iMaxAgeYoungbX1000/>
+		<iMaxAgeYoungcX100000/>
+		<iMaxAgeYoungMinAge/><!-- Characters younger than this will assume same max age as Characters that are exactly this old -->
+	</Entry>
+	<Entry>
+		<zType>MORTALITY_LONG</zType>
+		<iMaxAgeGenOldaX10>-21</iMaxAgeGenOldaX10>
+		<iMaxAgeGenOldbX1000>2126</iMaxAgeGenOldbX1000>
+		<iMaxAgeGenOldcX100000>-1818</iMaxAgeGenOldcX100000>
+		<iMaxAgeGenOld>49</iMaxAgeGenOld>
+		<iMaxAgeGenYoungaX10>532</iMaxAgeGenYoungaX10>
+		<iMaxAgeGenYoungbX1000>98</iMaxAgeGenYoungbX1000>
+		<iMaxAgeGenYoungcX100000>21</iMaxAgeGenYoungcX100000>
+		<iMaxAgeGenYoungMinAge>19</iMaxAgeGenYoungMinAge>
+		<iMaxAgeOldaX10>492</iMaxAgeOldaX10>
+		<iMaxAgeOldbX1000>118</iMaxAgeOldbX1000>
+		<iMaxAgeOldcX100000>461</iMaxAgeOldcX100000>
+		<iMaxAgeOld>49</iMaxAgeOld>
+		<iMaxAgeYoungaX10>598</iMaxAgeYoungaX10>
+		<iMaxAgeYoungbX1000>66</iMaxAgeYoungbX1000>
+		<iMaxAgeYoungcX100000>130</iMaxAgeYoungcX100000>
+		<iMaxAgeYoungMinAge>19</iMaxAgeYoungMinAge>
+	</Entry>
+	<Entry>
+		<zType>MORTALITY_STANDARD</zType>
+		<iMaxAgeGenOldaX10>-176</iMaxAgeGenOldaX10>
+		<iMaxAgeGenOldbX1000>2645</iMaxAgeGenOldbX1000>
+		<iMaxAgeGenOldcX100000>-2254</iMaxAgeGenOldcX100000>
+		<iMaxAgeGenOld>49</iMaxAgeGenOld>
+		<iMaxAgeGenYoungaX10>509</iMaxAgeGenYoungaX10>
+		<iMaxAgeGenYoungbX1000>129</iMaxAgeGenYoungbX1000>
+		<iMaxAgeGenYoungcX100000>38</iMaxAgeGenYoungcX100000>
+		<iMaxAgeGenYoungMinAge>19</iMaxAgeGenYoungMinAge>
+		<iMaxAgeOldaX10>417</iMaxAgeOldaX10>
+		<iMaxAgeOldbX1000>252</iMaxAgeOldbX1000>
+		<iMaxAgeOldcX100000>385</iMaxAgeOldcX100000>
+		<iMaxAgeOld>49</iMaxAgeOld>
+		<iMaxAgeYoungaX10>553</iMaxAgeYoungaX10>
+		<iMaxAgeYoungbX1000>93</iMaxAgeYoungbX1000>
+		<iMaxAgeYoungcX100000>150</iMaxAgeYoungcX100000>
+		<iMaxAgeYoungMinAge>19</iMaxAgeYoungMinAge>
+	</Entry>
+	<Entry>
+		<zType>MORTALITY_REALISTIC</zType>
+		<iMaxAgeGenOldaX10>-325</iMaxAgeGenOldaX10>
+		<iMaxAgeGenOldbX1000>3140</iMaxAgeGenOldbX1000>
+		<iMaxAgeGenOldcX100000>-2666</iMaxAgeGenOldcX100000>
+		<iMaxAgeGenOld>49</iMaxAgeGenOld>
+		<iMaxAgeGenYoungaX10>480</iMaxAgeGenYoungaX10>
+		<iMaxAgeGenYoungbX1000>164</iMaxAgeGenYoungbX1000>
+		<iMaxAgeGenYoungcX100000>67</iMaxAgeGenYoungcX100000>
+		<iMaxAgeGenYoungMinAge>19</iMaxAgeGenYoungMinAge>
+		<iMaxAgeOldaX10>347</iMaxAgeOldaX10>
+		<iMaxAgeOldbX1000>391</iMaxAgeOldbX1000>
+		<iMaxAgeOldcX100000>307</iMaxAgeOldcX100000>
+		<iMaxAgeOld>49</iMaxAgeOld>
+		<iMaxAgeYoungaX10>510</iMaxAgeYoungaX10>
+		<iMaxAgeYoungbX1000>124</iMaxAgeYoungbX1000>
+		<iMaxAgeYoungcX100000>184</iMaxAgeYoungcX100000>
+		<iMaxAgeYoungMinAge>19</iMaxAgeYoungMinAge>
+	</Entry>
+</Root>

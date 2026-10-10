@@ -1,15 +1,6 @@
 <?xml version="1.0"?>
 <Root>
 	<Entry>
-		<zType>PROJECT_FOUND_RELIGION</zType>
-		<iCivics>0</iCivics>
-		<bHidden>1</bHidden>
-		<bUnique>1</bUnique>
-		<Bonus></Bonus>
-		<MinimumCulture>CULTURE_DEVELOPING</MinimumCulture>
-		<EffectCityPrereq></EffectCityPrereq>
-	</Entry>
-	<Entry>
 		<zType>PROJECT_IMPORT_HORSE</zType>
 		<Bonus></Bonus>
 		<CityProject>PROJECT_IMPORT_HORSE</CityProject>

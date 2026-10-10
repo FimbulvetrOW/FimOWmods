@@ -3,7 +3,6 @@
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_COLOSSEUM_ALL</zType>
 		<Name>TEXT_IMPROVEMENT_COLOSSEUM</Name>
-		<SourceImprovement>IMPROVEMENT_COLOSSEUM</SourceImprovement>
 		<bSingle>1</bSingle>
 		<aiYieldRateDefending>
 			<Pair>
@@ -15,12 +14,20 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALISTCLASS_ACOLYTE</zType>
 		<Name>TEXT_SPECIALISTCLASS_ACOLYTE</Name>
-		<SourceSpecialistClass>SPECIALISTCLASS_ACOLYTE</SourceSpecialistClass>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_COMBINATION_HEDONISTIC_OPULANCE_LUXURY</zType>
+		<zType>EFFECTCITY_COMBINATION_HEDONISTIC_OPULENCE_LUXURY</zType>
 		<Name>TEXT_IMPROVEMENT_PALATIAL_ESTATES</Name>
-		<SourceProject>PROJECT_LAVISH_LIFESTYLE_EFFECT</SourceProject>
 		<iFamilyOpinion>5</iFamilyOpinion>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_CONNECTED_VIZIER</zType>
+		<Name>TEXT_SHARED_POWER</Name>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_SCIENCE</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+		</aiYieldRate>
 	</Entry>
 </Root>

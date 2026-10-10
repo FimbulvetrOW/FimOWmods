@@ -1,0 +1,4 @@
+﻿<VGroup OBJECT_NAME="selected-worker.xml" STYLE="CycleSelectionPanelContainerScroll" Width="420" ForceInactive="{{UI-IsVideoCapture}}" 
+		State="{{ActiveSelection}}" StateType="WORKER" StateToggleMode="StateToggleModeType.Visibility" IsActive="true">
+
+</VGroup>

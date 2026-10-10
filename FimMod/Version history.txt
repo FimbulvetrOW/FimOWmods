@@ -1,4 +1,15 @@
 Version history
+[0.8.0] Restored Religious Building construction restrictions: not adjacent to other Religions' Buildings.
+        Removed +40% Culture from Cathedrals, flat +8 Culture instead, increased base Discontent for Glorious and up,
+        Restored Markets' Culture prereqs, Freedom gives +2 Growth (+20% in base game, +4 Money/Specialist in mod before),
+        Capitals start with a Garrison again which enables Governor, Schemers can't be Ambassadors or Chancellors (I really disagree with this base game change),
+        Specialists start at Apprentice even with Guilds, Drama unlocks Agents, 
+        Garrison line improvements give protection to Units on the Tile: Garrison immune to Rout, Stronghold immune to Rout and Panic, Citadel immune to Rout and Panic and Stun, 
+        Besieger promotion no longer available to Siege Units, removed from Competitive Mode: EVENTSTORY_ALL_ROADS_LEAD, EVENTSTORY_AMBITION_STRESS_VOLUNTEERS, EVENTSTORY_CITY_OF_CLAY,
+        re-added game option to disable Grand Viziers, Tribal Settlements give +1 Range (Tribal units only have Range 1 in this mod), Harbor gives +60% to Nets (base game is +100% now), 
+        Watermill and Windmill are both Mills, unlocked at the same time and limited together at Hydraulics (base game split them), 
+        the new Resources that give Happiness give Culture instead, Ranger Trapper Gardener Fisher all cost 60 Civics again,  
+        Council yield triangle offset set to 0 (is same as Court yield offset in base game now, used to be constant 0), UI XML updated to new XPath format (hurray for that).
 [0.7.44] Update for new game version 1.0.74622: UI XML updated; reverted 4 base game changes: 
          re-enabled Grand Vizier for Competitive Mode: deactivating is an independent option; re-enabled 3 tech trade events for Competitive Mode;
          Cities are immune to Critial Hits again, Missions that were changed cost Civics again (Slander, Trade, High Synod).

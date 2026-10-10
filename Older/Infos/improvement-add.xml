@@ -21,7 +21,7 @@
 		<aiYieldCost>
 			<Pair>
 				<zIndex>YIELD_WOOD</zIndex>
-				<iValue>40</iValue>
+				<iValue>10</iValue>
 			</Pair>
 		</aiYieldCost>
 		<aiYieldPillage>
@@ -30,23 +30,8 @@
 				<iValue>10</iValue>
 			</Pair>
 		</aiYieldPillage>
-		<abTerrainValid>
-			<Pair>
-				<zIndex>TERRAIN_URBAN</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-			<Pair>
-				<zIndex>TERRAIN_LUSH</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-			<Pair>
-				<zIndex>TERRAIN_TEMPERATE</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-			<Pair>
-				<zIndex>TERRAIN_ARID</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-		</abTerrainValid>
+		<TerrainValid>
+			<zValue>TERRAIN_TARGET_HABITABLE</zValue>
+		</TerrainValid>
 	</Entry>
 </Root>

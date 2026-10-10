@@ -3,7 +3,6 @@
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_LIGHTHOUSE</zType>
 		<Name>TEXT_IMPROVEMENT_LIGHTHOUSE</Name>
-		<SourceImprovement>IMPROVEMENT_LIGHTHOUSE</SourceImprovement>
 		<bSingle>1</bSingle>
 		<aiImprovementModifier>
 			<Pair>
@@ -15,19 +14,17 @@
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_MARKET_0</zType>
 		<Name>TEXT_IMPROVEMENT_MARKET_0</Name>
-		<SourceImprovement>IMPROVEMENT_MARKET_0</SourceImprovement>
 		<bSingle>1</bSingle>
 		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>15</iValue> <!-- this improvement exists mostly for the + 5 orders storage functionality -->
+				<iValue>20</iValue> <!-- this improvement exists mostly for the + 5 orders storage functionality -->
 			</Pair>
 		</aiYieldModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_UNIT_FERRY</zType>
 		<Name>TEXT_EFFECTCITY_UNIT_FERRY</Name>
-		<Source>TEXT_EFFECTCITY_FERRY_SOURCE</Source>
 		<bSingle>1</bSingle>
 	</Entry>
 	<Entry>
@@ -54,7 +51,6 @@
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_COLOSSEUM_ALL</zType>
 		<Name>TEXT_IMPROVEMENT_COLOSSEUM</Name>
-		<SourceImprovement>IMPROVEMENT_COLOSSEUM</SourceImprovement>
 		<bSingle>1</bSingle>
 		<aiYieldRateDefending>
 			<Pair>
@@ -66,12 +62,20 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALISTCLASS_ACOLYTE</zType>
 		<Name>TEXT_SPECIALISTCLASS_ACOLYTE</Name>
-		<SourceSpecialistClass>SPECIALISTCLASS_ACOLYTE</SourceSpecialistClass>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_COMBINATION_HEDONISTIC_OPULANCE_LUXURY</zType>
+		<zType>EFFECTCITY_COMBINATION_HEDONISTIC_OPULENCE_LUXURY</zType>
 		<Name>TEXT_IMPROVEMENT_PALATIAL_ESTATES</Name>
-		<SourceProject>PROJECT_LAVISH_LIFESTYLE_EFFECT</SourceProject>
 		<iFamilyOpinion>5</iFamilyOpinion>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_CONNECTED_VIZIER</zType>
+		<Name>TEXT_SHARED_POWER</Name>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_SCIENCE</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+		</aiYieldRate>
 	</Entry>
 </Root>

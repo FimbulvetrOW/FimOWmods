@@ -1,8 +1,23 @@
 <?xml version="1.0"?>
 <Root>
 	<Entry>
+		<zType>EFFECTCITY_BASE</zType>
+		<bEnablesGovernor>0</bEnablesGovernor>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENT_GARRISON_1</zType>
+		<bEnablesGovernor>1</bEnablesGovernor>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENT_GARRISON_2</zType>
+		<bEnablesGovernor>1</bEnablesGovernor>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENT_GARRISON_3</zType>
+		<bEnablesGovernor>1</bEnablesGovernor>
+	</Entry>
+	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_BATHS_3</zType>
-		<SourceImprovement>IMPROVEMENT_BATHS_3</SourceImprovement>
 		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -30,19 +45,6 @@
 		<iFamilyOpinion>0</iFamilyOpinion>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_DIFFICULTY_NEW</zType>
-		<aiYieldRate>
-			<Pair>
-				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>60</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>200</iValue>
-			</Pair>
-		</aiYieldRate>
-	</Entry>
-	<Entry>
 		<zType>EFFECTCITY_DIFFICULTY_ABLE</zType>
 		<aiYieldRate>
 			<Pair>
@@ -52,19 +54,6 @@
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>160</iValue>
-			</Pair>
-		</aiYieldRate>
-	</Entry>
-	<Entry>
-		<zType>EFFECTCITY_DIFFICULTY_JUST</zType>
-		<aiYieldRate>
-			<Pair>
-				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>80</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>140</iValue>
 			</Pair>
 		</aiYieldRate>
 	</Entry>
@@ -112,7 +101,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>120</iValue>
+				<iValue>140</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -125,7 +114,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>130</iValue>
+				<iValue>160</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -138,7 +127,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>140</iValue>
+				<iValue>180</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -155,12 +144,12 @@
 				<iValue>40</iValue>
 			</Pair>
 		</aiYieldModifier>
-		<aeTraitPromotion>
+		<aeTraitEffectUnit>
 			<Pair>
 				<zIndex>UNITTRAIT_INFANTRY</zIndex>
-				<zValue>PROMOTION_TOUGH</zValue>
+				<zValue>EFFECTUNIT_TOUGH</zValue>
 			</Pair>
-		</aeTraitPromotion>
+		</aeTraitEffectUnit>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_COTHON</zType>
@@ -235,7 +224,6 @@
 	<Entry>
 		<zType>EFFECTCITY_PALATIAL_ESTATES</zType>
 		<Name>TEXT_IMPROVEMENT_PALATIAL_ESTATES</Name>
-		<SourceImprovement>IMPROVEMENT_ESTATES</SourceImprovement>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -252,11 +240,11 @@
 		<aaiEffectCityYieldRate></aaiEffectCityYieldRate>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_HEDONISTIC_OPULANCE</zType>
+		<zType>EFFECTCITY_HEDONISTIC_OPULENCE</zType>
 		<aeEffectCityEffectCity>
 			<Pair>
 				<zIndex>EFFECTCITY_LUXURY</zIndex>
-				<zValue>EFFECTCITY_COMBINATION_HEDONISTIC_OPULANCE_LUXURY</zValue>
+				<zValue>EFFECTCITY_COMBINATION_HEDONISTIC_OPULENCE_LUXURY</zValue>
 			</Pair>
 		</aeEffectCityEffectCity>
 	</Entry>
@@ -293,18 +281,8 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_SHARED_POWER</zType>
-		<SourceEffectPlayer>EFFECTPLAYER_SHARED_POWER_VIZIER</SourceEffectPlayer>
+		<DefaultGovernor></DefaultGovernor>
 		<bAutoBuild>0</bAutoBuild>
-	</Entry>
-	<Entry>
-		<zType>EFFECTCITY_CONNECTED_VIZIER</zType>
-		<SourceEffectPlayer>EFFECTPLAYER_SHARED_POWER_VIZIER</SourceEffectPlayer>
-		<aiYieldRate>
-			<Pair>
-				<zIndex>YIELD_SCIENCE</zIndex>
-				<iValue>5</iValue>
-			</Pair>
-		</aiYieldRate>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_TRAIT_RISING_STAR</zType>
@@ -339,6 +317,17 @@
 -->
 		</aeLuxuryResources>
 	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENTCLASS_CATHEDRAL</zType>
+		<aiYieldModifier>
+<!--
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>40</iValue>
+			</Pair>
+-->
+		</aiYieldModifier>
+	</Entry>
 	<!-- keeping pre-74111 versions. Tyranny, Pilgrimage change can stay -->
 	<Entry>
 		<zType>EFFECTCITY_LAW_SLAVERY</zType>
@@ -361,13 +350,12 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_LAW_FREEDOM</zType>
-		<aiYieldRate />
-		<aiYieldRateSpecialist>
+		<aiYieldRate>
 			<Pair>
-				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>40</iValue>
+				<zIndex>YIELD_GROWTH</zIndex>
+				<iValue>20</iValue>
 			</Pair>
-		</aiYieldRateSpecialist>
+		</aiYieldRate>
 		<aiYieldModifier />
 	</Entry>
 	<Entry>
@@ -382,6 +370,19 @@
 				</SubPair>
 			</Pair>
 		</aaiImprovementClassYield>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_LAW_GUILDS</zType>
+		<SpecialistNoPrereq></SpecialistNoPrereq>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_LAW_GUILDS_EXTRA</zType>
+		<aiYieldRateSpecialistUrban>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+		</aiYieldRateSpecialistUrban>
 	</Entry>
 	
 	<!-- what to do with those -->

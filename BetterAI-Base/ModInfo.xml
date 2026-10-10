@@ -46,22 +46,31 @@ Features (NOT active by default, but can be used/activated by mods)
 - Player Effect + Player Effect = Player Effect: Two Player Effects together can now add another Player Effect
 - Alternative Character list sorting: Leader - (Leader Spouse - Heirs - ) Council - Courtiers - Families (Characters without Family first)
   - Jobs (Generals, Governors, Agents, can be Genral, can be Governor, can be Agent) - age - Character ID
-- Cities can be set to be immune again from Critical Attacks
+- Delayed Event results be can made to happen immediately, skipping the waiting
+- City Effects can enable governors again
+- Triangle offset for Council yields can be set separately from Court yield offsets
+- Agents can be unlocked before Spymaster, assigning them via Leader
+- Overlay types Connected, Roads and Rivers both show River edges highlighted blue, for the Roads and Rivers overlay this replaces the blue highlighting of river adjacent tiles. 
+- Temporary overlay type when hovering over Road contruction in Worker action list can be set to Roads and Rivers instead of the default overlay Connected.
 
 Mods that activate/showcase some of these features are avaiable.
 
 *General AI improvements (these are always active): 
--  total Yield Modifiers are no longer ignored for calculateCityYieldValue calculations for Yields other than Growth, Civics and Training
--  AI (probably) didn't occupy human starting Cities. This is no longer the case
--  AI will not snipe other AI's Cities in War, it will respect the player with the higher number of attacks as the owner - same as with human players
--  To clear Barbarian sites faster, AI will not defend its free City Sites during the first few turns of the game with its main military Units - but might do it with Militia Units
--  Before all Religions are founded, the AI will value Holy City Agent Networks (Oracle Bonus) a lot less
--  AI should act a bit less cowardly when planning to expand into Tribal territories
--  better support for circular Unit upgrade options (for real this time)
--  Segmented AI nations will know exactly how many Settlers they need as a nation, not just on City level
--  AI will value Family Opinion less if Opinion is already higher than +240. At +340 the value fur further increases is 0
--  Improved City Effect calculations for overlapping Unit unlocks und Hurry unlocks
--  AI can declare War for expansion alone, even with 0% War chance otherwise (base game removed that ability)
+-- total Yield Modifiers are no longer ignored for calculateCityYieldValue calculations for Yields other than Growth, Civics and Training
+-- AI (probably) didn't occupy human starting Cities. This is no longer the case
+-- AI will not snipe other AI's Cities in War, it will respect the player with the higher number of attacks as the owner - same as with human players
+-- To clear Barbarian sites faster, AI will not defend its free City Sites during the first few turns of the game with its main military Units - but might do it with Militia Units
+-- Before all Religions are founded, the AI will value Holy City Agent Networks (Oracle Bonus) a lot less
+-- AI should act a bit less cowardly when planning to expand into Tribal territories
+-- better support for circular Unit upgrade options (for real this time)
+-- Segmented AI nations will know exactly how many Settlers they need as a nation, not just on City level
+-- AI will value Family Opinion less if Opinion is already higher than +240. At +340 the value fur further increases is 0
+-- Improved City Effect calculations for overlapping Unit unlocks und Hurry unlocks
+-- AI can declare War for expansion alone, even with 0% War chance otherwise (base game removed that ability)
+-- AI will no longer use Courtiers with Governor Archetypes as Generals (uses different logic for this than base game).
+-- AI knows to also give priority to Culture production of its most cultured Holy City if there are Wonders that can only be built in Holy Cities.
+-- AI will use units with special Tile-buying abilities.
+-- AI will consider Ratings from Traits when upgrading its Characters.
 
 *Also always active
 - City List Screen: Sort by Culture Level (CTRL + click on Culture) now sorts by Turns left to next Culture level, and only then by progress, 
@@ -87,6 +96,9 @@ Mods that activate/showcase some of these features are avaiable.
 - First letters of Religious Improvement (class) names are displayed next to City names in Religion selection City list
 - Yield icons only, no more superflous yield name text next to it
 - Improvement bonus Units always spawn at Improvement Tile, or near it
+- Law HelpText displays how many Techs are missing
+- Tribal Camp Unit counter will still go down if you kill a Unit (removed in 1.0.84365) (I guess I should make this optional)
+
 
 Incompatible with all other exclusive DLL mods - Harmony DLL mods should still work.
 
@@ -102,8 +114,8 @@ If you try any other way to contact me, my answer could take months.</descriptio
   <modplatform>Modio</modplatform>
   <modioID>2302466</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.1.8.3</modversion>
-  <modbuild>1.0.74622</modbuild>
+  <modversion>0.1.9.5</modversion>
+  <modbuild>1.0.84977</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo,AI,UI</tags>
   <singlePlayer>true</singlePlayer>

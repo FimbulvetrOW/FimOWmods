@@ -174,7 +174,14 @@
 		<iValue>0</iValue>
 	</Entry>
 	<Entry>
-		<zType>BAI_CITIES_IMMUNE_TO_CRITICAL</zType> <!-- Set to 1 to make Cities immune to critial hits again, -->
+		<zType>BAI_ALT_ROAD_BUILD_OVERLAY</zType>
+		<!-- Activates alternative overlay when hovering over the Road construction button in Worker actions list -->
+		<!-- 0 leaves this at the standard "Connected" overlay. 1 changes this to the "Roads and Rivers" overlay. -->
+		<iValue>0</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_NO_DELAY</zType>
+		<!-- Set to 1 to get all Event/Bonus results immediately, skipping the wait time for Traits or Relations -->
 		<iValue>0</iValue>
 	</Entry>
 </Root>

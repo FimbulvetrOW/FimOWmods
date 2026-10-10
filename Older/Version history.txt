@@ -1,4 +1,13 @@
 Version history
+[0.2.3] Capitals start with a Garrison again which enables Governor, Schemers can't be Ambassadors or Chancellors (I really disagree with this base game change),
+        Specialists start at Apprentice even with Guilds, removed +40% Culture from Cathedral, Drama unlocks Agents, increased base Discontent for Glorious and up,
+        Garrison line improvements give protection to Units on the Tile: Garrison immune to Rout, Stronghold immune to Rout and Panic, Citadel immune to Rout and Panic and Stun, 
+        Besieger promotion no longer available to Siege Units, removed from Competitive Mode: EVENTSTORY_ALL_ROADS_LEAD, EVENTSTORY_AMBITION_STRESS_VOLUNTEERS, EVENTSTORY_CITY_OF_CLAY,
+        re-added game option to disable Grand Viziers, Tribal Settlements give +1 Range (Tribal units only have Range 1 in this mod), Harbor gives +60% to Nets (base game is +100% now), 
+        Watermill and Windmill are both Mills, unlocked at the same time and limited together at Hydraulics (base game split them), restored Markets' Culture prereqs,
+        World Religion Improvements can again not be built next to another Religions' Improvements, the new Resources that give Happiness give Culture instead, 
+        Ranger Trapper Gardener Fisher all cost 60 Civics again, Crossbowman still has 8 Strength and still kicking ass, no more Pierce though, 
+        Council yield triangle offset set to 0 (is same as Court yield offset in base game now, used to be constant 0), UI XML updated to new XPath format (hurray for that).
 [0.2.2.24] Update for new game version 1.0.74622: UI XML updated; reverted 4 base game changes: 
            re-enabled Grand Vizier for Competitive Mode: deactivating is an independent option; re-enabled 3 tech trade events for Competitive Mode;
            Cities are immune to Critial Hits again, Missions that were changed cost Civics again (Slander, Trade, High Synod);

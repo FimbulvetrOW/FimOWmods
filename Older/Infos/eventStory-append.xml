@@ -82,12 +82,6 @@
 		</aeGameOptionInvalid>
 	</Entry>
 	<Entry>
-		<zType>EVENTSTORY_SUDDEN_INSIGHT</zType>
-		<aeGameOptionInvalid>
-			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
-		</aeGameOptionInvalid>
-	</Entry>
-	<Entry>
 		<zType>EVENTSTORY_RELATIONSHIP_A_NEW_METHOD</zType>
 		<aeGameOptionInvalid>
 			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
@@ -221,6 +215,25 @@
 	</Entry>
 	<Entry>
 		<zType>EVENTSTORY_HEIR_TO_HEIR</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- BTT - Stress -->
+	<Entry>
+		<zType>EVENTSTORY_ALL_ROADS_LEAD</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_AMBITION_STRESS_VOLUNTEERS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry> 
+	    <zType>EVENTSTORY_CITY_OF_CLAY</zType>
 		<aeGameOptionInvalid>
 			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
 		</aeGameOptionInvalid>

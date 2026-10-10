@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_GAMEOPTION_NO_GRAND_VIZIERS</zType>
+		<en-US>No Grand Viziers</en-US>
+		<es />
+		<de />
+		<fr />
+		<ja />
+		<zh-TW />
+		<ru />
+		<zh-CN />
+		<pt-BR />
+		<ko />
+	</Entry>
+	<Entry>
+		<zType>TEXT_GAMEOPTION_NO_GRAND_VIZIERS_HELP</zType>
+		<en-US>Characters cannot serve as link(COUNCIL_GRAND_VIZIER,1).</en-US>
+		<es />
+		<de />
+		<fr />
+		<ja />
+		<zh-TW />
+		<ru />
+		<zh-CN />
+		<pt-BR />
+		<ko />
+	</Entry>
+</Root>

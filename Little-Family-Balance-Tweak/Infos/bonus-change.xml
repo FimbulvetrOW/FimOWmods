@@ -3,6 +3,9 @@
 	<Entry>
 		<zType>BONUS_FAMILYCLASS_SAGES_SEAT</zType>
 		<bRandomTech>0</bRandomTech>
+		<aeAddProjects>
+			<zValue>PROJECT_ARCHIVE_1</zValue>
+		</aeAddProjects>
 	</Entry>
 	<Entry>
 		<zType>BONUS_FAMILYCLASS_TRADERS_SEAT</zType>

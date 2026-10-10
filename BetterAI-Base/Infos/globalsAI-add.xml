@@ -20,4 +20,12 @@
 		<zType>AI_EXPANSION_OVERRIDES_ZERO_WAR_CHANCE</zType>
 		<iValue>0</iValue> <!-- (new) default: 0 -->
 	</Entry>
+	<Entry>
+		<zType>AI_CITY_GOVERNOR_VALUE</zType>
+		<iValue>100000</iValue> <!-- (restored) default: 100000 -->
+	</Entry>
+	<Entry>
+		<zType>AI_DEATHTRAIT_PROB_EVAL_DEPTH</zType>
+		<iValue>10</iValue> <!-- (new) default: 10 -->
+	</Entry>
 </Root>

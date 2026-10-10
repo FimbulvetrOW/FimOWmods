@@ -2,6 +2,7 @@
 <Root>
 	<Entry>
 		<zType>BONUS_START</zType>
+		<AddImprovement>IMPROVEMENT_GARRISON_1</AddImprovement>
 		<aiGlobalYields>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -45,10 +46,19 @@
 	<Entry>
 		<zType>BONUS_FAMILYCLASS_SAGES_SEAT</zType>
 		<bRandomTech>0</bRandomTech>
+		<aeAddProjects>
+			<zValue>PROJECT_ARCHIVE_1</zValue>
+		</aeAddProjects>
 	</Entry>
 	<Entry>
 		<zType>BONUS_FAMILYCLASS_TRADERS_SEAT</zType>
 		<AddImprovement>IMPROVEMENT_MARKET_0</AddImprovement>
+		<AddCourtier>
+			<Pair>
+				<First>COURTIER_MERCHANT</First>
+				<Second/>
+			</Pair>
+		</AddCourtier>
 	</Entry>
 	<Entry>
 		<zType>BONUS_EFFECTCITY_FAMILYCLASS_PATRONS_SEAT</zType>

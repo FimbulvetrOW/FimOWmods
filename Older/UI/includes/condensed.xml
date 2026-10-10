@@ -1,0 +1,11 @@
+<VGroup Anchor="UIAnchor.BottomCenter" Pivot="UIPivot.TopCenter" Position="0,6" Spacing="0" HorizontalFit="PreferredSize" VerticalFit="PreferredSize" TOOLTIP_LOCATION="TooltipLocation.Right">
+	<loop start="0" end="{{SpecialistWidget$-NumYields}}" placeholder="@">
+					<TileWidgetText Width="60" Height="15" IsVisible="{{SpecialistWidget$-Yield@-IsVisible}}" ITEM_TYPE="ItemType.TILE_WIDGET" ITEM_DATA="$,{{SpecialistWidget$-Yield@-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent"
+								Rotation="0,0,0" RaycastTarget="{{SpecialistWidget$-Yield@-IsInteractable}}">
+						<WorldImage OBJECT_NAME="WorldYieldBG" ASSIGN_TO_PARENT="TileWidgetText:BG" BackgroundImage="WorldYieldBG" BackgroundImageMaterial="UI/Materials/WorldButton"
+								Rotation="0,0,0" Scale="55,60" IsVisible="{{SpecialistWidget$-IsVisible}}" SortOrder="0"/>
+						<WorldText OBJECT_NAME="WorldYieldText" ASSIGN_TO_PARENT="TileWidgetText:Text" STYLE="AvalonWorldUI" FontColor="#e3c08c" Height="20" WordWrapping="false" Alignment="Midline" Label="{{SpecialistWidget$-Yield@-Label}}"
+								FontSize="100" IsVisible="{{SpecialistWidget$-IsVisible}}" SortOrder="1"/>
+					</TileWidgetText>
+				</loop>
+</VGroup>

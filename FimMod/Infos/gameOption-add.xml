@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>GAMEOPTION_NO_GRAND_VIZIERS</zType>
+		<zName>TEXT_GAMEOPTION_NO_GRAND_VIZIERS</zName>
+		<zHelp>TEXT_GAMEOPTION_NO_GRAND_VIZIERS_HELP</zHelp>
+		<Category>RULES</Category>
+	</Entry>
+</Root>

@@ -1,0 +1,8 @@
+﻿<Fragments>
+    <Fragment>
+        <XPath>//VGroup
+        </XPath>
+        <ReplaceDeep/>
+        <File>condensed.xml</File>
+    </Fragment>
+</Fragments>

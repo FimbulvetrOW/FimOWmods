@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>COLOR_RIVER_EDGE</zType>
+		<zName>River Edge</zName>
+		<ColorClass>COLORCLASS_OVERLAYS</ColorClass>
+		<zHexValue>#0000ffff</zHexValue>
+	</Entry>
+	<Entry>
+		<zType>COLOR_RIVER_EDGE_NOT_CONNECTED</zType>
+		<zName>River Edge</zName>
+		<ColorClass>COLORCLASS_OVERLAYS</ColorClass>
+		<zHexValue>#779eb2ff</zHexValue>
+	</Entry>
+</Root>

@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <Root>
 	<Entry>
+		<zType>EFFECTPLAYER_TECH_DRAMA</zType>
+		<bAgent>1</bAgent>
+	</Entry>
+	<Entry>
 		<zType>EFFECTPLAYER_TRAIT_SCHEMER_ARCHETYPE</zType>
 		<bLegitimacyOrders>0</bLegitimacyOrders>
 		<aiWarYield>
@@ -15,6 +19,10 @@
 				<iValue>40</iValue>
 			</Pair>
 		</aiYieldRate>
+	</Entry>
+	<Entry>
+		<zType>EFFECTPLAYER_SHARED_POWER_VIZIER</zType>
+		<ConnectedEffectCity>EFFECTCITY_CONNECTED_VIZIER</ConnectedEffectCity>
 	</Entry>
 	<Entry>
 		<zType>EFFECTPLAYER_LAW_ENGINEERING</zType>

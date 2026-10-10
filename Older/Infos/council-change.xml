@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root>
 	<Entry>
+		<zType>COUNCIL_AMBASSADOR</zType>
+		<abTraitPrereq>
+			<Pair>
+				<zIndex>TRAIT_COMMANDER_ARCHETYPE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_ORATOR_ARCHETYPE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_DIPLOMAT_ARCHETYPE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTraitPrereq>
+	</Entry>
+	<Entry>
+		<zType>COUNCIL_CHANCELLOR</zType>
+		<abTraitPrereq>
+			<Pair>
+				<zIndex>TRAIT_ZEALOT_ARCHETYPE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_JUDGE_ARCHETYPE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+			<Pair>
+				<zIndex>TRAIT_BUILDER_ARCHETYPE</zIndex>
+				<bValue>1</bValue>
+			</Pair>
+		</abTraitPrereq>
+	</Entry>
+	<Entry>
 		<zType>COUNCIL_GRAND_VIZIER</zType>
 		<AssignMission>MISSION_MAKE_GRAND_VIZIER</AssignMission>
 		<abTraitPrereq>

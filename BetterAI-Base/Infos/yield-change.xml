@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>YIELD_GROWTH</zType>
+		<!-- <iTriangleOffset>0</iTriangleOffset> -->
+		<iTriangleOffsetCouncil>0</iTriangleOffsetCouncil>
+	</Entry>
+	<Entry>
+		<zType>YIELD_CIVICS</zType>
+		<!-- <iTriangleOffset>-1</iTriangleOffset> -->
+		<iTriangleOffsetCouncil>-1</iTriangleOffsetCouncil>
+	</Entry>
+	<Entry>
+		<zType>YIELD_TRAINING</zType>
+		<!-- <iTriangleOffset>0</iTriangleOffset> -->
+		<iTriangleOffsetCouncil>0</iTriangleOffsetCouncil>
+	</Entry>
+	<Entry>
+		<zType>YIELD_CULTURE</zType>
+		<!-- <iTriangleOffset>-2</iTriangleOffset> -->
+		<iTriangleOffsetCouncil>-2</iTriangleOffsetCouncil>
+	</Entry>
+	<Entry>
+		<zType>YIELD_SCIENCE</zType>
+		<!-- <iTriangleOffset>-2</iTriangleOffset> -->
+		<iTriangleOffsetCouncil>-2</iTriangleOffsetCouncil>
+	</Entry>
+	<Entry>
+		<zType>YIELD_MONEY</zType>
+		<!-- <iTriangleOffset>1</iTriangleOffset> -->
+		<iTriangleOffsetCouncil>1</iTriangleOffsetCouncil>
+	</Entry>
+	<Entry>
+		<zType>YIELD_ORDERS</zType>
+		<!-- <iTriangleOffset>0</iTriangleOffset> -->
+		<iTriangleOffsetCouncil>0</iTriangleOffsetCouncil>
+	</Entry>
+</Root>

@@ -1,0 +1,20 @@
+<Fragments>
+    <Fragment>
+        <XPath>//HGroup[@TEMPLATE_TYPE='SelectedUnitFrame']/replace/UIImage/UIImage[1]
+        </XPath>
+        <ReplaceDeep/>
+        <File>upsa.xml</File>
+    </Fragment>
+    <Fragment>
+        <XPath>//HGroup[@TEMPLATE_TYPE='SelectedUnitFrame']/replace/UIImage/UIButton
+        </XPath>
+        <ReplaceDeep/>
+        <File>upsb.xml</File>
+    </Fragment>
+    <Fragment>
+        <XPath>//HGroup[@TEMPLATE_TYPE='SelectedUnitFrame']/replace/UIImage/replace
+        </XPath>
+        <Remove/>
+        <File>upsa.xml</File>
+    </Fragment>
+</Fragments>

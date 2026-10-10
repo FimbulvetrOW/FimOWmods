@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTUNIT_IMPROVEMENT_GARRISON_1</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_1</GenderedName>
+		<zIconName>EFFECTUNIT_WARDEN</zIconName>
+		<aeEffectUnitImmune>
+			<zValue>EFFECTUNIT_ROUT</zValue>
+		</aeEffectUnitImmune>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_IMPROVEMENT_GARRISON_2</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_2</GenderedName>
+		<zIconName>EFFECTUNIT_WARDEN</zIconName>
+		<aeEffectUnitImmune>
+			<zValue>EFFECTUNIT_ROUT</zValue>
+			<zValue>EFFECTUNIT_PANIC</zValue>
+		</aeEffectUnitImmune>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_IMPROVEMENT_GARRISON_3</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_3</GenderedName>
+		<zIconName>EFFECTUNIT_WARDEN</zIconName>
+		<aeEffectUnitImmune>
+			<zValue>EFFECTUNIT_ROUT</zValue>
+			<zValue>EFFECTUNIT_PANIC</zValue>
+			<zValue>EFFECTUNIT_TACTICIAN_LEADER</zValue>
+		</aeEffectUnitImmune>
+	</Entry>
+</Root>

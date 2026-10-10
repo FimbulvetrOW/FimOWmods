@@ -1,0 +1,12 @@
+<UIButton Width="50" Height="50" Anchor="UIAnchor.MiddleCenter" Pivot="UIPivot.MiddleCenter" Position="-29,-50" BackgroundImage="GeneralFrame" IsActive="{{Unit(ID)-HasGeneral}}"
+		  AllowNavigationSelection="false" ITEM_TYPE="ItemType.UNIT_CHARACTER" ITEM_DATA="{{Unit(ID)-General-Data}}" TOOLTIP_LOCATION="TooltipLocation.Parent">
+	<UIImage BackgroundImage="{{SelectedPanel-Unit-PortraitBG}}" PreserveAspect="true" Inset="-6,10,5,11" HighlightedColor="#888888">
+		<replace placeholder="$" replacement="{{Unit(ID)-GeneralID}}">
+			<UIImage Anchor="UIAnchor.StretchAll" PreserveAspect="true" BackgroundImage="{{Character$-Portrait}}"  CharacterID="{{Character$-CharacterID}}" BackgroundImageMaterial="UI/Materials/UINoMipImage">
+				<UIImage Width="14" Height="14" Anchor="UIAnchor.TopRight" Pivot="UIPivot.TopRight" Position="0,-11" BackgroundImage="OpinionEdge" BackgroundColor="{{Character$-Opinion-Color}}"
+						 ITEM_TYPE="ItemType.HELP_LINK" ITEM_DATA="{{Character$-Opinion-Data}}" HOVER_EVENT_TYPE="Target" TOOLTIP_LOCATION="TooltipLocation.Parent" IsActive="{{Character$-Opinion-NotCautious}}"/>
+			</UIImage>
+		</replace>
+	</UIImage>
+	<UIParticles ASSET_TYPE="Prefabs/Particles/AddGeneral-Particle" IsPlaying="true" RaycastTarget="false" Scale="17,17,1" IsActive="{{SelectedPanel-Unit-ShowGeneralEffect}}false"/>
+</UIButton>

@@ -1,4 +1,5 @@
 Version history
+[0.7.3] Sages changes mentioned in modinfo file were for some reason not added, this is fixed now. Archives need Tech, but Seat gains Archive when founded.
 [0.7.2] Traders's special extra Market upkeep cost reduced to 1 Wood, Culture prereqs for other Markets restored.
 [0.7.1] Traders get their Court Merchant again.
 [0.7] Update for new game version 1.0.84044: Clerics' -50% training time for Disciples now only applies to State Religion (base game change),

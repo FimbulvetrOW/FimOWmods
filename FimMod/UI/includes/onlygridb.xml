@@ -1,0 +1,4 @@
+﻿<UIGrid IsActive="true"
+		Constraint="Column" ConstraintCount="6" CellSize="65,65" Spacing="3,3" TOOLTIP_LOCATION="TooltipLocation.Right">
+
+</UIGrid>

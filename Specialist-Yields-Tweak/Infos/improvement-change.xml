@@ -415,11 +415,8 @@
 		<zType>IMPROVEMENT_CATHEDRAL_BUDDHISM</zType>
 		<Specialist>SPECIALIST_BISHOP_1</Specialist>
 	</Entry>
- -->
- 
- 
-
 	<Entry>
 		<zType>IMPROVEMENT_GODS_CONSORT_SHRINE</zType>
 	</Entry>
+ -->
 </Root>

@@ -44,20 +44,6 @@
 				<iValue>25</iValue>
 			</Pair>
 		</aiImprovementToModifier>
-		<abUnitTraitValid>
-			<Pair>
-				<zIndex>UNITTRAIT_INFANTRY</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-			<Pair>
-				<zIndex>UNITTRAIT_SIEGE</zIndex>
-				<bValue>0</bValue>
-			</Pair>
-			<Pair>
-				<zIndex>UNITTRAIT_SHIP</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-		</abUnitTraitValid>
 	</Entry>
 <!--
 	<Entry>
@@ -126,7 +112,7 @@
 		<zIconName>EFFECTUNIT_TACTICIAN</zIconName>
 		<bSkipIcon>1</bSkipIcon>
 -->
-		<bMeleeCounter>0</bMeleeCounter>
+		<iMeleeCounterPercent>0</iMeleeCounterPercent>
 		<aiUnitTraitModifierDefense>
 			<Pair>
 				<zIndex>UNITTRAIT_MELEE</zIndex>
@@ -171,28 +157,8 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTUNIT_ZEALOT_LEADER</zType>
-		<GenderedName>GENDERED_TEXT_EFFECTUNIT_ZEALOT_LEADER</GenderedName>
-		<zIconName>EFFECTUNIT_ZEALOT_LEADER</zIconName>
-		<bSkipIcon>0</bSkipIcon>
-		<SelfApplyEffectUnitTurns>
-			<First>NONE</First>
-			<Second>0</Second>
-		</SelfApplyEffectUnitTurns>
-		<SelfApplyEffectUnitYieldCost />
+		<bHealKill>0</bHealKill>
 		<iHealAttack>2</iHealAttack>
-<!--
-		<bSkipIcon>1</bSkipIcon>
-		<SelfApplyEffectUnitTurns>
-			<First>EFFECTUNIT_ZEALOT_LEADER_ENLIST</First>
-			<Second>3</Second>
-		</SelfApplyEffectUnitTurns>
-		<SelfApplyEffectUnitYieldCost>
-			<Pair>
-				<First>YIELD_CIVICS</First>
-				<Second>400</Second>
-			</Pair>
-		</SelfApplyEffectUnitYieldCost>
--->
 	</Entry>
 	<!-- BTT -->
 	<Entry>
@@ -203,5 +169,13 @@
 				<iValue>10</iValue>
 			</Pair>
 		</aiMilitaryKillYield>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_TESTUDO</zType>
+		<UnitTraitFormation>
+			<First>UNITTRAIT_RANGED</First>
+			<Second>25</Second>
+			<Third>2</Third>
+		</UnitTraitFormation>
 	</Entry>
 </Root>

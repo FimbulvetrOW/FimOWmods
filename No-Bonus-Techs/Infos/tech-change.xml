@@ -200,7 +200,6 @@
 		<zType>TECH_BEJA_ARCHER_BONUS</zType>
 		<bDisable>1</bDisable>
 	</Entry>
-	
 	<Entry>
 		<zType>TECH_DMT_WARRIOR_BONUS</zType>
 		<bDisable>1</bDisable>
@@ -209,7 +208,6 @@
 		<zType>TECH_SHOTELAI_BONUS</zType>
 		<bDisable>1</bDisable>
 	</Entry>
-	
 	<Entry>
 		<zType>TECH_RESOURCE_SILK_BONUS</zType>
 		<bDisable>1</bDisable>
@@ -230,7 +228,6 @@
 		<zType>TECH_RESOURCE_PERFUME_BONUS</zType>
 		<bDisable>1</bDisable>
 	</Entry>
-	
 	<Entry>
 		<zType>TECH_MAURYA_ASSAULT_ELEPHANT_BONUS</zType>
 		<bDisable>1</bDisable>
@@ -259,5 +256,4 @@
 		<zType>TECH_TAMIL_ARCHER_ELEPHANT_BONUS</zType>
 		<bDisable>1</bDisable>
 	</Entry>
-	
 </Root>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>EFFECTCITY_BASE</zType>
+		<bEnablesGovernor>1</bEnablesGovernor>
+	</Entry>
+</Root>

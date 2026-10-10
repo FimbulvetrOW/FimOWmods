@@ -54,7 +54,7 @@
 	</Entry>
 	<Entry>
 		<zType>TECH_ARCHITECTURE</zType>
-		<iCost>600</iCost>
+		<iCost>700</iCost>
 		<iColumn>4</iColumn>
 		<iRow>4</iRow>
 		<abTechPrereq>
@@ -77,7 +77,7 @@
 	</Entry>
 	<Entry>
 		<zType>TECH_VAULTING</zType>
-		<iCost>1000</iCost>
+		<iCost>1100</iCost>
 		<iColumn>5</iColumn>
 		<iRow>4</iRow>
 	</Entry>
@@ -95,29 +95,8 @@
 		</abTechPrereq>
 	</Entry>
 	<Entry>
-		<zType>TECH_FISCAL_POLICY</zType>
-		<iCost>1500</iCost>
-	</Entry>
-	<Entry>
 		<zType>TECH_BARDING</zType>
-		<iCost>1500</iCost>
 		<iColumn>6</iColumn>
 		<iRow>3</iRow>
-	</Entry>
-	<Entry> <!-- also changed by Reduced Range: RR needs to load afterwards for this value to be correct -->
-		<zType>TECH_INFANTRY_SQUARE</zType>
-		<iCost>1500</iCost>
-	</Entry>
-	<Entry>
-		<zType>TECH_COHORTS</zType>
-		<iCost>1500</iCost>
-	</Entry>
-	<Entry>
-		<zType>TECH_CHAIN_DRIVE</zType>
-		<iCost>1500</iCost>
-	</Entry>
-	<Entry>
-		<zType>TECH_BALLISTICS</zType>
-		<iCost>1500</iCost>
 	</Entry>
 </Root>

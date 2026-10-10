@@ -1,18 +1,19 @@
   Planned features: 
-  - Movement cost discounts for Forest/Hills for Ranger/Highlander (or Scouts? Pathfinder?)
+  - Movement cost discounts for Forest/Hills for Ranger/Highlander (or Scouts? Pathfinder? Explorer?)
   - Make Defender Tile count for most Tile-based Combat modifiers
   - Replace Hurry with Citizens by Hurry with Growth (more precision)
   - Steal Tech mission reward to be dependent on unknown Techs the target Player has (main - yields go directly to the techs, 
       not as basic science yield into what is being researched)
   - Better AI value calculations (I imagine this will increase CPU load)
+  - Improvement Extra Range (for units standing on tile) to give Tribal Units +1 Range (with Reduced Range Mod their Range is only 1).
+  - Make Workers invisible inside Team Territory - so they can't be used as blockers.
   Maybe also:
+  - Compound Units Traits (Melee + Infantry = Melee Infantry) to better target Promotions/UnitEffects.
+  - Reduced Religious Specialist/Improvement Yields if more than one Religion is present.
+  - Allow a State World Religion to completely replace the Nation's Pagan Religion (No more opinion penality from having Shrines).
+  - Allow Disable World Religion founding for Players that already control a World Religion Holy City.
   - Allow Growth Yield as up-front-cost for City Builds
   - Allow City Yields as Unit Upkeep (spread over Family Cities)
   - Allow City Yields as Unit action Cost (pay for Healing action with stored Growth yield)
   - some possibility to merge national Pagan Religion into your non-pagan State Religion
   - manual Bridge building, not automatically applied by an effect
-  - UI mod: sort all Character lists better (idk how that list is even sorted now) 
-       with Jobs(Council &gt; Governor &gt; General) &gt; 
-	   no Jobs &gt; not Adult yet; in Court &gt; 
-	   not in Court within those, 
-	   and group by Family within those sections.

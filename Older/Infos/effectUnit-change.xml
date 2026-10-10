@@ -3,23 +3,19 @@
 	<Entry>
 		<zType>EFFECTUNIT_ASSAULT</zType>
 		<iSettlementAttackModifier>25</iSettlementAttackModifier>
-		<iUrbanAttackModifier>25</iUrbanAttackModifier>
+		<iUrbanAttackModifier>10</iUrbanAttackModifier>
 		<aiImprovementToModifier>
 			<Pair>
 				<zIndex>IMPROVEMENT_FORT</zIndex>
-				<iValue>25</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>IMPROVEMENT_GARRISON_1</zIndex>
-				<iValue>20</iValue>
+				<iValue>10</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>IMPROVEMENT_GARRISON_2</zIndex>
-				<iValue>20</iValue>
+				<iValue>10</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>IMPROVEMENT_GARRISON_3</zIndex>
-				<iValue>20</iValue>
+				<iValue>10</iValue>
 			</Pair>
 		</aiImprovementToModifier>
 	</Entry>
@@ -31,20 +27,6 @@
 				<iValue>25</iValue>
 			</Pair>
 		</aiImprovementToModifier>
-		<abUnitTraitValid>
-			<Pair>
-				<zIndex>UNITTRAIT_INFANTRY</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-			<Pair>
-				<zIndex>UNITTRAIT_SIEGE</zIndex>
-				<bValue>0</bValue>
-			</Pair>
-			<Pair>
-				<zIndex>UNITTRAIT_SHIP</zIndex>
-				<bValue>1</bValue>
-			</Pair>
-		</abUnitTraitValid>
 	</Entry>
 	<Entry>
 		<zType>EFFECTUNIT_BESIEGER_ALL</zType>
@@ -80,7 +62,7 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTUNIT_TACTICIAN</zType>
-		<bMeleeCounter>0</bMeleeCounter>
+		<iMeleeCounterPercent>0</iMeleeCounterPercent>
 		<aiUnitTraitModifierDefense>
 			<Pair>
 				<zIndex>UNITTRAIT_MELEE</zIndex>
@@ -95,14 +77,7 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTUNIT_ZEALOT_LEADER</zType>
-		<GenderedName>GENDERED_TEXT_EFFECTUNIT_ZEALOT_LEADER</GenderedName>
-		<zIconName>EFFECTUNIT_ZEALOT_LEADER</zIconName>
-		<bSkipIcon>0</bSkipIcon>
-		<SelfApplyEffectUnitTurns>
-			<First>NONE</First>
-			<Second>0</Second>
-		</SelfApplyEffectUnitTurns>
-		<SelfApplyEffectUnitYieldCost />
+		<bHealKill>0</bHealKill>
 		<iHealAttack>2</iHealAttack>
 	</Entry>
 	<!-- BTT -->
@@ -114,5 +89,22 @@
 				<iValue>10</iValue>
 			</Pair>
 		</aiMilitaryKillYield>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_CHARGE</zType>
+		<aiMeleeToClearTerrainTargetModifier>
+			<Pair>
+				<zIndex>TERRAIN_TARGET_BARE</zIndex>
+				<iValue>25</iValue>
+			</Pair>
+		</aiMeleeToClearTerrainTargetModifier>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_TESTUDO</zType>
+		<UnitTraitFormation>
+			<First>UNITTRAIT_RANGED</First>
+			<Second>25</Second>
+			<Third>2</Third>
+		</UnitTraitFormation>
 	</Entry>
 </Root>

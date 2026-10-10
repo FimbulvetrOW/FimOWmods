@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>SPECIALIST_RANCHER</zType>
+		<iCivics>60</iCivics>
+	</Entry>
+	<Entry>
+		<zType>SPECIALIST_TRAPPER</zType>
+		<iCivics>60</iCivics>
+	</Entry>
+	<Entry>
+		<zType>SPECIALIST_GARDENER</zType>
+		<iCivics>60</iCivics>
+	</Entry>
+	<Entry>
+		<zType>SPECIALIST_FISHER</zType>
+		<iCivics>60</iCivics>
+	</Entry>
+</Root>

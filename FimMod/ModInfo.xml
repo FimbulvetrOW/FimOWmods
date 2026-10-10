@@ -85,7 +85,11 @@
 - re-enabled Grand Vizier for Competitive Mode (disabled in 74622 update)
 - re-enabled 3 tech trade events for Competitive Mode (disabled in 74622 update)
 - Cities are immune to Critial Hits again (changed in 74622 update)
-- Missions that were changed (in 74622 update) cost Civics again (Slander, Trade, High Synod).
+- Missions that were changed (in 74622 update) cost Civics again (Slander, Trade, High Synod)
+- Markets unlock at Developing/Strong/Legendary again
+- Cathedrals: no more +50% Culture, flat +8 Culture instead
+- Religious Improvements block Improvements from other Religins again
+- Freedom: +2 Growth (instead of +20%)
 
 
 -Siege-related Traits get Bonuses against Forts and Settlements but get reduced Bonus against plain Urban Tiles.
@@ -108,8 +112,8 @@ If you try any other way to contact me, my answer could take months.</descriptio
   <modplatform>Modio</modplatform>
   <modioID>2226901</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.7.44</modversion>
-  <modbuild>1.0.74622</modbuild>
+  <modversion>0.8.0</modversion>
+  <modbuild>1.0.84977</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo,Event,UI</tags>
   <singlePlayer>true</singlePlayer>

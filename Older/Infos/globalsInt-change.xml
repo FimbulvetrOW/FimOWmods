@@ -94,14 +94,6 @@
 		<iValue>10</iValue>
 	</Entry>
 	<Entry>
-		<zType>MAX_TESTUDO_TURNS</zType>
-		<iValue>2</iValue>
-	</Entry>
-	<Entry>
-		<zType>TESTUDO_BONUS_PER</zType>
-		<iValue>25</iValue>
-	</Entry>
-	<Entry>
 		<zType>BAI_RAIDER_WATER_PILLAGE_DELAY_TURNS</zType>
 		<!-- Raiding Land Units can enter Water Tiles and pillage Improvements there, while this is impossible for Player Units -->
 		<!-- When set to a value above 0, Raiders will not pillage Water until iMinRaidTurns + BAI_DELAY_RAIDER_WATER_PILLAGE_TURNS Turns have passed -->
@@ -182,7 +174,14 @@
 		<iValue>1</iValue>
 	</Entry>
 	<Entry>
-		<zType>BAI_CITIES_IMMUNE_TO_CRITICAL</zType> <!-- Set to 1 to make Cities immune to critial hits again, -->
+		<zType>BAI_ALT_ROAD_BUILD_OVERLAY</zType>
+		<!-- Activates alternative overlay when hovering over the Road construction button in Worker actions list -->
+		<!-- 0 leaves this at the standard "Connected" overlay. 1 changes this to the "Roads and Rivers" overlay. -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_NO_DELAY</zType>
+		<!-- Set to 1 to get all Event/Bonus results immediately, skipping the wait time for Traits or Relations -->
 		<iValue>1</iValue>
 	</Entry>
 </Root>

@@ -4,4 +4,25 @@
 		<zType>IMPROVEMENTCLASS_SETTLEMENT</zType>
 		<Name>TEXT_IMPROVEMENTCLASS_SETTLEMENT</Name>
 	</Entry>
+	<Entry>
+		<zType>IMPROVEMENTCLASS_MILL</zType>
+		<Name>TEXT_IMPROVEMENTCLASS_MILL</Name>
+		<iMaxCultureCount>1</iMaxCultureCount>
+		<bHelpAll>1</bHelpAll>
+		<TechPrereq>TECH_HYDRAULICS</TechPrereq>
+		<aiAdjacentImprovementClassModifier>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_MINE</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_QUARRY</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>IMPROVEMENTCLASS_LUMBERMILL</zIndex>
+				<iValue>100</iValue>
+			</Pair>
+		</aiAdjacentImprovementClassModifier>
+	</Entry>
 </Root>

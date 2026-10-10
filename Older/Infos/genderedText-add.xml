@@ -27,6 +27,45 @@
 		</Texts>
 	</Entry>
  	<Entry>
+		<zType>GENDERED_TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_1</zType>
+		<Texts>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_MASCULINE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_1</zValue>
+			</Pair>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_FEMININE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_1</zValue>
+			</Pair>
+		</Texts>
+	</Entry>
+ 	<Entry>
+		<zType>GENDERED_TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_2</zType>
+		<Texts>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_MASCULINE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_2</zValue>
+			</Pair>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_FEMININE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_2</zValue>
+			</Pair>
+		</Texts>
+	</Entry>
+ 	<Entry>
+		<zType>GENDERED_TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_3</zType>
+		<Texts>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_MASCULINE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_3</zValue>
+			</Pair>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_FEMININE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_3</zValue>
+			</Pair>
+		</Texts>
+	</Entry>
+ 	<Entry>
 		<zType>GENDERED_TEXT_EFFECTUNIT_EXPLORATION</zType>
 		<Texts>
 			<Pair>

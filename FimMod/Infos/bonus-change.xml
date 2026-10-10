@@ -2,6 +2,7 @@
 <Root>
 	<Entry>
 		<zType>BONUS_START</zType>
+		<AddImprovement>IMPROVEMENT_GARRISON_1</AddImprovement>
 		<aeAddProjects>
 			<zValue>PROJECT_WALLS</zValue>
 		</aeAddProjects>

@@ -125,10 +125,6 @@
 		<iValue>8</iValue> <!-- default: 8 -->
 	</Entry>
 	<Entry>
-		<zType>AI_NO_WONDER_TURNS</zType>
-		<iValue>50</iValue> <!-- default: 50 -->
-	</Entry>
-	<Entry>
 		<zType>AI_GRACE_TURNS</zType>
 		<iValue>30</iValue> <!-- default: 30 -->
 	</Entry>
@@ -203,18 +199,6 @@
 	<Entry>
 		<zType>AI_UNIT_STRENGTH_VALUE</zType>
 		<iValue>200</iValue> <!-- default: 200 -->
-	</Entry>
-	<Entry>
-		<zType>AI_UNIT_STRENGTH_MODIFIER_VALUE</zType>
-		<iValue>500</iValue> <!-- default: 500 -->
-	</Entry>
-	<Entry>
-		<zType>AI_UNIT_ATTACK_MODIFIER_VALUE</zType>
-		<iValue>250</iValue> <!-- default: 250 -->
-	</Entry>
-	<Entry>
-		<zType>AI_UNIT_DEFENSE_MODIFIER_VALUE</zType>
-		<iValue>250</iValue> <!-- default: 250 -->
 	</Entry>
 	<Entry>
 		<zType>AI_UNIT_CRITICAL_CHANCE_VALUE</zType>
@@ -385,7 +369,7 @@
 		<iValue>100</iValue> <!-- default: 100 -->
 	</Entry>
 	<Entry>
-		<zType>AI_UNIT_HIDE_VEGETATION_VALUE</zType>
+		<zType>AI_UNIT_HIDE_TERRAIN_TARGET_VALUE</zType>
 		<iValue>50</iValue> <!-- default: 50 -->
 	</Entry>
 	<Entry>
@@ -685,8 +669,8 @@
 		<iValue>10</iValue> <!-- default: 10 -->
 	</Entry>
 	<Entry>
-		<zType>AI_BORDER_EXPANSION_VALUE_MODIFIER</zType>
-		<iValue>-75</iValue> <!-- default: -75 -->
+		<zType>AI_BORDER_EXPANSION_IMPROVEMENT_VALUE_MODIFIER</zType>
+		<iValue>-90</iValue> <!-- default: -90 -->
 	</Entry>
 	<Entry>
 		<zType>AI_MAX_ALLOWED_EXPENSE_IN_SHORTAGE</zType>

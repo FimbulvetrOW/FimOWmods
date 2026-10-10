@@ -2,7 +2,6 @@
 <Root>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_BATHS_3</zType>
-		<SourceImprovement>IMPROVEMENT_BATHS_3</SourceImprovement>
 		<aiYieldModifier>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -26,19 +25,6 @@
 		</abUrbanTerrainValid>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_DIFFICULTY_NEW</zType>
-		<aiYieldRate>
-			<Pair>
-				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>60</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>200</iValue>
-			</Pair>
-		</aiYieldRate>
-	</Entry>
-	<Entry>
 		<zType>EFFECTCITY_DIFFICULTY_ABLE</zType>
 		<aiYieldRate>
 			<Pair>
@@ -48,19 +34,6 @@
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
 				<iValue>160</iValue>
-			</Pair>
-		</aiYieldRate>
-	</Entry>
-	<Entry>
-		<zType>EFFECTCITY_DIFFICULTY_JUST</zType>
-		<aiYieldRate>
-			<Pair>
-				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>80</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>140</iValue>
 			</Pair>
 		</aiYieldRate>
 	</Entry>
@@ -108,7 +81,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>120</iValue>
+				<iValue>140</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -121,7 +94,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>130</iValue>
+				<iValue>160</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -134,7 +107,7 @@
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_DISCONTENT</zIndex>
-				<iValue>140</iValue>
+				<iValue>180</iValue>
 			</Pair>
 			<Pair>
 				<zIndex>YIELD_MONEY</zIndex>
@@ -148,7 +121,6 @@
 	</Entry>
 	<Entry>   <!-- More Food Consumption -->
 		<zType>EFFECTCITY_POPULATION</zType>
-		<Name>TEXT_EFFECTCITY_POPULATION</Name>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_MAINTENANCE</zIndex>
@@ -159,11 +131,11 @@
 				<iValue>-40</iValue>
 			</Pair>
 		</aiYieldRate>
+		<!-- Less Scaling Specialist Yields -->
+		<aaiEffectCityYieldRate></aaiEffectCityYieldRate>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_CULTURE_WEAK</zType>
-		<Name>TEXT_EFFECTCITY_CULTURE_WEAK</Name>
-		<SourceCulture>CULTURE_WEAK</SourceCulture>
 		<aiYieldRatePopulation>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -173,8 +145,6 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_CULTURE_DEVELOPING</zType>
-		<Name>TEXT_EFFECTCITY_CULTURE_DEVELOPING</Name>
-		<SourceCulture>CULTURE_DEVELOPING</SourceCulture>
 		<aiYieldRatePopulation>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -184,8 +154,6 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_CULTURE_STRONG</zType>
-		<Name>TEXT_EFFECTCITY_CULTURE_STRONG</Name>
-		<SourceCulture>CULTURE_STRONG</SourceCulture>
 		<aiYieldRatePopulation>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -195,8 +163,6 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_CULTURE_LEGENDARY</zType>
-		<Name>TEXT_EFFECTCITY_CULTURE_LEGENDARY</Name>
-		<SourceCulture>CULTURE_LEGENDARY</SourceCulture>
 		<aiYieldRatePopulation>
 			<Pair>
 				<zIndex>YIELD_FOOD</zIndex>
@@ -219,8 +185,6 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_LIGHTHOUSE</zType>
-		<Name>TEXT_IMPROVEMENT_LIGHTHOUSE</Name>
-		<SourceImprovement>IMPROVEMENT_LIGHTHOUSE</SourceImprovement>
 		<aiImprovementModifier>
 			<Pair>
 				<zIndex>IMPROVEMENT_NETS</zIndex>
@@ -250,12 +214,12 @@
 				<iValue>40</iValue>
 			</Pair>
 		</aiYieldModifier>
-		<aeTraitPromotion>
+		<aeTraitEffectUnit>
 			<Pair>
 				<zIndex>UNITTRAIT_INFANTRY</zIndex>
-				<zValue>PROMOTION_TOUGH</zValue>
+				<zValue>EFFECTUNIT_TOUGH</zValue>
 			</Pair>
-		</aeTraitPromotion>
+		</aeTraitEffectUnit>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_COTHON</zType>
@@ -278,6 +242,10 @@
 				</SubPair>
 			</Pair>
 		</aaiEffectCityYieldRate>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENTCLASS_CATHEDRAL</zType>
+		<aiYieldModifier></aiYieldModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_IMPROVEMENT_CAVALRY_CULT</zType>
@@ -304,32 +272,6 @@
 				<iValue>-10</iValue>
 			</Pair>
 		</aiUnitTraitCostModifier>
-	</Entry>
-	<Entry>
-		<zType>EFFECTCITY_TRAIT_PATHFINDER</zType>
-		<aiImprovementModifier>
-			<Pair>
-				<zIndex>IMPROVEMENT_NETS</zIndex>
-				<iValue>50</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>IMPROVEMENT_CAMP</zIndex>
-				<iValue>50</iValue>
-			</Pair>
-		</aiImprovementModifier>
-	</Entry>
-	<Entry>
-		<zType>EFFECTCITY_TRAIT_PATHFINDER_ALL</zType>
-		<aiImprovementModifier>
-			<Pair>
-				<zIndex>IMPROVEMENT_NETS</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-			<Pair>
-				<zIndex>IMPROVEMENT_CAMP</zIndex>
-				<iValue>20</iValue>
-			</Pair>
-		</aiImprovementModifier>
 	</Entry>
 	<Entry>   <!-- Less Scaling Specialist Yields -->
 		<zType>EFFECTCITY_CITIZEN</zType>
@@ -368,14 +310,14 @@
 				<zIndex>EFFECTCITY_SPECIALIST_SCRIBE_2</zIndex>
 				<SubPair>
 					<zSubIndex>YIELD_MONEY</zSubIndex>
-					<iValue>10</iValue>
+					<iValue>20</iValue>
 				</SubPair>
 			</Pair>
 			<Pair>
 				<zIndex>EFFECTCITY_SPECIALIST_SCRIBE_3</zIndex>
 				<SubPair>
 					<zSubIndex>YIELD_MONEY</zSubIndex>
-					<iValue>20</iValue>
+					<iValue>40</iValue>
 				</SubPair>
 			</Pair>
 			<Pair>
@@ -393,6 +335,24 @@
 				</SubPair>
 			</Pair>
 		</aaiEffectCityYieldRate>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_SPECIALIST_SHOPKEEPER_2</zType>
+		<aiYieldRateCulture>
+			<Pair>
+				<zIndex>YIELD_GROWTH</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+		</aiYieldRateCulture>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_SPECIALIST_SHOPKEEPER_3</zType>
+		<aiYieldRateCulture>
+			<Pair>
+				<zIndex>YIELD_GROWTH</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+		</aiYieldRateCulture>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_MONK_2</zType>
@@ -415,7 +375,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PRIEST_1</zType>
 		<Name>TEXT_SPECIALIST_PRIEST_1</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_HAPPINESS</zIndex>
@@ -426,7 +385,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PRIEST_2</zType>
 		<Name>TEXT_SPECIALIST_PRIEST_2</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_HAPPINESS</zIndex>
@@ -441,7 +399,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PRIEST_3</zType>
 		<Name>TEXT_SPECIALIST_PRIEST_3</Name>
-		<SourceSpecialist>SPECIALIST_PRIEST_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_HAPPINESS</zIndex>
@@ -454,27 +411,8 @@
 		</aiYieldRate>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_SPECIALIST_SHOPKEEPER_2</zType>
-		<aiYieldRateCulture>
-			<Pair>
-				<zIndex>YIELD_GROWTH</zIndex>
-				<iValue>5</iValue>
-			</Pair>
-		</aiYieldRateCulture>
-	</Entry>
-	<Entry>
-		<zType>EFFECTCITY_SPECIALIST_SHOPKEEPER_3</zType>
-		<aiYieldRateCulture>
-			<Pair>
-				<zIndex>YIELD_GROWTH</zIndex>
-				<iValue>10</iValue>
-			</Pair>
-		</aiYieldRateCulture>
-	</Entry>
-	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PHILOSOPHER_2</zType>
 		<Name>TEXT_SPECIALIST_PHILOSOPHER_2</Name>
-		<SourceSpecialist>SPECIALIST_PHILOSOPHER_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
@@ -489,7 +427,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_PHILOSOPHER_3</zType>
 		<Name>TEXT_SPECIALIST_PHILOSOPHER_3</Name>
-		<SourceSpecialist>SPECIALIST_PHILOSOPHER_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_SCIENCE</zIndex>
@@ -504,7 +441,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_DOCTOR_1</zType>
 		<Name>TEXT_SPECIALIST_DOCTOR_1</Name>
-		<SourceSpecialist>SPECIALIST_DOCTOR_1</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -515,7 +451,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_DOCTOR_2</zType>
 		<Name>TEXT_SPECIALIST_DOCTOR_2</Name>
-		<SourceSpecialist>SPECIALIST_DOCTOR_2</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -536,7 +471,6 @@
 	<Entry>
 		<zType>EFFECTCITY_SPECIALIST_DOCTOR_3</zType>
 		<Name>TEXT_SPECIALIST_DOCTOR_3</Name>
-		<SourceSpecialist>SPECIALIST_DOCTOR_3</SourceSpecialist>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_GROWTH</zIndex>
@@ -556,16 +490,14 @@
 	</Entry>
 	<Entry> <!-- Family Balance -->
 		<zType>EFFECTCITY_FAMILYCLASS_TRADERS</zType>
-		<SourceUnlock>EFFECTCITY_UNIT_FERRY</SourceUnlock>
+		<EffectCityUnlock>EFFECTCITY_UNIT_FERRY</EffectCityUnlock>
 		<aiYieldRateSpecialist></aiYieldRateSpecialist>
-		<aiImprovementModifier></aiImprovementModifier>
-		<aiImprovementClassUpgradeTurnChange>
+		<aiImprovementModifier>
 			<Pair>
-				<zIndex>IMPROVEMENTCLASS_HAMLET</zIndex>
-				<iValue>0</iValue>
+				<zIndex>IMPROVEMENT_NETS</zIndex>
+				<iValue>25</iValue>
 			</Pair>
-		</aiImprovementClassUpgradeTurnChange>
-		<aeTraitPromotion></aeTraitPromotion>
+		</aiImprovementModifier>
 		<aeTraitEffectUnit></aeTraitEffectUnit>
 		<aaiEffectCityYieldRate>
 			<Pair>
@@ -576,10 +508,10 @@
 				</SubPair>
 			</Pair>
 			<Pair>
-				<zIndex>EFFECTCITY_LUXURY</zIndex>
+				<zIndex>EFFECTCITY_CONNECTED</zIndex>
 				<SubPair>
 					<zSubIndex>YIELD_CULTURE</zSubIndex>
-					<iValue>20</iValue>
+					<iValue>10</iValue>
 				</SubPair>
 			</Pair>
 		</aaiEffectCityYieldRate>
@@ -592,21 +524,21 @@
 				<iValue>20</iValue>
 			</Pair>
 		</aiYieldRate>
-		<aiUnitTraitTrainModifier>
+		<aiStateReligionUnitTraitTrainModifier>
 			<Pair>
 				<zIndex>UNITTRAIT_DISCIPLE</zIndex>
 				<iValue>-50</iValue>
 			</Pair>
-		</aiUnitTraitTrainModifier>
+		</aiStateReligionUnitTraitTrainModifier>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_FAMILYCLASS_CLERICS_SEAT</zType>
-		<aiUnitTraitTrainModifier>
+		<aiStateReligionUnitTraitTrainModifier>
 			<Pair>
 				<zIndex>UNITTRAIT_DISCIPLE</zIndex>
 				<iValue>0</iValue>
 			</Pair>
-		</aiUnitTraitTrainModifier>
+		</aiStateReligionUnitTraitTrainModifier>
 		<aeHurryPopulation>
 			<zValue>BUILD_PROJECT</zValue>
 		</aeHurryPopulation>
@@ -639,12 +571,33 @@
 				<iValue>-25</iValue>
 			</Pair>
 		</aiUnitTraitCostModifier>
-		<aeTraitPromotion>
+		<aeTraitEffectUnit>
 			<Pair>
 				<zIndex>UNITTRAIT_SIEGE</zIndex>
-				<zValue>PROMOTION_INGENUITY</zValue>
+				<zValue>EFFECTUNIT_INGENUITY</zValue>
 			</Pair>
-		</aeTraitPromotion>
+		</aeTraitEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_FAMILYCLASS_SAGES</zType>
+		<iSpecialistUrbanCostModifier>-20</iSpecialistUrbanCostModifier>
+		<aeVoidTechPrereqProject></aeVoidTechPrereqProject>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_BASE</zType>
+		<bEnablesGovernor>0</bEnablesGovernor>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENT_GARRISON_1</zType>
+		<bEnablesGovernor>1</bEnablesGovernor>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENT_GARRISON_2</zType>
+		<bEnablesGovernor>1</bEnablesGovernor>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_IMPROVEMENT_GARRISON_3</zType>
+		<bEnablesGovernor>1</bEnablesGovernor>
 	</Entry>
 	<!-- BTT -->
 	<Entry>
@@ -659,7 +612,6 @@
 	<Entry>
 		<zType>EFFECTCITY_PALATIAL_ESTATES</zType>
 		<Name>TEXT_IMPROVEMENT_PALATIAL_ESTATES</Name>
-		<SourceImprovement>IMPROVEMENT_ESTATES</SourceImprovement>
 		<aiYieldRate>
 			<Pair>
 				<zIndex>YIELD_CULTURE</zIndex>
@@ -676,11 +628,11 @@
 		<aaiEffectCityYieldRate></aaiEffectCityYieldRate>
 	</Entry>
 	<Entry>
-		<zType>EFFECTCITY_HEDONISTIC_OPULANCE</zType>
+		<zType>EFFECTCITY_HEDONISTIC_OPULENCE</zType>
 		<aeEffectCityEffectCity>
 			<Pair>
 				<zIndex>EFFECTCITY_LUXURY</zIndex>
-				<zValue>EFFECTCITY_COMBINATION_HEDONISTIC_OPULANCE_LUXURY</zValue>
+				<zValue>EFFECTCITY_COMBINATION_HEDONISTIC_OPULENCE_LUXURY</zValue>
 			</Pair>
 		</aeEffectCityEffectCity>
 	</Entry>
@@ -717,18 +669,9 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_SHARED_POWER</zType>
-		<SourceEffectPlayer>EFFECTPLAYER_SHARED_POWER_VIZIER</SourceEffectPlayer>
+		<DefaultGovernor></DefaultGovernor>
 		<bAutoBuild>0</bAutoBuild>
-	</Entry>
-	<Entry>
-		<zType>EFFECTCITY_CONNECTED_VIZIER</zType>
-		<SourceEffectPlayer>EFFECTPLAYER_SHARED_POWER_VIZIER</SourceEffectPlayer>
-		<aiYieldRate>
-			<Pair>
-				<zIndex>YIELD_SCIENCE</zIndex>
-				<iValue>5</iValue>
-			</Pair>
-		</aiYieldRate>
+		<bNoHurry>0</bNoHurry>
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_TRAIT_RISING_STAR</zType>
@@ -785,13 +728,12 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTCITY_LAW_FREEDOM</zType>
-		<aiYieldRate />
-		<aiYieldRateSpecialist>
+		<aiYieldRate>
 			<Pair>
-				<zIndex>YIELD_MONEY</zIndex>
-				<iValue>40</iValue>
+				<zIndex>YIELD_GROWTH</zIndex>
+				<iValue>20</iValue>
 			</Pair>
-		</aiYieldRateSpecialist>
+		</aiYieldRate>
 		<aiYieldModifier />
 	</Entry>
 	<Entry>
@@ -806,5 +748,18 @@
 				</SubPair>
 			</Pair>
 		</aaiImprovementClassYield>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_LAW_GUILDS</zType>
+		<SpecialistNoPrereq></SpecialistNoPrereq>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_LAW_GUILDS_EXTRA</zType>
+		<aiYieldRateSpecialistUrban>
+			<Pair>
+				<zIndex>YIELD_CIVICS</zIndex>
+				<iValue>10</iValue>
+			</Pair>
+		</aiYieldRateSpecialistUrban>
 	</Entry>
 </Root>

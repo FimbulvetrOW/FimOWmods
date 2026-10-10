@@ -1,0 +1,28 @@
+﻿<Fragments>
+    <Fragment>
+        <XPath>/Root/VGroup[1]/UIRect[1]/template[1]/VGroup[1]/VGroup[1]
+        </XPath>
+        <Remove/>
+        <File>onlygridb.xml</File>
+    </Fragment>
+    <Fragment>
+        <XPath>/Root/VGroup[1]/UIRect[1]/template[1]/VGroup[1]/UIGrid[1]
+        </XPath>
+        <Replace/>
+        <File>onlygridb.xml</File>
+    </Fragment>
+    <Fragment>
+        <XPath>/Root/VGroup[1]
+        </XPath>
+        <Replace/>
+        <File>onlygrida.xml</File>
+    </Fragment>
+<!-- 	
+    <Fragment>
+        <XPath>//HGroup[@TEMPLATE_TYPE='SelectedUnitFrame']/replace/UIImage/replace
+        </XPath>
+        <Remove/>
+        <File>upsa.xml</File>
+    </Fragment>
+	 -->
+</Fragments>

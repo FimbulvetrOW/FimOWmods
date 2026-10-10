@@ -23,6 +23,45 @@
 		<zh-CN>长矛兵 防守 二</zh-CN>
 	</Entry>
 	<Entry>
+        <zType>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_1</zType>
+        <en-US>Protected in Garrison</en-US>
+        <es>Protegido en cuartel</es>
+        <de>In Garnison geschützt</de>
+        <fr>Protégé dans la Garnison</fr>
+        <ja>駐屯地で保護</ja>
+        <zh-TW>在駐軍地受保護</zh-TW>
+        <ru>Защищено в гарнизоне</ru>
+        <zh-CN>在营寨中受保护</zh-CN>
+        <pt-BR>Protegido na Guarnição</pt-BR>
+        <ko>주둔지에서 보호됨</ko>
+    </Entry>
+    <Entry>
+        <zType>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_2</zType>
+        <en-US>Protected in Stronghold</en-US>
+        <es>Protegido en fortaleza</es>
+        <de>In Feste geschützt</de>
+        <fr>Protégé dans la Forteresse</fr>
+        <ja>牙城で保護</ja>
+        <zh-TW>在要塞受保護</zh-TW>
+        <ru>Защищено в крепости</ru>
+        <zh-CN>在要塞中受保护</zh-CN>
+        <pt-BR>Protegido na Fortaleza</pt-BR>
+        <ko>요새에서 보호됨</ko>
+    </Entry>
+    <Entry>
+        <zType>TEXT_EFFECTUNIT_IMPROVEMENT_GARRISON_3</zType>
+        <en-US>Protected in Citadel</en-US>
+        <es>Protegido en ciudadela</es>
+        <de>In Zitadelle geschützt</de>
+        <fr>Protégé dans la Citadelle</fr>
+        <ja>城塞で保護</ja>
+        <zh-TW>在堡壘受保護</zh-TW>
+        <ru>Защищено в цитадели</ru>
+        <zh-CN>在堡垒中受保护</zh-CN>
+        <pt-BR>Protegido na Cidadela</pt-BR>
+        <ko>성채에서 보호됨</ko>
+    </Entry>
+	<Entry>
 		<zType>TEXT_EFFECTUNIT_EXPLORATION</zType>
 		<en-US>link(LAW_EXPLORATION)</en-US>
 		<es>link(LAW_EXPLORATION)</es>

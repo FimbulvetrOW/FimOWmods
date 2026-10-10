@@ -52,18 +52,22 @@
 	<Entry>
 		<zType>IMPROVEMENT_SETTLEMENT_1</zType>
 		<Class>IMPROVEMENTCLASS_SETTLEMENT</Class>
+		<iRangeChange>1</iRangeChange>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_SETTLEMENT_2</zType>
 		<Class>IMPROVEMENTCLASS_SETTLEMENT</Class>
+		<iRangeChange>1</iRangeChange>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_SETTLEMENT_3</zType>
 		<Class>IMPROVEMENTCLASS_SETTLEMENT</Class>
+		<iRangeChange>1</iRangeChange>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_SETTLEMENT_4</zType>
 		<Class>IMPROVEMENTCLASS_SETTLEMENT</Class>
+		<iRangeChange>1</iRangeChange>
 	</Entry>
 	<Entry>   <!-- disable Forts for 1.0.64196+ -->
 		<zType>IMPROVEMENT_FORT</zType>
@@ -180,6 +184,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_1</zType>
+		<CulturePrereq>CULTURE_DEVELOPING</CulturePrereq>
 		<SecondaryUnlockTechPrereq>TECH_NAVIGATION</SecondaryUnlockTechPrereq>
 		<SecondaryUnlockCulturePrereq>CULTURE_STRONG</SecondaryUnlockCulturePrereq>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_TRADERS</TertiaryUnlockFamilyClassPrereq>
@@ -188,6 +193,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_2</zType>
+		<CulturePrereq>CULTURE_STRONG</CulturePrereq>
 		<iSpecialistCost>-15</iSpecialistCost>
 		<Specialist>SPECIALIST_SHOPKEEPER_1</Specialist>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_TRADERS</TertiaryUnlockFamilyClassPrereq>
@@ -196,6 +202,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_3</zType>
+		<CulturePrereq>CULTURE_LEGENDARY</CulturePrereq>
 		<iSpecialistCost>-30</iSpecialistCost>
 		<Specialist>SPECIALIST_SHOPKEEPER_1</Specialist>
 	</Entry>
@@ -224,13 +231,24 @@
 	<Entry>
 		<zType>IMPROVEMENT_COURTHOUSE_2</zType>
 		<iSpecialistCost>-15</iSpecialistCost>
-		<AdjacentImprovementClassPrereq></AdjacentImprovementClassPrereq>
 		<Specialist>SPECIALIST_SCRIBE_1</Specialist>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_COURTHOUSE_3</zType>
 		<iSpecialistCost>-30</iSpecialistCost>
 		<Specialist>SPECIALIST_SCRIBE_1</Specialist>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_GARRISON_1</zType>
+		<ApplyEffectUnit>EFFECTUNIT_IMPROVEMENT_GARRISON_1</ApplyEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_GARRISON_2</zType>
+		<ApplyEffectUnit>EFFECTUNIT_IMPROVEMENT_GARRISON_2</ApplyEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_GARRISON_3</zType>
+		<ApplyEffectUnit>EFFECTUNIT_IMPROVEMENT_GARRISON_3</ApplyEffectUnit>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_APADANA</zType>
@@ -287,36 +305,69 @@
  -->
 	<Entry>
 		<zType>IMPROVEMENT_HARBOR</zType>
+		<aiAdjacentImprovementModifier>
+			<Pair>
+				<zIndex>IMPROVEMENT_NETS</zIndex>
+				<iValue>60</iValue>
+			</Pair>
+		</aiAdjacentImprovementModifier>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_TRADERS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_NAVIGATION</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockCulturePrereq>CULTURE_DEVELOPING</TertiaryUnlockCulturePrereq>
 	</Entry>
 	<Entry>
+		<zType>IMPROVEMENT_WATERMILL</zType>
+		<Class>IMPROVEMENTCLASS_MILL</Class>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_WINDMILL</zType>
+		<Class>IMPROVEMENTCLASS_MILL</Class>
+	</Entry>
+	<Entry>
 		<zType>IMPROVEMENT_MONASTERY_ZOROASTRIANISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_DIVINATION</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_ZOROASTRIANISM_STATE</TertiaryUnlockEffectCityPrereq>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MONASTERY_JUDAISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_DIVINATION</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_JUDAISM_STATE</TertiaryUnlockEffectCityPrereq>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MONASTERY_CHRISTIANITY</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_DIVINATION</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_CHRISTIANITY_STATE</TertiaryUnlockEffectCityPrereq>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MONASTERY_MANICHAEISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
+		<TertiaryUnlockTechPrereq>TECH_DIVINATION</TertiaryUnlockTechPrereq>
+		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_MANICHAEISM_STATE</TertiaryUnlockEffectCityPrereq>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_HINDUISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
+		<TertiaryUnlockTechPrereq>TECH_DIVINATION</TertiaryUnlockTechPrereq>
+		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_MANICHAEISM_STATE</TertiaryUnlockEffectCityPrereq>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_BUDDHISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_DIVINATION</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_MANICHAEISM_STATE</TertiaryUnlockEffectCityPrereq>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_TEMPLE_ZOROASTRIANISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_METAPHYSICS</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockCulturePrereq>CULTURE_STRONG</TertiaryUnlockCulturePrereq>
@@ -324,6 +375,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_TEMPLE_JUDAISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_METAPHYSICS</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockCulturePrereq>CULTURE_STRONG</TertiaryUnlockCulturePrereq>
@@ -331,6 +383,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_TEMPLE_CHRISTIANITY</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_METAPHYSICS</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockCulturePrereq>CULTURE_STRONG</TertiaryUnlockCulturePrereq>
@@ -338,10 +391,87 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_TEMPLE_MANICHAEISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_METAPHYSICS</TertiaryUnlockTechPrereq>
 		<TertiaryUnlockCulturePrereq>CULTURE_STRONG</TertiaryUnlockCulturePrereq>
 		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_MANICHAEISM_STATE</TertiaryUnlockEffectCityPrereq>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_HINDUISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
+		<TertiaryUnlockTechPrereq>TECH_METAPHYSICS</TertiaryUnlockTechPrereq>
+		<TertiaryUnlockCulturePrereq>CULTURE_STRONG</TertiaryUnlockCulturePrereq>
+		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_MANICHAEISM_STATE</TertiaryUnlockEffectCityPrereq>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_BUDDHISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_CLERICS</TertiaryUnlockFamilyClassPrereq>
+		<TertiaryUnlockTechPrereq>TECH_METAPHYSICS</TertiaryUnlockTechPrereq>
+		<TertiaryUnlockCulturePrereq>CULTURE_STRONG</TertiaryUnlockCulturePrereq>
+		<TertiaryUnlockEffectCityPrereq>EFFECTCITY_RELIGION_MANICHAEISM_STATE</TertiaryUnlockEffectCityPrereq>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_ZOROASTRIANISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_JUDAISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_CHRISTIANITY</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_MANICHAEISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_HINDUISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_BUDDHISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_PAGAN_STATUE_TEMPLE</zType>

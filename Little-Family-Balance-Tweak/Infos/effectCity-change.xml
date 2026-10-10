@@ -5,12 +5,6 @@
 		<EffectCityUnlock>EFFECTCITY_UNIT_FERRY</EffectCityUnlock>
 		<aiYieldRateSpecialist></aiYieldRateSpecialist>
 		<aiImprovementModifier></aiImprovementModifier>
-		<aiImprovementClassUpgradeTurnChange>
-			<Pair>
-				<zIndex>IMPROVEMENTCLASS_HAMLET</zIndex>
-				<iValue>0</iValue>
-			</Pair>
-		</aiImprovementClassUpgradeTurnChange>
 		<aeTraitEffectUnit></aeTraitEffectUnit>
 		<aaiEffectCityYieldRate>
 			<Pair>
@@ -96,5 +90,10 @@
 				<zValue>EFFECTUNIT_INGENUITY</zValue>
 			</Pair>
 		</aeTraitEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>EFFECTCITY_FAMILYCLASS_SAGES</zType>
+		<iSpecialistUrbanCostModifier>-20</iSpecialistUrbanCostModifier>
+		<aeVoidTechPrereqProject></aeVoidTechPrereqProject>
 	</Entry>
 </Root>

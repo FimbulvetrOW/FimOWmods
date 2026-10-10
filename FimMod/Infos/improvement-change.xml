@@ -178,23 +178,144 @@
 	<Entry>
 		<zType>IMPROVEMENT_SETTLEMENT_1</zType>
 		<Class>IMPROVEMENTCLASS_SETTLEMENT</Class>
+		<iRangeChange>1</iRangeChange>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_SETTLEMENT_2</zType>
 		<Class>IMPROVEMENTCLASS_SETTLEMENT</Class>
+		<iRangeChange>1</iRangeChange>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_SETTLEMENT_3</zType>
 		<Class>IMPROVEMENTCLASS_SETTLEMENT</Class>
+		<iRangeChange>1</iRangeChange>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_SETTLEMENT_4</zType>
 		<Class>IMPROVEMENTCLASS_SETTLEMENT</Class>
+		<iRangeChange>1</iRangeChange>
 	</Entry>
 	<!-- disable Forts for 1.0.64196+ -->
 	<Entry>
 		<zType>IMPROVEMENT_FORT</zType>
 		<bBuild>0</bBuild>
+	</Entry>
+	<!-- restoring the Mill Improvement Class -->
+	<Entry>
+		<zType>IMPROVEMENT_WATERMILL</zType>
+		<Class>IMPROVEMENTCLASS_MILL</Class>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_WINDMILL</zType>
+		<Class>IMPROVEMENTCLASS_MILL</Class>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_ZOROASTRIANISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_JUDAISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_CHRISTIANITY</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_MANICHAEISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_HINDUISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MONASTERY_BUDDHISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_ZOROASTRIANISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_JUDAISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_CHRISTIANITY</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_MANICHAEISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_HINDUISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_TEMPLE_BUDDHISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_ZOROASTRIANISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_JUDAISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_CHRISTIANITY</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_MANICHAEISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_HINDUISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_CATHEDRAL_BUDDHISM</zType>
+		<bNoAdjacentReligion>1</bNoAdjacentReligion>
+		<aiYieldOutput>
+			<Pair>
+				<zIndex>YIELD_CULTURE</zIndex>
+				<iValue>80</iValue>
+			</Pair>
+		</aiYieldOutput>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_BATHS_1</zType>
@@ -386,6 +507,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_1</zType>
+		<CulturePrereq>CULTURE_DEVELOPING</CulturePrereq>
 		<SecondaryUnlockTechPrereq>TECH_NAVIGATION</SecondaryUnlockTechPrereq>
 		<SecondaryUnlockCulturePrereq>CULTURE_STRONG</SecondaryUnlockCulturePrereq>
 		<!-- <iSecondaryUnlockPopulationPrereq></iSecondaryUnlockPopulationPrereq> -->
@@ -396,6 +518,14 @@
 		<!-- <TertiaryUnlockCulturePrereq>CULTURE_DEVELOPING</TertiaryUnlockCulturePrereq> -->
 		<!-- <TertiaryUnlockEffectCityPrereq></TertiaryUnlockEffectCityPrereq> -->
 	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_MARKET_2</zType>
+		<CulturePrereq>CULTURE_STRONG</CulturePrereq>
+	<Entry>
+		<zType>IMPROVEMENT_MARKET_3</zType>
+		<CulturePrereq>CULTURE_LEGENDARY</CulturePrereq>
+	</Entry>
+	
 	<Entry>
 		<zType>IMPROVEMENT_LIBRARY_1</zType>
 		<SecondaryUnlockTechPrereq>TECH_CITIZENSHIP</SecondaryUnlockTechPrereq>
@@ -421,8 +551,16 @@
 		<!-- <TertiaryUnlockEffectCityPrereq></TertiaryUnlockEffectCityPrereq> -->
 	</Entry>
 	<Entry>
-		<zType>IMPROVEMENT_COURTHOUSE_2</zType>
-		<AdjacentImprovementClassPrereq></AdjacentImprovementClassPrereq>
+		<zType>IMPROVEMENT_GARRISON_1</zType>
+		<ApplyEffectUnit>EFFECTUNIT_IMPROVEMENT_GARRISON_1</ApplyEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_GARRISON_2</zType>
+		<ApplyEffectUnit>EFFECTUNIT_IMPROVEMENT_GARRISON_2</ApplyEffectUnit>
+	</Entry>
+	<Entry>
+		<zType>IMPROVEMENT_GARRISON_3</zType>
+		<ApplyEffectUnit>EFFECTUNIT_IMPROVEMENT_GARRISON_3</ApplyEffectUnit>
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_APADANA</zType>

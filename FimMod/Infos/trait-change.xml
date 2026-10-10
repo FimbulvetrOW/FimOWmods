@@ -9,6 +9,10 @@
 		<iAdultProb>2</iAdultProb>
 	</Entry>
 	<Entry>
+		<zType>TRAIT_PREGNANT</zType>
+		<iMinAge>14</iMinAge>
+	</Entry>
+	<Entry>
 		<zType>TRAIT_RIGHTEOUS</zType>
 		<iTribeAllianceModifier>15</iTribeAllianceModifier>
 		<iAllianceModifier>15</iAllianceModifier>

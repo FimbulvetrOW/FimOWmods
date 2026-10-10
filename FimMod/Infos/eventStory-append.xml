@@ -96,15 +96,10 @@
 			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
 		</aeGameOptionInvalid>
 	</Entry>
-	<Entry>
-		<zType>EVENTSTORY_SUDDEN_INSIGHT</zType>
-		<aeGameOptionInvalid>
-			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
-		</aeGameOptionInvalid>
-	</Entry>
+	<!-- SUDDEN_INSIGHT is now disabled in CM in base game  -->
 	<!-- TRAIT_THE_FINER_THINGS requires EXOTIC OR EXTRAVAGANT, so I'm leaving it in  -->
 	<!-- FOREIGN_SCHOLAR requires INTELLIGENT, so I'm leaving it in after all -->
-	<!-- (TRAIT_MILITARY_MIND requires TACTICIAN, so I left it in. Since v1.0.72162 it gives Windlass, not a random tech)  -->
+	<!-- (TRAIT_MILITARY_MIND requires TACTICIAN, so I had left it in. Since v1.0.72162 it gives Windlass, not a random tech) It's now disabled in base game anyway. -->
 	<!-- INQUIRING_MINDS_SUCCESS is an Ambition, so that's ok -->
 	<!-- Since v1.0.72162 EVENTSTORY_TECH_HYDRAULICS_THE_AUTOMATON no longer gives a tech -->
 	<Entry>
@@ -248,6 +243,26 @@
 	</Entry>
 	<Entry>
 		<zType>EVENTSTORY_HEIR_TO_HEIR</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- BTT -->
+	<Entry>
+		<zType>EVENTSTORY_ALL_ROADS_LEAD</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<Entry>
+		<zType>EVENTSTORY_AMBITION_STRESS_VOLUNTEERS</zType>
+		<aeGameOptionInvalid>
+			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
+		</aeGameOptionInvalid>
+	</Entry>
+	<!-- EOTI -->
+	<Entry> 
+	    <zType>EVENTSTORY_CITY_OF_CLAY</zType>
 		<aeGameOptionInvalid>
 			<zValue>GAMEOPTION_COMPETITIVE_EVENTS</zValue>
 		</aeGameOptionInvalid>

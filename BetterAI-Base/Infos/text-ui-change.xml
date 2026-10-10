@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_CIVILIAN_FILTER</zType>
+		<en-US>{true_0:Hide:Show} Civilian Units</en-US>
+		<es>{true_0:Esconder:Mostrar} unidades civiles</es>
+		<de>Zivile Einheiten {true_0:verbergen:anzeigen}</de>
+		<fr>{true_0:Cacher:Afficher} unités civiles</fr>
+		<ja>文民を{true_0:非表示:表示}</ja>
+		<zh-TW>{true_0:隱藏:顯示}文職單位</zh-TW>
+		<ru>{true_0:Скрыть:Показать} гражданские юниты</ru>
+		<zh-CN>{true_0:隐藏:显示}文职单位</zh-CN>
+		<pt-BR>{true_0:Ocultar:Mostrar} unidades civis</pt-BR>
+		<ko>시민 유닛 {true_0:숨김:표시}</ko>
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_SCOUT_FILTER</zType>
+		<en-US>{true_0:Hide:Show} Scouts</en-US>
+		<es>{true_0:Esconder:Mostrar} exploradores</es>
+		<de>Kundschafter {true_0:verbergen:anzeigen}</de>
+		<fr>{true_0:Cacher:Afficher} éclaireurs</fr>
+		<ja>斥候兵を{true_0:非表示:表示}</ja>
+		<zh-TW>{true_0:隱藏:顯示}偵查員</zh-TW>
+		<ru>{true_0:Скрыть:Показать} разведчиков</ru>
+		<zh-CN>{true_0:隐藏:显示}侦查员</zh-CN>
+		<pt-BR>{true_0:Ocultar:Mostrar} batedores</pt-BR>
+		<ko>정찰병 {true_0:숨김:표시}</ko>
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_MILITARY_WATER_FILTER</zType>
+		<en-US>{true_0:Hide:Show} Naval Units</en-US>
+		<es>{true_0:Esconder:Mostrar} unidades navales</es>
+		<de>Marineeinheiten {true_0:verbergen:anzeigen}</de>
+		<fr>{true_0:Cacher:Afficher} unités navales</fr>
+		<ja>海軍ユニットを{true_0:非表示:表示}</ja>
+		<zh-TW>{true_0:隱藏:顯示}海軍單位</zh-TW>
+		<ru>{true_0:Скрыть:Показать} морские юниты</ru>
+		<zh-CN>{true_0:隐藏:显示}海军单位</zh-CN>
+		<pt-BR>{true_0:Ocultar:Mostrar} unidades navais</pt-BR>
+		<ko>해상 유닛 {true_0:숨김:표시}</ko>
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_MILITARY_MOUNTED_FILTER</zType>
+		<en-US>{true_0:Hide:Show} Mounted Units</en-US>
+		<es>{true_0:Esconder:Mostrar} unidades montadas</es>
+		<de>Berittene Einheiten {true_0:verbergen:anzeigen}</de>
+		<fr>{true_0:Cacher:Afficher} unités montées</fr>
+		<ja>騎兵ユニットを{true_0:非表示:表示}</ja>
+		<zh-TW>{true_0:隱藏:顯示}騎兵單位</zh-TW>
+		<ru>{true_0:Скрыть:Показать} конные юниты</ru>
+		<zh-CN>{true_0:隐藏:显示}骑兵单位</zh-CN>
+		<pt-BR>{true_0:Ocultar:Mostrar} unidades de montaria</pt-BR>
+		<ko>기병 유닛 {true_0:숨김:표시}</ko>
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_MILITARY_SIEGE_FILTER</zType>
+		<en-US>{true_0:Hide:Show} Siege Units</en-US>
+		<es>{true_0:Esconder:Mostrar} unidades de asedio</es>
+		<de>Belagerungseinheiten {true_0:verbergen:anzeigen}</de>
+		<fr>{true_0:Cacher:Afficher} unités de siège</fr>
+		<ja>攻囲ユニットを{true_0:非表示:表示}</ja>
+		<zh-TW>{true_0:隱藏:顯示}攻城單位</zh-TW>
+		<ru>{true_0:Скрыть:Показать} осадные юниты</ru>
+		<zh-CN>{true_0:隐藏:显示}攻城单位</zh-CN>
+		<pt-BR>{true_0:Ocultar:Mostrar} unidades de cerco</pt-BR>
+		<ko>공성 유닛 {true_0:숨김:표시}</ko>
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_MILITARY_RANGED_FILTER</zType>
+		<en-US>{true_0:Hide:Show} Ranged Units</en-US>
+		<es>{true_0:Esconder:Mostrar} unidades a distancia</es>
+		<de>Fernkampfeinheiten {true_0:verbergen:anzeigen}</de>
+		<fr>{true_0:Cacher:Afficher} unités à distance</fr>
+		<ja>遠隔ユニットを{true_0:非表示:表示}</ja>
+		<zh-TW>{true_0:隱藏:顯示}遠程單位</zh-TW>
+		<ru>{true_0:Скрыть:Показать} юнитов дальнего боя</ru>
+		<zh-CN>{true_0:隐藏:显示}远程单位</zh-CN>
+		<pt-BR>{true_0:Ocultar:Mostrar} unidades a distância</pt-BR>
+		<ko>원거리 유닛 {true_0:숨김:표시}</ko>
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_MILITARY_INFANTRY_FILTER</zType>
+		<en-US>{true_0:Hide:Show} (Melee) Infantry Units</en-US>
+		<es>{true_0:Esconder:Mostrar} unidades de infantería (cuerpo a cuerpo)</es>
+		<de>(Nahkampf) Infanterieeinheiten {true_0:verbergen:anzeigen}</de>
+		<fr>{true_0:Masquer:Afficher} les unités d'infanterie (de mêlée)</fr>
+		<ja>(近接)歩兵ユニットを{true_0:隠す:表示}</ja>
+		<zh-TW>{true_0:隱藏:顯示}(近戰)步兵單位</zh-TW>
+		<ru>{true_0:Скрыть:Показать} пехотные отряды ближнего боя</ru>
+		<zh-CN>{true_0:隐藏:显示}(近战)步兵单位</zh-CN>
+		<pt-BR>{true_0:Ocultar:Mostrar} unidades de infantaria (corpo a corpo)</pt-BR>
+		<ko>(근거리) 보병 유닛 {true_0:숨김:표시}</ko>
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_FILTER_OTHERS</zType>
+		<en-US>{0} to only show this unit type</en-US>
+		<es>{0} para mostrar tan solo este tipo de unidad</es>
+		<de>{0}: nur diesen Einheitentyp anzeigen</de>
+		<fr>{0} pour seulement afficher ce type d’unité</fr>
+		<ja>{0}でこのユニットタイプのみ表示</ja>
+		<zh-TW>{0}以只顯示這個單位類別</zh-TW>
+		<ru>{0} — показывать юниты только этого типа</ru>
+		<zh-CN>{0}以只显示这个单位类别</zh-CN>
+		<pt-BR>{0} para mostrar apenas este tipo de unidade</pt-BR>
+		<ko>{0}: 이 유형의 유닛만 표시</ko>
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_UNITLIST_FILTER_RESET</zType>
+		<en-US>{0} to reset all filters</en-US>
+		<es>{0} para reiniciar todos los filtros</es>
+		<de>{0}: alle Filter zurücksetzen</de>
+		<fr>{0} pour réinitialiser tous les filtres</fr>
+		<ja>{0}で全てのフィルターをリセット</ja>
+		<zh-TW>{0}以重設所有篩選條件</zh-TW>
+		<ru>{0} — сбросить все фильтры</ru>
+		<zh-CN>{0}以重设所有筛选条件</zh-CN>
+		<pt-BR>{0} para redefinir todos os filtros</pt-BR>
+		<ko>{0}: 모든 필터 초기화</ko>
+	</Entry>
+</Root>

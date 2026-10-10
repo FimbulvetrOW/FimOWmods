@@ -14,4 +14,16 @@
 		<pt-BR>Forte~um Forte~Fortes</pt-BR>
 -->
 	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENTCLASS_MILL</zType>
+		<en-US>Mill~a Mill~Mills</en-US>
+		<es>Molino~un molino~Molinos</es>
+		<de>Mühle~eine Mühle~Mühlen~der Mühle</de>
+		<fr>Moulin~un Moulin~Moulins</fr>
+		<ja>製粉所~製粉所~製粉所</ja>
+		<zh-TW>磨坊~磨坊~磨坊</zh-TW>
+		<ru>Мельница~Мельницы~Мельнице~Мельницу~Мельницей~Мельнице~Мельницы~Мельниц~Мельницам~Мельницы~Мельницами~Мельницах</ru>
+		<zh-CN>磨坊~磨坊~磨坊</zh-CN>
+		<pt-BR>Moinho~um Moinho~Moinhos</pt-BR>
+	</Entry>
 </Root>

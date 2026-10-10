@@ -158,6 +158,7 @@
 	</Entry>
 	<Entry>
 		<zType>UNIT_CROSSBOWMAN</zType>
+		<iStrength>80</iStrength>
 		<iRangeMax>1</iRangeMax>
 		<bRangeFlat>1</bRangeFlat>
 		<aiYieldConsumption>
@@ -176,7 +177,7 @@
 		</aiYieldConsumption>
 		<aeEffectUnit>
 			<zValue>EFFECTUNIT_ANTIMELEE</zValue>
-			<zValue>EFFECTUNIT_PIERCE1</zValue> <!-- instead of PIERCE2 -->
+			<!-- no more PIERCE2 -->
 		</aeEffectUnit>
 	</Entry>
 	<Entry>
@@ -540,7 +541,7 @@
 		</aiYieldConsumption>
 	</Entry>
 	<Entry>
-		<zType>UNIT_KUSHITE_CAVALRY</zType>
+		<zType>UNIT_MOUNTED_LANCER</zType>
 		<iRangeMax>1</iRangeMax>
 		<aiYieldConsumption>
 			<Pair>
@@ -809,5 +810,166 @@
 				<iValue>4</iValue>
 			</Pair>
 		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_STEPPE_RIDER</zType>
+		<iRangeMax>1</iRangeMax>
+	</Entry>
+	<Entry>
+		<zType>UNIT_DMT_WARRIOR</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_SHOTELAI</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_ASSAULT_ELEPHANT</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_ARMOURED_ELEPHANT</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry> 
+		<zType>UNIT_STEPPE_RIDER</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>3</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_KUSHAN_CAVALRY</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>3</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_KUSHAN_WARLORDS</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>3</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_IRON</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_JAVELIN_ELEPHANT</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>1</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_ARCHER_ELEPHANT</zType>
+		<aiYieldConsumption>
+			<Pair>
+				<zIndex>YIELD_TRAINING</zIndex>
+				<iValue>2</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_FOOD</zIndex>
+				<iValue>5</iValue>
+			</Pair>
+			<Pair>
+				<zIndex>YIELD_WOOD</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiYieldConsumption>
+	</Entry>
+	<Entry>
+		<zType>UNIT_HUNNIC_CAVALRY_1</zType>
+		<iRangeMax>1</iRangeMax>
+	</Entry>
+	<Entry>
+		<zType>UNIT_HUNNIC_CAVALRY_2</zType>
+		<iRangeMax>1</iRangeMax>
 	</Entry>
 </Root>
