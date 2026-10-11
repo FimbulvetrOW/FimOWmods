@@ -521,6 +521,7 @@
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_2</zType>
 		<CulturePrereq>CULTURE_STRONG</CulturePrereq>
+	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_3</zType>
 		<CulturePrereq>CULTURE_LEGENDARY</CulturePrereq>

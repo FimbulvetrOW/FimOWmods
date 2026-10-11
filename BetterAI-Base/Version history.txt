@@ -1,4 +1,5 @@
 Version history
+[0.1.9.6] Added options to set border reveal range independent from border vision, and to make counterattack possible even when the Unit is being flanked.
 [0.1.9.5] Update to new game version 1.0.84977: maeVoidTechPrereqProject added, getPushTile override no longer needed, 
           Unit filtering implementation is now optional since base game filters too now.
           miTriangleOffsetCouncil: Starting with v1.0.84658,  base game Council yield calculation uses the same triangle offset as Court (instead of 0), this is now a separate value.

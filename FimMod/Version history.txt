@@ -1,4 +1,6 @@
 Version history
+[0.8.0.1] Counterattacking (fully fortified Units) ignores any flanking that might be happening, 
+          and border Reveal range (when founding a City) set to static 1 (down from 4, Tacticians extra Vision also has no effect) 
 [0.8.0] Restored Religious Building construction restrictions: not adjacent to other Religions' Buildings.
         Removed +40% Culture from Cathedrals, flat +8 Culture instead, increased base Discontent for Glorious and up,
         Restored Markets' Culture prereqs, Freedom gives +2 Growth (+20% in base game, +4 Money/Specialist in mod before),

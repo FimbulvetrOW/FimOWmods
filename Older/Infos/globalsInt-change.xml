@@ -184,4 +184,16 @@
 		<!-- Set to 1 to get all Event/Bonus results immediately, skipping the wait time for Traits or Relations -->
 		<iValue>1</iValue>
 	</Entry>
+	<Entry>
+		<zType>BAI_BORDER_REVEAL</zType>
+		<!-- Leave at -1 to use standard border vision for City founding tile reveal. -->
+		<!-- Set to values 0 and greater to override the border reveal range.   -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_FLANKING_DISABLES_COUNTERATTACK</zType>
+		<!-- Leave at 1 to disable counter attack damage when flanking. -->
+		<!-- Set 0 to remove this feature.  -->
+		<iValue>0</iValue>
+	</Entry>
 </Root>

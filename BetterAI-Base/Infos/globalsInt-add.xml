@@ -175,13 +175,25 @@
 	</Entry>
 	<Entry>
 		<zType>BAI_ALT_ROAD_BUILD_OVERLAY</zType>
-		<!-- Activates alternative overlay when hovering over the Road construction button in Worker actions list -->
+		<!-- Activates alternative overlay when hovering over the Road construction button in Worker actions list. -->
 		<!-- 0 leaves this at the standard "Connected" overlay. 1 changes this to the "Roads and Rivers" overlay. -->
 		<iValue>0</iValue>
 	</Entry>
 	<Entry>
 		<zType>BAI_NO_DELAY</zType>
-		<!-- Set to 1 to get all Event/Bonus results immediately, skipping the wait time for Traits or Relations -->
+		<!-- Set to 1 to get all Event/Bonus results immediately, skipping the wait time for Traits or Relations. -->
 		<iValue>0</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_BORDER_REVEAL</zType>
+		<!-- Leave at -1 to use standard border vision for City founding tile reveal. -->
+		<!-- Set to values 0 and greater to override the border reveal range.   -->
+		<iValue>-1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_FLANKING_DISABLES_COUNTERATTACK</zType>
+		<!-- Leave at 1 to disable counter attack damage when flanking. -->
+		<!-- Set 0 to remove this feature.  -->
+		<iValue>1</iValue>
 	</Entry>
 </Root>

@@ -52,6 +52,8 @@ Features (NOT active by default, but can be used/activated by mods)
 - Agents can be unlocked before Spymaster, assigning them via Leader
 - Overlay types Connected, Roads and Rivers both show River edges highlighted blue, for the Roads and Rivers overlay this replaces the blue highlighting of river adjacent tiles. 
 - Temporary overlay type when hovering over Road contruction in Worker action list can be set to Roads and Rivers instead of the default overlay Connected.
+- Border reveal range can be set separately from border vision (with this, Tactician's extra Vision no longer affects reveal when founding Cities)
+- Counter attacks be be enabled again for flanking situations.
 
 Mods that activate/showcase some of these features are avaiable.
 
@@ -114,7 +116,7 @@ If you try any other way to contact me, my answer could take months.</descriptio
   <modplatform>Modio</modplatform>
   <modioID>2302466</modioID>
   <modioFileID>0</modioFileID>
-  <modversion>0.1.9.5</modversion>
+  <modversion>0.1.9.6</modversion>
   <modbuild>1.0.84977</modbuild>
   <homepage>https://forums.civfanatics.com/threads/mod-fims-collection-of-small-mods.678240/</homepage>
   <tags>GameInfo,AI,UI</tags>

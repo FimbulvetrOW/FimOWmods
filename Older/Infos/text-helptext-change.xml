@@ -12,4 +12,17 @@
 		<zType>TEXT_HELPTEXT_SAME_IMPROVEMENT_CLASS</zType>
 		<en-US>Already contains {0_improvement}</en-US>
 	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_FLANKING</zType>
+		<en-US>Flanking occurs while attacking an Enemy Unit with a Friendly Military Unit on the opposite side. For example, if attacking from a Tile west of a target, there must be another Military Unit to its east.</en-US>
+		<es>Un flanqueo ocurre cuando se ataca a una unidad enemiga que tiene a una unidad militar aliada en el lado opuesto. Por ejemplo, si atacas desde una casilla situada al oeste del objetivo, debe haber otra unidad en el este.</es>
+		<de>Ein Flankenangriff wird durchgeführt, wenn eine feindliche Einheit von zwei sich gegenüberstehenden verbündeten Militäreinheiten attackiert wird. Wenn Ihr beispielsweise ein Feld vom Westen her angreift und östlich des betreffenden Feldes eine weitere Einheit habt, so gilt der Angriff als Flankenangriff.</de>
+		<fr>Une attaque de flanc s'effectue en attaquant une unité ennemie avec une unité militaire alliée du côté opposé. Par exemple, si vous attaquez d'une case à l'ouest de la cible, il doit y avoir une unité militaire sur la case à l'est.</fr>
+		<ja>側面攻撃は、敵ユニットの反対側に別の味方ユニットがいる状態で攻撃すると発動します。例えば、対象の敵を西側から攻撃する場合、別の味方ユニットが敵の東側のタイルにいる必要があります。</ja>
+		<zh-TW>攻擊敵方單位時，若友好軍事單位在對面圖塊，即可進行夾擊。舉例來說，若從目標西方的圖塊發動攻擊，則目標東方的軍事圖塊上須有另一個單位。</zh-TW>
+		<ru>Во время атаки с фланга вы нападаете на вражеский отряд с противоположной стороны от дружественного военного отряда. Например, при атаке врага с запада на востоке должен находиться другой отряд.</ru>
+		<zh-CN>攻击敌方单位时，若友好军事单位在对面图块，即可进行夹击。举例来说，若从目标西方的图块发动攻击，则目标东方的军事图块上须有另一个单位。</zh-CN>
+		<pt-BR>Um ataque de flanco acontece quando você ataca uma unidade inimiga e há uma unidade aliada no lado oposto. Por exemplo, se você atacar uma unidade a partir do lado esquerdo, deve haver outra unidade militar do lado direito da unidade alvo para que ela seja flanqueada.</pt-BR>
+		<ko>협공은 적 유닛을 공격할 때 우호적인 군사 유닛이 반대편에 있어야 발생합니다. 만약 목표물 왼쪽 타일에서 공격한다면, 목표물 오른쪽 타일에 우호적인 군사 유닛이 있어야 협공이 일어납니다. </ko>
+	</Entry>
 </Root>

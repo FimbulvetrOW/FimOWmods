@@ -1,4 +1,6 @@
 Version history
+[0.2.3.1] Counterattacking (fully fortified Units) ignores any flanking that might be happening, 
+          and border Reveal range (when founding a City) set to static 1 (down from 4, Tacticians extra Vision also has no effect) 
 [0.2.3] Capitals start with a Garrison again which enables Governor, Schemers can't be Ambassadors or Chancellors (I really disagree with this base game change),
         Specialists start at Apprentice even with Guilds, removed +40% Culture from Cathedral, Drama unlocks Agents, increased base Discontent for Glorious and up,
         Garrison line improvements give protection to Units on the Tile: Garrison immune to Rout, Stronghold immune to Rout and Panic, Citadel immune to Rout and Panic and Stun, 
