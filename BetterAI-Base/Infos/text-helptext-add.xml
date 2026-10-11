@@ -508,7 +508,7 @@ To complete the encirclement you don't need to own water Tiles or impassable Til
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_TECH_RESEARCHING</zType>
-		<en-US>currently researching</en-US>
+		<en-US>currently researching, {0}{YIELD_SCIENCE}</en-US>
 <!--
 		<es>({0})</es>
 		<de>({0})</de>
@@ -521,7 +521,7 @@ To complete the encirclement you don't need to own water Tiles or impassable Til
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_TECH_IN_HAND</zType>
-		<en-US>can currently switch</en-US>
+		<en-US>can currently switch research, {0}{YIELD_SCIENCE}</en-US>
 <!--
 		<es>({0})</es>
 		<de>({0})</de>
@@ -534,7 +534,7 @@ To complete the encirclement you don't need to own water Tiles or impassable Til
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_TECH_DRAW_PILE</zType>
-		<en-US>Tech in draw pile</en-US>
+		<en-US>Tech in draw pile, {0}{YIELD_SCIENCE}</en-US>
 <!--
 		<es>({0})</es>
 		<de>({0})</de>
@@ -547,7 +547,7 @@ To complete the encirclement you don't need to own water Tiles or impassable Til
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_TECH_DISCARD_PILE</zType>
-		<en-US>Tech in discard pile</en-US>
+		<en-US>Tech in discard pile, {0}{YIELD_SCIENCE}</en-US>
 <!--
 		<es>({0})</es>
 		<de>({0})</de>
@@ -560,7 +560,7 @@ To complete the encirclement you don't need to own water Tiles or impassable Til
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_TECH_MORE_TECHS_REQUIRED</zType>
-		<en-US>{0} more {singular_0:Technology:Technologies} required to unlock</en-US>
+		<en-US>+{0} prerequisite {singular_0:Technology:Technologies}, {1}{YIELD_SCIENCE}</en-US>
 <!--
 		<es>({0})</es>
 		<de>({0})</de>
