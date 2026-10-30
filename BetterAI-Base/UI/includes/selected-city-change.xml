@@ -1,0 +1,8 @@
+<Fragments>
+    <Fragment>
+        <XPath>//VGroup[@OBJECT_NAME='QueuePanel']/CityQueueList[1]/loop[1]/UIDraggable[1]/UIRaycastTarget[1]
+        </XPath>
+        <Replace/>
+        <File>noswitchhurry.xml</File>
+    </Fragment>
+</Fragments>

@@ -71,6 +71,14 @@
 		</aiUnitTraitModifierDefense>
 	</Entry>
 	<Entry>
+		<zType>EFFECTUNIT_TACTICIAN_LEADER</zType>
+		<AttackApplyEffectUnitTurns>
+			<First>EFFECTUNIT_STUN_IMMUNITY</First>
+			<Second>2</Second>
+		</AttackApplyEffectUnitTurns>
+		<bAIIgnoreApplyValue>1</bAIIgnoreApplyValue>
+	</Entry>
+	<Entry>
 		<zType>EFFECTUNIT_SWORD_OF_THE_GODS</zType>
 		<iDefenseModifier>10</iDefenseModifier>
 		<bCriticalImmune>0</bCriticalImmune>
@@ -78,6 +86,11 @@
 	<Entry>
 		<zType>EFFECTUNIT_ZEALOT_LEADER</zType>
 		<bHealKill>0</bHealKill>
+		<AttackApplyEffectUnitTurns>
+			<First>EFFECTUNIT_HEALATTACK_IMMUNITY</First>
+			<Second>5</Second>
+		</AttackApplyEffectUnitTurns>
+		<bAIIgnoreApplyValue>1</bAIIgnoreApplyValue>
 		<iHealAttack>2</iHealAttack>
 	</Entry>
 	<!-- BTT -->

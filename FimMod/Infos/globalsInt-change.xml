@@ -190,4 +190,29 @@
 		<!-- Set 0 to remove this feature.  -->
 		<iValue>0</iValue>
 	</Entry>
+	<Entry>
+		<zType>BAI_BUY_TILE_COST_DISTANCE_OFFSET</zType>
+		<!-- Tile Buy cost is modified by distance. Before that calculation, this offset is applied. -->
+		<iValue>-1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_BUY_TILE_COST_DISTANCE_SQARED</zType>
+		<!-- Set to 1 to make Buy Tile cost increase with distance squared, instead of the linear increase with distance. -->
+		<iValue>1</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_BUY_TILE_COST_ONE_ADJACENT_MODIFIER</zType>
+		<!-- % increase for Buy Tile cost if only 1 adjacent tile belongs to the same Team -->
+		<iValue>50</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_BUY_TILE_COST_TWO_ADJACENT_MODIFIER</zType>
+		<!-- % increase for Buy Tile cost if 2 adjacent Tiles belongs to the same Team -->
+		<iValue>0</iValue>
+	</Entry>
+	<Entry>
+		<zType>BAI_BUY_TILE_COST_THREE_ADJACENT_MODIFIER</zType>
+		<!-- % increase for Buy Tile cost if 3 adjacent Tiles belongs to the same Team -->
+		<iValue>-50</iValue>
+	</Entry>
 </Root>

@@ -39,5 +39,57 @@
         <pt-BR>Protegido na Cidadela</pt-BR>
         <ko>성채에서 보호됨</ko>
     </Entry>
+	<Entry>
+        <zType>TEXT_EFFECTUNIT_GUARD4</zType>
+        <en-US>Indomitable</en-US>
+        <es>Indomable</es>
+        <de>Unbeugsam</de>
+        <fr>Indomptable</fr>
+        <ja>不屈</ja>
+        <zh-TW>不屈不撓</zh-TW>
+        <ru>Непреклонный</ru>
+        <zh-CN>不屈不挠</zh-CN>
+        <pt-BR>Indomável</pt-BR>
+        <ko>굴하지 않는 자</ko>
+    </Entry>
+	<Entry>
+        <zType>TEXT_EFFECTUNIT_STUN_IMMUNITY</zType>
+        <en-US>Stun Immunity</en-US>
+        <es>Inmunidad a aturdimiento</es>
+        <de>Betäubungsimmunität</de>
+        <fr>Immunité au étourdissement</fr>
+        <ja>気絶無効</ja>
+        <zh-TW>免疫眩暈</zh-TW>
+        <ru>Иммунитет к оглушению</ru>
+        <zh-CN>免疫眩晕</zh-CN>
+        <pt-BR>Imunidade a atordoamento</pt-BR>
+        <ko>기절 면제</ko>
+    </Entry>
+	<Entry>
+        <zType>TEXT_EFFECTUNIT_STUN_IMMUNITY</zType>
+        <en-US>Stun Immunity</en-US>
+        <es>Inmunidad a aturdimiento</es>
+        <de>Betäubungsimmunität</de>
+        <fr>Immunité au étourdissement</fr>
+        <ja>気絶無効</ja>
+        <zh-TW>免疫眩暈</zh-TW>
+        <ru>Иммунитет к оглушению</ru>
+        <zh-CN>免疫眩晕</zh-CN>
+        <pt-BR>Imunidade a atordoamento</pt-BR>
+        <ko>기절 면제</ko>
+    </Entry>
+	<Entry>
+        <zType>TEXT_EFFECTUNIT_HEALATTACK_IMMUNITY</zType>
+        <en-US>Prevents HP stealing</en-US>
+        <es>Previene el robo de PG</es>
+        <de>Verhindert TP-Raub</de>
+        <fr>Empêche el vol de PV</fr>
+        <ja>HP吸収を無効化</ja>
+        <zh-TW>防止生命值取</zh-TW>
+        <ru>Предотвращает похищение ОЗ</ru>
+        <zh-CN>防止生命值取</zh-CN>
+        <pt-BR>Previne roubo de PD</pt-BR>
+        <ko>HP 강탈 방지</ko>
+    </Entry>
 </Root>
 

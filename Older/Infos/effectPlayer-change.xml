@@ -31,6 +31,12 @@
 	<Entry>
 		<zType>EFFECTPLAYER_LAW_ENGINEERING</zType>
 		<bRiverBridging>0</bRiverBridging>
+		<aeEffectUnit>
+			<Pair>
+				<zIndex>UNIT_WORKER</zIndex>
+				<zValue>EFFECTUNIT_SURVEYOR</zValue>
+			</Pair>
+		</aeEffectUnit>
 	</Entry>
 	<Entry>
 		<zType>EFFECTPLAYER_IMPROVEMENT_PYRAMIDS</zType>
@@ -47,12 +53,7 @@
 	</Entry>
 	<Entry>
 		<zType>EFFECTPLAYER_TRAIT_BUILDER_ARCHETYPE</zType>
-		<aeEffectUnit>
-			<Pair>
-				<zIndex>UNIT_WORKER</zIndex>
-				<zValue>EFFECTUNIT_SURVEYOR</zValue>
-			</Pair>
-		</aeEffectUnit>
+		<bAddUrban>0</bAddUrban>
 	</Entry>
 	<Entry>   <!-- More Food Consumption -->
 		<zType>EFFECTPLAYER_IMPROVEMENT_LIGHTHOUSE</zType>

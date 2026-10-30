@@ -65,6 +65,45 @@
 			</Pair>
 		</Texts>
 	</Entry>
+	<Entry>
+		<zType>GENDERED_TEXT_EFFECTUNIT_GUARD4</zType>
+		<Texts>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_MASCULINE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_GUARD4</zValue>
+			</Pair>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_FEMININE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_GUARD4</zValue>
+			</Pair>
+		</Texts>
+	</Entry>
+	<Entry>
+		<zType>GENDERED_TEXT_EFFECTUNIT_STUN_IMMUNITY</zType>
+		<Texts>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_MASCULINE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_STUN_IMMUNITY</zValue>
+			</Pair>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_FEMININE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_STUN_IMMUNITY</zValue>
+			</Pair>
+		</Texts>
+	</Entry>
+	<Entry>
+		<zType>GENDERED_TEXT_EFFECTUNIT_HEALATTACK_IMMUNITY</zType>
+		<Texts>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_MASCULINE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_HEALATTACK_IMMUNITY</zValue>
+			</Pair>
+			<Pair>
+				<zIndex>GRAMMATICAL_GENDER_FEMININE</zIndex>
+				<zValue>TEXT_EFFECTUNIT_HEALATTACK_IMMUNITY</zValue>
+			</Pair>
+		</Texts>
+	</Entry>
  	<Entry>
 		<zType>GENDERED_TEXT_EFFECTUNIT_EXPLORATION</zType>
 		<Texts>

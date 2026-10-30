@@ -1,0 +1,3 @@
+<UIRaycastTarget Anchor="UIAnchor.MiddleLeft" Pivot="UIAnchor.MiddleRight" Width="20" Height="100" Position="15,-5" IsActive="{{QueuePanel-Button@-Arrow-IsActive}}">
+	<UIImage Width="36" Height="36"  NormalImage="QueArrow" HighlightedImage="QueArrowHighlighted" PreserveAspect="true"/>
+</UIRaycastTarget>

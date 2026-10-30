@@ -696,4 +696,8 @@
 		<zType>AI_EXPANSION_OVERRIDES_ZERO_WAR_CHANCE</zType>
 		<iValue>1</iValue> <!-- (new) default: 0 -->
 	</Entry>
+	<Entry>
+		<zType>AI_MAX_NUM_DISCIPLES_PER_HUNDRED_WORKERS</zType>
+		<iValue>30</iValue> <!-- (new) default: 30 -->
+	</Entry>
 </Root>

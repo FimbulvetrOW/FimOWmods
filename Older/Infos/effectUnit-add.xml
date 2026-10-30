@@ -39,6 +39,38 @@
 			<zValue>EFFECTUNIT_TACTICIAN_LEADER</zValue>
 		</aeEffectUnitImmune>
 	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_STUN_IMMUNITY</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_STUN_IMMUNITY</GenderedName>
+		<zIconName>EFFECTUNIT_WARDEN</zIconName>
+		<aeEffectUnitImmune>
+			<zValue>EFFECTUNIT_TACTICIAN_LEADER</zValue>
+		</aeEffectUnitImmune>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_GUARD4</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_GUARD4</GenderedName>
+		<zIconName>EFFECTUNIT_WARDEN</zIconName>
+		<iMeleeCounterPercent>50</iMeleeCounterPercent>
+		<aiUnitTraitModifier>
+			<Pair>
+				<zIndex>UNITTRAIT_RANGED</zIndex>
+				<iValue>25</iValue>
+			</Pair>
+		</aiUnitTraitModifier>
+		<aeEffectUnitImmune>
+			<zValue>EFFECTUNIT_PANIC</zValue>
+			<zValue>EFFECTUNIT_TACTICIAN_LEADER</zValue>
+		</aeEffectUnitImmune>
+	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_HEALATTACK_IMMUNITY</zType>
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_HEALATTACK_IMMUNITY</GenderedName>
+		<zIconName>EFFECTUNIT_WARDEN</zIconName>
+		<aeEffectUnitImmune>
+			<zValue>EFFECTUNIT_ZEALOT_LEADER</zValue>
+		</aeEffectUnitImmune>
+	</Entry>
 	<Entry>   <!-- Boat -->
 		<zType>EFFECTUNIT_EXPLORATION</zType>
 		<GenderedName>GENDERED_TEXT_EFFECTUNIT_EXPLORATION</GenderedName>

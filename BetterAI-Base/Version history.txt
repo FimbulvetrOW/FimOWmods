@@ -1,4 +1,15 @@
 Version history
+[0.1.9.8] Fixed a bug that frequently added Improvements twice to Worker valid list,
+          Improvement value calculation for value from enabling or spawning Units that requires Religion is moved to DependentValue, because this calls religionValue which depends on Improvements, 
+           this calculation now only looks at Units that would actually be unlocked with the Improvement, and ignores Units that also need other things to unlock that don't come online soon. 
+           While this value is still reduced by the value of the value of Units that can already be built, this value reduction is now separated into categories.
+           (base game does no value reducuction from already available options); copied the bug fix from Test branch for low priority Settlers and other civilian units,
+          fixed NullRef in UnitAI.getBestGeneral when Character had no Archetype yet, fixed ZOC over river not properly invalidating paths, fixed serious bugs in Character remaining turn calculation
+          for ill/severely ill Characters, reduced Unit value of Disciples, and reduced their target number. (They are not workers!), Units can now be immune to HealAttack (meaning the attacking
+          Unit will not gain HP), Units now count as Scouts for Unit filter list if they have more than normal (1) reveal range, even if their primary role/classification is different, 
+          added alternative buy tile cost modifier options: can scale quadratically with distance now with offset, and discounts/extra costs from number of owned adjacent tiles can be specified, 
+          added a flag for XML to turn off AI evaluation of applied unit effects (to apply stun immunity without that reducing the value of the stun action. This will be obsolete with next update
+          because Stun gets changed), also UI XML is repaired now (I forgot about that, therefore City screen was a bit broken.)
 [0.1.9.7] Fixed endless loop in Law Helptext Tech counting
 [0.1.9.6] Added options to set border reveal range independent from border vision, and to make counterattack possible even when the Unit is being flanked.
 [0.1.9.5] Update to new game version 1.0.84977: maeVoidTechPrereqProject added, getPushTile override no longer needed, 

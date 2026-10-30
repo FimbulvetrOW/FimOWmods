@@ -28,4 +28,8 @@
 		<zType>AI_DEATHTRAIT_PROB_EVAL_DEPTH</zType>
 		<iValue>10</iValue> <!-- (new) default: 10 -->
 	</Entry>
+	<Entry>
+		<zType>AI_MAX_NUM_DISCIPLES_PER_HUNDRED_WORKERS</zType>
+		<iValue>30</iValue> <!-- (new) default: 30 -->
+	</Entry>
 </Root>

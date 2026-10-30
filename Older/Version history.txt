@@ -1,4 +1,5 @@
 Version history
+[0.2.4.0] bAddUrban removed from Builder, 2 turn Stun immunity on Stun and HealAttack immunity on HealAttack, buy tile cost scales quadratic now.
 [0.2.3.1] Counterattacking (fully fortified Units) ignores any flanking that might be happening, 
           and border Reveal range (when founding a City) set to static 1 (down from 4, Tacticians extra Vision also has no effect) 
 [0.2.3] Capitals start with a Garrison again which enables Governor, Schemers can't be Ambassadors or Chancellors (I really disagree with this base game change),

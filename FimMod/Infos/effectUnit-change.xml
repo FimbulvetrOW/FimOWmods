@@ -120,6 +120,19 @@
 			</Pair>
 		</aiUnitTraitModifierDefense>
 	</Entry>
+	<Entry>
+		<zType>EFFECTUNIT_TACTICIAN_LEADER</zType>
+<!--
+		<GenderedName>GENDERED_TEXT_EFFECTUNIT_TACTICIAN_LEADER</GenderedName>
+		<zIconName>EFFECTUNIT_TACTICIAN_LEADER</zIconName>
+		<bSkipIcon>1</bSkipIcon>
+		<bStun>1</bStun>
+-->
+		<AttackApplyEffectUnitTurns>
+			<First>EFFECTUNIT_STUN_IMMUNITY</First>
+			<Second>2</Second>
+		</AttackApplyEffectUnitTurns>
+	</Entry>
 <!--
 	<Entry>
 		<zType>EFFECTUNIT_ZEALOT</zType>
@@ -158,6 +171,11 @@
 	<Entry>
 		<zType>EFFECTUNIT_ZEALOT_LEADER</zType>
 		<bHealKill>0</bHealKill>
+		<AttackApplyEffectUnitTurns>
+			<First>EFFECTUNIT_HEALATTACK_IMMUNITY</First>
+			<Second>5</Second>
+		</AttackApplyEffectUnitTurns>
+		<bAIIgnoreApplyValue>1</bAIIgnoreApplyValue>
 		<iHealAttack>2</iHealAttack>
 	</Entry>
 	<!-- BTT -->
@@ -176,6 +194,7 @@
 			<First>UNITTRAIT_RANGED</First>
 			<Second>25</Second>
 			<Third>2</Third>
+		<bAIIgnoreApplyValue>1</bAIIgnoreApplyValue>
 		</UnitTraitFormation>
 	</Entry>
 </Root>

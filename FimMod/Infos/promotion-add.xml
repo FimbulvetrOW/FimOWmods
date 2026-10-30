@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Root>
+	<Entry>
+		<zType>PROMOTION_GUARD4</zType>
+		<Name>TEXT_PROMOTION_GUARD4</Name>
+		<EffectUnitPrereq>EFFECTUNIT_GUARD3</EffectUnitPrereq>
+		<EffectUnit>EFFECTUNIT_GUARD4</EffectUnit>
+		<bPriority>1</bPriority>
+	</Entry>
+</Root>
