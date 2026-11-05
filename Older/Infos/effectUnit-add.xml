@@ -36,7 +36,7 @@
 		<aeEffectUnitImmune>
 			<zValue>EFFECTUNIT_ROUT</zValue>
 			<zValue>EFFECTUNIT_PANIC</zValue>
-			<zValue>EFFECTUNIT_TACTICIAN_LEADER</zValue>
+			<zValue>EFFECTUNIT_STUNNED</zValue>
 		</aeEffectUnitImmune>
 	</Entry>
 	<Entry>
@@ -44,7 +44,7 @@
 		<GenderedName>GENDERED_TEXT_EFFECTUNIT_STUN_IMMUNITY</GenderedName>
 		<zIconName>EFFECTUNIT_WARDEN</zIconName>
 		<aeEffectUnitImmune>
-			<zValue>EFFECTUNIT_TACTICIAN_LEADER</zValue>
+			<zValue>EFFECTUNIT_STUNNED</zValue>
 		</aeEffectUnitImmune>
 	</Entry>
 	<Entry>
@@ -60,7 +60,7 @@
 		</aiUnitTraitModifier>
 		<aeEffectUnitImmune>
 			<zValue>EFFECTUNIT_PANIC</zValue>
-			<zValue>EFFECTUNIT_TACTICIAN_LEADER</zValue>
+			<zValue>EFFECTUNIT_STUNNED</zValue>
 		</aeEffectUnitImmune>
 	</Entry>
 	<Entry>

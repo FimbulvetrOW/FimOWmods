@@ -71,14 +71,6 @@
 		</aiUnitTraitModifierDefense>
 	</Entry>
 	<Entry>
-		<zType>EFFECTUNIT_TACTICIAN_LEADER</zType>
-		<AttackApplyEffectUnitTurns>
-			<First>EFFECTUNIT_STUN_IMMUNITY</First>
-			<Second>2</Second>
-		</AttackApplyEffectUnitTurns>
-		<bAIIgnoreApplyValue>1</bAIIgnoreApplyValue>
-	</Entry>
-	<Entry>
 		<zType>EFFECTUNIT_SWORD_OF_THE_GODS</zType>
 		<iDefenseModifier>10</iDefenseModifier>
 		<bCriticalImmune>0</bCriticalImmune>

@@ -1,4 +1,6 @@
 Version history
+[0.1.9.10] Update for new game version 1.0.85345: victory checks when Player effects change, stunned and immobile are no longer cooldowns.
+[0.1.9.9] Fixed negative Unit effect Count from Improvement Unit effects, fixed NullRef is Religion tab.
 [0.1.9.8] Fixed a bug that frequently added Improvements twice to Worker valid list,
           Improvement value calculation for value from enabling or spawning Units that requires Religion is moved to DependentValue, because this calls religionValue which depends on Improvements, 
            this calculation now only looks at Units that would actually be unlocked with the Improvement, and ignores Units that also need other things to unlock that don't come online soon. 
