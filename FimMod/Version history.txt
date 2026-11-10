@@ -1,4 +1,5 @@
 Version history
+[0.8.1.2] Fixed Cities starting with Discontent level 1 instead of intended level 0, EVENTSTORY_TRIBE_HOMELAND_BURNING: Minturns set to 30, and a few other XML fixes.
 [0.8.1.1] Update for new game version 1.0.85345: Stun now applies stun immunity in base game, and my implementation stopped working, so it's removed.
 [0.8.1.0] bAddUrban removed from Builder, 2 turn Stun immunity on Stun and HealAttack immunity on HealAttack, buy tile cost scales quadratic now.
 [0.8.0.1] Counterattacking (fully fortified Units) ignores any flanking that might be happening, 

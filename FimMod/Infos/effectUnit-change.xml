@@ -181,7 +181,6 @@
 			<First>UNITTRAIT_RANGED</First>
 			<Second>25</Second>
 			<Third>2</Third>
-		<bAIIgnoreApplyValue>1</bAIIgnoreApplyValue>
 		</UnitTraitFormation>
 	</Entry>
 </Root>

@@ -22,10 +22,6 @@
 		<iTriangleOffsetCouncil>0</iTriangleOffsetCouncil>
 	</Entry>
 	<Entry>
-		<zType>YIELD_HAPPINESS</zType>
-		<iCityStart>1000</iCityStart>
-	</Entry>
-	<Entry>
 		<zType>YIELD_SCIENCE</zType>
 		<!-- <iTriangleOffset>-2</iTriangleOffset> -->
 		<iTriangleOffsetCouncil>0</iTriangleOffsetCouncil>

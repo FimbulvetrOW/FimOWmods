@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <Root>
 	<Entry>
+		<zType>EFFECTPLAYER_BASE</zType>
+		<FoundBonus>BONUS_HAPPINESS_UP</FoundBonus>
+	</Entry>
+	<Entry>
 		<zType>EFFECTPLAYER_TECH_DRAMA</zType>
 		<bAgent>1</bAgent>
 	</Entry>

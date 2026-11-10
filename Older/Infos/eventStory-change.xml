@@ -169,4 +169,8 @@
 		<zType>EVENTSTORY_TECH_TRADE_OFF</zType>
 		<aeGameOptionInvalid />
 	</Entry>
+	<Entry>   <!-- delay -->
+		<zType>EVENTSTORY_TRIBE_HOMELAND_BURNING</zType>
+		<iMinTurns>30</iMinTurns>
+	</Entry>
 </Root>

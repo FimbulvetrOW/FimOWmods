@@ -29,7 +29,6 @@
 		<bWater>1</bWater>
 		<bOutsideOpinion>1</bOutsideOpinion>
 		<bAnchor>1</bAnchor>
-		<bHarvest>1</bHarvest>
 		<aiYieldCost>
 			<Pair>
 				<zIndex>YIELD_WOOD</zIndex>
@@ -52,5 +51,8 @@
 		<aeUnitTrait>
 			<zValue>UNITTRAIT_SHIP</zValue>
 		</aeUnitTrait>
+		<aeEffectUnit>
+			<zValue>EFFECTUNIT_HARVESTER</zValue>
+		</aeEffectUnit>
 	</Entry>
 </Root>

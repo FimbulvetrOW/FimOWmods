@@ -2,6 +2,7 @@
 <Root>
 	<Entry>
 		<bAmphibiousEmbark/>
+		<bAIIgnoreApplyValue/>
 		<iHealAttack/>
 	</Entry>
 </Root>

@@ -586,7 +586,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_JERWAN_AQUEDUCT</zType>
-		<AdjacentImprovementSpecialist></AdjacentImprovementSpecialist>
+		<AdjacentImprovementSpecialists></AdjacentImprovementSpecialists>
 		<BonusAdjacentImprovementClass>IMPROVEMENTCLASS_BATHS</BonusAdjacentImprovementClass>
 		<bMakesAdjacentPassableLandTileValidForBonusImprovement>1</bMakesAdjacentPassableLandTileValidForBonusImprovement>
 	</Entry>

@@ -1,4 +1,6 @@
 Version history
+[0.1.9.11] Fixed a ZoC-cache pollution (for good this time), fixed a possible casting error when trying to load a save from a newer game version, 
+           fixed bAIIgnoreApplyValue property of Unit effects which was not getting read at all.
 [0.1.9.10] Update for new game version 1.0.85345: victory checks when Player effects change, stunned and immobile are no longer cooldowns.
 [0.1.9.9] Fixed negative Unit effect Count from Improvement Unit effects, fixed NullRef is Religion tab.
 [0.1.9.8] Fixed a bug that frequently added Improvements twice to Worker valid list,

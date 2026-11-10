@@ -193,8 +193,8 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_2</zType>
-		<CulturePrereq>CULTURE_STRONG</CulturePrereq>
 		<iSpecialistCost>-15</iSpecialistCost>
+		<CulturePrereq>CULTURE_STRONG</CulturePrereq>
 		<Specialist>SPECIALIST_SHOPKEEPER_1</Specialist>
 		<TertiaryUnlockFamilyClassPrereq>FAMILYCLASS_TRADERS</TertiaryUnlockFamilyClassPrereq>
 		<TertiaryUnlockTechPrereq>TECH_NAVIGATION</TertiaryUnlockTechPrereq>
@@ -202,8 +202,8 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_MARKET_3</zType>
-		<CulturePrereq>CULTURE_LEGENDARY</CulturePrereq>
 		<iSpecialistCost>-30</iSpecialistCost>
+		<CulturePrereq>CULTURE_LEGENDARY</CulturePrereq>
 		<Specialist>SPECIALIST_SHOPKEEPER_1</Specialist>
 	</Entry>
 	<Entry>
@@ -277,7 +277,7 @@
 	</Entry>
 	<Entry>
 		<zType>IMPROVEMENT_JERWAN_AQUEDUCT</zType>
-		<AdjacentImprovementSpecialist></AdjacentImprovementSpecialist>
+		<AdjacentImprovementSpecialists></AdjacentImprovementSpecialists>
 		<BonusAdjacentImprovementClass>IMPROVEMENTCLASS_BATHS</BonusAdjacentImprovementClass>
 		<bMakesAdjacentPassableLandTileValidForBonusImprovement>1</bMakesAdjacentPassableLandTileValidForBonusImprovement>
 	</Entry>
